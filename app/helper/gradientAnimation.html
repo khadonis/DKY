@@ -12,30 +12,55 @@
     <title></title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+           body {
+                background-color: #fff;
+                margin: 0px;
+                overflow: hidden;
+                font-family:arial;
+                color:#fff;
+            }
+            #canvas{
+                width:100%;
+                height:700px;
+                overflow: hidden;
+                position:absolute;
+                top:0;
+                left:0;
+                background-color: #1a1724;               
+            }
+            .canvas-wrap{
+                position:relative;
+                
+            }            
+        </style>
 </head>
 
 <body>
     <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
-        crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
-        crossorigin="anonymous"></script>
-    <script type="text/javascript">
-        $(document).ready(function () {
-            colors = ['rgba(255,120,15,0.5)', '#58EC00', '#0087EC']
-            var i = 0;
-            animate_loop = function () {
-                $('body').animate({
-                    backgroundColor: colors[(i++) % colors.length]
-                }, 1500, function () {
-                    animate_loop();
-                });
-            }
-            animate_loop();
-        });
-    </script>
+    <section class="canvas-wrap">
+        <!-- <div class="canvas-content">
+                <h1>3D lines animation with three.js</h1>
+            </div>-->
+        <div id="canvas" class="gradient"></div>
+
+    </section>
+
+    <!-- Main library -->
+    <!--<script src="js/three.min.js"></script>-->
+
+    <!-- Helpers -->
+    <!--<script src="js/projector.js"></script>-->
+    <!--<script src="js/canvas-renderer.js"></script>-->
+
+    <!-- Visualitzation adjustments -->
+    <!--<script src="js/3d-lines-animation.js"></script>-->
+
+    <!-- Animated background color -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+    <script src="../js/color.js"></script>
 </body>
 
 </html>
