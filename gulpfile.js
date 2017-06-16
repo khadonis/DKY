@@ -13,11 +13,20 @@ sass = require('gulp-sass');
 
 gulp.task('sass', function(){
 	gulp.src('app/sass/app.scss')
-	.pipe(sass())
+	.pipe(sass())	
+	.pipe(gulp.dest('app/css/'));
+});
+
+gulp.task('aprefix', function () {
+	gulp.src('app/css/app.css')
 	.pipe(autoprefixer({
             browsers: ['last 2 versions']
         }))
-	.pipe(gulp.dest('app/css'))
+	.pipe(gulp.dest('app/css'));
+});
+
+gulp.task('cleanCSS', function () {
+	gulp.src('app/css/app.css')
 	.pipe(cleanCSS())
 	.pipe(rename('app.min.css'))
 	.pipe(gulp.dest('dist/css'));
@@ -55,8 +64,8 @@ gulp.task('import', function () {
         .pipe(gulp.dest('dist')); 
 });
 
-gulp.task('default', ['sass', 'manage', 'fonts', 'images', 'import'], function(){
-	gulp.watch(['app/sass/*.scss','app/css/*css'], ['sass']);
+gulp.task('default', ['sass', 'manage', 'fonts', 'images', 'import', 'aprefix', 'cleanCSS'], function(){
+	gulp.watch(['app/sass/*.scss','app/css/*css'], ['sass', 'aprefix', 'cleanCSS']);
 	gulp.watch(['app/js/*js', 'app/js/*js'], ['manage']);
 	gulp.watch(['app/font/*', 'app/font/*'], ['fonts']);
 	gulp.watch(['app/images/**/*)', 'app/images/**/*'], ['images']);
