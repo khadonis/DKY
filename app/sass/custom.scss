@@ -3,3 +3,12 @@
 my custom scss file
 *******************
 */
+body{
+    padding-top: $navbar-height;
+    margin-bottom: 60px;
+}
+footer{
+    position:absolute;
+    bottom:0;
+    width:100%;
+}
