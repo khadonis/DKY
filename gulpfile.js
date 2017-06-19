@@ -55,7 +55,7 @@ gulp.task('images', function(){
 
 gulp.task('import', function () {
     gulp.src('app/*.html')
-        .pipe(gulpImport('app/temp/*'))
+        .pipe(gulpImport('app/temp/'))
         .pipe(gulp.dest('dist')); 
 });
 
