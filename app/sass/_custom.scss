@@ -6,14 +6,15 @@ my custom scss file
 
 body{
     padding-top: $navbar-height;
-    margin-bottom: 60px;
+    padding-bottom: 60px;
 }
 footer{
     height: 60px;
     position: absolute;
-    bottom: 0;
+    bottom: -60px;
     width:100%;
 }
+
 .map{
     width: 100%;
     height: 400px;

@@ -76,6 +76,7 @@ setInterval(updateGradient,2);
   * my custom javascript file 
   */
 //
+
 // /*
 /*Map Api Js Start*/
 // */
@@ -141,22 +142,38 @@ function runMap(button, locations, latLng) {
 runMap('.dky-sahil-harbtn', dkySahil, { lat: 40.8944685, lng: 29.171256 });
 runMap('.dky-kartal-harbtn', dkyVizyon, { lat: 40.90861, lng: 29.19233 });
 
-//var mekanlar = ['Hastaneler', 'Okul', 'Resmi', 'AVN', 'Orman', 'Ulaşım', 'Camii', 'Park', 'Yemek', 'Spor'];
-//var liTags = $('.dplaces li');
-//var projTags = $('.dprojs li');
-
+var pli = '.dprojs li', plli = '.dplaces li';
+function adcls(eq) {
+    $(plli).eq(eq).find('span').addClass('active');
+}
+var hastane = 0;
+var okul = 1;
+var resmiKurum = 2;
+var avm = 3;
+var orman = 4;
+var ulasim = 5;
+var cami = 6;
+var park = 7;
+var yemek = 8;
+var spor = 9;
 
 function aktifs() {
-    if ($('.dprojs li').eq(0).hasClass('active')) {
-        $('.dplaces li span').removeClass('active');
-        $('.dplaces li:eq(1) span').addClass('active');
-        $('.dplaces li:eq(2) span').addClass('active');
-        $('.dplaces li:eq(3) span').addClass('active');
-        $('.dplaces li:eq(8) span').addClass('active');
+    if ($(pli).eq(0).hasClass('active')) {
+        $(plli + ' span').removeClass('active');
+        adcls(okul);
+        adcls(resmiKurum);
+        adcls(avm);
+        adcls(yemek);
+        
     }
-    if ($('.dprojs li').eq(1).hasClass('active')) {
-        $('.dplaces li span').removeClass('active');
-        $('.dplaces li:eq(4) span').addClass('active');
+    if ($(pli).eq(1).hasClass('active')) {
+        $(plli + ' span').removeClass('active');
+        adcls(okul);
+        adcls(resmiKurum);
+        adcls(avm);
+        adcls(ulasim);
+        adcls(park);
+        adcls(yemek);
     }
 }
 aktifs();

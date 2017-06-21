@@ -67,19 +67,34 @@ var pli = '.dprojs li', plli = '.dplaces li';
 function adcls(eq) {
     $(plli).eq(eq).find('span').addClass('active');
 }
-
+var hastane = 0;
+var okul = 1;
+var resmiKurum = 2;
+var avm = 3;
+var orman = 4;
+var ulasim = 5;
+var cami = 6;
+var park = 7;
+var yemek = 8;
+var spor = 9;
 
 function aktifs() {
     if ($(pli).eq(0).hasClass('active')) {
         $(plli + ' span').removeClass('active');
-        adcls(1);
-        adcls(2);
-        adcls(3);
-        adcls(8);
+        adcls(okul);
+        adcls(resmiKurum);
+        adcls(avm);
+        adcls(yemek);
+        
     }
-    if ($('.dprojs li').eq(1).hasClass('active')) {
-        $('.dplaces li span').removeClass('active');
-        $('.dplaces li:eq(4) span').addClass('active');
+    if ($(pli).eq(1).hasClass('active')) {
+        $(plli + ' span').removeClass('active');
+        adcls(okul);
+        adcls(resmiKurum);
+        adcls(avm);
+        adcls(ulasim);
+        adcls(park);
+        adcls(yemek);
     }
 }
 aktifs();
