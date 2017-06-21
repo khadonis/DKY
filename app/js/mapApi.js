@@ -63,18 +63,19 @@ function runMap(button, locations, latLng) {
 runMap('.dky-sahil-harbtn', dkySahil, { lat: 40.8944685, lng: 29.171256 });
 runMap('.dky-kartal-harbtn', dkyVizyon, { lat: 40.90861, lng: 29.19233 });
 
-//var mekanlar = ['Hastaneler', 'Okul', 'Resmi', 'AVN', 'Orman', 'Ulaşım', 'Camii', 'Park', 'Yemek', 'Spor'];
-//var liTags = $('.dplaces li');
-//var projTags = $('.dprojs li');
+var pli = '.dprojs li', plli = '.dplaces li';
+function adcls(eq) {
+    $(plli).eq(eq).find('span').addClass('active');
+}
 
 
 function aktifs() {
-    if ($('.dprojs li').eq(0).hasClass('active')) {
-        $('.dplaces li span').removeClass('active');
-        $('.dplaces li:eq(1) span').addClass('active');
-        $('.dplaces li:eq(2) span').addClass('active');
-        $('.dplaces li:eq(3) span').addClass('active');
-        $('.dplaces li:eq(8) span').addClass('active');
+    if ($(pli).eq(0).hasClass('active')) {
+        $(plli + ' span').removeClass('active');
+        adcls(1);
+        adcls(2);
+        adcls(3);
+        adcls(8);
     }
     if ($('.dprojs li').eq(1).hasClass('active')) {
         $('.dplaces li span').removeClass('active');
