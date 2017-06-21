@@ -57,6 +57,7 @@ function runMap(button, locations, latLng) {
         test(locations);
         $('.dprojs li').removeClass('active');
         $(button).addClass('active');
+        aktifs();
     });
 }
 runMap('.dky-sahil-harbtn', dkySahil, { lat: 40.8944685, lng: 29.171256 });
@@ -66,10 +67,21 @@ runMap('.dky-kartal-harbtn', dkyVizyon, { lat: 40.90861, lng: 29.19233 });
 //var liTags = $('.dplaces li');
 //var projTags = $('.dprojs li');
 
-$('.dprojs li').each(function () {
-    if($(this).hasClass('active') && $(this).index() == 0){
+
+function aktifs() {
+    if ($('.dprojs li').eq(0).hasClass('active')) {
         $('.dplaces li span').removeClass('active');
+        $('.dplaces li:eq(1) span').addClass('active');
         $('.dplaces li:eq(2) span').addClass('active');
+        $('.dplaces li:eq(3) span').addClass('active');
+        $('.dplaces li:eq(8) span').addClass('active');
     }
-});
+    if ($('.dprojs li').eq(1).hasClass('active')) {
+        $('.dplaces li span').removeClass('active');
+        $('.dplaces li:eq(4) span').addClass('active');
+    }
+}
+aktifs();
+
+
 
