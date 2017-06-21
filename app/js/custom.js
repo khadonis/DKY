@@ -1,6 +1,6 @@
-/*
-**************************
- my custom javascript file
-**************************
- */
-var sample = 'sample';
+
+ //
+ /************************
+  * my custom javascript file 
+  */
+//

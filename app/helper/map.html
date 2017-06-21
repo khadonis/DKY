@@ -4,22 +4,27 @@
 <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
     <title>Google Maps Multiple Markers</title>
-    <script src="http://maps.google.com/maps/api/js?sensor=false" type="text/javascript"></script>
+    <link href="../../dist/css/app.min.css" rel="stylesheet">    
 </head>
 
 <body>
     <div class="button1">button1</div>
     <div class="button2">button2</div>
+
+    <div class="container">
     <div id="map" style="width: 100%; height: 400px;"></div>
+    </div>
+
     <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
         crossorigin="anonymous"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB2V7XQtDZSOvcJzylGchYrL8nqzfsTsFg&libraries=places"></script>
     <script type="text/javascript">
         var locations = [
-            ['Bondi Beach', -33.890542, 151.274856,'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png', 4],
-            ['Coogee Beach', -33.923036, 151.259052,'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png', 5],
-            ['Cronulla Beach', -34.028249, 151.157507,'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png', 3],
-            ['Manly Beach', -33.80010128657071, 151.28747820854187,'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png', 2],
-            ['Maroubra Beach', -33.950198, 151.259302,'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png', 1]
+            ['Bondi Beach', -33.890542, 151.274856, 'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png', 4],
+            ['Coogee Beach', -33.923036, 151.259052, 'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png', 5],
+            ['Cronulla Beach', -34.028249, 151.157507, 'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png', 3],
+            ['Manly Beach', -33.80010128657071, 151.28747820854187, 'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png', 2],
+            ['Maroubra Beach', -33.950198, 151.259302, 'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png', 1]
         ];
         var locations2 = [
             ['Bondi Beach', -33.920545, 151.264855, 'https://developers.google.com/maps/documentation/javascript/images/custom-marker.png', 4],
@@ -28,7 +33,8 @@
         var map = new google.maps.Map(document.getElementById('map'), {
             zoom: 10,
             center: new google.maps.LatLng(-33.92, 151.25),
-            mapTypeId: google.maps.MapTypeId.ROADMAP
+            mapTypeId: google.maps.MapTypeId.ROADMAP,
+            types: ['hospital', 'school']
         });
         var infowindow = new google.maps.InfoWindow();
         var marker, i;
@@ -49,7 +55,7 @@
                     }
                 })(marker, i));
             }
-        };        
+        };
         test(locations);
         function setMapOnAll(map) {
             for (var i = 0; i < markers.length; i++) {
@@ -59,27 +65,16 @@
         function clearMarkers() {
             setMapOnAll(null);
         }
-        function centerLocation() {
-            map.setCenter({
-                lat: -33.92,
-                lng: 151.25
+        function runMap(button, locations) {
+            $(button).click(function (event) {
+                map.setZoom(10);
+                map.setCenter({ lat: -33.92, lng: 151.25 });
+                clearMarkers();
+                test(locations);
             });
         }
-        function zoomLocation() {
-            map.setZoom(10);
-        }
-        $('.button1').click(function (event) {
-            zoomLocation();
-            centerLocation();
-            clearMarkers();
-            test(locations);
-        });
-        $('.button2').click(function (event) {
-            zoomLocation();
-            centerLocation();
-            clearMarkers();
-            test(locations2);
-        });
+        runMap('.button1', locations);
+        runMap('.button2', locations2);
     </script>
 </body>
 

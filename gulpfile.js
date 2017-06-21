@@ -31,7 +31,7 @@ gulp.task('manage', function(){
 	return gulp.src(['app/js/jquery-1.12.4.min.js', 'app/js/*.js', '!app/js/app.js'])
 	.pipe(concat('app.js'))
 	.pipe(gulp.dest('app/js'))
-	.pipe(uglify())
+	.pipe(uglify({output: {comments: true}}))
 	.pipe(rename('app.min.js'))
 	.pipe(gulp.dest('dist/js'))
 	.on('error', projectError.log)
