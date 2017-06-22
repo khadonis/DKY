@@ -22,7 +22,7 @@ $brand-warning:         #f0ad4e !default;
 $brand-danger:          #d9534f !default;
 
 $main-color:            #1d2b3e;
-$sec-color:             #fb8f1b;
+$sec-color:             #e9501b;
 
 
 //== Scaffolding
@@ -375,7 +375,7 @@ $navbar-collapse-max-height:       340px !default;
 
 //$navbar-default-color:             #777 !default;
 $navbar-default-color:             #ddd;
-$navbar-default-bg:                #3e6975;
+$navbar-default-bg:                $main-color;
 $navbar-default-border:            darken($navbar-default-bg, 6.5%) !default;
 
 // Navbar links
