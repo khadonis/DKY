@@ -29,10 +29,9 @@ gulp.task('cleanCSS', function () {
 
 gulp.task('manage', function () {
 	return gulp.src(['app/js/jquery-1.12.4.min.js', 'app/js/*.js'])
-		.pipe(concat('app.js'))
-		.pipe(gulp.dest('app/js/merged'))
-		.pipe(rename('app.min.js'))
 		.pipe(cache(uglify({ output: { comments: true } })))
+		.pipe(concat('app.js'))
+		.pipe(rename('app.min.js'))
 		.pipe(gulp.dest('dist/js'))
 		.on('error', projectError.log)
 });
@@ -60,11 +59,11 @@ gulp.task('import', function () {
 });
 
 gulp.task('watch', function () {
-	gulp.watch(['app/sass/*.scss', 'app/css/*css'], ['sass', 'cleanCSS']);
+	gulp.watch(['app/sass/*.scss', 'app/css/*.css'], ['sass', 'cleanCSS']);
 	gulp.watch('app/js/*js', ['manage']);
 	gulp.watch('app/font/*', ['fonts']);
 	gulp.watch('app/images/**/*', ['images']);
 	gulp.watch(['app/temp/*.html', 'app/**/*.html'], ['import']);
 });
 
-gulp.task('default', ['sass', 'manage', 'fonts', 'images', 'import', 'cleanCSS','watch']);
+gulp.task('default', ['sass', 'manage', 'fonts', 'images', 'import', 'cleanCSS', 'watch']);
