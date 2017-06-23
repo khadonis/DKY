@@ -29,6 +29,8 @@ footer {
     width: 100%;
 }
 
+// Map
+
 .map {
     width: 100%;
     height: 400px;
@@ -47,8 +49,7 @@ footer {
                 color: #fff;
                 background-color: #ddd;
                 background: linear-gradient(to right, rgba(240, 183, 161, 0.50) 0%, rgba(229, 99, 18, 1) 100%);
-                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#26f0b7a1', endColorstr='#e56312', GradientType=1);
-                /* IE6-9 */
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#26f0b7a1', endColorstr='#e56312', GradientType=1);                
             }
             text-align: right;
             transition: all ease-out .2sn;
@@ -61,6 +62,8 @@ footer {
     }
     .dplaces {
         font-family: 'flexothin';
+        padding-left: 0;
+        float: left;
         li {
             .circle {
                 display: list-item;
@@ -71,6 +74,7 @@ footer {
                 width: 16px;
                 height: 16px;
                 border-radius: 20px;
+                transition: ease-out .5s all;
                  :hover,
                 &.active {
                     background-color: $sec-color;
@@ -79,14 +83,40 @@ footer {
         }
     }
 }
+.iw-container {
+    color: $sec-color;
+    font-family: 'flexoregular';
+    /*animation-name: bounce;
+    animation-duration: .5s;
+    animation-fill-mode: both;
+    animation-timing-function: linear;
+    animation-iteration-count: 3;
+    animation-delay: .5s;*/
+    // left: -100px;
+    top: -75px;
+    opacity: 0;
+    transition-delay: .3s;
+    transition-duration: .5s;
+    transition-property: all;
+    transition-timing-function: ease-out;
+    &.active {
+        top: 0;
+        opacity: 1;
+    }
+    a {
+        margin-top: 5px;
+        display: block;
+    }
+}
 
-//header
+// Header
+
 .header {
     padding: 30px;
 }
 
 .menu-toggle {
-    position: relative;
+    position: fixed;
     @include square(44px);
     display: block;
     z-index: 999;
@@ -109,8 +139,12 @@ footer {
             transform: rotate(0deg);
         }
     }
-    &:hover,
-    &.active {        
+    &:hover{
+        .line-h{
+            background-color: $sec-color;
+        }
+    }
+    &.active {
         .line-h:nth-child(1) {
             transform: rotate(-45deg);
             top: 11px;
@@ -122,13 +156,16 @@ footer {
             transform: rotate(45deg);
             top: 11px;
         }
-        &.active{
-            .line-h{background: #fff;}
+        &.active {
+            .line-h {
+                background: #fff;
+            }
         }
     }
 }
 
-//menu
+// Menu
+
 .menu {
     position: fixed;
     top: 0;
@@ -161,3 +198,15 @@ footer {
         opacity: 0.08;
     }
 }
+
+
+/*@keyframes bounce {
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+}*/
+

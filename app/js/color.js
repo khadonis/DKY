@@ -1,6 +1,4 @@
-/*
-Color javascript file
-*/
+/*! Color javascript file */
 var colors = new Array(
 [29,43,62],
   [253,79,0],

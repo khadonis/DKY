@@ -1,7 +1,5 @@
 
-/*
-my custom javascript file 
-*/
+/*! my custom javascript file */
 
 $('.menu-toggle').click(function () {
   $('.menu').toggleClass('opened');
