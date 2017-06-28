@@ -28,7 +28,7 @@ gulp.task('cleanCSS', function () {
 });
 
 gulp.task('manage', function () {
-	return gulp.src(['app/js/jquery-1.12.4.min.js', 'app/js/*.js'])
+	return gulp.src(['app/js/jquery-1.12.4.min.js', 'app/js/swiper.jquery.min.js', 'app/js/*.js'])
 		.pipe(cache(uglify({ output: { comments: true } })))
 		.pipe(concat('app.js'))
 		.pipe(rename('app.min.js'))

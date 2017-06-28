@@ -2,14 +2,29 @@
 <html lang="tr">
 
 <head>
+    <link rel="stylesheet" href="css/swiper.min.css">
     @import "head.html"
     <title>DKY Anasayfa</title>
+    
 </head>
 
 <body>
     @import "header.html"
-    <div class="container">
-        <h1>Hello World</h1>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="images/Slider-1.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="images/dkyon_dis.png" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="images/DKY-KARTAL.jpg" alt="">
+            </div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+
     </div>
     @import "footer.html"
 </body>

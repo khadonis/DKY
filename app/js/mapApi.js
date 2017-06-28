@@ -56,7 +56,7 @@ function test(locatis) {
             position: new google.maps.LatLng(locatis[i][1], locatis[i][2]),
             map: map,
             animation: google.maps.Animation.DROP,
-            icon: new google.maps.MarkerImage(locatis[i][3]),
+            icon: new google.maps.MarkerImage(locatis[i][3])
 
         });
         markers.push(marker);
@@ -116,16 +116,7 @@ var pli = '.dprojs li', plli = '.dplaces li';
 function adcls(eq) {
     $(plli).eq(eq).find('span').addClass('active');
 }
-var hastane = 0;
-var okul = 1;
-var resmiKurum = 2;
-var avm = 3;
-var orman = 4;
-var ulasim = 5;
-var cami = 6;
-var park = 7;
-var yemek = 8;
-var spor = 9;
+var hastane = 0, okul = 1, resmiKurum = 2, avm = 3, orman = 4, ulasim = 5, cami = 6, park = 7, yemek = 8, spor = 9;
 
 function aktifs() {
     if ($(pli).eq(0).hasClass('active')) {
@@ -134,83 +125,39 @@ function aktifs() {
     }
     if ($(pli).eq(1).hasClass('active')) {
         $(plli + ' span').removeClass('active');
-        adcls(okul);
-        adcls(resmiKurum);
-        adcls(avm);
-        adcls(ulasim);
-        adcls(park);
-        adcls(yemek);
+        adcls(okul), adcls(resmiKurum), adcls(avm), adcls(ulasim), adcls(park), adcls(yemek);
     }
     if ($(pli).eq(2).hasClass('active')) {
         $(plli + ' span').removeClass('active');
-        adcls(okul);
-        adcls(resmiKurum);
-        adcls(avm);
-        adcls(ulasim);
-        adcls(cami);
-        adcls(yemek);
-        adcls(park);
-
+        adcls(okul), adcls(resmiKurum), adcls(avm), adcls(ulasim), adcls(cami), adcls(yemek), adcls(park);
     }
     if ($(pli).eq(3).hasClass('active')) {
         $(plli + ' span').removeClass('active');
-        adcls(okul);
-        adcls(hastane);
-        adcls(avm);
-        adcls(yemek);
-        adcls(ulasim);
-        adcls(cami);
-        adcls(resmiKurum);
+        adcls(okul), adcls(hastane), adcls(avm), adcls(yemek), adcls(ulasim), adcls(cami), adcls(resmiKurum);
     }
     if ($(pli).eq(4).hasClass('active')) {
         $(plli + ' span').removeClass('active');
-        adcls(avm);
-        adcls(yemek);
-        adcls(ulasim);
-        adcls(resmiKurum);
+        adcls(avm), adcls(yemek), adcls(ulasim), adcls(resmiKurum);
     }
     if ($(pli).eq(5).hasClass('active')) {
         $(plli + ' span').removeClass('active');
-        adcls(avm);
-        adcls(yemek);
-        adcls(ulasim);
-        adcls(resmiKurum);
-        adcls(okul);
+        adcls(avm), adcls(yemek), adcls(ulasim), adcls(resmiKurum), adcls(okul);
     }
     if ($(pli).eq(6).hasClass('active')) {
         $(plli + ' span').removeClass('active');
-        adcls(avm);
-        adcls(yemek);
-        adcls(ulasim);
-        adcls(cami);
-        adcls(okul);
-        adcls(park);
+        adcls(avm), adcls(yemek), adcls(ulasim), adcls(cami), adcls(okul), adcls(park);
     }
     if ($(pli).eq(7).hasClass('active')) {
         $(plli + ' span').removeClass('active');
-        adcls(avm);
-        adcls(hastane);
-        adcls(ulasim);
-        adcls(yemek);
-
+        adcls(avm), adcls(hastane), adcls(ulasim), adcls(yemek);
     }
     if ($(pli).eq(8).hasClass('active')) {
         $(plli + ' span').removeClass('active');
-        adcls(avm);
-        adcls(ulasim);
-        adcls(yemek);
-        adcls(okul);
-
+        adcls(avm), adcls(ulasim), adcls(yemek), adcls(okul);
     }
     if ($(pli).eq(9).hasClass('active')) {
         $(plli + ' span').removeClass('active');
-        adcls(avm);
-        adcls(ulasim);
-        adcls(yemek);
-        adcls(okul);
-        adcls(resmiKurum);
-        adcls(cami);
-        adcls(hastane);
+        adcls(avm), adcls(ulasim), adcls(yemek), adcls(okul), adcls(resmiKurum), adcls(cami), adcls(hastane);
     }
 }
 aktifs();

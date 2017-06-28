@@ -2,5 +2,6 @@
 {
     "editor.wordWrap": "on",
     "git.ignoreLimitWarning": true,
-    "editor.minimap.enabled": false
+    "editor.minimap.enabled": false,
+    "previewServer.sync": false
 }
