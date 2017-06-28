@@ -1821,14 +1821,20 @@ footer {
   margin-top: 30px; }
 
 .header {
-  padding: 15px; }
+  padding: 15px;
+  position: absolute;
+  width: 100%;
+  background: #fff;
+  z-index: 3; }
+  .header.static {
+    position: static; }
 
 .menu-toggle {
   position: fixed;
   width: 60px;
   height: 60px;
   display: block;
-  z-index: 99;
+  z-index: 3;
   right: 30px; }
   .menu-toggle .line-h {
     height: 10px;
@@ -1851,18 +1857,20 @@ footer {
               transform: rotate(0deg); }
   .menu-toggle:hover .line-h {
     background-color: #ea5b06; }
-  .menu-toggle.active .line-h:nth-child(1) {
-    -webkit-transform: rotate(-45deg);
-            transform: rotate(-45deg);
-    top: 11px; }
-  .menu-toggle.active .line-h:nth-child(2) {
-    width: 0; }
-  .menu-toggle.active .line-h:nth-child(3) {
-    -webkit-transform: rotate(45deg);
-            transform: rotate(45deg);
-    top: 11px; }
-  .menu-toggle.active.active .line-h {
-    background: #fff; }
+  .menu-toggle.active {
+    z-index: 99; }
+    .menu-toggle.active .line-h:nth-child(1) {
+      -webkit-transform: rotate(-45deg);
+              transform: rotate(-45deg);
+      top: 11px; }
+    .menu-toggle.active .line-h:nth-child(2) {
+      width: 0; }
+    .menu-toggle.active .line-h:nth-child(3) {
+      -webkit-transform: rotate(45deg);
+              transform: rotate(45deg);
+      top: 11px; }
+    .menu-toggle.active.active .line-h {
+      background: #fff; }
 
 .menu, .search {
   position: fixed;
@@ -1873,12 +1881,12 @@ footer {
   background: rgba(29, 43, 62, 0.9);
   -webkit-transition: all ease-out .2s;
   transition: all ease-out .2s;
-  opacity: 0;
-  z-index: 98; }
+  opacity: 0; }
   .menu.opened, .opened.search {
     width: 100%;
     height: 100%;
-    opacity: 1; }
+    opacity: 1;
+    z-index: 98; }
 
 .gradient, .gradient .back-effect {
   width: 100%;
@@ -1888,7 +1896,7 @@ footer {
   left: 0;
   opacity: 1; }
   .gradient .back-effect {
-    background-image: url("../images/1.jpg");
+    background-image: url("../images/Slider-1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     opacity: 0.08; }
@@ -1920,10 +1928,8 @@ footer {
       margin-top: -10px; }
 
 .search {
-  z-index: 100;
   left: 0; }
   .search .form-group input {
-    z-index: 99;
     position: relative;
     top: 50%;
     margin: 15% 5%;
@@ -1957,7 +1963,6 @@ footer {
   width: 60px;
   height: 60px;
   display: block;
-  z-index: 999;
   left: 30px;
   top: 30px; }
   .close-search .line-h:nth-child(1) {
@@ -1976,8 +1981,7 @@ footer {
     position: absolute;
     width: 100%;
     -webkit-transition: all 300ms cubic-bezier(0.215, 0.61, 0.355, 1) 200ms;
-    transition: all 300ms cubic-bezier(0.215, 0.61, 0.355, 1) 200ms;
-    z-index: 999; }
+    transition: all 300ms cubic-bezier(0.215, 0.61, 0.355, 1) 200ms; }
   .close-search .fa-times {
     position: absolute;
     top: 30px;
@@ -2089,7 +2093,15 @@ footer {
   justify-content: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: baseline; }
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .swiper-slide.r1 {
+    background-image: url("../images/Slider-1.jpg"); }
+  .swiper-slide.r2 {
+    background-image: url("../images/dkyon_dis.png"); }
+  .swiper-slide.r3 {
+    background-image: url("../images/DKY-KARTAL.jpg"); }
 
 .swiper-container-vertical > .swiper-pagination-bullets {
   left: 20px; }

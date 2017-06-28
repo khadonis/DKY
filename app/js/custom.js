@@ -4,6 +4,7 @@
 $('.menu-toggle').click(function () {
   $('.menu').toggleClass('opened');
   $(this).toggleClass('active');
+  $('.header').toggleClass('static');
 });
 
 //Slider
