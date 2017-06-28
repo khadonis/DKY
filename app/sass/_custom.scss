@@ -106,6 +106,10 @@ footer {
     a {
         margin-top: 5px;
         display: block;
+        color: lighten($link-color, 20%);
+        &:hover,&:active,&:focus{
+            color: lighten($link-color, 40%);
+        }
     }
 }
 
