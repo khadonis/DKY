@@ -16,6 +16,16 @@ Custom SCSS File
     font-style: normal;
 }
 
+//mixins
+@mixin vertical-align($position: relative) {
+  position: $position;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+
 //Animations
 @keyframes bounce {
     0%,
@@ -38,7 +48,7 @@ footer {
 // Header
 .header {
     padding: 15px;
-    position: absolute;
+    position: fixed;
     width: 100%;
     background: #fff;
     z-index: 3;
@@ -104,8 +114,8 @@ footer {
     position: fixed;
     top: 0;
     right: 0;
-    width: 0;
-    height: 0;
+    width: 0%;
+    height: 0%;
     background: rgba($main-color, .9);
     transition: all ease-out .2s;
     opacity: 0;
@@ -115,15 +125,16 @@ footer {
         opacity: 1;
         z-index: 98;
         overflow: auto;
+        transition: all ease-out .2s;
     }
     .navig {
         text-align: center;
-        width: 100%;
-        position: relative;
+        width: 100%;        
         z-index: 9;
         top: 26.1%;
         list-style: none;
         overflow: auto;
+        @include vertical-align();
         li {
             a {
                 font-size: 60px;
@@ -254,8 +265,9 @@ footer {
 // Map
 .map {
     width: 100%;
-    height: 82%;
+    height: 100%;
     margin: 0;
+    right: -15px;
 }
 
 .har-projs {
@@ -555,12 +567,15 @@ footer {
 //Proje Haritası Section
 .section-harita {
     background-color: $gray-lighter;
+    padding: 0;
+    margin: 0;
 }
 
 .vertical-h-menu {
     position: relative;
     float: left;
-    width: 100px;
+    width: 70px;
+    left: -15px;
     ul {
         list-style: none;
         width: 60px;
