@@ -2,10 +2,9 @@
 <html lang="tr">
 
 <head>
-    <link rel="stylesheet" href="css/swiper.min.css">
-    @import "head.html"
+    <link rel="stylesheet" href="css/swiper.min.css"> @import "head.html"
     <title>DKY Anasayfa</title>
-    
+
 </head>
 
 <body>
@@ -13,18 +12,90 @@
     <div class="swiper-container">
         <div class="swiper-wrapper">
             <div class="swiper-slide r1">
+                <a href="#DKYSahil" class="btn-sahil">
+                    <h4>DKY SAHİL</h4>
+                    <p>Detaylı bilgi için tıklayınız</p>
+                </a>
             </div>
             <div class="swiper-slide r2">
-                
+                <a href="#DKYOn" class="btn-sahil">
+                    <h4>DKY ON</h4>
+                    <p>Detaylı bilgi için tıklayınız</p>
+                </a>
             </div>
             <div class="swiper-slide r3">
-                
+                <a href="#DKYKartal" class="btn-sahil">
+                    <h4>DKY KARTAL</h4>
+                    <p>Detaylı bilgi için tıklayınız</p>
+                </a>
             </div>
         </div>
         <!-- Add Pagination -->
         <div class="swiper-pagination"></div>
-
+        <div class="scroll-down-i"></div>
+        <a href="#" class="b-talep-form">Bilgi Talep Formu</a>
     </div>
+
+    <section class="section-medya">
+        <div class="container-fluid">
+            <div class="col-sm-3 h-sep hidden-xs">
+                <hr>
+            </div>
+            <div class="col-sm-9 head">
+                <h2> MEDYA MERKEZİ </h2>
+            </div>
+        </div>
+    </section>
+
+    <section class="container-fluid section-harita">
+        <div class="col-sm-3">
+            <div class="vertical-h-menu">
+                <ul>
+                    <li><a href="#">Gelecek Projeler</a></li>
+                    <li><a href="#">Devam Eden Projeler</a></li>
+                    <li><a href="#">Tamamlanan Projeler</a></li>
+                    <li><a href="#">Tüm Projeler</a></li>
+                </ul>
+            </div>
+            <div class="proje-collapsible-menu">
+                <div class="proje-harita-head">
+                    <h2><img src="images/PROJE.png"> <small>haritası</small></h2>
+                </div>
+                <ul class="proje-listesi">
+                    <li>
+                        <h4><a href="#">Tamamlanan Projeler</a></h4>
+                        <ul>
+                            <li><a href="#">Dky Cadde Erenköy 86</a></li>
+                            <li><a href="#">Dky Cadde suadiye 12</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h4><a href="#">Devam Eden Projeler</a></h4>
+                        <ul>
+                            <li><a href="#">Dky Ada</a></li>
+                            <li><a href="#">Dky Business Tuzla</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h4><a href="#">Gelecek Projeler</a></h4>
+                        <ul>
+                            <li><a href="#">Dky Sahil</a></li>
+                            <li><a href="#">Dky Kartal</a></li>
+                            <li><a href="#">Dky On</a></li>
+                            <li><a href="#">Dky Cadde Göztepe 05</a></li>
+                            <li><a href="#">Dky Business Kartal</a></li>
+                            <li><a href="#">Lokum Evler</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-sm-9">
+            <div class="map" id="map"></div>
+        </div>
+    </section>
+    <!-- Medya Merkezi Section -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB2V7XQtDZSOvcJzylGchYrL8nqzfsTsFg&libraries=places"></script>
     @import "footer.html"
 </body>
 
