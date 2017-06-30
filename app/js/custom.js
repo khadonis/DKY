@@ -19,7 +19,7 @@ var swiper = new Swiper('.swiper-container', {
   pagination: '.swiper-pagination',
   paginationClickable: true,
   keyboardControl: true,
-  effect: "fade",
+  //effect: "fade",
   speed: 1000,
   loop: true,
   autoplay: 3000,

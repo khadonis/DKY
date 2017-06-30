@@ -113,13 +113,13 @@
     </section>
 
     <section class="container-fluid section-harita">
-        <div class="col-sm-3">
+        <div class="col-sm-3 no-right-pad">
             <div class="vertical-h-menu">
                 <ul>
-                    <li><a href="#">Gelecek Projeler</a></li>
-                    <li><a href="#">Devam Eden Projeler</a></li>
-                    <li><a href="#">Tamamlanan Projeler</a></li>
-                    <li><a href="#">Tüm Projeler</a></li>
+                    <li><a class="gelecek-harbtn">Gelecek Projeler</a></li>
+                    <li><a class="devam-eden-harbtn">Devam Eden Projeler</a></li>
+                    <li><a class="tamamlanan-harbtn">Tamamlanan Projeler</a></li>
+                    <li><a class="hepsi-harbtn active">Tüm Projeler</a></li>
                 </ul>
             </div>
             <div class="proje-collapsible-menu">
@@ -128,34 +128,37 @@
                 </div>
                 <ul class="proje-listesi">
                     <li>
-                        <h4><a href="#">Tamamlanan Projeler</a></h4>
+                        <h4><a class="tamamlanan-harbtn" >Tamamlanan Projeler</a></h4>
                         <ul>
-                            <li><a href="#">Dky Cadde Erenköy 86</a></li>
-                            <li><a href="#">Dky Cadde suadiye 12</a></li>
+                            <li><a class="dky-cadde-erenkoy-harbtn" >Dky Cadde Erenköy 86</a></li>
+                            <li><a class="dky-cadde-suadiye-harbtn" >Dky Cadde suadiye 12</a></li>
                         </ul>
                     </li>
                     <li>
-                        <h4><a href="#">Devam Eden Projeler</a></h4>
+                        <h4><a class="devam-eden-harbtn">Devam Eden Projeler</a></h4>
                         <ul>
-                            <li><a href="#">Dky Ada</a></li>
-                            <li><a href="#">Dky Business Tuzla</a></li>
+                            <li><a class="dky-ada-harbtn" >Dky Ada</a></li>
+                            <li><a class="dky-bsness-tuzla-harbtn" >Dky Business Tuzla</a></li>
                         </ul>
                     </li>
                     <li>
-                        <h4><a href="#">Gelecek Projeler</a></h4>
+                        <h4><a class="gelecek-harbtn">Gelecek Projeler</a></h4>
                         <ul>
                             <li><a class="dky-sahil-harbtn" >Dky Sahil</a></li>
                             <li><a class="dky-kartal-harbtn" >Dky Kartal</a></li>
-                            <li><a href="#">Dky On</a></li>
-                            <li><a href="#">Dky Cadde Göztepe 05</a></li>
-                            <li><a href="#">Dky Business Kartal</a></li>
-                            <li><a href="#">Lokum Evler</a></li>
+                            <li><a class="dky-on-harbtn" >Dky On</a></li>
+                            <li><a class="dky-cadde-goztepe-harbtn" >Dky Cadde Göztepe 05</a></li>
+                            <li><a class="dky-bsness-kartal-harbtn" >Dky Business Kartal</a></li>
+                            <li><a class="dky-lokum-harbtn" >Lokum Evler</a></li>
                         </ul>
+                    </li>
+                    <li>
+                        <h4><a class="hepsi-harbtn active">Tüm Projeler</a></h4>
                     </li>
                 </ul>
             </div>
         </div>
-        <div class="col-sm-9">
+        <div class="col-sm-9 no-left-pad">
             <div class="map" id="map"></div>
         </div>
     </section>
