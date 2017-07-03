@@ -1,13 +1,14 @@
 
 /*! my custom javascript file */
 
+//menu panel
 $('.menu-toggle').click(function () {
   $('.menu').toggleClass('opened');
   $(this).toggleClass('active');
   $('.header').toggleClass('static');
 });
 
-//Slider
+//Sliders
 
 var activeClassTxt = '.swiper-pagination-bullet-active .res', bullts = ".swiper-pagination-bullet";
 function addTxt(sira, txtM) {
@@ -18,7 +19,7 @@ var swiper = new Swiper('.swiper-container', {
   watchSlidesProgress: true,
   pagination: '.swiper-pagination',
   paginationClickable: true,
-  keyboardControl: true,
+  //keyboardControl: true,
   //effect: "fade",
   speed: 1000,
   loop: true,
@@ -43,11 +44,25 @@ var swiper = new Swiper('.swiper-container', {
     $(activeClassTxt).show();
   }
 });
+
+var swiperOduller = new Swiper('.odul-slide-container', {
+  speed: 400,
+  nextButton: '.swiper-button-next',
+  prevButton: '.swiper-button-prev',
+});
+
+
+//search panel
 var searchButon = '.languages .search-btn', searchDiv = '.search', closeButon = '.close-search';
 $(searchButon).click(function () {
   $(searchDiv).addClass('opened');
-  
+
 });
 $(closeButon).click(function () {
   $(searchDiv).removeClass('opened');
+});
+
+//video
+$('.video-wrapper .mask').click(function (params) {
+  $('.video').attr('src','https://www.youtube.com/embed/hAxZF94QFks?autoplay=1').siblings().hide();
 });
