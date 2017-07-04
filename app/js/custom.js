@@ -47,8 +47,20 @@ var swiper = new Swiper('.swiper-container', {
 
 var swiperOduller = new Swiper('.odul-slide-container', {
   speed: 400,
-  nextButton: '.swiper-button-next',
-  prevButton: '.swiper-button-prev',
+  //nextButton: '.swiper-button-next',
+  //prevButton: '.swiper-button-prev',
+  autoplay:3000,
+  loop: true
+});
+
+var swiperHaberler = new Swiper('.basin-slide-container', {
+  speed: 400,
+  nextButton: '.swiper-haber-btn-next',
+  prevButton: '.swiper-haber-btn-prev',
+  slidesPerView: 3,
+  spaceBetween: 30,
+  autoplay:2000,
+  loop:true
 });
 
 
@@ -64,5 +76,5 @@ $(closeButon).click(function () {
 
 //video
 $('.video-wrapper .mask').click(function (params) {
-  $('.video').attr('src','https://www.youtube.com/embed/hAxZF94QFks?autoplay=1').siblings().hide();
+  $('.video').attr('src', 'https://www.youtube.com/embed/hAxZF94QFks?autoplay=1').siblings().hide();
 });
