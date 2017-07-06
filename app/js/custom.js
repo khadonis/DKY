@@ -49,7 +49,7 @@ var swiperOduller = new Swiper('.odul-slide-container', {
   speed: 400,
   //nextButton: '.swiper-button-next',
   //prevButton: '.swiper-button-prev',
-  autoplay:3000,
+  autoplay: 3000,
   loop: true
 });
 
@@ -59,8 +59,8 @@ var swiperHaberler = new Swiper('.basin-slide-container', {
   prevButton: '.swiper-haber-btn-prev',
   slidesPerView: 3,
   spaceBetween: 30,
-  autoplay:2000,
-  loop:true
+  autoplay: 2000,
+  loop: true
 });
 
 
@@ -77,4 +77,19 @@ $(closeButon).click(function () {
 //video
 $('.video-wrapper .mask').click(function (params) {
   $('.video').attr('src', 'https://www.youtube.com/embed/hAxZF94QFks?autoplay=1').siblings().hide();
+});
+
+//kurumsal side menu
+$('.side-menu').height($('.content-inner').height() - 60);
+$(function () {
+  var current = location.pathname;
+  $('.side-menu a').each(function () {
+    var $this = $(this);
+    var pieces = current.split(/[\s/]+/);
+    // if the current path is like this link, make it active
+    if ($this.attr('href').indexOf(pieces[pieces.length - 1]) !== -1) {
+      $('.side-menu a').removeClass('active');
+      $this.addClass('active');
+    }
+  });
 });

@@ -4,6 +4,6 @@
     "git.ignoreLimitWarning": true,
     "editor.minimap.enabled": false,
     "php.validate.executablePath": "C:/xampp/php/php.exe",
-    "php-project.launchOutputTemplate": "PHP server running with {{rootDir}} as root directory. Reach server using http://{{server}}/"
+    "php-project.launchOutputTemplate": "PHP server running with {{rootDir}} as root directory. Reach server using http://{{server}}"
     //"previewServer.sync": false
 }

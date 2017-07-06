@@ -24,6 +24,7 @@ $brand-danger:          #d9534f !default;
 
 $main-color:            #1d2b3e;
 $sec-color:             #ea5b06;
+$alt-color:             #e74c3c;
 //#f78f1e
 
 
@@ -50,6 +51,8 @@ $link-hover-decoration: none !default;
 
 $font-family-sans-serif:  "flexoregular", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
 $font-family-serif:       "flexothin", Georgia, "Times New Roman", Times, serif !default;
+$f-f-flexobold:               "flexobold", 'flexoregular', "Helvetica Neue", Times, serif !default;
+
 //** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
 $font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace !default;
 $font-family-base:        $font-family-serif !default;
@@ -880,3 +883,7 @@ $dl-horizontal-offset:        $component-offset-horizontal !default;
 $dl-horizontal-breakpoint:    $grid-float-breakpoint !default;
 //** Horizontal line color.
 $hr-border:                   $gray-lighter !default;
+
+//Sizing Helpers
+
+$blog-height: 321px;

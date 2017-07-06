@@ -59,7 +59,7 @@ gulp.task('import', function () {
 });
 
 gulp.task('watch', function () {
-	gulp.watch(['app/sass/*.scss', 'app/css/*.css'], ['sass', 'cleanCSS']);
+	gulp.watch(['app/sass/**/*.scss', 'app/css/*.css'], ['sass', 'cleanCSS']);
 	gulp.watch('app/js/*js', ['manage']);
 	gulp.watch('app/font/*', ['fonts']);
 	gulp.watch('app/images/**/*', ['images']);

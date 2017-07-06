@@ -3,71 +3,66 @@
 
 /*! Map Api Js Start*/
 
+var vizyonIcon = 'Merkez_map_icon.png';
+var sahilIcon = 'Sahil_map_icon.png';
+var onIcon = 'On_map_icon.png';
+var goztepeIcon = 'Goztepe_map_icon.png';
+var businessIcon = 'Businesskar_map_icon.png';
+var lokumIcon = 'Lokum_map_icon.png';
+var adaIcon = 'Ada_map_icon.png';
+var businessTuzlaIcon = 'Businesstuz_map_icon.png';
+var suadiyeIcon = 'Suadiye_map_icon.png';
+var erenkoyIcon = 'Erenkoy_map_icon.png';
+
 var dkyVizyon = [
-    ['DKY Kartal', 40.9093863, 29.1996109, '../../images/pin.png', '#dkyVizyonLink', 1]
-    /*['DKY Vizyon', 40.9088177, 29.1925373, '../../images/pin.png', 2]
-    ['Cronulla Beach', -34.028249, 151.157507, 'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png', 3],
-    ['Manly Beach', -33.80010128657071, 151.28747820854187, 'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png', 2],
-    ['Maroubra Beach', -33.950198, 151.259302, 'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png', 4]*/
+    ['DKY Vizyon', 40.9093863, 29.1996109, 'images/' + vizyonIcon + '', '#dkyVizyonLink', 'images/DKY-KARTAL-GECE.jpg', 1],
+    /*
+    ['DKY Vizyon', 40.9088177, 29.1925373, '../../images/pin.png', '#dkyKartalLink', 1]
+    */
 ];
 var dkySahil = [
-    ['DKY Sahil', 40.8944685, 29.171256, '../../images/pin.png', '#dkySahilLink', 1]
+    ['DKY Sahil', 40.8944685, 29.171256, 'images/' + sahilIcon + '', '#dkySahilLink', 'images/DKY-KARTAL-GECE.jpg', 1]
 ]
-var dkyOnKagithane = [['DKY On Kağıthane', 41.085888, 28.9703857, '../../images/pin.png', '#dkyOnKagithaneLink', 1]];
+var dkyOnKagithane = [
+    ['DKY On Kağıthane', 41.085888, 28.9703857, 'images/' + onIcon + '', '#dkyOnKagithaneLink', 'images/DKY-KARTAL-GECE.jpg', 1]
+];
 var dkyGoztepe = [
-    ['DKY Cadde Göztepe 05', 40.9801883, 29.0653588, '../../images/pin.png', '#dkyGoztepeLink', 1]
+    ['DKY Cadde Göztepe 05', 40.9801883, 29.0653588, 'images/' + goztepeIcon + '', '#dkyGoztepeLink', 'images/DKY-KARTAL-GECE.jpg', 1]
 ];
 var dkyBusiness = [
-    ['DKY Business Kartal', 40.9090283, 29.2100452, '../../images/pin.png', '#dkyBusinessLink', 1]
+    ['DKY Business Kartal', 40.9090283, 29.2100452, 'images/' + businessIcon + '', '#dkyBusinessLink', 'images/DKY-KARTAL-GECE.jpg', 1]
 ];
 var dkyLokumEvler = [
-    ['Lokum Evler', 40.8750308, 29.3239722, '../../images/pin.png', '#dkyLokumEvlerLink', 1]
+    ['Lokum Evler', 40.8750308, 29.3239722, 'images/' + lokumIcon + '', '#dkyLokumEvlerLink', 'images/DKY-KARTAL-GECE.jpg', 1]
 ];
 var dkyAda = [
-    ['DKY Ada', 40.905396, 29.185898, '../../images/pin.png', '#dkyAdaLink', 1]
+    ['DKY Ada', 40.905396, 29.185898, 'images/' + adaIcon + '', '#dkyAdaLink', 'images/DKY-KARTAL-GECE.jpg', 1]
 ];
 var dkyBusinessTuzla = [
-    ['DKY Business Tuzla', 40.847713, 29.2967011, '../../images/pin.png', '#dkyBusinezzTuzlaLink', 1]
+    ['DKY Business Tuzla', 40.847713, 29.2967011, 'images/' + businessTuzlaIcon + '', '#dkyBusinezzTuzlaLink', 'images/DKY-KARTAL-GECE.jpg', 1]
 ];
 var dkyCaddeSuadiye = [
-    ['DKY Cadde Suadiye 12', 40.96679, 29.085285, '../../images/pin.png', '#dkyCaddeSuadiyeLink', 1]
+    ['DKY Cadde Suadiye 12', 40.96679, 29.085285, 'images/' + suadiyeIcon + '', '#dkyCaddeSuadiyeLink', 'images/DKY-KARTAL-GECE.jpg', 1]
 ];
 var dkyCaddeErenkoy = [
-    ['DKY Cadde Erenköy 86', 40.978263, 29.073121, '../../images/pin.png', '#dkyCaddeErenkoyLink', 1]
+    ['DKY Cadde Erenköy 86', 40.978263, 29.073121, 'images/' + erenkoyIcon + '', '#dkyCaddeErenkoyLink', 'images/DKY-KARTAL-GECE.jpg', 1]
 ];
 var tamamlanan = [
-    ['DKY Cadde Erenköy 86', 40.978263, 29.073121, '../../images/pin.png', '#dkyCaddeErenkoyLink', 1], ['DKY Cadde Suadiye 12', 40.96679, 29.085285, '../../images/pin.png', '#dkyCaddeSuadiyeLink', 1]
+    ['DKY Cadde Erenköy 86', 40.978263, 29.073121, 'images/' + erenkoyIcon + '', '#dkyCaddeErenkoyLink', 'images/DKY-KARTAL-GECE.jpg', 1], ['DKY Cadde Suadiye 12', 40.96679, 29.085285, 'images/' + suadiyeIcon + '', '#dkyCaddeSuadiyeLink', 'images/DKY-KARTAL-GECE.jpg', 1]
 ];
-var devamEden = [
-    ['DKY Ada', 40.905396, 29.185898, '../../images/pin.png', '#dkyAdaLink', 1], ['DKY Business Tuzla', 40.847713, 29.2967011, '../../images/pin.png', '#dkyBusinezzTuzlaLink', 1]
-];
-var gelecek = [
-    ['DKY Sahil', 40.8944685, 29.171256, '../../images/pin.png', '#dkySahilLink', 1],
-    ['DKY Kartal', 40.9093863, 29.1996109, '../../images/pin.png', '#dkyVizyonLink', 1],
-    ['DKY On Kağıthane', 41.085888, 28.9703857, '../../images/pin.png', '#dkyOnKagithaneLink', 1],
-    ['DKY Cadde Göztepe 05', 40.9801883, 29.0653588, '../../images/pin.png', '#dkyGoztepeLink', 1],
-    ['DKY Business Kartal', 40.9090283, 29.2100452, '../../images/pin.png', '#dkyBusinessLink', 1],
-    ['Lokum Evler', 40.8750308, 29.3239722, '../../images/pin.png', '#dkyLokumEvlerLink', 1]
-];
-var hepsi = [
-    ['DKY Sahil', 40.8944685, 29.171256, '../../images/pin.png', '#dkySahilLink', 1],
-    ['DKY Kartal', 40.9093863, 29.1996109, '../../images/pin.png', '#dkyVizyonLink', 1],
-    ['DKY On Kağıthane', 41.0858883, 28.97038573, '../../images/pin.png', '#dkyOnKagithaneLink', 1],
-    ['DKY Cadde Göztepe 05', 40.9801883, 29.0653588, '../../images/pin.png', '#dkyGoztepeLink', 1],
-    ['DKY Business Kartal', 40.9090283, 29.2100452, '../../images/pin.png', '#dkyBusinessLink', 1],
-    ['Lokum Evler', 40.8750308, 29.3239722, '../../images/pin.png', '#dkyLokumEvlerLink', 1],
-    ['DKY Ada', 40.905396, 29.185898, '../../images/pin.png', '#dkyAdaLink', 1],
-    ['DKY Business Tuzla', 40.847713, 29.2967011, '../../images/pin.png', '#dkyBusinezzTuzlaLink', 1],
-    ['DKY Cadde Erenköy 86', 40.978263, 29.073121, '../../images/pin.png', '#dkyCaddeErenkoyLink', 1], ['DKY Cadde Suadiye 12', 40.96679, 29.085285, '../../images/pin.png', '#dkyCaddeSuadiyeLink', 1]
-];
+
+var devamEden = dkyAda.concat(dkyBusinessTuzla);
+var gelecek = dkySahil.concat(dkyVizyon, dkyOnKagithane, dkyGoztepe, dkyBusiness, dkyLokumEvler);
+var hepsi = dkySahil.concat(dkyVizyon, dkyOnKagithane, dkyGoztepe, dkyBusiness, dkyLokumEvler, dkyAda, dkyBusinessTuzla, dkyCaddeErenkoy, dkyCaddeSuadiye);
+
 var map = new google.maps.Map(document.getElementById('map'), {
     zoom: 11,
     scrollwheel: false,
     center: new google.maps.LatLng(hepsi[3][1], hepsi[1][2]),
     mapTypeId: google.maps.MapTypeId.ROADMAP,
     types: ['hospital', 'school', 'shopping_mall', 'amusement_park', 'park', 'food', 'gym', 'mosque', 'subway_station', 'train_station', 'bus_station'],
-    styles: [{ "featureType": "all", "elementType": "geometry", "stylers": [{ "color": "#25292e" }] }, { "featureType": "all", "elementType": "labels.text.fill", "stylers": [{ "gamma": 0.01 }, { "lightness": 20 }, { "color": "#47546e" }] }, { "featureType": "all", "elementType": "labels.text.stroke", "stylers": [{ "saturation": -31 }, { "lightness": -33 }, { "weight": 2 }, { "gamma": "0.00" }, { "visibility": "off" }] }, { "featureType": "all", "elementType": "labels.icon", "stylers": [{ "visibility": "on" }] }, { "featureType": "administrative.country", "elementType": "all", "stylers": [{ "visibility": "off" }] }, { "featureType": "administrative.province", "elementType": "all", "stylers": [{ "visibility": "off" }] }, { "featureType": "administrative.locality", "elementType": "all", "stylers": [{ "visibility": "simplified" }] }, { "featureType": "administrative.locality", "elementType": "labels.text.fill", "stylers": [{ "lightness": "45" }] }, { "featureType": "administrative.locality", "elementType": "labels.icon", "stylers": [{ "visibility": "on" }] }, { "featureType": "administrative.neighborhood", "elementType": "all", "stylers": [{ "visibility": "off" }] }, { "featureType": "administrative.land_parcel", "elementType": "all", "stylers": [{ "visibility": "off" }] }, { "featureType": "landscape", "elementType": "geometry", "stylers": [{ "lightness": 30 }, { "saturation": 30 }, { "color": "#30363d" }, { "visibility": "on" }] }, { "featureType": "poi", "elementType": "geometry", "stylers": [{ "saturation": "0" }, { "lightness": "0" }, { "gamma": "0.30" }, { "weight": "0.01" }, { "visibility": "off" }] }, { "featureType": "poi.park", "elementType": "geometry", "stylers": [{ "lightness": "100" }, { "saturation": -20 }, { "visibility": "simplified" }, { "color": "#32383d" }] }, { "featureType": "road", "elementType": "geometry", "stylers": [{ "lightness": 10 }, { "saturation": -30 }, { "color": "#2a3037" }] }, { "featureType": "road", "elementType": "geometry.stroke", "stylers": [{ "saturation": "-100" }, { "lightness": "-100" }, { "gamma": "0.00" }, { "color": "#2a3037" }] }, { "featureType": "road", "elementType": "labels", "stylers": [{ "visibility": "on" }] }, { "featureType": "road", "elementType": "labels.text", "stylers": [{ "visibility": "on" }, { "color": "#575e6b" }] }, { "featureType": "road", "elementType": "labels.text.stroke", "stylers": [{ "visibility": "off" }] }, { "featureType": "road", "elementType": "labels.icon", "stylers": [{ "visibility": "on" }, { "weight": "1" }, { "gamma": "1" }, { "saturation": "100" }, { "lightness": "1" }] }, { "featureType": "road.highway", "elementType": "geometry.fill", "stylers": [{ "color": "#474b51" }, { "visibility": "on" }, { "weight": "0.78" }] }, { "featureType": "road.highway", "elementType": "geometry.stroke", "stylers": [{ "visibility": "off" }, { "weight": "1.06" }] }, { "featureType": "road.highway", "elementType": "labels.icon", "stylers": [{ "visibility": "on" }, { "saturation": "75" }] }, { "featureType": "road.highway.controlled_access", "elementType": "labels.text", "stylers": [{ "visibility": "on" }] }, { "featureType": "road.highway.controlled_access", "elementType": "labels.icon", "stylers": [{ "visibility": "on" }, { "hue": "#ff6600" }, { "lightness": "1" }, { "saturation": "100" }, { "gamma": "1" }, { "weight": "2.08" }] }, { "featureType": "road.arterial", "elementType": "labels.icon", "stylers": [{ "visibility": "on" }] }, { "featureType": "road.local", "elementType": "labels.icon", "stylers": [{ "hue": "#ff0000" }, { "visibility": "on" }] }, { "featureType": "transit", "elementType": "all", "stylers": [{ "visibility": "off" }] }, { "featureType": "transit.station.airport", "elementType": "all", "stylers": [{ "visibility": "off" }] }, { "featureType": "water", "elementType": "all", "stylers": [{ "lightness": -20 }, { "color": "#35485f" }] },{"featureType": "transit.station.rail", "elementType": "labels.icon","stylers": [{ "hue": "#1f2d79" }, { "visibility": "on" }]}, {"featureType": "poi.park", "elementType": "labels.icon","stylers": [{ "color": "#7cb342" }]}]
-    
+    styles: [{ "featureType": "all", "elementType": "geometry", "stylers": [{ "color": "#25292e" }] }, { "featureType": "all", "elementType": "labels.text.fill", "stylers": [{ "gamma": 0.01 }, { "lightness": 20 }, { "color": "#47546e" }] }, { "featureType": "all", "elementType": "labels.text.stroke", "stylers": [{ "saturation": -31 }, { "lightness": -33 }, { "weight": 2 }, { "gamma": "0.00" }, { "visibility": "off" }] }, { "featureType": "all", "elementType": "labels.icon", "stylers": [{ "visibility": "on" }] }, { "featureType": "administrative.country", "elementType": "all", "stylers": [{ "visibility": "off" }] }, { "featureType": "administrative.province", "elementType": "all", "stylers": [{ "visibility": "off" }] }, { "featureType": "administrative.locality", "elementType": "all", "stylers": [{ "visibility": "simplified" }] }, { "featureType": "administrative.locality", "elementType": "labels.text.fill", "stylers": [{ "lightness": "45" }] }, { "featureType": "administrative.locality", "elementType": "labels.icon", "stylers": [{ "visibility": "on" }] }, { "featureType": "administrative.neighborhood", "elementType": "all", "stylers": [{ "visibility": "off" }] }, { "featureType": "administrative.land_parcel", "elementType": "all", "stylers": [{ "visibility": "off" }] }, { "featureType": "landscape", "elementType": "geometry", "stylers": [{ "lightness": 30 }, { "saturation": 30 }, { "color": "#30363d" }, { "visibility": "on" }] }, { "featureType": "poi", "elementType": "geometry", "stylers": [{ "saturation": "0" }, { "lightness": "0" }, { "gamma": "0.30" }, { "weight": "0.01" }, { "visibility": "off" }] }, { "featureType": "poi.park", "elementType": "geometry", "stylers": [{ "lightness": "100" }, { "saturation": -20 }, { "visibility": "simplified" }, { "color": "#32383d" }] }, { "featureType": "road", "elementType": "geometry", "stylers": [{ "lightness": 10 }, { "saturation": -30 }, { "color": "#2a3037" }] }, { "featureType": "road", "elementType": "geometry.stroke", "stylers": [{ "saturation": "-100" }, { "lightness": "-100" }, { "gamma": "0.00" }, { "color": "#2a3037" }] }, { "featureType": "road", "elementType": "labels", "stylers": [{ "visibility": "on" }] }, { "featureType": "road", "elementType": "labels.text", "stylers": [{ "visibility": "on" }, { "color": "#575e6b" }] }, { "featureType": "road", "elementType": "labels.text.stroke", "stylers": [{ "visibility": "off" }] }, { "featureType": "road", "elementType": "labels.icon", "stylers": [{ "visibility": "on" }, { "weight": "1" }, { "gamma": "1" }, { "saturation": "100" }, { "lightness": "1" }] }, { "featureType": "road.highway", "elementType": "geometry.fill", "stylers": [{ "color": "#474b51" }, { "visibility": "on" }, { "weight": "0.78" }] }, { "featureType": "road.highway", "elementType": "geometry.stroke", "stylers": [{ "visibility": "off" }, { "weight": "1.06" }] }, { "featureType": "road.highway", "elementType": "labels.icon", "stylers": [{ "visibility": "on" }, { "saturation": "75" }] }, { "featureType": "road.highway.controlled_access", "elementType": "labels.text", "stylers": [{ "visibility": "on" }] }, { "featureType": "road.highway.controlled_access", "elementType": "labels.icon", "stylers": [{ "visibility": "on" }, { "hue": "#ff6600" }, { "lightness": "1" }, { "saturation": "100" }, { "gamma": "1" }, { "weight": "2.08" }] }, { "featureType": "road.arterial", "elementType": "labels.icon", "stylers": [{ "visibility": "on" }] }, { "featureType": "road.local", "elementType": "labels.icon", "stylers": [{ "hue": "#ff0000" }, { "visibility": "on" }] }, { "featureType": "transit", "elementType": "all", "stylers": [{ "visibility": "off" }] }, { "featureType": "transit.station.airport", "elementType": "all", "stylers": [{ "visibility": "off" }] }, { "featureType": "water", "elementType": "all", "stylers": [{ "lightness": -20 }, { "color": "#35485f" }] }, { "featureType": "transit.station.rail", "elementType": "labels.icon", "stylers": [{ "hue": "#1f2d79" }, { "visibility": "on" }] }, { "featureType": "poi.park", "elementType": "labels.icon", "stylers": [{ "color": "#7cb342" }] }]
+
 
 });
 
@@ -88,7 +83,7 @@ function test(locatis) {
         markers.push(marker);
         infowindow = new SnazzyInfoWindow({
             marker: marker,
-            content: '<div><h3>' + locatis[i][0] + '</h3><a target="_blank" href="' + wayDir + '" >Yol Tarifi</a><a target="_self" href="' + locatis[i][4] + '" >Proje Detayı</a></div>',
+            content: '<div class="mi-content"><div class="mi-image" style="background-image:url(' + locatis[i][5] + ');" ></div><a target="_blank" href="' + wayDir + '" class="mi-tarif">Yol Tarifi</a><a href="' + locatis[i][4] + '" class="mi-detay">Proje Detayı</a></div>',
             wrapperClass: 'iw-container',
             placement: 'top',
             closeWhenOthersOpen: true,
@@ -146,7 +141,7 @@ runMap('.dky-bsness-tuzla-harbtn', dkyBusinessTuzla, { lat: hepsi[3][1], lng: he
 runMap('.dky-cadde-suadiye-harbtn', dkyCaddeSuadiye, { lat: hepsi[3][1], lng: hepsi[1][2] }, 11);
 runMap('.dky-cadde-erenkoy-harbtn', dkyCaddeErenkoy, { lat: hepsi[3][1], lng: hepsi[1][2] }, 11);
 runMap('.tamamlanan-harbtn', tamamlanan, { lat: hepsi[3][1], lng: hepsi[1][2] }, 11);
-runMap('.devam-eden-harbtn', devamEden, {lat: hepsi[3][1], lng: hepsi[1][2] }, 11);
+runMap('.devam-eden-harbtn', devamEden, { lat: hepsi[3][1], lng: hepsi[1][2] }, 11);
 runMap('.gelecek-harbtn', gelecek, { lat: hepsi[3][1], lng: hepsi[1][2] }, 11);
 runMap('.hepsi-harbtn', hepsi, { lat: hepsi[3][1], lng: hepsi[1][2] }, 11);
 

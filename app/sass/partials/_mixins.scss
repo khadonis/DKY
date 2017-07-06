@@ -1,0 +1,74 @@
+//mixins
+@mixin vertical-align($position: relative) {
+    position: $position;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+@mixin horizontal-align($position: relative) {
+    position: $position;
+    left: 50%;    
+    transform: translateX(-50%);
+}
+@mixin complate-align($position: relative) {
+    position: $position;
+    left: 50%; 
+    top: 50%;   
+    transform: translate(-50%, -50%);
+}
+
+
+@mixin no-left-pad($pad) {
+    padding-left: -$pad;
+}
+
+%h2 {
+    font-size: 30px;
+    margin: 0;
+    text-transform: uppercase;
+    font-family: $font-family-sans-serif;
+}
+
+%sec-containers {
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+
+%dergi-blog-height {
+    min-height: $blog-height;
+}
+
+%slider-btns {
+    bottom: 20px;
+    top: auto;
+    left: auto;
+    cursor: pointer;
+    background-image: none;
+    &:before {
+        font-family: 'fontawesome';
+        font-size: 30px;
+        display: block;
+        color: $main-color;
+    }
+}
+
+%slider-btn-next {
+    right: 30px;
+    &:before {
+        content: "\f054";
+        left: 0px;
+        position: absolute;
+        @include vertical-align();
+    }
+}
+
+%slider-btn-prev {
+    right: 60px;
+    &:before {
+        content: "\f053";
+        left: -5px;
+        position: absolute;
+        @include vertical-align();
+    }
+}

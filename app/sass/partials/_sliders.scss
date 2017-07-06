@@ -1,0 +1,193 @@
+// Slider
+.swiper-container,
+.odul-slide-container,
+.basin-slide-container {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    img {
+        width: 100%;
+    }
+}
+
+.odul-slide-container {
+    height: 295px;
+    .swiper-wrapper {
+        p {
+            text-transform: capitalize;
+            font-size: 10pt;
+            text-align: center;
+            color: #bf9f4e;
+            padding-top: 165px;
+            line-height: 1.25;
+            font-family: $font-family-sans-serif;
+            u {
+                color: $gray-darker;
+                font-weight: 900;
+                text-decoration: none;
+                text-transform: uppercase;
+            }
+        }
+    }
+    .swiper-slide {
+        background: {
+            position: top center;
+            size: auto;
+        }
+        display: block;
+    }
+    .swiper-button-prev,
+    .swiper-button-next {
+        bottom: 0;
+        top: auto;
+        left: auto;
+        background-image: none;
+        &:before {
+            font-family: 'fontawesome';
+            font-size: 30px;
+            display: block;
+            color: $main-color;
+        }
+    }
+    .swiper-button-next {
+        right: 30px;
+        &:before {
+            content: "\f054";
+            left: 0px;
+            position: absolute;
+            @include vertical-align();
+        }
+    }
+    .swiper-button-prev {
+        right: 60px;
+        &:before {
+            content: "\f053";
+            left: -5px;
+            position: absolute;
+            @include vertical-align();
+        }
+    }
+}
+
+.basin-slide-container {
+    @extend .odul-slide-container;
+    padding-top: 30px;
+    margin-top: -30px;
+    background-color: #fff;
+    h3 {
+        font-family: $font-family-sans-serif;
+        text-align: left;
+        font-size: 20px;
+        min-height: 70px;
+    }
+    .swiper-slide {
+        padding: 0 30px 0 0;
+        &:after {
+            content: '\f142';
+            top: 15%;
+            transform: translateY(-85);
+            position: absolute;
+            font-family: 'fontawesome';
+            color: $gray-darker;
+            font-size: 30px;
+            right: -2px;
+            left: initial;
+            opacity: .5;
+            cursor: -webkit-grab;
+        }
+    }
+}
+
+.swiper-haber-btn-prev,
+.swiper-haber-btn-next {
+    position: absolute;
+    @extend %slider-btns;
+    top: 30px;
+    bottom: auto;
+    &:before {
+        font-size: 20px;
+    }
+}
+
+.swiper-haber-btn-prev {
+    @extend %slider-btn-prev;
+    right:30px;
+}
+
+.swiper-haber-btn-next {
+    @extend %slider-btn-next;
+    right: 0;
+}
+
+.swiper-pagination {
+    left: 20px;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    background: {
+        repeat: no-repeat;
+        size: cover;
+    }
+    &.r1 {
+        background: {
+            image: url('../images/Slider-1.jpg');
+        }
+    }
+    &.r2 {
+        background: {
+            image: url('../images/dkyon_dis.png');
+        }
+    }
+    &.r3 {
+        background: {
+            image: url('../images/DKY-KARTAL.jpg');
+        }
+    }
+}
+
+.swiper-container-vertical>.swiper-pagination-bullets {
+    left: 20px;
+}
+
+.swiper-container-vertical>.swiper-pagination-bullets .swiper-pagination-bullet {
+    width: 15px;
+    height: 15px;
+    margin: 17px 0;
+    padding: 2px;
+    opacity: 1;
+    position: relative;
+    background: #fff;
+}
+
+.swiper-container-vertical>.swiper-pagination-bullets .swiper-pagination-bullet-active {
+    background: #000;
+}
+
+.swiper-pagination-bullet::after {
+    content: '';
+    width: 25px;
+    height: 25px;
+    background: transparent;
+    border: 1px solid #fff;
+    position: absolute;
+    display: block;
+    top: -5px;
+    z-index: 9999999;
+    left: -5px;
+    border-radius: 20px;
+}
