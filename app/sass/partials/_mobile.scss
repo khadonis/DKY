@@ -1,5 +1,5 @@
 //Responsive
-@media screen and (max-width: 1367px) {
+@media screen and (max-width: 1600px) {
     .vertical-h-menu {
         width: 65px;
     }
@@ -16,9 +16,15 @@
     }
 }
 
+@media screen and (max-width: 1200px) {
+    .blog-img {
+        top: 100%;
+    }
+}
+
 // Codes for Tablets
 @media screen and (max-width: $screen-sm-max) {
-    .proje-collapsible-menu {
+    body .proje-collapsible-menu {
         position: absolute;
         left: 75px;
         width: 170px;
@@ -52,14 +58,13 @@
 //Codes for Mobiles
 @media screen and (max-width: $screen-xs-max) {
     body {
-        .section-medya{
-            h2{
+        section {
+            h2 {
                 text-align: center;
             }
         }
         .swiper-container .b-talep-form {
             display: none;
-            
         }
         .b-talep-form {
             right: 0;
@@ -111,6 +116,147 @@
             height: 40%;
             display: block;
             top: 74px;
+        }
+        .basin-slide-container {
+            height: 50%;
+            margin-top: 15px;
+            .btn-more {
+                text-align: center;
+                font-size: 90%;
+            }
+        }
+    }
+    section[class^='section'] {
+        .container-fluid {
+            padding: 0;
+            margin-left: 0;
+        }
+        .head {
+            padding: 0;
+            h3 {
+                text-align: center;
+            }
+        }
+    }
+    .basin-slide-container {
+        h3 {
+            text-align: center;
+        }
+    }
+    .basin-slide-container .swiper-slide {
+        padding: 0;
+    }
+    body .section-projeler {
+        padding-bottom: 0;
+        .hero-proj {
+            h3 {
+                font-size: 20px;
+                letter-spacing: 4px;
+                top: 25px;
+            }
+            .detay-link {
+                font-size: 18px;
+                width: 121px;
+                font-family: $font-family-sans-serif;
+                top: 105px;
+                &:after,
+                &:before {
+                    height: 37px;
+                    padding: 0;
+                    width: 21px;
+                }
+                &:after {
+                    right: -2px;
+                }
+                &:before {
+                    left: -2px;
+                }
+            }
+            .mask {
+                p {
+                    padding: 15px;
+                    font-size: 14px;
+                    line-height: 1.25;
+                }
+            }
+            &:before {
+                content: '';
+                position: absolute;
+                @include square(100%);
+                background: linear-gradient(to top, rgba(#000, .0) 50%, rgba(#000, .8) 100%); //z-index: 3;
+                z-index: 1;
+            }
+        }
+        .hero-proj,
+        .standart-proj {
+            &,
+            & .mask {
+                height: 336px;
+            }
+            .mask {
+                bottom: -400px;
+            }
+        }
+        .standart-proj {
+            border: none;
+            margin-top: 15px;
+        }
+    }
+    footer {
+        margin-top: 0;
+        text-align: center;
+        .container-fluid {
+            margin-top: 0;
+        }
+        h5 {
+            text-align: center;
+        }
+        .bot-menu a {
+            margin-left: 0;
+            padding-left: 0;
+            display: block;
+            text-align: center;
+            &:last-child:after {
+                display: none;
+            }
+        }
+        .copy h4 {
+            margin: 15px 0;
+        }
+    }
+    body .blog-inner {
+        padding: 0 15px 0;
+        img {
+            width: 100%;
+            margin-top: 25px;
+        }
+        .btn-blog {
+            text-align: center;
+        }
+    }
+    .bulten-input {
+        font-size: 16px;
+    }
+    .foot-menu {
+        padding-left: 0;
+        margin-top: 10;
+        li {
+            display: block;
+        }
+    }
+    .contact-items {
+        padding: 0;
+        .social-media-icons a {
+            margin: 0 4px;
+        }
+        li {
+            display: block;
+            width: 100%;
+            padding: 0;
+            border: 0;
+            margin-left: 0;
+            margin-block-end: 15px;
+            font-size: 130%;
         }
     }
 }

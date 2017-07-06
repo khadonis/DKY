@@ -60,8 +60,15 @@ var swiperHaberler = new Swiper('.basin-slide-container', {
   slidesPerView: 3,
   spaceBetween: 30,
   autoplay: 2000,
-  loop: true
+  loop: true,
+  breakpoints: {
+    767: {
+      slidesPerView: 1,
+      spaceBetween: 0
+    }
+  }
 });
+
 
 
 //search panel

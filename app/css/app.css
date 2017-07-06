@@ -3195,7 +3195,7 @@ ul {
               transform: rotate(45deg);
       background-color: #fff; }
 
-@media screen and (max-width: 1367px) {
+@media screen and (max-width: 1600px) {
   .vertical-h-menu {
     width: 65px; }
   .proje-listesi a {
@@ -3205,8 +3205,12 @@ ul {
   .proje-listesi h4 {
     top: -18px; } }
 
+@media screen and (max-width: 1200px) {
+  .blog-img {
+    top: 100%; } }
+
 @media screen and (max-width: 991px) {
-  .proje-collapsible-menu {
+  body .proje-collapsible-menu {
     position: absolute;
     left: 75px;
     width: 170px;
@@ -3229,7 +3233,7 @@ ul {
     top: 122%; } }
 
 @media screen and (max-width: 767px) {
-  body .section-medya h2 {
+  body section h2 {
     text-align: center; }
   body .swiper-container .b-talep-form {
     display: none; }
@@ -3271,7 +3275,110 @@ ul {
   body .basin-slide-container {
     height: 40%;
     display: block;
-    top: 74px; } }
+    top: 74px; }
+  body .basin-slide-container {
+    height: 50%;
+    margin-top: 15px; }
+    body .basin-slide-container .btn-more {
+      text-align: center;
+      font-size: 90%; }
+  section[class^='section'] .container-fluid {
+    padding: 0;
+    margin-left: 0; }
+  section[class^='section'] .head {
+    padding: 0; }
+    section[class^='section'] .head h3 {
+      text-align: center; }
+  .basin-slide-container h3 {
+    text-align: center; }
+  .basin-slide-container .swiper-slide {
+    padding: 0; }
+  body .section-projeler {
+    padding-bottom: 0; }
+    body .section-projeler .hero-proj h3, body .section-projeler .standart-proj h3 {
+      font-size: 20px;
+      letter-spacing: 4px;
+      top: 25px; }
+    body .section-projeler .hero-proj .detay-link, body .section-projeler .standart-proj .detay-link {
+      font-size: 18px;
+      width: 121px;
+      font-family: "flexoregular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      top: 105px; }
+      body .section-projeler .hero-proj .detay-link:after, body .section-projeler .standart-proj .detay-link:after, body .section-projeler .hero-proj .detay-link:before, body .section-projeler .standart-proj .detay-link:before {
+        height: 37px;
+        padding: 0;
+        width: 21px; }
+      body .section-projeler .hero-proj .detay-link:after, body .section-projeler .standart-proj .detay-link:after {
+        right: -2px; }
+      body .section-projeler .hero-proj .detay-link:before, body .section-projeler .standart-proj .detay-link:before {
+        left: -2px; }
+    body .section-projeler .hero-proj .mask p, body .section-projeler .standart-proj .mask p {
+      padding: 15px;
+      font-size: 14px;
+      line-height: 1.25; }
+    body .section-projeler .hero-proj:before, body .section-projeler .standart-proj:before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, transparent), to(rgba(0, 0, 0, 0.8)));
+      background: linear-gradient(to top, transparent 50%, rgba(0, 0, 0, 0.8) 100%);
+      z-index: 1; }
+    body .section-projeler .hero-proj, body .section-projeler .standart-proj,
+    body .section-projeler .hero-proj .mask,
+    body .section-projeler .standart-proj .mask,
+    body .section-projeler .standart-proj,
+    body .section-projeler .standart-proj .mask {
+      height: 336px; }
+    body .section-projeler .hero-proj .mask, body .section-projeler .standart-proj .mask,
+    body .section-projeler .standart-proj .mask {
+      bottom: -400px; }
+    body .section-projeler .standart-proj {
+      border: none;
+      margin-top: 15px; }
+  footer {
+    margin-top: 0;
+    text-align: center; }
+    footer .container-fluid {
+      margin-top: 0; }
+    footer h5 {
+      text-align: center; }
+    footer .bot-menu a {
+      margin-left: 0;
+      padding-left: 0;
+      display: block;
+      text-align: center; }
+      footer .bot-menu a:last-child:after {
+        display: none; }
+    footer .copy h4 {
+      margin: 15px 0; }
+  body .blog-inner {
+    padding: 0 15px 0; }
+    body .blog-inner img {
+      width: 100%;
+      margin-top: 25px; }
+    body .blog-inner .btn-blog {
+      text-align: center; }
+  .bulten-input {
+    font-size: 16px; }
+  .foot-menu {
+    padding-left: 0;
+    margin-top: 10; }
+    .foot-menu li {
+      display: block; }
+  .contact-items {
+    padding: 0; }
+    .contact-items .social-media-icons a {
+      margin: 0 4px; }
+    .contact-items li {
+      display: block;
+      width: 100%;
+      padding: 0;
+      border: 0;
+      margin-left: 0;
+      -webkit-margin-after: 15px;
+              margin-block-end: 15px;
+      font-size: 130%; } }
 
 .btn-sahil {
   border-top: 4px solid #fff;
