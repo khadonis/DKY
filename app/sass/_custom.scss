@@ -13,7 +13,6 @@ Custom SCSS File
 @import "partials/globals";
 @import "partials/pages/kurumsal";
 @import "partials/mobile";
-
 .btn-sahil {
     border-top: 4px solid #fff;
     border-bottom: 4px solid #fff;
@@ -302,6 +301,93 @@ Custom SCSS File
         }
     }
     .standart-proj {
+        height: 675px;
+        overflow: hidden;
+        position: relative;
+        transition: all ease-in .3s;
+        img {
+            position: absolute;
+            z-index: 0;
+            height: 675px;
+        }
+        .mask {
+            position: absolute;
+            bottom: -675px; //top: initial;
+            left: 0;
+            width: 100%;
+            height: 675px;
+            background: rgba($sec-color, 0.7);
+            transition: all ease-out .3s;
+            z-index: 1;
+            p {
+                padding: 30px;
+                position: absolute;
+                top: initial;
+                left: initial;
+                bottom: 0;
+                right: 0;
+                font-size: 18px;
+                line-height: 30px;
+                color: #fff; //text-align: center;
+            }
+        }
+        &:hover .mask {
+            bottom: 0;
+            top: initial;
+        }
+        h3 {
+            position: absolute;
+            z-index: 2;
+            top: 50px;
+            font-size: 40px;
+            font-family: $font-family-serif;
+            letter-spacing: 17px;
+            margin: 0;
+            transform: translateX(-50%);
+            left: 50%;
+            width: 100%;
+            text-align: center;
+            color: #fff;
+            text-indent: 17px;
+        }
+        .detay-link {
+            position: absolute;
+            top: 138px;
+            width: 139px;
+            text-align: center;
+            color: #fff;
+            z-index: 2;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 24px;
+            &:before {
+                content: '';
+                border-top: 2px solid #fff;
+                border-left: 2px solid #fff;
+                border-bottom: 2px solid #fff;
+                display: block;
+                padding: 12px;
+                position: absolute;
+                top: -6px;
+                left: -12px;
+                width: 27px;
+                height: 47px;
+            }
+            &:after {
+                content: '';
+                border-top: 2px solid #fff;
+                border-right: 2px solid #fff;
+                border-bottom: 2px solid #fff;
+                display: block;
+                padding: 12px;
+                position: absolute;
+                top: -6px;
+                right: -12px;
+                left: initial;
+                width: 27px;
+                height: 47px;
+            }
+        }
         border: 7px solid #fff;
         &:nth-child(n+4) {
             border-top-width: 0;
@@ -317,8 +403,7 @@ Custom SCSS File
         .mask {
             height: 337px;
             transition: all ease-out .4s;
-        }
-        @extend .hero-proj;
+        } // @extend .hero-proj;
         h3 {
             font-size: 20px;
             letter-spacing: 4px;

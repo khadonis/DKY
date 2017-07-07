@@ -313,7 +313,7 @@ $screen-tablet:              $screen-sm-min !default;
 
 // Medium screen / desktop
 //** Deprecated `$screen-md` as of v3.0.1
-$screen-md:                  992px !default;
+$screen-md:                  1024px !default; //992px
 $screen-md-min:              $screen-md !default;
 //** Deprecated `$screen-desktop` as of v3.0.1
 $screen-desktop:             $screen-md-min !default;
@@ -887,3 +887,4 @@ $hr-border:                   $gray-lighter !default;
 //Sizing Helpers
 
 $blog-height: 321px;
+$proj-height:510px;

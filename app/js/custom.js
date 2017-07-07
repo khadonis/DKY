@@ -65,6 +65,10 @@ var swiperHaberler = new Swiper('.basin-slide-container', {
     767: {
       slidesPerView: 1,
       spaceBetween: 0
+    },
+    1023: {
+      slidesPerView: 2,
+      spaceBetween: 15
     }
   }
 });
@@ -87,7 +91,10 @@ $('.video-wrapper .mask').click(function (params) {
 });
 
 //kurumsal side menu
-$('.side-menu').height($('.content-inner').height() - 60);
+if ($(window).width() > 767) {
+  $('.side-menu').height($('.content-inner').height() - 60);
+}
+
 $(function () {
   var current = location.pathname;
   $('.side-menu a').each(function () {
