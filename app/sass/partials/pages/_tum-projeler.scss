@@ -1,3 +1,22 @@
 .tp-projects-top {
-    @extend %hero-proj;
+    margin-top: $header-height;
+    @include hero-proj();
+    .mask {
+        @include mask($bottom:-600px, $background-color:rgba($gray-darker, 1),$padding:0);
+    }
+    &:hover .mask {
+        @include hover-mask();
+        background-color: rgba($gray-darker,.7);
+        .detay-link{
+            top:30px;
+        }
+    }
+    h3{
+        @include hero-proj-h3();
+    }
+    .detay-link{
+        @include detay-link($width:auto, $font-size:22px, $before-left:-26px, $before-top:-12px,$top:-24px);
+        letter-spacing: 0;
+        text-indent: 0;
+    }
 }

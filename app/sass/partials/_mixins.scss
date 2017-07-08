@@ -6,18 +6,19 @@
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
 }
+
 @mixin horizontal-align($position: relative) {
     position: $position;
-    left: 50%;    
+    left: 50%;
     transform: translateX(-50%);
 }
+
 @mixin complate-align($position: relative) {
     position: $position;
-    left: 50%; 
-    top: 50%;   
+    left: 50%;
+    top: 50%;
     transform: translate(-50%, -50%);
 }
-
 
 @mixin no-left-pad($pad) {
     padding-left: -$pad;
@@ -71,94 +72,96 @@
         position: absolute;
         @include vertical-align();
     }
+} //hero Projects mixins
+@mixin hero-proj($height:675px, $trans-dur:.3s) {
+    height: $height;
+    overflow: hidden;
+    position: relative;
+    transition: all ease-in $trans-dur;
+    img {
+        position: absolute;
+        z-index: 0;
+        height: $height;
+    }
 }
 
-%hero-proj {
-        height: 675px;
-        overflow: hidden;
-        position: relative;
-        transition: all ease-in .3s;
-        img {
-            position: absolute;
-            z-index: 0;
-            height: 675px;
-        }
-        %mask {
-            position: absolute;
-            bottom: -675px; //top: initial;
-            left: 0;
-            width: 100%;
-            height: 675px;
-            background: rgba($sec-color, 0.7);
-            transition: all ease-out .3s;
-            z-index: 1;
-            p {
-                padding: 30px;
-                position: absolute;
-                top: initial;
-                left: initial;
-                bottom: 0;
-                right: 0;
-                font-size: 18px;
-                line-height: 30px;
-                color: #fff; //text-align: center;
-            }
-        }
-        &:hover %mask {
-            bottom: 0;
-            top: initial;
-        }
-        h3 {
-            position: absolute;
-            z-index: 2;
-            top: 50px;
-            font-size: 40px;
-            font-family: $font-family-serif;
-            letter-spacing: 17px;
-            margin: 0;
-            transform: translateX(-50%);
-            left: 50%;
-            width: 100%;
-            text-align: center;
-            color: #fff;
-            text-indent: 17px;
-        }
-        %detay-link {
-            position: absolute;
-            top: 138px;
-            width: 139px;
-            text-align: center;
-            color: #fff;
-            z-index: 2;
-            left: 50%;
-            transform: translateX(-50%);
-            font-size: 24px;
-            &:before {
-                content: '';
-                border-top: 2px solid #fff;
-                border-left: 2px solid #fff;
-                border-bottom: 2px solid #fff;
-                display: block;
-                padding: 12px;
-                position: absolute;
-                top: -6px;
-                left: -12px;
-                width: 27px;
-                height: 47px;
-            }
-            &:after {
-                content: '';
-                border-top: 2px solid #fff;
-                border-right: 2px solid #fff;
-                border-bottom: 2px solid #fff;
-                display: block;
-                padding: 12px;
-                position: absolute;
-                top: -6px;
-                right: -12px;
-                left: initial;
-                width: 27px;
-                height: 47px;
-            }
-        }
+@mixin mask($bottom:-675px, $background-color:rgba($sec-color, 0.7), $trans-dur: .3s, $padding:30px, $font-size:18px, $line-height:30px, $color: #fff,$p-top:150px) {
+    position: absolute;
+    bottom: $bottom;
+    left: 0;
+    width: 100%;
+    height: 675px;
+    background: $background-color;
+    transition: all ease-out $trans-dur;
+    z-index: 1;
+    p {
+        padding: $padding;
+        position: absolute;
+        top: $p-top;
+        @include horizontal-align(relative);
+        font-size: $font-size;
+        line-height: $line-height;
+        color: $color;
+        display: block;
+        text-align: center;
     }
+}
+
+@mixin hover-mask($bottom:0, $top:auto) {
+    bottom: $bottom;
+    top: $top;
+}
+
+@mixin hero-proj-h3 ($z-index:2, $top:50px, $font-size:40px) {
+    @include horizontal-align();
+    position: absolute;
+    z-index: $z-index;
+    top: $top;
+    font-size: $font-size;
+    font-family: $font-family-serif;
+    letter-spacing: 17px;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    text-indent: 17px;
+}
+
+@mixin detay-link($top:138px, $width:139px, $color: #fff, $font-size:24px, $before-top:-6px, $before-border-size:2px, $before-padding:12px, $before-left:-12px, $before-width:27px, $before-height:47px) {
+    position: absolute;
+    white-space: nowrap;
+    top: $top;
+    width: $width;
+    text-align: center;
+    color: $color;
+    z-index: 2;
+    @include horizontal-align(absolute);
+    font-size: $font-size;
+    &:before {
+        content: '';
+        border-top: $before-border-size solid $color;
+        border-left: $before-border-size solid $color;
+        border-bottom: $before-border-size solid $color;
+        display: block;
+        padding: $before-padding;
+        position: absolute;
+        top: $before-top;
+        left: $before-left;
+        width: $before-width;
+        height: $before-height;
+    }
+    &:after {
+        content: '';
+        border-top: $before-border-size solid $color;
+        border-right: $before-border-size solid $color;
+        border-bottom: $before-border-size solid $color;
+        display: block;
+        padding: $before-padding;
+        position: absolute;
+        top: $before-top;
+        right: $before-left;
+        left: initial;
+        width: $before-width;
+        height: $before-height;
+    }
+}

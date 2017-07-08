@@ -107,3 +107,13 @@ $(function () {
     }
   });
 });
+
+//projeler responsive set
+/*function setWidths(wrapperDiv) {
+  var width = $(wrapperDiv + ' img').width();
+  $(wrapperDiv).width(width);
+  $(wrapperDiv + ' .mask').width(width);
+
+};
+setWidths('.hero-proj');
+setWidths('.standart-proj');*/
