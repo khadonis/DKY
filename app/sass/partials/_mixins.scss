@@ -73,7 +73,7 @@
         @include vertical-align();
     }
 } //hero Projects mixins
-@mixin hero-proj($height:675px, $trans-dur:.3s) {
+@mixin hero-proj($height:$tum-proj-height, $trans-dur:.3s) {
     height: $height;
     overflow: hidden;
     position: relative;
@@ -82,15 +82,16 @@
         position: absolute;
         z-index: 0;
         height: $height;
+        @include complate-align(absolute);
     }
 }
 
-@mixin mask($bottom:-675px, $background-color:rgba($sec-color, 0.7), $trans-dur: .3s, $padding:30px, $font-size:18px, $line-height:30px, $color: #fff,$p-top:150px) {
+@mixin mask($bottom:-$tum-proj-height, $background-color:rgba($sec-color, 0.7), $trans-dur: .3s, $padding:30px, $font-size:18px, $line-height:30px, $color: #fff,$p-top:150px) {
     position: absolute;
     bottom: $bottom;
     left: 0;
     width: 100%;
-    height: 675px;
+    height: $tum-proj-height;
     background: $background-color;
     transition: all ease-out $trans-dur;
     z-index: 1;

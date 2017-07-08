@@ -117,3 +117,11 @@ $(function () {
 };
 setWidths('.hero-proj');
 setWidths('.standart-proj');*/
+
+$('.tp-box-field a').each(function () {
+  var h = $(this).width();
+  var ph = $(this).parent().width();
+  $(this).height(h);
+  $(this).parent().height(ph);
+  $(this).find('img').height(h);
+});

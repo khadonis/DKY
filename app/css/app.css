@@ -3209,10 +3209,15 @@ ul {
   .tp-projects-top img {
     position: absolute;
     z-index: 0;
-    height: 675px; }
+    height: 675px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%); }
   .tp-projects-top .mask {
     position: absolute;
-    bottom: -600px;
+    bottom: -601px;
     left: 0;
     width: 100%;
     height: 675px;
@@ -3295,6 +3300,55 @@ ul {
       left: initial;
       width: 27px;
       height: 47px; }
+
+.tp-box-field {
+  text-align: center;
+  font-family: "flexoregular", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  .tp-box-field div[class^="col"] {
+    overflow: hidden;
+    margin-bottom: 30px; }
+  .tp-box-field h2 {
+    letter-spacing: 15px;
+    font-size: 24px;
+    padding: 30px 30px 15px; }
+  .tp-box-field a {
+    position: relative;
+    width: 100%;
+    display: block;
+    overflow: hidden; }
+    .tp-box-field a h4 {
+      font-size: 24px;
+      color: #fff;
+      font-family: inherit;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      -webkit-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%);
+      z-index: 2;
+      line-height: 1.5; }
+    .tp-box-field a img {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      -webkit-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%); }
+    .tp-box-field a:after {
+      content: '';
+      -webkit-transition: all ease .2s;
+      transition: all ease .2s;
+      width: 85%;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      -webkit-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%);
+      background-color: rgba(0, 0, 0, 0.7);
+      height: 85%;
+      opacity: 1;
+      display: block; }
+    .tp-box-field a:hover:after {
+      opacity: 0; }
 
 @media screen and (max-width: 1440px) {
   body .proje-collapsible-menu {
