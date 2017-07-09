@@ -1,6 +1,12 @@
 // Responsive
 //1440< (Laptop L)
 @media screen and (max-width: 1440px) {
+    .tp-projects-top {
+        @include hero-proj($height: 675px);
+        .mask {
+            @include mask($bottom: -((675px)-($header-height)), $background-color:rgba($gray-darker, 1), $padding:0, $height:675px);
+        }
+    }
     body .proje-collapsible-menu {
         position: absolute;
         left: 75px;
@@ -41,6 +47,15 @@
 
 //1024< (Laptop)
 @media screen and (max-width: 1024px) {
+    .tp-projects-top {
+        @include hero-proj($height: 445px);
+        .mask {
+            @include mask($bottom: -((445px)-($header-height)), $background-color:rgba($gray-darker, 1), $padding:0, $height:445px);
+        }
+        .detay-link {
+            font-size: 18px;
+        }
+    }
     .hero-img h1 {
         right: 70px;
     }
@@ -107,6 +122,12 @@
 
 //768< (Tablet)
 @media screen and (max-width: 768px) {
+    .tp-projects-top {
+        .detay-link {
+            @include detay-link($width: auto, $font-size:22px, $before-left:-15px, $before-top:-10px, $top:-24px, $before-width:15px, $before-height:35px, $before-padding:5px);
+            font-size: 14px;
+        }
+    }
     .hero-img h1 {
         font-size: 46px;
     }
@@ -200,6 +221,19 @@
 
 //425< (All Phones)
 @media screen and (max-width: 425px) {
+    .tp-projects-top {
+        margin-top: 0;
+        @include hero-proj($height: 555px);
+        .mask {
+            @include mask($bottom: -((555px)-($header-height)), $background-color:rgba($gray-darker, 1), $padding:0, $height:555px);
+        }
+        /*.detay-link {
+            @include detay-link($width: auto, $font-size:18px, $before-left:-26px, $before-top:-12px, $top:-24px);
+        }*/
+        .col-sm-4:first-child & {
+            margin-top: $header-height;
+        }
+    }
     html body .section-projeler {
         .standart-proj {
             left: 50%;

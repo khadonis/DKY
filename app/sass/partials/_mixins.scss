@@ -86,12 +86,12 @@
     }
 }
 
-@mixin mask($bottom:-$tum-proj-height, $background-color:rgba($sec-color, 0.7), $trans-dur: .3s, $padding:30px, $font-size:18px, $line-height:30px, $color: #fff,$p-top:150px) {
+@mixin mask($bottom:-$tum-proj-height, $background-color:rgba($sec-color, 0.7), $trans-dur: .3s, $padding:30px, $font-size:18px, $line-height:30px, $color: #fff,$p-top:150px, $height:$tum-proj-height) {
     position: absolute;
     bottom: $bottom;
     left: 0;
     width: 100%;
-    height: $tum-proj-height;
+    height: $height;
     background: $background-color;
     transition: all ease-out $trans-dur;
     z-index: 1;

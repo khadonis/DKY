@@ -118,10 +118,16 @@ $(function () {
 setWidths('.hero-proj');
 setWidths('.standart-proj');*/
 
-$('.tp-box-field a').each(function () {
-  var h = $(this).width();
-  var ph = $(this).parent().width();
-  $(this).height(h);
-  $(this).parent().height(ph);
-  $(this).find('img').height(h);
+function resizes(targetEl) {
+  $(targetEl).each(function () {
+    var h = $(this).width();
+    var ph = $(this).parent().width();
+    $(this).height(h);
+    $(this).parent().height(ph);
+    $(this).find('img').height(h);
+  });
+};
+resizes('.tp-box-field a');
+$(window).resize(function () {
+  resizes('.tp-box-field a');
 });
