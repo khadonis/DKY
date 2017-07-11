@@ -3581,6 +3581,9 @@ ul {
 .satis-ofisleri a {
   cursor: pointer; }
 
+.show-in-mobil {
+  display: none; }
+
 @media screen and (max-width: 1440px) {
   .mo-head, .mo-places {
     top: 547.82609px; }
@@ -3655,6 +3658,12 @@ ul {
     top: 16px; } }
 
 @media screen and (max-width: 1024px) {
+  .hide-in-mobil {
+    display: none; }
+  .show-in-mobil {
+    display: block; }
+  .map.ilt-map {
+    display: none; }
   .merkez-ofis {
     display: none; }
   .merkez {

@@ -56,6 +56,15 @@
 
 //1024< (Laptop)
 @media screen and (max-width: 1024px) {
+    .hide-in-mobil{
+        display: none;
+    }
+    .show-in-mobil{
+        display: block;
+    }
+    .map.ilt-map{
+        display: none;
+    }
     .merkez-ofis {
         display: none;
     }
