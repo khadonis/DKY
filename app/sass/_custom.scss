@@ -13,10 +13,7 @@ Custom SCSS File
 @import "partials/globals";
 @import "partials/pages/kurumsal";
 @import "partials/pages/tum-projeler";
-<<<<<<< HEAD
 @import "partials/pages/iletisim";
-=======
->>>>>>> GlobMaster/GlobMaster
 @import "partials/mobile";
 .btn-sahil {
     border-top: 4px solid #fff;
@@ -69,7 +66,6 @@ Custom SCSS File
 }
 
 .b-talep-form {
-<<<<<<< HEAD
     position: fixed;
     right: -20px;
     top: 50%;
@@ -85,30 +81,12 @@ Custom SCSS File
         //repeat: no-repeat;
         color: $main-color;
         //position: 45px 25px;
-=======
-    position: absolute;
-    right: 60px;
-    bottom: 60px;
-    padding: 25px 45px 25px 100px;
-    display: block;
-    border-radius: 40px;
-    z-index: 1;
-    background: {
-        image: url('../images/form-icon.png');
-        size: 42px;
-        repeat: no-repeat;
-        color: $main-color;
-        position: 45px 25px;
->>>>>>> GlobMaster/GlobMaster
     }
     color:#fff;
     font-size: 24px;
     transition: all ease-out .2s;
     &:hover {
-<<<<<<< HEAD
         right: 0;
-=======
->>>>>>> GlobMaster/GlobMaster
         color: #fff;
         background-color: darken($main-color, 10%);
     }

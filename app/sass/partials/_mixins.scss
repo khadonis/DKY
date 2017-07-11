@@ -86,7 +86,7 @@
     }
 }
 
-@mixin mask($bottom:-$tum-proj-height, $background-color:rgba($sec-color, 0.7), $trans-dur: .3s, $padding:30px, $font-size:18px, $line-height:30px, $color: #fff,$p-top:150px, $height:$tum-proj-height) {
+@mixin mask($bottom:-$tum-proj-height, $background-color:rgba($sec-color, 0.7), $trans-dur: .3s, $padding:30px, $font-size:18px, $line-height:30px, $color: #fff, $p-top:150px, $height:$tum-proj-height) {
     position: absolute;
     bottom: $bottom;
     left: 0;
@@ -165,4 +165,17 @@
         width: $before-width;
         height: $before-height;
     }
+}
+
+@mixin ucgen($square:17px,$btw:2px,$bbw:0,$brw:2px,$blw:0,$trf:45deg ) {
+    content: '';
+    position: absolute;
+    @include square($square);
+    border: solid $gray-darker;
+    border-top-width: $btw;
+    border-bottom-width: $bbw;
+    border-right-width: $brw;
+    border-left-width: $blw;
+    transform: rotate($trf);
+    background-color: transparent;
 }

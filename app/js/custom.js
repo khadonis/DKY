@@ -5,7 +5,7 @@
 $('.menu-toggle').click(function () {
   $('.menu').toggleClass('opened');
   $(this).toggleClass('active');
-  $('.header').toggleClass('static');
+  $('.header').toggleClass('static'); 
 });
 
 //Sliders
@@ -131,3 +131,10 @@ resizes('.tp-box-field a');
 $(window).resize(function () {
   resizes('.tp-box-field a');
 });
+//yasal uyari
+var yUyariDiv = $('.y-uyari'), yUyariBtn = $('.y-uyari-btn');
+yUyariBtn.click(function () {
+  yUyariDiv.slideDown();
+});
+
+

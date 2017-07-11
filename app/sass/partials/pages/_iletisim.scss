@@ -4,14 +4,15 @@
 
 .mo-inner {
     position: relative;
-    top: -$mo-height;
-    margin-bottom: -$mo-height;
+    pointer-events: none;
+    top: -$mo-height+$header-height;
+    margin-bottom: -$mo-height*2;
     height: 1005px;
     background: {
         image: url('../images/ucgen.png');
         repeat: no-repeat;
         size: 100%;
-        position: 165px center;
+        position: 7vw center; //165px center;
     }
 }
 
@@ -44,5 +45,150 @@
         top: 0;
         left: 0;
         @include square(25px);
+    }
+}
+
+.satis-ofisleri {
+    margin: 174px 0;
+    h2 {
+        font-size: 46px;
+        border-bottom: 2px solid $gray-darker;
+        padding: 0 0 15px 0;
+        margin: 0 0 75px 0;
+        position: relative;
+        &:after {
+            @include ucgen($square: 17px, $btw:0, $bbw:2px, $brw:2px, $blw:0);
+            bottom: -10px;
+            background: #fff;
+            left: 50%;
+        }
+    }
+    .so-ofis {
+        margin-bottom: 30px;
+        font-size: 24px;
+        font-family: $font-family-sans-serif;
+        h3 {
+            color: $yllw;
+            font-size: 24px;
+            font-family: $f-f-flexobold;
+            padding: 0 0 15px 0;
+            margin: 0 0 35px 0;
+            border-bottom: 2px solid $gray-darker;
+            position: relative;
+            padding: 0 0 15px 0;
+            &:after {
+                @include ucgen($square: 17px, $btw:0, $bbw:2px, $brw:2px, $blw:0);
+                bottom: -10px;
+                background: #fff;
+                left: 50%;
+            }
+        }
+        span {
+            margin-right: 15px;
+        }
+        span[class] {
+            margin-right: 0;
+        }
+    }
+}
+
+.bt-form {
+    text-align: center;
+    background: $main-color;
+    color: #fff;
+    padding: 60px 0;
+    input {
+        color: $gray-darker;
+        transition: all ease .3s;
+    }
+    input[type="text"] {
+        color: $gray-darker;
+    }
+    h2 {
+        font-size: 56px;
+        font-family: $font-family-sans-serif;
+        padding-bottom: 15px;
+    }
+    h4 {
+        padding-bottom: 30px;
+        font-size: 21px;
+    }
+    h5 {
+        cursor: pointer;
+    }
+    .y-uyari {
+        //height: 0;
+        overflow: hidden;
+        display: none;
+        margin: 30px auto;
+        background: rgba(#fff, .85);
+        color: $main-color;
+        padding: 15px; //width: 50%;
+    }
+    h5,
+    label {
+        font-size: 18px;
+    }
+    label span {
+        margin-right: 15px;
+        margin-left: 15px;
+        position: relative;
+        top: -6px;
+    }
+    label {
+        text-align: left;
+    }
+    input[placeholder] {
+        width: 100%;
+        padding: 30px;
+        margin-bottom: 30px;
+        font-family: $font-family-sans-serif;
+        font-size: 18px;
+    }
+    input[type="radio"] {
+        appearance: none;
+        background: #fff;
+        padding: 12px;
+        position: relative;
+        &:focus {
+            &:after {
+                content: '\f00c';
+                font-family: 'fontawesome';
+                font-size: 24px;
+                color: #000;
+                position: absolute;
+                left: 0;
+                top: 0;
+            }
+        }
+    }
+    .fieldset {
+        margin-bottom: 15px;
+    }
+    input[type="submit"] {
+        display: block;
+        text-align: center;
+        background: $brand-danger;
+        padding: 30px 15px;
+        margin: 0 auto;
+        border: none;
+        width: 50%;
+        text-transform: uppercase;
+        font-size: 24px;
+        color: #fff;
+        &:hover {
+            background: darken($brand-danger, 30%);
+        }
+    }
+}
+
+.merkez {
+    display: none;
+    margin-bottom: 60px;
+}
+
+.satis-ofisleri {
+    a {
+        cursor: pointer;
     }
 }
