@@ -2180,6 +2180,53 @@ Custom SCSS File
   font-weight: bold;
   font-style: normal; }
 
+<<<<<<< HEAD
+@font-face {
+  font-family: "othersicon";
+  src: url("../font/othersicon.eot");
+  src: url("../font/othersicon.eot?#iefix") format("embedded-opentype"), url("../font/othersicon.woff") format("woff"), url("../font/othersicon.ttf") format("truetype"), url("../font/othersicon.svg#othersicon") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  @font-face {
+    font-family: "othersicon";
+    src: url("../font/othersicon.svg#othersicon") format("svg"); } }
+
+.oi:before {
+  display: inline-block;
+  font-family: "othersicon";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-decoration: inherit;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased; }
+
+.oi-internet:before {
+  content: "\f100"; }
+
+.oi-phone:before {
+  content: "\f101"; }
+
+.oi-mail:before {
+  content: "\f102"; }
+
+.oi-pin:before {
+  content: "\f103"; }
+
+.oi-clock:before {
+  content: "\f104"; }
+
+.oi-arrows:before {
+  content: "\f105"; }
+
+=======
+>>>>>>> GlobMaster/GlobMaster
 @-webkit-keyframes bounce {
   0%,
   100% {
@@ -2527,6 +2574,16 @@ footer {
   width: 60px;
   height: 60px;
   display: block;
+<<<<<<< HEAD
+  top: 22px;
+  z-index: 12;
+  right: 30px; }
+  .menu-toggle .line-h {
+    height: 4px;
+    position: absolute;
+    background-color: #000;
+    border-radius: 5px;
+=======
   top: 20px;
   z-index: 12;
   right: 30px; }
@@ -2535,6 +2592,7 @@ footer {
     position: absolute;
     background-color: #000;
     border-radius: 3px;
+>>>>>>> GlobMaster/GlobMaster
     width: 80%;
     -webkit-transition: all 300ms cubic-bezier(0.215, 0.61, 0.355, 1) 200ms;
     transition: all 300ms cubic-bezier(0.215, 0.61, 0.355, 1) 200ms; }
@@ -2543,11 +2601,19 @@ footer {
       -webkit-transform: rotate(0deg);
               transform: rotate(0deg); }
     .menu-toggle .line-h:nth-child(2) {
+<<<<<<< HEAD
+      top: 12px;
+      -webkit-transition: all 200ms cubic-bezier(0.8, 0.9, 0.95, 1) 0ms;
+      transition: all 200ms cubic-bezier(0.8, 0.9, 0.95, 1) 0ms; }
+    .menu-toggle .line-h:nth-child(3) {
+      top: 24px;
+=======
       top: 15px;
       -webkit-transition: all 200ms cubic-bezier(0.8, 0.9, 0.95, 1) 0ms;
       transition: all 200ms cubic-bezier(0.8, 0.9, 0.95, 1) 0ms; }
     .menu-toggle .line-h:nth-child(3) {
       top: 30px;
+>>>>>>> GlobMaster/GlobMaster
       -webkit-transform: rotate(0deg);
               transform: rotate(0deg); }
   .menu-toggle:hover .line-h {
@@ -2706,9 +2772,15 @@ footer {
     top: 11px; }
   .close-search .line-h {
     background: #fff;
+<<<<<<< HEAD
+    height: 4px;
+    position: absolute;
+    border-radius: 5px;
+=======
     height: 5px;
     position: absolute;
     border-radius: 3px;
+>>>>>>> GlobMaster/GlobMaster
     width: 80%;
     -webkit-transition: all 300ms cubic-bezier(0.215, 0.61, 0.355, 1) 200ms;
     transition: all 300ms cubic-bezier(0.215, 0.61, 0.355, 1) 200ms; }
@@ -2724,6 +2796,12 @@ footer {
   height: 800px;
   margin: 0;
   right: -15px; }
+<<<<<<< HEAD
+  .map.ilt-map {
+    right: 0;
+    height: 650px; }
+=======
+>>>>>>> GlobMaster/GlobMaster
 
 .har-projs {
   font-family: 'flexoregular'; }
@@ -2787,6 +2865,12 @@ footer {
           transition-timing-function: ease-out;
   width: 142px;
   height: 212px; }
+<<<<<<< HEAD
+  #iltMap .iw-container {
+    opacity: 1;
+    top: -50px; }
+=======
+>>>>>>> GlobMaster/GlobMaster
   .iw-container.active {
     top: -50px;
     opacity: 1; }
@@ -3350,6 +3434,49 @@ ul {
     .tp-box-field a:hover:after {
       opacity: 0; }
 
+<<<<<<< HEAD
+.merkez-ofis {
+  position: relative; }
+
+.mo-inner {
+  position: relative;
+  top: -630px;
+  margin-bottom: -630px;
+  height: 1005px;
+  background-image: url("../images/ucgen.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: 165px center; }
+
+.mo-head, .mo-places {
+  position: relative;
+  top: 572.72727px;
+  right: 0;
+  text-align: right; }
+  .mo-head h2, .mo-places h2 {
+    font-family: "flexobold", "flexoregular", "Helvetica Neue", Times, serif;
+    font-size: 48px; }
+
+.mo-places {
+  top: 504px;
+  text-align: left;
+  width: 95%;
+  padding-left: 30px; }
+
+.place-item {
+  font-size: 24px;
+  padding-left: 35px;
+  position: relative; }
+  .place-item .oi {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 25px;
+    height: 25px; }
+
+=======
+>>>>>>> GlobMaster/GlobMaster
 @media screen and (max-width: 1440px) {
   .tp-projects-top {
     height: 675px;
@@ -3418,6 +3545,15 @@ ul {
     top: 16px; } }
 
 @media screen and (max-width: 1024px) {
+<<<<<<< HEAD
+  body .b-talep-form {
+    right: -15px;
+    padding: 7px 30px;
+    font-size: 14px; }
+    body .b-talep-form:hover {
+      right: 0; }
+=======
+>>>>>>> GlobMaster/GlobMaster
   .tp-projects-top {
     height: 445px;
     overflow: hidden;
@@ -3580,9 +3716,12 @@ ul {
     height: 420px; }
     .swiper-container .scroll-down-i {
       display: none; }
+<<<<<<< HEAD
+=======
   body .b-talep-form {
     bottom: 20px;
     right: 20px; }
+>>>>>>> GlobMaster/GlobMaster
   body .hero-proj {
     width: 70%;
     left: 50%;
@@ -3688,6 +3827,21 @@ ul {
       width: auto !important; }
   body section h2 {
     text-align: center; }
+<<<<<<< HEAD
+  body .b-talep-form {
+    -webkit-transform-origin: center bottom;
+            transform-origin: center bottom;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    bottom: -15px;
+    right: 0;
+    left: 0;
+    top: auto;
+    font-size: 18px;
+    text-align: center; }
+    body .b-talep-form:hover {
+      bottom: 0px; }
+=======
   body .swiper-container .b-talep-form {
     display: none; }
   body .b-talep-form {
@@ -3700,6 +3854,7 @@ ul {
     text-align: center;
     background-image: none;
     padding: 10px; }
+>>>>>>> GlobMaster/GlobMaster
   body .scroll-down-i {
     display: none !important; }
   body .btn-sahil {
@@ -3917,6 +4072,19 @@ ul {
   background-size: 100%; }
 
 .b-talep-form {
+<<<<<<< HEAD
+  position: fixed;
+  right: -20px;
+  top: 50%;
+  padding: 15px 45px;
+  display: block;
+  -webkit-transform: rotate(-90deg) translateX(70%);
+          transform: rotate(-90deg) translateX(70%);
+  -webkit-transform-origin: bottom right;
+          transform-origin: bottom right;
+  z-index: 11;
+  background-color: #1d2b3e;
+=======
   position: absolute;
   right: 60px;
   bottom: 60px;
@@ -3929,11 +4097,16 @@ ul {
   background-repeat: no-repeat;
   background-color: #1d2b3e;
   background-position: 45px 25px;
+>>>>>>> GlobMaster/GlobMaster
   color: #fff;
   font-size: 24px;
   -webkit-transition: all ease-out .2s;
   transition: all ease-out .2s; }
   .b-talep-form:hover {
+<<<<<<< HEAD
+    right: 0;
+=======
+>>>>>>> GlobMaster/GlobMaster
     color: #fff;
     background-color: #0d131b; }
 

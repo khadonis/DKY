@@ -1,0 +1,48 @@
+.merkez-ofis {
+    position: relative;
+}
+
+.mo-inner {
+    position: relative;
+    top: -$mo-height;
+    margin-bottom: -$mo-height;
+    height: 1005px;
+    background: {
+        image: url('../images/ucgen.png');
+        repeat: no-repeat;
+        size: 100%;
+        position: 165px center;
+    }
+}
+
+.mo-head {
+    position: relative;
+    top: $mo-height/1.1;
+    right: 0;
+    text-align: right;
+    h2 {
+        font-family: $f-f-flexobold;
+        font-size: 48px;
+    }
+}
+
+.mo-places {
+    @extend .mo-head;
+    top: $mo-height/1.25;
+    text-align: left;
+    width: 95%;
+    padding-left: 30px;
+}
+
+.place-item {
+    font-size: 24px;
+    padding-left: 35px;
+    position: relative;
+    .oi {
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        @include square(25px);
+    }
+}

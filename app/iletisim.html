@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    @import "head.html"
+    <title>DKY Anasayfa</title>
+</head>
+
+<body>
+    @import "header.html"
+    <div class="container-fluid no-pad">
+        <div id="iltMap" class="map ilt-map"> </div>
+    </div>
+    <div class="container-fluid no-pad merkez-ofis">
+        <div class="col-md-7 col-sm-12 col-xs-12 col-md-push-5 mo-inner">
+            <div class="col-sm-6 col-xs-12">
+                <div class="mo-head">
+                    <h2>MERKEZ OFİS
+                        <!--<span class="othersicon-clock oi"></span>-->
+                    </h2>
+                </div>
+            </div>
+            <div class="col-sm-6 col-xs-12">
+                <div class="mo-places">
+                    <div class="place-item">
+                        <span class="oi oi-pin"></span>
+                        <p>Cevizli D-100 Güney Yan yol Cad. No:13/33 Kartal Vizyon Sit. D</p>
+                    </div>
+                    <div class="place-item">
+                        <span class="oi oi-phone"></span>
+                        <p>0216 517 9 517</p>
+                    </div>
+                    <div class="place-item">
+                        <span class="oi oi-mail"></span>
+                        <p> <a href="mailto:info@dkyinsaat.com">info@dkyinsaat.com</a></p>
+                    </div>
+                    <div class="place-item">
+                        <span class="oi oi-clock"></span>
+                        <p>09:00 - 18:00</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="col-sm-6 col-xs-12">
+            <div class="satis-ofisleri">
+                <h2>SATIŞ OFİSLERİ</h2>
+                <div class="so-ofis">
+
+                    <h3>DKY ON KAĞITHANE</h3>
+                    <div>
+                        <p>Merkez Mh. Kemerburgaz Cd. No:74 Kağıthane / İstanbul</p>
+                    </div>
+                    <p>
+                        <span class="oi oi-phone"></span>
+                        <span>444 9 359</span>
+                        <span class="oi oi-clock"></span>
+                        <span>09:00 - 18:00</span>
+                        <span class="oi oi-pin"></span>
+                        <span>Haritada Göster</span>
+                    </p>
+                    <p>
+                        <a href="http://www.dkyon.com">
+                        <span class="oi oi-internet"></span>
+                        <span>www.dkyon.com</span>
+                        </a>
+                    </p>
+                </div>
+                <div class="so-ofis">
+
+                    <h3>DKY ADA KARTAL</h3>
+                    <div>
+                        <p>Cevizli D 100 Güney Yan Yol Cd. No:13 Vizyon Sitesi D Blok Kartal / İstanbul</p>
+                    </div>
+                    <p>
+                        <span class="oi oi-phone"></span>
+                        <span>444 9 359</span>
+                        <span class="oi oi-clock"></span>
+                        <span>09:00 - 18:00</span>
+                        <span class="oi oi-pin"></span>
+                        <span>Haritada Göster</span>
+                    </p>
+                    <p>
+                        <a href="http://www.dkyon.com">
+                        <span class="oi oi-internet"></span>
+                        <span>www.dkyon.com</span>
+                        </a>
+                    </p>
+                </div>
+                <div class="so-ofis">
+
+                    <h3>DKY ON KAĞITHANE</h3>
+                    <div>
+                        <p>Merkez Mh. Kemerburgaz Cd. No:74 Kağıthane / İstanbul</p>
+                    </div>
+                    <p>
+                        <span class="oi oi-phone"></span>
+                        <span>444 9 359</span>
+                        <span class="oi oi-clock"></span>
+                        <span>09:00 - 18:00</span>
+                        <span class="oi oi-pin"></span>
+                        <span>Haritada Göster</span>
+                    </p>
+                    <p>
+                        <a href="http://www.dkyon.com">
+                        <span class="oi oi-internet"></span>
+                        <span>www.dkyon.com</span>
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB2V7XQtDZSOvcJzylGchYrL8nqzfsTsFg&libraries=places"></script>
+    @import "footer.html"
+    <script>
+        var iltMapOpt = {
+            styles: stls,
+            zoom: 12,
+            scrollwheel: false,
+            center: new google.maps.LatLng(dkyVizyon[0][1], dkyVizyon[0][2]),
+            mapTypeId: google.maps.MapTypeId.ROADMAP
+        };
+
+        var iltMap = new google.maps.Map(document.getElementById('iltMap'), iltMapOpt);
+        var marker2 = new google.maps.Marker({
+            position: new google.maps.LatLng(dkyVizyon[0][1], dkyVizyon[0][2]),
+            map: iltMap,
+            animation: google.maps.Animation.DROP,
+            icon: new google.maps.MarkerImage(dkyVizyon[0][3])
+        });
+        var wayDir2 = 'https://www.google.com.tr/maps/dir//' + dkyVizyon[0][1] + ',' + dkyVizyon[0][2];
+        var infoWindow2 = new SnazzyInfoWindow({
+            marker: marker2,
+            content: '<div class="mi-content"><div class="mi-image" style="background-image:url(' + dkyVizyon[0][5] + ');" ></div><a target="_blank" href="' + wayDir2 + '" class="mi-tarif">Yol Tarifi</a><a href="' + dkyVizyon[0][4] + '" class="mi-detay">Proje Detayı</a></div>',
+            wrapperClass: 'iw-container',
+            placement: 'top'
+        });
+    </script>
+
+</body>
+
+</html>

@@ -4,6 +4,13 @@
     height: 800px;
     margin: 0;
     right: -15px;
+<<<<<<< HEAD
+    &.ilt-map{
+        right: 0;
+        height: 650px;
+    }
+=======
+>>>>>>> GlobMaster/GlobMaster
 }
 
 .har-projs {
@@ -64,6 +71,13 @@
     animation-iteration-count: 3;
     animation-delay: .5s;*/
     // left: -100px;
+<<<<<<< HEAD
+    #iltMap & {
+        opacity: 1;
+        top:-50px;        
+    }
+=======
+>>>>>>> GlobMaster/GlobMaster
     top: -75px;
     opacity: 0;
     transition-delay: .3s;

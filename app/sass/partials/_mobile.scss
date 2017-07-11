@@ -47,6 +47,17 @@
 
 //1024< (Laptop)
 @media screen and (max-width: 1024px) {
+<<<<<<< HEAD
+    body .b-talep-form {
+        right: -15px;
+        padding: 7px 30px;
+        font-size: 14px;
+        &:hover {
+            right: 0;
+        }
+    }
+=======
+>>>>>>> GlobMaster/GlobMaster
     .tp-projects-top {
         @include hero-proj($height: 445px);
         .mask {
@@ -170,10 +181,13 @@
             display: none;
         }
     }
+<<<<<<< HEAD
+=======
     body .b-talep-form {
         bottom: 20px;
         right: 20px;
     }
+>>>>>>> GlobMaster/GlobMaster
     body .hero-proj {
         width: 70%;
         left: 50%;
@@ -268,6 +282,20 @@
                 text-align: center;
             }
         }
+<<<<<<< HEAD
+        .b-talep-form {
+            transform-origin: center bottom;
+            transform: rotate(0deg);
+            bottom: -15px;
+            right: 0;
+            left: 0;
+            top: auto;
+            font-size: 18px;
+            text-align: center;
+            &:hover {
+                bottom: 0px;
+            }
+=======
         .swiper-container .b-talep-form {
             display: none;
         }
@@ -281,6 +309,7 @@
             text-align: center;
             background-image: none;
             padding: 10px;
+>>>>>>> GlobMaster/GlobMaster
         }
         .scroll-down-i {
             display: none !important;
