@@ -1,0 +1,115 @@
+.krtl-header {
+    @extend .header;
+    padding: 30px;
+    background: rgba(#fff, .7);
+    .languages,
+    .menu-toggle,
+    .tel {
+        @include vertical-align(absolute);
+    }
+    .menu-toggle {
+        height: 30px;
+    }
+    &.static {
+        .menu-toggle {
+            top: 60px;
+        }
+    }
+    .tel {
+        font-family: $f-f-flexobold;
+        font-size: 36px;
+        right: 150px;
+    }
+}
+
+.panorama {
+    position: absolute;
+    top: 0;
+    left: 300px;
+    font-size: 18px;
+    .oi {
+        font-size: $panorama-width;
+    }
+    &,
+    .pt {
+        @include vertical-align(absolute);
+    }
+    .pt {
+        left: $panorama-width+15px;
+        font-size: $panorama-width/2.25;
+        font-family: $font-family-sans-serif;
+    }
+}
+
+.krtl-hero {
+    @extend %hero;
+    .krtl-form-btn {
+        position: absolute;
+        bottom: 60px;
+        right: 7%;
+        font-size: 28px;
+        span,
+        i {
+            transition: all ease .3s;
+        }
+        span {
+            @include dashed-border();
+            color: #ffffff;
+            font-family: $font-family-sans-serif;
+            padding-right: 100px;
+        }
+        i {
+            border-radius: 100px;
+            background-color: #fff;
+            padding: 30px;
+            color: $gray-darker;
+            @include vertical-align(absolute);
+            right: 0;
+            line-height: 0;
+            font-size: 38px;
+        }
+        &:hover {
+            i {
+                background-color: $main-color;
+                color: #ffffff;
+            }
+            span {
+                background-color: $main-color;
+            }
+        }
+    }
+}
+
+section.krtl-tanitim {
+    padding: 60px 0;
+    .krtl-tnt-aciklama {
+        background-color: $krtl-color;
+        .head {
+            text-align: center;
+            padding: 0;
+            margin: 30px;
+            li {
+                text-align: center;
+                display: inline;
+                a {
+                    display: inline-block;
+                    color: #fff;
+                    font-family: $f-f-flexobold;
+                    font-size: 18px;
+                    margin-right: 15px;
+                    margin-left: 15px;
+                    position: relative;
+                    &:after {
+                        content: "";
+                        border-right: 2px solid #fff;
+                        height: 50%;
+                        position: absolute;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        right: -17px;
+                    }
+                }
+            }
+        }
+    }
+}

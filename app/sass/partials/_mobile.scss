@@ -52,17 +52,20 @@
     .side-menu a.active:after {
         top: 16px;
     }
+    .map {
+        max-height: 636px;
+    }
 }
 
 //1024< (Laptop)
 @media screen and (max-width: 1024px) {
-    .hide-in-mobil{
+    .hide-in-mobil {
         display: none;
     }
-    .show-in-mobil{
+    .show-in-mobil {
         display: block;
     }
-    .map.ilt-map{
+    .map.ilt-map {
         display: none;
     }
     .merkez-ofis {
@@ -75,8 +78,8 @@
         width: 100%;
     }
     body .b-talep-form {
-        right: -15px;
-        padding: 7px 30px;
+        right: -10px;
+        //padding: 7px 30px;
         font-size: 14px;
         &:hover {
             right: 0;
@@ -252,7 +255,7 @@
 
 //425< (All Phones)
 @media screen and (max-width: 425px) {
-  body .bt-form  label {
+    body .bt-form label {
         margin-left: 20vmin;
         width: 60vmin;
         font-size: 14px

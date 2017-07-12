@@ -6,6 +6,7 @@ $('.menu-toggle').click(function () {
   $('.menu').toggleClass('opened');
   $(this).toggleClass('active');
   $('.header').toggleClass('static'); 
+  $('.krtl-header').toggleClass('static'); 
 });
 
 //Sliders
@@ -51,6 +52,11 @@ var swiperOduller = new Swiper('.odul-slide-container', {
   //prevButton: '.swiper-button-prev',
   autoplay: 3000,
   loop: true
+});
+var swiperKrtl = new Swiper('.krtl-slider-container', {
+  speed: 400,
+  nextButton: '.swiper-krtl-btn-next',
+  prevButton: '.swiper-krtl-btn-prev',
 });
 
 var swiperHaberler = new Swiper('.basin-slide-container', {

@@ -73,9 +73,24 @@
     content: "\f105";
 }
 
+.oi-chat:before {
+    content: "\f106";
+}
+
+.oi-360:before {
+    content: "\f107";
+}
+
+.oi-talepform:before {
+    content: "\f108";
+}
+
 $font-oi-internet: "\f100";
 $font-oi-cell-phone: "\f101";
 $font-oi-black-back-closed-envelope-shape: "\f102";
 $font-oi-placeholder-1: "\f103";
 $font-oi-clock: "\f104";
 $font-oi-arrows: "\f105";
+$font-oi-chat: "\f106";
+$font-oi-360: "\f107";
+$font-oi-talepform: "\f108";
