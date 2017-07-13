@@ -3869,6 +3869,10 @@ section.krtl-tanitim {
         font-family: "flexoregular", "Helvetica Neue", Helvetica, Arial, sans-serif;
         font-size: 24px; }
 
+section.kartal-galeri {
+  padding: 80px;
+  background: #cac1b0; }
+
 @media screen and (max-width: 1440px) {
   .mo-head, .mo-places {
     top: 547.82609px; }
