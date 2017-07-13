@@ -65,6 +65,9 @@
     .show-in-mobil {
         display: block;
     }
+    .tel.show-in-mobil{
+        display: none;
+    }
     .map.ilt-map {
         display: none;
     }
@@ -255,6 +258,9 @@
 
 //425< (All Phones)
 @media screen and (max-width: 425px) {
+    .tel.show-in-mobil{
+        display: block;
+    }
     body .bt-form label {
         margin-left: 20vmin;
         width: 60vmin;

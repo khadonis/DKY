@@ -7,6 +7,7 @@
     overflow: hidden;
     img {
         width: 100%;
+        display: block;
     }
 }
 
@@ -74,6 +75,46 @@
     padding-top: 30px;
     margin-top: -30px;
     background-color: #fff;
+    img {
+        width: auto;
+        height: 125px;
+        margin: 0 auto;
+    }
+    .golge {
+        display: block;
+        &:hover {
+            &:after,
+            &:before {
+                border-width: 2px;
+            }
+        }
+        &:after,
+        &:before {
+            content: '';
+            position: absolute;
+            transition: all ease .2s;
+            width: 90px;
+            height: 90px;
+            display: block;
+            z-index: -1;
+        }
+        &:after {
+            box-shadow: rgba(0, 0, 0, .5) 2px 2px 5px;
+            top: 38px;
+            left: 177px;
+            border-bottom: 0 solid $sec-color;
+            border-right: 0 solid $sec-color;
+        }
+        &:before {
+            box-shadow: rgba(0, 0, 0, .5) -2px -2px 5px;
+            top: auto;
+            left: auto;
+            bottom: 178px;
+            right: 192px;
+            border-top: 0 solid $sec-color;
+            border-left: 0 solid $sec-color;
+        }
+    }
     h3 {
         font-family: $font-family-sans-serif;
         text-align: left;
@@ -81,7 +122,8 @@
         min-height: 70px;
     }
     .swiper-slide {
-        padding: 0 30px 0 0;
+        padding: 0 15px 0 0;
+        background: transparent;
         &:after {
             content: '\f142';
             top: 15%;
@@ -193,7 +235,8 @@
     border-radius: 20px;
 }
 
-.krtl-slider-container {
+.krtl-slider-container,
+.krtl-video-slider-container {
     @extend .swiper-container;
     .swiper-container,
     .swiper-slide {
@@ -201,6 +244,9 @@
         min-height: 450px;
         background: transparent;
     }
+}
+.krtl-slider-container{
+    max-height: 450px;
 }
 
 .swiper-krtl-btn-next,
@@ -213,37 +259,60 @@
     color: #fff;
     z-index: 3;
     cursor: pointer;
-    transition:all ease .3s;
-    &.swiper-button-disabled{
+    transition: all ease .3s;
+    &.swiper-button-disabled {
         background-color: $gray-light;
     }
-    &:after{
-        content:'';
+    &:after {
+        content: '';
         position: absolute;
         top: 25px;
         left: 17px;
-        
     }
 }
 
 .swiper-krtl-btn-prev {
     left: auto;
-    right: 90px;
-    &:after{
-        @include ucgen(17px, 2px, 0px, 0, 2px, -45deg);
+    right: 82px;
+    &:after {
+        @include ucgen(17px,
+        2px,
+        0px,
+        0,
+        2px,
+        -45deg);
         border-color: #fff;
         border-style: solid;
         transform-origin: left top;
     }
 }
+
 .swiper-krtl-btn-next {
     left: auto;
     right: 30px;
-    &:after{
-        @include ucgen(17px, 2px, 0px, 2px, 0, 45deg);
+    &:after {
+        @include ucgen(17px,
+        2px,
+        0px,
+        2px,
+        0,
+        45deg);
         border-color: #fff;
         border-style: solid;
         transform-origin: right top;
-        
+    }
+}
+
+.krtl-video-slider-container {
+    .swiper-slide {
+        background: {
+            size: cover;
+            position: center center;
+            repeat: no-repeat;
+        }
+    }
+    iframe {
+        width: 100%;
+        height: 450px;
     }
 }
