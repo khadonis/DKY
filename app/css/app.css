@@ -3018,7 +3018,11 @@ footer {
     font-size: 18px;
     margin-bottom: 0; }
 
-.swiper-container, .krtl-slider-container,
+.swiper-container, .krtl-slider-container, .kartal-galeri-slider-container,
+.kg-mimari-slider-container,
+.kg-icmimari-slider-container,
+.kg-odaire-slider-container, .plans-slider-container,
+.plan-1-slide-container, .plan-2-slide-container, .plan-3-slide-container, .plan-4-slide-container,
 .krtl-video-slider-container,
 .odul-slide-container,
 .basin-slide-container,
@@ -3026,7 +3030,11 @@ footer {
   width: 100%;
   height: 100%;
   overflow: hidden; }
-  .swiper-container img, .krtl-slider-container img,
+  .swiper-container img, .krtl-slider-container img, .kartal-galeri-slider-container img,
+  .kg-mimari-slider-container img,
+  .kg-icmimari-slider-container img,
+  .kg-odaire-slider-container img, .plans-slider-container img,
+  .plan-1-slide-container img, .plan-2-slide-container img, .plan-3-slide-container img, .plan-4-slide-container img,
   .krtl-video-slider-container img,
   .odul-slide-container img, .basin-slide-container img,
   .basin-slide-container img {
@@ -3213,11 +3221,125 @@ footer {
   left: -5px;
   border-radius: 20px; }
 
-.krtl-slider-container .swiper-container, .krtl-slider-container .krtl-slider-container, .krtl-slider-container
+.krtl-slider-container .swiper-container, .kartal-galeri-slider-container .swiper-container,
+.kg-mimari-slider-container .swiper-container,
+.kg-icmimari-slider-container .swiper-container,
+.kg-odaire-slider-container .swiper-container, .plans-slider-container .swiper-container,
+.plan-1-slide-container .swiper-container, .plan-2-slide-container .swiper-container, .plan-3-slide-container .swiper-container, .plan-4-slide-container .swiper-container, .krtl-slider-container .krtl-slider-container, .kartal-galeri-slider-container .krtl-slider-container,
+.kg-mimari-slider-container .krtl-slider-container,
+.kg-icmimari-slider-container .krtl-slider-container,
+.kg-odaire-slider-container .krtl-slider-container, .plans-slider-container .krtl-slider-container,
+.plan-1-slide-container .krtl-slider-container, .plan-2-slide-container .krtl-slider-container, .plan-3-slide-container .krtl-slider-container, .plan-4-slide-container .krtl-slider-container, .krtl-slider-container .kartal-galeri-slider-container, .kartal-galeri-slider-container .kartal-galeri-slider-container,
+.kg-mimari-slider-container .kartal-galeri-slider-container,
+.kg-icmimari-slider-container .kartal-galeri-slider-container,
+.kg-odaire-slider-container .kartal-galeri-slider-container, .plans-slider-container .kartal-galeri-slider-container,
+.plan-1-slide-container .kartal-galeri-slider-container, .plan-2-slide-container .kartal-galeri-slider-container, .plan-3-slide-container .kartal-galeri-slider-container, .plan-4-slide-container .kartal-galeri-slider-container, .krtl-slider-container
+.kg-mimari-slider-container, .kartal-galeri-slider-container
+.kg-mimari-slider-container,
+.kg-mimari-slider-container
+.kg-mimari-slider-container,
+.kg-icmimari-slider-container
+.kg-mimari-slider-container,
+.kg-odaire-slider-container
+.kg-mimari-slider-container, .plans-slider-container
+.kg-mimari-slider-container,
+.plan-1-slide-container
+.kg-mimari-slider-container, .plan-2-slide-container
+.kg-mimari-slider-container, .plan-3-slide-container
+.kg-mimari-slider-container, .plan-4-slide-container
+.kg-mimari-slider-container, .krtl-slider-container
+.kg-icmimari-slider-container, .kartal-galeri-slider-container
+.kg-icmimari-slider-container,
+.kg-mimari-slider-container
+.kg-icmimari-slider-container,
+.kg-icmimari-slider-container
+.kg-icmimari-slider-container,
+.kg-odaire-slider-container
+.kg-icmimari-slider-container, .plans-slider-container
+.kg-icmimari-slider-container,
+.plan-1-slide-container
+.kg-icmimari-slider-container, .plan-2-slide-container
+.kg-icmimari-slider-container, .plan-3-slide-container
+.kg-icmimari-slider-container, .plan-4-slide-container
+.kg-icmimari-slider-container, .krtl-slider-container
+.kg-odaire-slider-container, .kartal-galeri-slider-container
+.kg-odaire-slider-container,
+.kg-mimari-slider-container
+.kg-odaire-slider-container,
+.kg-icmimari-slider-container
+.kg-odaire-slider-container,
+.kg-odaire-slider-container
+.kg-odaire-slider-container, .plans-slider-container
+.kg-odaire-slider-container,
+.plan-1-slide-container
+.kg-odaire-slider-container, .plan-2-slide-container
+.kg-odaire-slider-container, .plan-3-slide-container
+.kg-odaire-slider-container, .plan-4-slide-container
+.kg-odaire-slider-container, .krtl-slider-container .plans-slider-container, .kartal-galeri-slider-container .plans-slider-container,
+.kg-mimari-slider-container .plans-slider-container,
+.kg-icmimari-slider-container .plans-slider-container,
+.kg-odaire-slider-container .plans-slider-container, .plans-slider-container .plans-slider-container,
+.plan-1-slide-container .plans-slider-container, .plan-2-slide-container .plans-slider-container, .plan-3-slide-container .plans-slider-container, .plan-4-slide-container .plans-slider-container, .krtl-slider-container
+.plan-1-slide-container, .kartal-galeri-slider-container
+.plan-1-slide-container,
+.kg-mimari-slider-container
+.plan-1-slide-container,
+.kg-icmimari-slider-container
+.plan-1-slide-container,
+.kg-odaire-slider-container
+.plan-1-slide-container, .plans-slider-container
+.plan-1-slide-container,
+.plan-1-slide-container
+.plan-1-slide-container, .plan-2-slide-container
+.plan-1-slide-container, .plan-3-slide-container
+.plan-1-slide-container, .plan-4-slide-container
+.plan-1-slide-container, .krtl-slider-container .plan-2-slide-container, .kartal-galeri-slider-container .plan-2-slide-container,
+.kg-mimari-slider-container .plan-2-slide-container,
+.kg-icmimari-slider-container .plan-2-slide-container,
+.kg-odaire-slider-container .plan-2-slide-container, .plans-slider-container .plan-2-slide-container,
+.plan-1-slide-container .plan-2-slide-container, .plan-2-slide-container .plan-2-slide-container, .plan-3-slide-container .plan-2-slide-container, .plan-4-slide-container .plan-2-slide-container, .krtl-slider-container .plan-3-slide-container, .kartal-galeri-slider-container .plan-3-slide-container,
+.kg-mimari-slider-container .plan-3-slide-container,
+.kg-icmimari-slider-container .plan-3-slide-container,
+.kg-odaire-slider-container .plan-3-slide-container, .plans-slider-container .plan-3-slide-container,
+.plan-1-slide-container .plan-3-slide-container, .plan-2-slide-container .plan-3-slide-container, .plan-3-slide-container .plan-3-slide-container, .plan-4-slide-container .plan-3-slide-container, .krtl-slider-container .plan-4-slide-container, .kartal-galeri-slider-container .plan-4-slide-container,
+.kg-mimari-slider-container .plan-4-slide-container,
+.kg-icmimari-slider-container .plan-4-slide-container,
+.kg-odaire-slider-container .plan-4-slide-container, .plans-slider-container .plan-4-slide-container,
+.plan-1-slide-container .plan-4-slide-container, .plan-2-slide-container .plan-4-slide-container, .plan-3-slide-container .plan-4-slide-container, .plan-4-slide-container .plan-4-slide-container, .krtl-slider-container
+.krtl-video-slider-container, .kartal-galeri-slider-container
 .krtl-video-slider-container,
-.krtl-slider-container .swiper-slide,
+.kg-mimari-slider-container
+.krtl-video-slider-container,
+.kg-icmimari-slider-container
+.krtl-video-slider-container,
+.kg-odaire-slider-container
+.krtl-video-slider-container, .plans-slider-container
+.krtl-video-slider-container,
+.plan-1-slide-container
+.krtl-video-slider-container, .plan-2-slide-container
+.krtl-video-slider-container, .plan-3-slide-container
+.krtl-video-slider-container, .plan-4-slide-container
+.krtl-video-slider-container,
+.krtl-slider-container .swiper-slide, .kartal-galeri-slider-container .swiper-slide,
+.kg-mimari-slider-container .swiper-slide,
+.kg-icmimari-slider-container .swiper-slide,
+.kg-odaire-slider-container .swiper-slide, .plans-slider-container .swiper-slide,
+.plan-1-slide-container .swiper-slide, .plan-2-slide-container .swiper-slide, .plan-3-slide-container .swiper-slide, .plan-4-slide-container .swiper-slide,
 .krtl-video-slider-container .swiper-container,
 .krtl-video-slider-container .krtl-slider-container,
+.krtl-video-slider-container .kartal-galeri-slider-container,
+.krtl-video-slider-container
+.kg-mimari-slider-container,
+.krtl-video-slider-container
+.kg-icmimari-slider-container,
+.krtl-video-slider-container
+.kg-odaire-slider-container,
+.krtl-video-slider-container .plans-slider-container,
+.krtl-video-slider-container
+.plan-1-slide-container,
+.krtl-video-slider-container .plan-2-slide-container,
+.krtl-video-slider-container .plan-3-slide-container,
+.krtl-video-slider-container .plan-4-slide-container,
 .krtl-video-slider-container
 .krtl-video-slider-container,
 .krtl-video-slider-container .swiper-slide {
@@ -3226,11 +3348,17 @@ footer {
   min-height: 450px;
   background: transparent; }
 
-.krtl-slider-container {
+.krtl-slider-container, .kartal-galeri-slider-container,
+.kg-mimari-slider-container,
+.kg-icmimari-slider-container,
+.kg-odaire-slider-container, .plans-slider-container,
+.plan-1-slide-container, .plan-2-slide-container, .plan-3-slide-container, .plan-4-slide-container {
   max-height: 450px; }
 
 .swiper-krtl-btn-next,
-.swiper-krtl-btn-prev {
+.swiper-krtl-btn-prev,
+.kg-btn-prev,
+.kg-btn-next {
   position: absolute;
   top: auto;
   bottom: 30px;
@@ -3243,19 +3371,25 @@ footer {
   -webkit-transition: all ease .3s;
   transition: all ease .3s; }
   .swiper-krtl-btn-next.swiper-button-disabled,
-  .swiper-krtl-btn-prev.swiper-button-disabled {
+  .swiper-krtl-btn-prev.swiper-button-disabled,
+  .kg-btn-prev.swiper-button-disabled,
+  .kg-btn-next.swiper-button-disabled {
     background-color: #777777; }
   .swiper-krtl-btn-next:after,
-  .swiper-krtl-btn-prev:after {
+  .swiper-krtl-btn-prev:after,
+  .kg-btn-prev:after,
+  .kg-btn-next:after {
     content: '';
     position: absolute;
     top: 25px;
     left: 17px; }
 
-.swiper-krtl-btn-prev {
+.swiper-krtl-btn-prev,
+.kg-btn-prev {
   left: auto;
   right: 82px; }
-  .swiper-krtl-btn-prev:after {
+  .swiper-krtl-btn-prev:after,
+  .kg-btn-prev:after {
     content: '';
     position: absolute;
     width: 17px;
@@ -3273,10 +3407,12 @@ footer {
     -webkit-transform-origin: left top;
             transform-origin: left top; }
 
-.swiper-krtl-btn-next {
+.swiper-krtl-btn-next,
+.kg-btn-next {
   left: auto;
   right: 30px; }
-  .swiper-krtl-btn-next:after {
+  .swiper-krtl-btn-next:after,
+  .kg-btn-next:after {
     content: '';
     position: absolute;
     width: 17px;
@@ -3294,18 +3430,78 @@ footer {
     -webkit-transform-origin: right top;
             transform-origin: right top; }
 
-.krtl-video-slider-container .swiper-slide {
+.krtl-video-slider-container .swiper-slide,
+.kartal-galeri-slider-container .swiper-slide {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat; }
 
-.krtl-video-slider-container iframe {
+.krtl-video-slider-container iframe,
+.kartal-galeri-slider-container iframe {
   width: 100%;
   height: 450px; }
 
+.kartal-galeri-slider-container,
+.kg-mimari-slider-container,
+.kg-icmimari-slider-container,
+.kg-odaire-slider-container {
+  padding: 80px 40px;
+  background-color: #fff;
+  position: relative;
+  min-height: 600px;
+  overflow: hidden; }
+  .kartal-galeri-slider-container .swiper-slide,
+  .kg-mimari-slider-container .swiper-slide,
+  .kg-icmimari-slider-container .swiper-slide,
+  .kg-odaire-slider-container .swiper-slide {
+    width: 100%;
+    min-height: 450px; }
+  .kartal-galeri-slider-container .kg-btn-prev,
+  .kartal-galeri-slider-container .kg-btn-next,
+  .kg-mimari-slider-container .kg-btn-prev,
+  .kg-mimari-slider-container .kg-btn-next,
+  .kg-icmimari-slider-container .kg-btn-prev,
+  .kg-icmimari-slider-container .kg-btn-next,
+  .kg-odaire-slider-container .kg-btn-prev,
+  .kg-odaire-slider-container .kg-btn-next {
+    top: 15px;
+    bottom: auto; }
+  .kartal-galeri-slider-container .kg-btn-prev,
+  .kg-mimari-slider-container .kg-btn-prev,
+  .kg-icmimari-slider-container .kg-btn-prev,
+  .kg-odaire-slider-container .kg-btn-prev {
+    right: 92px; }
+  .kartal-galeri-slider-container .kg-btn-next,
+  .kg-mimari-slider-container .kg-btn-next,
+  .kg-icmimari-slider-container .kg-btn-next,
+  .kg-odaire-slider-container .kg-btn-next {
+    right: 40px; }
+
+.kg-mimari-slider-container,
+.kg-icmimari-slider-container,
+.kg-odaire-slider-container {
+  padding: 0; }
+
+.plans-slider-container,
+.plan-1-slide-container, .plan-2-slide-container, .plan-3-slide-container, .plan-4-slide-container {
+  position: relative;
+  min-height: 600px;
+  overflow: hidden; }
+  .plans-slider-container .swiper-slide,
+  .plan-1-slide-container .swiper-slide, .plan-2-slide-container .swiper-slide, .plan-3-slide-container .swiper-slide, .plan-4-slide-container .swiper-slide {
+    width: 100%;
+    min-height: 600px; }
+  .plans-slider-container .room-images,
+  .plan-1-slide-container .room-images, .plan-2-slide-container .room-images, .plan-3-slide-container .room-images, .plan-4-slide-container .room-images {
+    overflow: hidden; }
+
+.plan-1-slide-container .swiper-slide, .plan-2-slide-container .swiper-slide, .plan-3-slide-container .swiper-slide, .plan-4-slide-container .swiper-slide {
+  min-height: 450px; }
+
 a {
   -webkit-transition: all ease .2s;
-  transition: all ease .2s; }
+  transition: all ease .2s;
+  cursor: pointer; }
 
 body {
   min-height: 600px; }
@@ -3778,40 +3974,42 @@ ul {
     font-size: 24.88889px;
     font-family: "flexoregular", "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
-.krtl-hero .krtl-form-btn {
-  position: absolute;
-  bottom: 60px;
-  right: 7%;
-  font-size: 28px; }
-  .krtl-hero .krtl-form-btn span,
-  .krtl-hero .krtl-form-btn i {
-    -webkit-transition: all ease .3s;
-    transition: all ease .3s; }
-  .krtl-hero .krtl-form-btn span {
-    border-radius: 120px;
-    border: 3px dashed #fff;
-    padding: 5px 20px;
-    margin: 10px;
-    color: #ffffff;
-    font-family: "flexoregular", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    padding-right: 100px; }
-  .krtl-hero .krtl-form-btn i {
-    border-radius: 100px;
-    background-color: #fff;
-    padding: 30px;
-    color: #222222;
-    position: absolute;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-    transform: translateY(-50%);
-    right: 0;
-    line-height: 0;
-    font-size: 38px; }
-  .krtl-hero .krtl-form-btn:hover i {
-    background-color: #1d2b3e;
-    color: #ffffff; }
-  .krtl-hero .krtl-form-btn:hover span {
-    background-color: #1d2b3e; }
+.krtl-hero {
+  /* .krtl-form-btn {
+        position: absolute;
+        bottom: 60px;
+        right: 7%;
+        font-size: 28px;
+        span,
+        i {
+            transition: all ease .3s;
+        }
+        span {
+            @include dashed-border();
+            color: #ffffff;
+            font-family: $font-family-sans-serif;
+            padding-right: 100px;
+        }
+        i {
+            border-radius: 100px;
+            background-color: #fff;
+            padding: 30px;
+            color: $gray-darker;
+            @include vertical-align(absolute);
+            right: 0;
+            line-height: 0;
+            font-size: 38px;
+        }
+        &:hover {
+            i {
+                background-color: $main-color;
+                color: #ffffff;
+            }
+            span {
+                background-color: $main-color;
+            }
+        }
+    } */ }
 
 section.krtl-tanitim {
   padding: 80px 0; }
@@ -3872,6 +4070,120 @@ section.krtl-tanitim {
 section.kartal-galeri {
   padding: 80px;
   background: #cac1b0; }
+  section.kartal-galeri .head {
+    text-align: center;
+    position: relative; }
+    section.kartal-galeri .head div:last-child a {
+      border: none; }
+    section.kartal-galeri .head a {
+      background-color: #1d2b3e;
+      border-right: solid 1px #fff;
+      color: #fff;
+      width: 100%;
+      display: block;
+      font-size: 26px;
+      padding: 30px 0; }
+      section.kartal-galeri .head a:hover, section.kartal-galeri .head a:active, section.kartal-galeri .head a.active {
+        background-color: #777777; }
+    section.kartal-galeri .head:after {
+      content: 'GALERİ';
+      font-size: 150px;
+      color: #fff;
+      -webkit-transform: rotate(-90deg);
+              transform: rotate(-90deg);
+      -webkit-transform-origin: top left;
+              transform-origin: top left;
+      position: absolute;
+      font-family: "flexobold", "flexoregular", "Helvetica Neue", Times, serif;
+      left: -158px;
+      top: 706px; }
+
+section.krtl-plans {
+  padding: 80px 40px; }
+  section.krtl-plans .container {
+    position: relative;
+    background-color: #eeeeee; }
+  section.krtl-plans .side-txt {
+    font-size: 120px;
+    color: #cac1b0;
+    -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+    -webkit-transform-origin: top left;
+            transform-origin: top left;
+    position: absolute;
+    left: -124px;
+    top: 610px; }
+  section.krtl-plans .plans-menu {
+    background-color: #cac1b0;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    min-height: 600px; }
+    section.krtl-plans .plans-menu li a {
+      height: 150px;
+      font-size: 32px;
+      padding: 50px 15px;
+      border-bottom: 1px solid #fff;
+      color: #fff;
+      background-color: #cac1b0;
+      display: block;
+      text-align: center;
+      position: relative; }
+      section.krtl-plans .plans-menu li a:hover, section.krtl-plans .plans-menu li a:active, section.krtl-plans .plans-menu li a.active {
+        background-color: #777777; }
+        section.krtl-plans .plans-menu li a:hover:after, section.krtl-plans .plans-menu li a:active:after, section.krtl-plans .plans-menu li a.active:after {
+          content: '';
+          position: absolute;
+          top: 50%;
+          -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+          content: '';
+          position: absolute;
+          width: 12px;
+          height: 12px;
+          border: solid #222222;
+          border-top-width: 2px;
+          border-bottom-width: 0;
+          border-right-width: 0;
+          border-left-width: 2px;
+          -webkit-transform: rotate(-45deg);
+                  transform: rotate(-45deg);
+          background-color: transparent;
+          left: -6px;
+          border-color: #777777;
+          background-color: #777777; }
+    section.krtl-plans .plans-menu li:last-child a {
+      border: none; }
+  section.krtl-plans .rooms li, section.krtl-plans .rooms2 li, section.krtl-plans .rooms3 li, section.krtl-plans .rooms4 li {
+    text-align: left; }
+    section.krtl-plans .rooms li a, section.krtl-plans .rooms2 li a, section.krtl-plans .rooms3 li a, section.krtl-plans .rooms4 li a {
+      width: 90%;
+      display: block; }
+      section.krtl-plans .rooms li a .room-meters, section.krtl-plans .rooms2 li a .room-meters, section.krtl-plans .rooms3 li a .room-meters, section.krtl-plans .rooms4 li a .room-meters {
+        text-align: right;
+        float: right; }
+  section.krtl-plans .room-images {
+    border-right: 1px solid #fff; }
+    section.krtl-plans .room-images img {
+      position: absolute;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      transform: translateY(-50%);
+      width: 90%; }
+  section.krtl-plans .sizes h3 {
+    color: #cac1b0;
+    font-size: 64px;
+    font-family: "flexobold", "flexoregular", "Helvetica Neue", Times, serif; }
+  section.krtl-plans .sizes h4 {
+    font-size: 32px; }
+  section.krtl-plans .desc {
+    margin-top: 30px; }
+    section.krtl-plans .desc h5 {
+      font-size: 24px;
+      color: #cac1b0; }
+      section.krtl-plans .desc h5,
+      section.krtl-plans .desc h5 + p {
+        text-align: left; }
 
 @media screen and (max-width: 1440px) {
   .mo-head, .mo-places {
@@ -4126,10 +4438,18 @@ section.kartal-galeri {
       min-height: 1px;
       padding-left: 15px;
       padding-right: 15px; }
-  .swiper-container, .krtl-slider-container,
+  .swiper-container, .krtl-slider-container, .kartal-galeri-slider-container,
+  .kg-mimari-slider-container,
+  .kg-icmimari-slider-container,
+  .kg-odaire-slider-container, .plans-slider-container,
+  .plan-1-slide-container, .plan-2-slide-container, .plan-3-slide-container, .plan-4-slide-container,
   .krtl-video-slider-container {
     height: 420px; }
-    .swiper-container .scroll-down-i, .krtl-slider-container .scroll-down-i,
+    .swiper-container .scroll-down-i, .krtl-slider-container .scroll-down-i, .kartal-galeri-slider-container .scroll-down-i,
+    .kg-mimari-slider-container .scroll-down-i,
+    .kg-icmimari-slider-container .scroll-down-i,
+    .kg-odaire-slider-container .scroll-down-i, .plans-slider-container .scroll-down-i,
+    .plan-1-slide-container .scroll-down-i, .plan-2-slide-container .scroll-down-i, .plan-3-slide-container .scroll-down-i, .plan-4-slide-container .scroll-down-i,
     .krtl-video-slider-container .scroll-down-i {
       display: none; }
   body .hero-proj {
@@ -4283,7 +4603,11 @@ section.kartal-galeri {
   body .menu .navig, body .search .navig {
     top: 40%;
     padding: 0; }
-  body .swiper-container, body .krtl-slider-container, body
+  body .swiper-container, body .krtl-slider-container, body .kartal-galeri-slider-container, body
+  .kg-mimari-slider-container, body
+  .kg-icmimari-slider-container, body
+  .kg-odaire-slider-container, body .plans-slider-container, body
+  .plan-1-slide-container, body .plan-2-slide-container, body .plan-3-slide-container, body .plan-4-slide-container, body
   .krtl-video-slider-container,
   body .odul-slide-container,
   body .basin-slide-container,

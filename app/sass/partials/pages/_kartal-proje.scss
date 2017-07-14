@@ -43,7 +43,7 @@
 
 .krtl-hero {
     @extend %hero;
-    .krtl-form-btn {
+    /* .krtl-form-btn {
         position: absolute;
         bottom: 60px;
         right: 7%;
@@ -77,7 +77,7 @@
                 background-color: $main-color;
             }
         }
-    }
+    } */
 }
 
 section.krtl-tanitim {
@@ -152,7 +152,135 @@ section.krtl-tanitim {
         }
     }
 }
-section.kartal-galeri{
+
+section.kartal-galeri {
     padding: $section-padding;
     background: $krtl-color;
+    .head {
+        text-align: center;
+        position: relative;
+        div:last-child a {
+            border: none;
+        }
+        a {
+            background-color: $main-color;
+            border-right: solid 1px #fff;
+            color: #fff;
+            width: 100%;
+            display: block;
+            font-size: 26px;
+            padding: 30px 0;
+            &:hover,
+            &:active,
+            &.active {
+                background-color: $gray-light;
+            }
+        }
+        &:after {
+            content: 'GALERİ';
+            font-size: 150px;
+            color: #fff;
+            transform: rotate(-90deg);
+            transform-origin: top left;
+            position: absolute;
+            font-family: $f-f-flexobold;
+            left: -158px;
+            top: 706px;
+        }
+    }
+}
+
+section.krtl-plans {
+    padding: $section-padding $section-padding/2;
+    .container {
+        position: relative;
+        background-color: $gray-lighter;
+    }
+    .side-txt {
+        font-size: 120px;
+        color: $krtl-color;
+        transform: rotate(-90deg);
+        transform-origin: top left;
+        position: absolute;
+        left: -124px;
+        top: 610px;
+    }
+    .plans-menu {
+        background-color: $krtl-color;
+        padding: 0;
+        margin: 0;
+        position: relative;
+        min-height: 600px;
+        li {
+            a {
+                height: (600px) / 4;
+                font-size: 32px;
+                padding: 50px 15px;
+                border-bottom: 1px solid #fff;
+                color: #fff;
+                background-color: $krtl-color;
+                display: block;
+                text-align: center;
+                position: relative;
+                &:hover,
+                &:active,
+                &.active {
+                    background-color: $gray-light;
+                    &:after {
+                        content: '';
+                        @include vertical-align(absolute);
+                        @include ucgen(12px, 2px, 0, 0, 2px, -45deg);
+                        left: -6px;
+                        border-color: $gray-light;
+                        background-color: $gray-light;
+                    }
+                }
+            }
+            &:last-child a {
+                border: none;
+            }
+        }
+    }
+    .rooms, .rooms2, .rooms3, .rooms4 {
+        li {
+            text-align: left;
+            a {
+                width: 90%;
+                display: block;
+                .room-meters {
+                    text-align: right;
+                    float: right;
+                }
+            }
+        }
+    }
+    .room-images {
+        border-right: 1px solid #fff;
+        //min-height: 600px;
+        img {
+            @include vertical-align(absolute);
+            width: 90%;
+        }
+    }
+    .sizes {
+        h3 {
+            color: $krtl-color;
+            font-size: 64px;
+            font-family: $f-f-flexobold;
+        }
+        h4 {
+            font-size: 32px;
+        }
+    }
+    .desc {
+        margin-top: 30px;
+        h5 {
+            font-size: 24px;
+            color: $krtl-color;
+            &,
+            &+p {
+                text-align: left;
+            }
+        }
+    }
 }

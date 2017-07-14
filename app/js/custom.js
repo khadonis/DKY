@@ -68,6 +68,110 @@ var swiperKrtlVideo = new Swiper('.krtl-video-slider-container', {
   nextButton: '.swiper-krtl-btn-next',
   prevButton: '.swiper-krtl-btn-prev',
 });
+var swiperKrtlGaleri = new Swiper('.kartal-galeri-slider-container', {
+  speed: 400,
+  effect: 'fade',
+  //prevButton: '.kg-btn-prev',
+  //nextButton: '.kg-btn-next',
+  onSlideChangeStart: function () {
+    $('.kartal-galeri .head div').find('a').removeClass('active');
+    $('.kartal-galeri .head div').eq(swiperKrtlGaleri.activeIndex).find('a').addClass('active');
+  },
+  spaceBetween: 40
+});
+var swiperKrtlMimari = new Swiper('.kg-mimari-slider-container', {
+  speed: 400,
+  nextButton: '.kg-btn-next',
+  prevButton: '.kg-btn-prev',
+  spaceBetween: 40
+});
+var swiperKrtlIcMimari = new Swiper('.kg-icmimari-slider-container', {
+  speed: 400,
+  nextButton: '.kg-btn-next',
+  prevButton: '.kg-btn-prev',
+  spaceBetween: 40
+});
+var swiperKrtlODaire = new Swiper('.kg-odaire-slider-container', {
+  speed: 400,
+  nextButton: '.kg-btn-next',
+  prevButton: '.kg-btn-prev',
+  spaceBetween: 40
+});
+var swiperKrtlPlans = new Swiper('.plans-slider-container', {
+  speed: 400,
+  spaceBetween: 40,
+  onSlideChangeStart: function () {
+    $('.plans-menu li').find('a').removeClass('active');
+    $('.plans-menu li').eq(swiperKrtlPlans.activeIndex).find('a').addClass('active');
+  },
+});
+var swiperKrtlPlan1 = new Swiper('.plan-1-slide-container', {
+  speed: 400,
+  //direction:'vertical',
+  effect: 'fade',
+  spaceBetween: 40,
+  onSlideChangeStart: function () {
+    $('.rooms li').find('a').removeClass('active');
+    $('.rooms li').eq(swiperKrtlPlan1.activeIndex).find('a').addClass('active');
+  },
+});
+
+
+
+
+
+
+
+var swiperKrtlPlan2 = new Swiper('.plan-2-slide-container', {
+    speed: 400,
+    //direction:'vertical',
+    effect: 'fade',
+    spaceBetween: 40,
+    onSlideChangeStart: function () {
+      $('.rooms2 li').find('a').removeClass('active');
+      $('.rooms2 li').eq(swiperKrtlPlan2.activeIndex).find('a').addClass('active');
+    },
+  });
+
+  var swiperKrtlPlan3 = new Swiper('.plan-3-slide-container', {
+    speed: 400,
+    //direction:'vertical',
+    effect: 'fade',
+    spaceBetween: 40,
+    onSlideChangeStart: function () {
+      $('.rooms3 li').find('a').removeClass('active');
+      $('.rooms3 li').eq(swiperKrtlPlan3.activeIndex).find('a').addClass('active');
+    },
+  });
+  var swiperKrtlPlan4 = new Swiper('.plan-4-slide-container', {
+    speed: 400,
+    //direction:'vertical',
+    effect: 'fade',
+    spaceBetween: 40,
+    onSlideChangeStart: function () {
+      $('.rooms4 li').find('a').removeClass('active');
+      $('.rooms4 li').eq(swiperKrtlPlan4.activeIndex).find('a').addClass('active');
+    },
+  });
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 var swiperHaberler = new Swiper('.basin-slide-container', {
   speed: 400,
@@ -90,7 +194,7 @@ var swiperHaberler = new Swiper('.basin-slide-container', {
 });
 
 function linkOutSlide(link, slider) {
-  link.each(function (index) {    
+  link.each(function (index) {
     link.eq(index).find('a').click(function () {
       slider.slideTo(index);
     });
@@ -98,6 +202,13 @@ function linkOutSlide(link, slider) {
 };
 linkOutSlide($('.krtl-tnt-aciklama .head li'), swiperKrtl);
 linkOutSlide($('.krtl-tnt-aciklama .head li'), swiperKrtlVideo);
+linkOutSlide($('.kartal-galeri .head div'), swiperKrtlGaleri);
+linkOutSlide($('.plans-menu li'), swiperKrtlPlans);
+linkOutSlide($('.rooms li'), swiperKrtlPlan1);
+linkOutSlide($('.rooms2 li'), swiperKrtlPlan2);
+linkOutSlide($('.rooms3 li'), swiperKrtlPlan3);
+linkOutSlide($('.rooms4 li'), swiperKrtlPlan4);
+
 
 
 
