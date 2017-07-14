@@ -178,13 +178,13 @@ section.kartal-galeri {
         }
         &:after {
             content: 'GALERİ';
-            font-size: 150px;
+            font-size: 120px;
             color: #fff;
             transform: rotate(-90deg);
             transform-origin: top left;
             position: absolute;
             font-family: $f-f-flexobold;
-            left: -158px;
+            left: -127px;
             top: 706px;
         }
     }
@@ -260,6 +260,10 @@ section.krtl-plans {
         img {
             @include vertical-align(absolute);
             width: 90%;
+            left: 0;
+            &:hover{
+                cursor: zoom-in;
+            }
         }
     }
     .sizes {
