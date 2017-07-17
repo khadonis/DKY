@@ -1,0 +1,552 @@
+/*//Responsive
+// Codes for Standarts Laptops
+@media screen and (max-width: 1600px) {
+    .vertical-h-menu {
+        width: 65px;
+    }
+    .proje-listesi {
+        a {
+            font-size: 100%;
+        }
+    }
+    .proje-listesi>li li:after {
+        top: 13px;
+    }
+    .proje-listesi h4 {
+        top: -18px;
+    }
+}
+
+// Codes for Medium Tablets Landscape
+@media only screen and (min-width: 972px) and (max-width: 1200px) {
+    .kurum-content {
+        .container {
+            width: 100%;
+        }
+    }
+    html body .section-projeler {
+        .hero-proj {
+            width: 60%;
+        }
+    }
+    body .hero-img {
+        h1 {
+            top: 25px;
+            right: 50px;
+            font-size: 32px;
+        }
+    }
+}
+
+// Codes for Medium Tablets Portrait and Small Tablets Landscape
+@media only screen and (min-width: 1024px) and (max-width: 1200px) {
+    body .hero-img {
+        img {
+            width: 100%;
+        }
+    }
+    .spot {
+        display: none;
+    }
+    html body .section-projeler .hero-proj {
+        width: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .swiper-container {
+        height: 410px;
+        display: block;
+        top: 74px;
+        .scroll-down-i {
+            display: none;
+        }
+    }
+    body .section-projeler {
+        padding: 40px 0 0;
+    }
+    .odul-slide-container,
+    .basin-slide-container {
+        height: 25%;
+        display: block;
+        top: 74px;
+    }
+    .section-medya {
+        top: 74px;
+        margin-bottom: 20px;
+    }
+    .blog-img {
+        top: 140%;
+        width: 95%;
+    }
+    .blog-inner {
+        padding: 10px 15px;
+        img {
+            margin: 15px auto;
+        }
+        .btn-blog {
+            margin-left: 15px;
+        }
+    }
+    .dergi-content {
+        p {
+            text-align: center;
+            padding-top: 15px;
+        }
+        img {
+            margin: 15px auto;
+            position: relative;
+            top: 30px;
+            display: block;
+        }
+        .btn-oku {
+            width: 85%;
+            float: none;
+            margin: 30px auto;
+            text-align: center;
+        }
+    }
+    body .b-talep-form {
+        bottom: 20px;
+        right: 20px;
+    }
+    body div.drg-bg-img {
+        width: 100%;
+        background-position: top center;
+    }
+}
+
+// Temp
+@media screen and (max-width: 1200px) {
+    .blog-img {
+        top: 100%;
+    }
+}
+
+// Codes for Small Tablets Portrait
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .spot {
+        display: none;
+    }
+    .swiper-container,
+    .odul-slide-container,
+    .basin-slide-container {
+        height: 40%;
+        display: block;
+        top: 74px;
+        .scroll-down-i {
+            display: none;
+        }
+    }
+    .blog-img {
+        top: 140%;
+        width: 95%;
+    }
+    .blog-inner {
+        padding: 10px 15px;
+        img {
+            margin: 15px auto;
+        }
+        .btn-blog {
+            margin-left: 15px;
+        }
+    }
+    .dergi-content {
+        p {
+            text-align: center;
+            padding-top: 15px;
+        }
+        img {
+            margin: 15px auto;
+            position: relative;
+            top: 30px;
+            display: block;
+        }
+        .btn-oku {
+            width: 85%;
+            float: none;
+            margin: 30px auto;
+            text-align: center;
+        }
+    }
+    body .b-talep-form {
+        bottom: 20px;
+        right: 20px;
+    }
+    body div.drg-bg-img {
+        width: 100%;
+        background-position: top center;
+    }
+    .section-projeler .container {
+        width: 100%;
+        margin-bottom: 0;
+        .standart-proj .mask p {
+            font-size: 85%;
+        }
+    }
+    .contact-items li.social-media-icons {
+        display: block;
+        margin-top: 15px;
+    }
+    .contact-items li:nth-child(2) {
+        border-right: 0;
+    }
+    footer {
+        margin-top: 0;
+        h5 {
+            font-size: 14px;
+        }
+        .blog {
+            margin-top: 0;
+        }
+    }
+    html body .section-projeler {
+        .hero-proj {
+            height: 675px;
+            width: 68%;
+            left: 50%;
+            transform: translateX(-50%);
+            .mask {
+                height: 675px;
+            }
+            img {
+                height: 675px;
+                left: 50%;
+                transform: translateX(-50%);
+                width: auto !important;
+            }
+        }
+        .standart-proj {
+            &,
+            & .mask {
+                height: 382px;
+                /*left: 50%;
+            transform: translateX(-50%);
+            }
+            img {
+                height: 375px;
+                left: 50%;
+                transform: translateX(-50%);
+                width: auto !important;
+            }
+        }
+    }
+}
+
+//Codes for Mobiles
+@media screen and (max-width: 767px) {
+    html body .section-projeler {
+        .standart-proj {
+            left: 50%;
+            transform: translateX(-50%);
+            img {
+                height: 460px;
+                left: 50%;
+                transform: translateX(-50%);
+                width: auto !important;
+            }
+        }
+        .hero-proj {
+            height: $proj-height;
+            left: 50%;
+            transform: translateX(-50%);
+            /*width: 100%;
+            float: none;
+            .mask {
+                height: $proj-height;
+            }
+            img {
+                height: $proj-height;
+                left: 50%;
+                transform: translateX(-50%);
+                width: auto !important;
+            }
+        }        
+    }
+    body .proje-collapsible-menu {
+        position: absolute;
+        left: 75px;
+        width: 170px;
+        font-size: 80%;
+    }
+    .drg-bg-img {
+        width: 100%;
+        float: none;
+    }
+    .dergi-content {
+        img {
+            margin: 30px auto;
+            display: block;
+        }
+        p {
+            text-align: center;
+        }
+    }
+    .btn-oku {
+        width: 90%;
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    .blog-img {
+        top: 122%;
+    }
+    body {
+        section {
+            h2 {
+                text-align: center;
+            }
+        }
+        .swiper-container .b-talep-form {
+            display: none;
+        }
+        .b-talep-form {
+            right: 0;
+            position: relative;
+            border-radius: 0;
+            top: 30px;
+            font-size: 18px;
+            background-position: 35px 18px;
+            text-align: center;
+            background-image: none;
+            padding: 10px;
+        }
+        .scroll-down-i {
+            display: none !important;
+        }
+        .btn-sahil {
+            display: none;
+        }
+        .swiper-slide {
+            //background-size: 350px;
+            background-position: top center;
+        }
+        .languages a {
+            display: none;
+        }
+        .menu-toggle {
+            right: 0;
+        }
+        .logo img {
+            float: left;
+        }
+        .menu .navig li a,
+        .search .navig li a {
+            font-size: 30px;
+        }
+        .menu .languages {
+            &,
+            & a {
+                display: block;
+            }
+        }
+        .menu .navig {
+            top: 40%;
+            padding: 0;
+        }
+        .swiper-container,
+        .odul-slide-container,
+        .basin-slide-container {
+            height: 40%;
+            display: block;
+            top: 74px;
+        }
+        .basin-slide-container {
+            height: 50%;
+            margin-top: 15px;
+            .btn-more {
+                text-align: center;
+                font-size: 90%;
+            }
+        }
+    }
+    section[class^='section'] {
+        .container-fluid {
+            padding: 0;
+            margin-left: 0;
+        }
+        .head {
+            padding: 0;
+            h3 {
+                text-align: center;
+            }
+        }
+    }
+    .basin-slide-container {
+        h3 {
+            text-align: center;
+        }
+    }
+    .basin-slide-container .swiper-slide {
+        padding: 0;
+    }
+    body .section-projeler {
+        padding-bottom: 0;
+        .hero-proj {
+            h3 {
+                font-size: 20px;
+                letter-spacing: 4px;
+                top: 25px;
+            }
+            .detay-link {
+                font-size: 18px;
+                width: 121px;
+                font-family: $font-family-sans-serif;
+                top: 105px;
+                &:after,
+                &:before {
+                    height: 37px;
+                    padding: 0;
+                    width: 21px;
+                }
+                &:after {
+                    right: -2px;
+                }
+                &:before {
+                    left: -2px;
+                }
+            }
+            .mask {
+                p {
+                    padding: 15px;
+                    font-size: 14px;
+                    line-height: 1.25;
+                }
+            }
+            &:before {
+                content: '';
+                position: absolute;
+                @include square(100%);
+                background: linear-gradient(to top, rgba(#000, .0) 50%, rgba(#000, .8) 100%); //z-index: 3;
+                z-index: 1;
+            }
+        }
+        .hero-proj,
+        .standart-proj {
+            &,
+            & .mask {
+                height: 460px;
+            }
+            .mask {
+                bottom: -510px;
+            }
+        }
+        .standart-proj {
+            border: none;
+            margin-top: 15px;
+        }
+    }
+    footer {
+        margin-top: 0;
+        text-align: center;
+        .container-fluid {
+            margin-top: 0;
+        }
+        h5 {
+            text-align: center;
+        }
+        .bot-menu a {
+            margin-left: 0;
+            padding-left: 0;
+            display: block;
+            text-align: center;
+            &:last-child:after {
+                display: none;
+            }
+        }
+        .copy h4 {
+            margin: 15px 0;
+        }
+    }
+    body .blog-inner {
+        padding: 0 15px 0;
+        img {
+            width: 100%;
+            margin-top: 25px;
+        }
+        .btn-blog {
+            text-align: center;
+        }
+    }
+    .bulten-input {
+        font-size: 16px;
+    }
+    .foot-menu {
+        padding-left: 0;
+        margin-top: 10;
+        li {
+            display: block;
+        }
+    }
+    .contact-items {
+        padding: 0;
+        .social-media-icons a {
+            margin: 0 4px;
+        }
+        li {
+            display: block;
+            width: 100%;
+            padding: 0;
+            border: 0;
+            margin-left: 0;
+            margin-block-end: 15px;
+            font-size: 130%;
+        }
+    }
+    body .hero-img {
+        img {
+            width: 150%;
+        }
+    }
+    .spot {
+        width: 100%;
+        height: 410px;
+        background-size: 100%;
+        background-position: top right;
+        top: 90px;
+    }
+    .hero-img h1 {
+        font-size: 16px;
+        top: 0;
+        right: 25px;
+        border-left-width: 6px;
+    }
+    .spot .spot-text {
+        position: relative;
+        top: 210px;
+        padding: 0 0 0 60%;
+    }
+    .spot {
+        display: none;
+        h2 {
+            font-size: 18px;
+            text-align: left;
+        }
+        h4 {
+            font-size: 12px;
+        }
+        h3 {
+            font-size: 14px;
+        }
+    }
+    .kurum-content {
+        top: 0;
+        position: relative;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        .side-menu {
+            border: none;
+            a {
+                font-size: 21px;
+                text-align: center;
+                &.active:after {
+                    display: none;
+                }
+            }
+        }
+    }
+    .content-inner {
+        margin-top: 0; //margin-bottom: 195 px;
+        border-top: 1px solid $gray-darker;
+    }
+}*/

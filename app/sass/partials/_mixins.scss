@@ -1,0 +1,198 @@
+//mixins
+@mixin vertical-align($position: relative) {
+    position: $position;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+@mixin horizontal-align($position: relative) {
+    position: $position;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+@mixin complate-align($position: relative) {
+    position: $position;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@mixin no-left-pad($pad) {
+    padding-left: -$pad;
+}
+
+%h2 {
+    font-size: 30px;
+    margin: 0;
+    text-transform: uppercase;
+    font-family: $font-family-sans-serif;
+}
+
+%sec-containers {
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+
+%dergi-blog-height {
+    min-height: $blog-height;
+}
+
+%slider-btns {
+    bottom: 20px;
+    top: auto;
+    left: auto;
+    cursor: pointer;
+    background-image: none;
+    &:before {
+        font-family: 'fontawesome';
+        font-size: 30px;
+        display: block;
+        color: $main-color;
+    }
+}
+
+%slider-btn-next {
+    right: 30px;
+    &:before {
+        content: "\f054";
+        left: 0px;
+        position: absolute;
+        @include vertical-align();
+    }
+}
+
+%slider-btn-prev {
+    right: 60px;
+    &:before {
+        content: "\f053";
+        left: -5px;
+        position: absolute;
+        @include vertical-align();
+    }
+} //hero Projects mixins
+@mixin hero-proj($height:$tum-proj-height, $trans-dur:.3s) {
+    height: $height;
+    overflow: hidden;
+    position: relative;
+    transition: all ease-in $trans-dur;
+    img {
+        position: absolute;
+        z-index: 0;
+        height: $height;
+        @include complate-align(absolute);
+    }
+}
+
+@mixin mask($bottom:-$tum-proj-height, $background-color:rgba($sec-color, 0.7), $trans-dur: .3s, $padding:30px, $font-size:18px, $line-height:30px, $color: #fff, $p-top:150px, $height:$tum-proj-height) {
+    position: absolute;
+    bottom: $bottom;
+    left: 0;
+    width: 100%;
+    height: $height;
+    background: $background-color;
+    transition: all ease-out $trans-dur;
+    z-index: 1;
+    p {
+        padding: $padding;
+        position: absolute;
+        top: $p-top;
+        @include horizontal-align(relative);
+        font-size: $font-size;
+        line-height: $line-height;
+        color: $color;
+        display: block;
+        text-align: center;
+    }
+}
+
+@mixin hover-mask($bottom:0, $top:auto) {
+    bottom: $bottom;
+    top: $top;
+}
+
+@mixin hero-proj-h3 ($z-index:2, $top:50px, $font-size:40px) {
+    @include horizontal-align();
+    position: absolute;
+    z-index: $z-index;
+    top: $top;
+    font-size: $font-size;
+    font-family: $font-family-serif;
+    letter-spacing: 17px;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    text-indent: 17px;
+}
+
+@mixin detay-link($top:138px, $width:139px, $color: #fff, $font-size:24px, $before-top:-6px, $before-border-size:2px, $before-padding:12px, $before-left:-12px, $before-width:27px, $before-height:47px) {
+    position: absolute;
+    white-space: nowrap;
+    top: $top;
+    width: $width;
+    text-align: center;
+    color: $color;
+    z-index: 2;
+    @include horizontal-align(absolute);
+    font-size: $font-size;
+    &:before {
+        content: '';
+        border-top: $before-border-size solid $color;
+        border-left: $before-border-size solid $color;
+        border-bottom: $before-border-size solid $color;
+        display: block;
+        padding: $before-padding;
+        position: absolute;
+        top: $before-top;
+        left: $before-left;
+        width: $before-width;
+        height: $before-height;
+    }
+    &:after {
+        content: '';
+        border-top: $before-border-size solid $color;
+        border-right: $before-border-size solid $color;
+        border-bottom: $before-border-size solid $color;
+        display: block;
+        padding: $before-padding;
+        position: absolute;
+        top: $before-top;
+        right: $before-left;
+        left: initial;
+        width: $before-width;
+        height: $before-height;
+    }
+}
+
+@mixin ucgen($square:17px, $btw:2px, $bbw:0, $brw:2px, $blw:0, $trf:45deg) {
+    content: '';
+    position: absolute;
+    @include square($square);
+    border: solid $gray-darker;
+    border-top-width: $btw;
+    border-bottom-width: $bbw;
+    border-right-width: $brw;
+    border-left-width: $blw;
+    transform: rotate($trf);
+    background-color: transparent;
+}
+
+%hero {
+    background: {
+        size: cover;
+        repeat: no-repeat;
+        position: center center;
+    }
+    width: 100%;
+    height: 100vmin;
+}
+
+@mixin dashed-border($borColor:#fff) {
+    border-radius: 120px;
+    border: 3px dashed $borColor;
+    padding:5px 20px;
+    margin: 10px;
+}
