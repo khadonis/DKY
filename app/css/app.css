@@ -2937,10 +2937,20 @@ footer {
   height: 800px;
   margin: 0;
   right: -15px; }
+<<<<<<< HEAD
   .map.ilt-map {
     right: 0;
     height: 650px;
     top: 67px; }
+=======
+  .map.ilt-map, .map.kartalMap {
+    right: 0;
+    height: 650px;
+    top: 67px; }
+  .map.kartalMap {
+    height: 450px;
+    top: 0; }
+>>>>>>> proje detay sayfasında harita sekmesi üzerinde çalışılıyor. haritalar oluşturulabilir durumda. harita ikonları ve lokasyon bilgileri girilecek...
 
 .har-projs {
   font-family: 'flexoregular'; }
@@ -2949,6 +2959,10 @@ footer {
   .har-projs .dprojs {
     float: right; }
     .har-projs .dprojs li {
+<<<<<<< HEAD
+=======
+      cursor: pointer;
+>>>>>>> proje detay sayfasında harita sekmesi üzerinde çalışılıyor. haritalar oluşturulabilir durumda. harita ikonları ve lokasyon bilgileri girilecek...
       -webkit-transition: ease-out .5s all;
       transition: ease-out .5s all;
       text-align: right;
@@ -2969,6 +2983,7 @@ footer {
     font-family: 'flexothin';
     padding-left: 0;
     float: left; }
+<<<<<<< HEAD
     .har-projs .dplaces li .circle {
       display: list-item;
       float: left;
@@ -2982,6 +2997,25 @@ footer {
       transition: ease-out .5s all; }
       .har-projs .dplaces li .circle :hover, .har-projs .dplaces li .circle.active {
         background-color: #ea5b06; }
+=======
+    .har-projs .dplaces li {
+      cursor: pointer; }
+      .har-projs .dplaces li:hover .circle, .har-projs .dplaces li.active .circle {
+        background-color: #ea5b06; }
+      .har-projs .dplaces li .circle {
+        display: list-item;
+        float: left;
+        clear: left;
+        margin-right: 10px;
+        background-color: #1d2b3e;
+        width: 16px;
+        height: 16px;
+        border-radius: 20px;
+        -webkit-transition: ease-out .5s all;
+        transition: ease-out .5s all; }
+        .har-projs .dplaces li .circle :hover, .har-projs .dplaces li .circle.active {
+          background-color: #ea5b06; }
+>>>>>>> proje detay sayfasında harita sekmesi üzerinde çalışılıyor. haritalar oluşturulabilir durumda. harita ikonları ve lokasyon bilgileri girilecek...
 
 .iw-container {
   color: #ea5b06;
@@ -3004,6 +3038,15 @@ footer {
           transition-timing-function: ease-out;
   width: 142px;
   height: 212px; }
+<<<<<<< HEAD
+=======
+  .kartalMap .iw-container.DKYBusinessKartal {
+    height: 212px; }
+    .kartalMap .iw-container.DKYBusinessKartal .loc-name {
+      display: none; }
+    .kartalMap .iw-container.DKYBusinessKartal .mi-content a {
+      display: block; }
+>>>>>>> proje detay sayfasında harita sekmesi üzerinde çalışılıyor. haritalar oluşturulabilir durumda. harita ikonları ve lokasyon bilgileri girilecek...
   #iltMap .iw-container {
     opacity: 1;
     top: -50px; }
@@ -3042,7 +3085,11 @@ footer {
 .mi-image {
   width: 142px;
   height: 102px;
+<<<<<<< HEAD
   background-size: 100%;
+=======
+  background-size: cover;
+>>>>>>> proje detay sayfasında harita sekmesi üzerinde çalışılıyor. haritalar oluşturulabilir durumda. harita ikonları ve lokasyon bilgileri girilecek...
   background-repeat: no-repeat;
   background-position: center center; }
 
@@ -3165,6 +3212,25 @@ footer {
     font-size: 18px;
     margin-bottom: 0; }
 
+<<<<<<< HEAD
+=======
+.loc-name {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  left: 0;
+  padding: 10px 30px 10px 10px;
+  font-size: 12px;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.7); }
+
+.kartalMap .mi-content a {
+  display: none; }
+
+.kartalMap .iw-container {
+  height: 112px; }
+
+>>>>>>> proje detay sayfasında harita sekmesi üzerinde çalışılıyor. haritalar oluşturulabilir durumda. harita ikonları ve lokasyon bilgileri girilecek...
 .swiper-container, .krtl-slider-container, .kartal-galeri-slider-container,
 .kg-mimari-slider-container,
 .kg-icmimari-slider-container,

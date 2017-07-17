@@ -423,6 +423,56 @@
                 </div>
             </div>
     </section>
+<<<<<<< HEAD
+=======
+    <section class="mapWr">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-10 col-xs-12">
+                    <div id="kartalMap" class="map kartalMap"></div>
+                </div>
+                <div class="col-sm-2 col-xs-12">
+                    <div class="har-projs">
+                        <ul class="dplaces col-md-12">
+                            <li id="hastaneler">
+                                <span class="circle"></span> Hastaneler
+                            </li>
+                            <li id="okul">
+                                <span class="circle"></span> Okul
+                            </li>
+                            <li id="resmi">
+                                <span class="circle"></span> Resmi Kurum</li>
+                            <li id="avm">
+                                <span class="circle"></span> AVM
+                            </li>
+                            <li id="orman">
+                                <span class="circle"></span> Orman
+                            </li>
+                            <li id="ulasim">
+                                <span class="circle"></span> Ulaşım
+                            </li>
+                            <li id="cami">
+                                <span class="circle"></span> Camii
+                            </li>
+                            <li id="park">
+                                <span class="circle"></span> Park
+                            </li>
+                            <li id="yemek">
+                                <span class="circle"></span> Yemek
+                            </li>
+                            <li id="spor">
+                                <span class="circle"></span> Spor
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+>>>>>>> proje detay sayfasında harita sekmesi üzerinde çalışılıyor. haritalar oluşturulabilir durumda. harita ikonları ve lokasyon bilgileri girilecek...
     <div class="modal fade modal-profile" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -435,6 +485,10 @@
             </div>
         </div>
     </div>
+<<<<<<< HEAD
+=======
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB2V7XQtDZSOvcJzylGchYrL8nqzfsTsFg"></script>
+>>>>>>> proje detay sayfasında harita sekmesi üzerinde çalışılıyor. haritalar oluşturulabilir durumda. harita ikonları ve lokasyon bilgileri girilecek...
     <footer>
   <div class="container-fluid no-pad">
     <div class="blog">
@@ -533,6 +587,105 @@
 </footer>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="js/app.min.js"></script>
+<<<<<<< HEAD
+=======
+    <script>
+        var kartalHastanesleri = [
+            ['Kartal Ağız ve Diş Hastanesi', 40.9106752, 29.2029738, 'images/pin.png', '#kartalProjesi', 'https://lh3.googleusercontent.com/proxy/LazHRGojZ4P-WqQopdUayiMYvzmIC34vhiCqT1qcr9naIpcZ5BBo3qpBPNhycjOJphk5rGY0SwbapznGoKWljwa8lDY7GYIu5mlhLvxuck10vgg9gf90Xz6H-1lWobnwkqfLKWyPxqaJYBxThFQQBAxi5PB2yR8=w408-h228-k-no', 1],
+            ['KARTAL DR. LÜTFİ KIRDAR EĞİTİM VE ARAŞTIRMA HASTANESİ', 40.9090207, 29.1940152, 'images/pin.png', '#kartalProjesi', 'https://lh4.googleusercontent.com/proxy/HfRzUZiuoyrXlGQoC3IsUi8K2qmkXo3cGr6MQnR74ox9I0ZGgB-6bmSuapZxO0jW3jKMdPc5ayR5t8jFKKrrwsgQk9uDWeJlQBAQoEssuiH79yEsw2p_EwapTXpK_f_3lEZLZgYJP8BVHURez7qo1mI5b-tgLg=w408-h209-k-no', 1],
+            ['YAKACIK DOĞUM VE ÇOCUK HASTALIKLARI HASTANESİ', 40.9162367, 29.2153441, 'images/pin.png', '#kartalProjesi', 'https://lh5.googleusercontent.com/proxy/bPM92hvvhWIpBnXyONrhtVvqzcnhhy7JXSbLlY7g_cPI0MFxvyGMPjwOlSGmwPNHP5H0_hA3HQg1Fbm2BL3_hMLQV4E62Mt1IBhEHdkfma8p8UuJlDs11oDmKR1O10SCBFLa1fpIJ_xY7l_QGHAJT0PEYha09w=w408-h408-k-no', 1],
+            ['Kartal Yavuz Selim Devlet Hastanesi Poliklinikleri', 40.901366, 29.2034566, 'images/pin.png', '#kartalProjesi', 'https://lh6.googleusercontent.com/-x2b8K7wF2a8/WAnCUMyQyTI/AAAAAAAAAWI/QQachip6oM0Z8mtzGCIu5OPnbJRE5ft5QCLIB/w408-h229-k-no/', 1]
+        ];
+        var kartalOkullari = [
+            ['Marmara Üniversitesi', 40.9128932, 29.1729242, 'images/pin.png', '#dkyOnKagithaneLink', 'https://maps.gstatic.com/tactile/pane/default_geocode-1x.png', 1],
+            ['Gedik Üniversitesi', 40.9053038, 29.2005188, 'images/pin.png', '#dkyOnKagithaneLink', 'https://lh6.googleusercontent.com/proxy/LoTIewZKqx66yOeIUDPeK9bGpMhmJyjhcGXuDEbVZkji4GEasp75SRw0YlMNALbDs614SVI7hTzhxWWCL_ihqP65Oq6c5ATjAsONuu_XbLGuzDHtmHCUWW6xFNd9L7Ejmh4RW-JodelYquVuCdaDSBRZJ4MhreA=w603-h200-k-no', 1],
+            ['Maltepe Üniversitesi Mühendislik ve Doğa Bilimleri Fakültesi', 40.9475857, 29.1729671, 'images/pin.png', '#dkyOnKagithaneLink', 'https://maps.gstatic.com/tactile/pane/default_geocode-1x.png', 1]
+        ];
+
+        var kartalMapOpt = {
+            zoom: 11,
+            scrollwheel: false,
+            center: new google.maps.LatLng(dkyBusiness[0][1], dkyBusiness[0][2]),
+            mapTypeId: google.maps.MapTypeId.ROADMAP,
+            styles: stls
+        };
+        var kartalMap = new google.maps.Map(document.getElementById('kartalMap'), kartalMapOpt);
+
+
+        var kartalMarker, i;
+        var kartalMarkers = [];
+        var kartalInfowindow;
+        function test(locatis, map) {
+
+            for (i = 0; i < locatis.length; i++) {
+                var wayDir = 'https://www.google.com.tr/maps/dir//' + locatis[i][1] + ',' + locatis[i][2];
+                kartalMarker = new google.maps.Marker({
+                    position: new google.maps.LatLng(locatis[i][1], locatis[i][2]),
+                    map: map,
+                    animation: google.maps.Animation.DROP,
+                    icon: new google.maps.MarkerImage(locatis[i][3])
+
+                });
+                kartalMarkers.push(kartalMarker);
+                kartalInfowindow = new SnazzyInfoWindow({
+                    marker: kartalMarker,
+                    content: '<div class="mi-content"><div class="loc-name">' + locatis[i][0] + '</div><div class="mi-image" style="background-image:url(' + locatis[i][5] + ');" ></div><a target="_blank" href="' + wayDir + '" class="mi-tarif">Yol Tarifi</a><a href="' + locatis[i][4] + '" class="mi-detay">Proje Detayı</a></div>',
+                    wrapperClass: 'iw-container ' + locatis[i][0].replace(/\s/g, '') + '',
+                    placement: 'top',
+                    closeWhenOthersOpen: true,
+                    callbacks: {
+                        afterOpen: function () {
+                            $(this.getWrapper()).addClass('active');
+                        }
+                    }
+                });
+                google.maps.event.addListener(kartalMarker, 'click', (function (marker, i) {
+                    return function () {
+                        var kartalInfowindow = null;
+                        if (kartalInfowindow) {
+                            kartalInfowindow.close();
+                        }
+                        kartalInfowindow.open();
+                    }
+                })(marker, i));
+            }
+        };
+        test(dkyBusiness, kartalMap);
+        function setMapOnAll(map) {
+            for (var i = 0; i < kartalMarkers.length; i++) {
+                kartalMarkers[i].setMap(map);
+            }
+        }
+        function clearMarkers() {
+            setMapOnAll(null);
+
+
+        }
+        function runMap(button, locations, latLng, zoom) {
+            $(button).click(function (event) {
+                $(this).siblings().find('.circle').removeClass('active');
+                $(this).find('.circle').addClass('active');
+                $('.si-float-wrapper').remove();
+                clearMarkers();
+                kartalMarkers[0].setMap(kartalMap);
+                kartalInfowindow.close();
+                kartalMap.setZoom(zoom);
+                kartalMap.panTo(latLng);
+                test(locations, kartalMap);
+            });
+        }
+        runMap('#hastaneler', kartalHastanesleri, { lat: kartalHastanesleri[0][1], lng: kartalHastanesleri[0][2] }, 14);
+        runMap('#okul', kartalOkullari, { lat: kartalOkullari[0][1], lng: kartalOkullari[0][2] }, 12);
+        $(document).click(function (evt) {
+            kartalMap.set('scrollwheel', false);
+        });
+        $("#kartalMap").click(function (evt) {
+            evt.stopPropagation();
+            kartalMap.set('scrollwheel', true);
+        });
+    </script>
+
+>>>>>>> proje detay sayfasında harita sekmesi üzerinde çalışılıyor. haritalar oluşturulabilir durumda. harita ikonları ve lokasyon bilgileri girilecek...
 </body>
 
 </html>
