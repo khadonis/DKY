@@ -4,23 +4,16 @@
     height: 800px;
     margin: 0;
     right: -15px;
-<<<<<<< HEAD
-    &.ilt-map {
-=======
     &.ilt-map,
     &.kartalMap {
->>>>>>> proje detay sayfasında harita sekmesi üzerinde çalışılıyor. haritalar oluşturulabilir durumda. harita ikonları ve lokasyon bilgileri girilecek...
         right: 0;
         height: 650px;
         top: $header-height;
     }
-<<<<<<< HEAD
-=======
     &.kartalMap {
         height: 450px;
         top: 0;
     }
->>>>>>> proje detay sayfasında harita sekmesi üzerinde çalışılıyor. haritalar oluşturulabilir durumda. harita ikonları ve lokasyon bilgileri girilecek...
 }
 
 .har-projs {
@@ -31,10 +24,7 @@
     .dprojs {
         float: right;
         li {
-<<<<<<< HEAD
-=======
             cursor: pointer;
->>>>>>> proje detay sayfasında harita sekmesi üzerinde çalışılıyor. haritalar oluşturulabilir durumda. harita ikonları ve lokasyon bilgileri girilecek...
             transition: ease-out .5s all;
             &.active {
                 color: #fff;
@@ -56,8 +46,6 @@
         padding-left: 0;
         float: left;
         li {
-<<<<<<< HEAD
-=======
             cursor: pointer;
             &:hover,
             &.active {
@@ -65,7 +53,6 @@
                     background-color: $sec-color;
                 }
             }
->>>>>>> proje detay sayfasında harita sekmesi üzerinde çalışılıyor. haritalar oluşturulabilir durumda. harita ikonları ve lokasyon bilgileri girilecek...
             .circle {
                 display: list-item;
                 float: left;
@@ -88,8 +75,6 @@
 .iw-container {
     color: $sec-color;
     font-family: 'flexoregular';
-<<<<<<< HEAD
-=======
     .kartalMap &.DKYBusinessKartal{
         height: 212px;
         .loc-name{
@@ -99,7 +84,6 @@
             display: block;
         }
     }
->>>>>>> proje detay sayfasında harita sekmesi üzerinde çalışılıyor. haritalar oluşturulabilir durumda. harita ikonları ve lokasyon bilgileri girilecek...
     /*animation-name: bounce;
     animation-duration: .5s;
     animation-fill-mode: both;
@@ -164,11 +148,7 @@
     width: 142px;
     height: 102px;
     background: {
-<<<<<<< HEAD
-        size: 100%;
-=======
         size: cover;
->>>>>>> proje detay sayfasında harita sekmesi üzerinde çalışılıyor. haritalar oluşturulabilir durumda. harita ikonları ve lokasyon bilgileri girilecek...
         repeat: no-repeat;
         position: center center;
     }
@@ -319,8 +299,6 @@
         font-size: 18px;
         margin-bottom: 0;
     }
-<<<<<<< HEAD
-=======
 }
 .loc-name{
     position: absolute;
@@ -339,5 +317,4 @@
     .iw-container{
         height: 112px;
     }
->>>>>>> proje detay sayfasında harita sekmesi üzerinde çalışılıyor. haritalar oluşturulabilir durumda. harita ikonları ve lokasyon bilgileri girilecek...
 }

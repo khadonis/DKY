@@ -215,7 +215,7 @@ function aktifs() {
     if ($(pli).eq(9).hasClass('active')) {
         $(plli + ' span').removeClass('active');
         adcls(avm), adcls(ulasim), adcls(yemek), adcls(okul), adcls(resmiKurum), adcls(cami), adcls(hastane);
-    }
+    } 
 }
 aktifs();
 
