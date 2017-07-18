@@ -9,7 +9,8 @@ var gulp = require('gulp'),
 	cache = require('gulp-cache'),
 	gulpImport = require('gulp-html-import'),
 	autoprefixer = require('gulp-autoprefixer'),
-	sass = require('gulp-sass');
+	sass = require('gulp-sass'),
+	browserSync = require('browser-sync').create();
 
 gulp.task('sass', function () {
 	gulp.src('app/sass/app.scss')
@@ -17,7 +18,8 @@ gulp.task('sass', function () {
 		.pipe(autoprefixer({
 			browsers: ['last 2 versions']
 		}))
-		.pipe(gulp.dest('app/css/'));
+		.pipe(gulp.dest('app/css/'))
+		.pipe(browserSync.stream());
 });
 
 gulp.task('cleanCSS', function () {
@@ -58,12 +60,21 @@ gulp.task('import', function () {
 		.pipe(gulp.dest('dist'));
 });
 
+gulp.task('browser-sync', function() {
+    browserSync.init(["dist/css/*.css", "dist/js/*.js"],{
+        server: {
+            baseDir: "./"
+        }
+	});
+});
+
 gulp.task('watch', function () {
 	gulp.watch(['app/sass/**/*.scss', 'app/css/*.css'], ['sass', 'cleanCSS']);
 	gulp.watch('app/js/*js', ['manage']);
 	gulp.watch('app/font/*', ['fonts']);
 	gulp.watch('app/images/**/*', ['images']);
 	gulp.watch(['app/temp/*.html', 'app/**/*.html'], ['import']);
+	gulp.watch("dist/**/*.html").on('change', browserSync.reload);
 });
 
-gulp.task('default', ['sass', 'manage', 'fonts', 'images', 'import', 'cleanCSS', 'watch']);
+gulp.task('default', ['sass', 'manage', 'fonts', 'images', 'import', 'cleanCSS', 'browser-sync', 'watch']);

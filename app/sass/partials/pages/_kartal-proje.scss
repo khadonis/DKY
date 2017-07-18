@@ -241,12 +241,19 @@ section.krtl-plans {
             }
         }
     }
-    .rooms, .rooms2, .rooms3, .rooms4 {
+    .rooms,
+    .rooms2,
+    .rooms3,
+    .rooms4 {
         li {
             text-align: left;
             a {
                 width: 90%;
                 display: block;
+                cursor: text;
+                &:hover{
+                    color: inherit;
+                }
                 .room-meters {
                     text-align: right;
                     float: right;
@@ -255,13 +262,12 @@ section.krtl-plans {
         }
     }
     .room-images {
-        border-right: 1px solid #fff;
-        //min-height: 600px;
+        border-right: 1px solid #fff; //min-height: 600px;
         img {
             @include vertical-align(absolute);
             width: 90%;
             left: 0;
-            &:hover{
+            &:hover {
                 cursor: zoom-in;
             }
         }
@@ -286,5 +292,21 @@ section.krtl-plans {
                 text-align: left;
             }
         }
+    }
+}
+
+section.mapWr {
+    margin: 0 0 $section-padding 0;
+}
+
+section.bi-tal-form {
+    background: {
+        image: url('../images/kartal-balkon-gece.jpg');
+        repeat: no-repeat;
+        size: cover;
+        position: center center;
+    }
+    .bt-form {
+        background: rgba($krtl-color, .85);
     }
 }

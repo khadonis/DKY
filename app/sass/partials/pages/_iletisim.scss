@@ -97,6 +97,12 @@
     background: $main-color;
     color: #fff;
     padding: 60px 0;
+    .bi-tal-form & {
+        h5,
+        .fieldset {
+            color: $gray-darker;
+        }
+    }
     input {
         color: $gray-darker;
         transition: all ease .3s;
@@ -192,6 +198,7 @@
         cursor: pointer;
     }
 }
-.show-in-mobil{
+
+.show-in-mobil {
     display: none;
 }

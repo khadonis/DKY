@@ -47,6 +47,7 @@
         float: left;
         li {
             cursor: pointer;
+            font-size: 20px;
             &:hover,
             &.active {
                 .circle {
@@ -58,6 +59,7 @@
                 float: left;
                 clear: left;
                 margin-right: 10px;
+                margin-top: 6px;
                 background-color: $main-color;
                 width: 16px;
                 height: 16px;

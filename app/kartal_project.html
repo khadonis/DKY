@@ -392,6 +392,59 @@
 
 
     </section>
+
+
+    <section class="bi-tal-form">
+        <div class="conainer-fluid no-pad bt-form">
+            <div class="container">
+                <div class="center-block">
+                    <h2>BİLGİ TALEP FORMU</h2>
+                    <h4>Projemiz hakkında daha fazla bilgi almak için lütfen formu doldurun. Sizi arayalım.</h4>
+                    <form>
+                        <div class="col-sm-8 col-sm-push-2 col-xs-12">
+                            <div class="row">
+                                <div class="col-sm-6 col-xs-12">
+                                    <input id="ad" type="text" placeholder="Adınız Soyadınız">
+                                </div>
+                                <div class="col-sm-6 col-xs-12">
+                                    <input id="tel" type="tel" placeholder="Telefon Numaranız">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6 col-xs-12">
+                                    <input id="email" type="mail" placeholder="Mail Adresiniz">
+                                </div>
+                                <div class="col-sm-6 col-xs-12">
+                                    <input id="mesaj" type="text" placeholder="Mesajınız">
+                                </div>
+                            </div>
+                            <h5 class="y-uyari-btn">Yasal uyarıyı okudum</h5>
+                            <div class="y-uyari">
+                                <h3>YASAL UYARI</h3>
+                                Formda yer alan her türlü kişisel bilgimin, DKY pazarlama faaliyetlerinde, kampanyalarında, reklamlarında, tanıtımlarında
+                                ve iletişim çalışmalarında paylaşılmasına, işlenebilmesine, kullanılmasına, saklanmasına,
+                                tarafıma sms, mms, email gönderilmesine, sesli arama yapılmasına ve posta gönderilmesine
+                                muvafakat ediyor ve izin veriyorum.</div>
+                            <div class="fieldset">
+                                <label for="ke">
+                                <input id="ke" type="radio" value="1" name="group1">
+                                    <span>Kabul ediyorum</span>
+                                </label>
+                                <label for="kt">
+                                <input id="kt" type="radio" value="2" name="group1">
+                                   <span>Kabul etmiyorum</span>
+                                </label>
+                            </div>
+                            <input id="submit" type="submit" value="Gönder">
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
     <div class="modal fade modal-profile" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -405,7 +458,9 @@
         </div>
     </div>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB2V7XQtDZSOvcJzylGchYrL8nqzfsTsFg"></script>
-    @import "footer.html"
+    @import "proje_footer.html"
+    <script src="js/sweetalert2.min.js"></script>
+    <script src="js/validate.js"></script>
     <script>
         var kartalHastanesleri = [
             ['Kartal Ağız ve Diş Hastanesi', 40.9106752, 29.2029738, 'images/Hastane-Gold.png', '#kartalProjesi', 'https://lh3.googleusercontent.com/proxy/LazHRGojZ4P-WqQopdUayiMYvzmIC34vhiCqT1qcr9naIpcZ5BBo3qpBPNhycjOJphk5rGY0SwbapznGoKWljwa8lDY7GYIu5mlhLvxuck10vgg9gf90Xz6H-1lWobnwkqfLKWyPxqaJYBxThFQQBAxi5PB2yR8=w408-h228-k-no', 1],
@@ -438,7 +493,7 @@
             ['Kültür Parkı Et Mangal Piknik Alanı', 40.9481237, 29.207021, 'images/Orman-Gold.png', '#dkyOnKagithaneLink', 'https://lh5.googleusercontent.com/-BXSte9lQa4U/WSAyjLdPKHI/AAAAAAAAIk4/OT5BhCSj8xseRYEhBwqYkoiLppo-WZ8PQCLIB/w408-h725-k-no/', 1],
         ];
         var kartalUlasim = [
-            ['kartal dörtyol taksi', 40.9072469, 29.2129211, 'images/metro-Gold.png', '#dkyOnKagithaneLink', 'https://geo3.ggpht.com/cbk?panoid=DlXDSjsVADv1BRatTt8JdA&output=thumbnail&cb_client=search.TACTILE.gps&thumb=2&w=408&h=200&yaw=215.76624&pitch=0&thumbfov=100', 1],
+            ['kartal dörtyol taksi', 40.9072469, 29.2129211, 'images/taxi.png', '#dkyOnKagithaneLink', 'https://geo3.ggpht.com/cbk?panoid=DlXDSjsVADv1BRatTt8JdA&output=thumbnail&cb_client=search.TACTILE.gps&thumb=2&w=408&h=200&yaw=215.76624&pitch=0&thumbfov=100', 1],
             ['Kartal Metro', 40.9068252, 29.2112903, 'images/metro-Gold.png', '#dkyOnKagithaneLink', 'https://lh4.googleusercontent.com/-4VgaEGiqLDU/Vvo4yXXMTJI/AAAAAAAAFnY/ezlFKgF0800MLbrIiIZy_VhhZ_9C9IBfACJkC/w408-h229-k-no/', 1],
             ['İdo Kartal Deniz Otobüsü İskelesi', 40.8871194, 29.1875874, 'images/Feribot-Gold.png', '#dkyOnKagithaneLink', 'https://lh4.googleusercontent.com/-2wF8V0FxclY/WCnZTBL7uUI/AAAAAAABOZY/Q8Fnr7hosj49LCbxIumXOTT6y8XUw5EgQCLIB/w408-h306-k-no/', 1],
             ['Sabiha Gökçen Uluslararası Havalimanı', 40.9004679, 29.2424149, 'images/Havaalani-Gold.png', '#dkyOnKagithaneLink', 'https://lh3.googleusercontent.com/-o1Txb-Vppcg/WUv2eVU2ygI/AAAAAAAAAPM/b8WqgJJAT-kD07NW9he3crf8xxVHTzDHQCLIBGAYYCw/w408-h267-k-no/', 1]
