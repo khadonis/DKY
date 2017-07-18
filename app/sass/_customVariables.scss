@@ -55,6 +55,10 @@ $font-family-sans-serif:  "flexoregular", "Helvetica Neue", Helvetica, Arial, sa
 $font-family-serif:       "flexothin", Georgia, "Times New Roman", Times, serif !default;
 $f-f-flexobold:               "flexobold", 'flexoregular', "Helvetica Neue", Times, serif !default;
 
+$f-normal: $font-family-sans-serif;
+$f-thin: $font-family-serif;
+$f-bold: $f-f-flexobold;
+
 //** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
 $font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace !default;
 $font-family-base:        $font-family-serif !default;

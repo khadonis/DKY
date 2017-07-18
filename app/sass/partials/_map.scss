@@ -72,25 +72,54 @@
     }
 }
 
+.loc-name {
+    @include vertical-align(relative);
+    width: 100%;
+    padding: 15px;
+    text-align: center;
+    font-size: 13px;
+    color: $gray-dark;
+    text-transform: capitalize;
+    font-family: $f-normal;
+}
+
 .iw-container {
     color: $sec-color;
     font-family: 'flexoregular';
-    .kartalMap &.DKYBusinessKartal{
-        height: 212px;
-        .loc-name{
-            display:none;
+    .kartalMap & {
+        height: 140px;
+        &.active {
+            top: 0;
         }
-        .mi-content a{
+        .mi-content {
+            background-color: #fff;
+            color: $gray-dark;
+            a {
+                display: none;
+            }
+        }
+        .loc-name {
+            background: none;
+        }
+    }
+    .kartalMap &.DKYBusinessKartal {
+        .si-pointer-bg-top {
+            border-top-color: $sec-color;
+        }
+        .si-content-wrapper {
+            padding: 0;
+        }
+        &.active {
+            top: -50px;
+        }
+        height: 64px;
+        .loc-name {
+            display: none;
+        }
+        .mi-content a {
             display: block;
         }
     }
-    /*animation-name: bounce;
-    animation-duration: .5s;
-    animation-fill-mode: both;
-    animation-timing-function: linear;
-    animation-iteration-count: 3;
-    animation-delay: .5s;*/
-    // left: -100px;
     #iltMap & {
         opacity: 1;
         top: -50px;
@@ -298,23 +327,5 @@
         padding-left: 10px;
         font-size: 18px;
         margin-bottom: 0;
-    }
-}
-.loc-name{
-    position: absolute;
-    top: 0;
-    width: 100%;
-    left: 0;
-    padding: 10px 30px 10px 10px;
-    font-size: 12px;
-    color:#fff;
-    background-color: rgba(0,0,0,.7);
-}
-.kartalMap{
-    .mi-content a{
-        display: none;
-    }
-    .iw-container{
-        height: 112px;
     }
 }

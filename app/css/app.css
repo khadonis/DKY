@@ -2991,15 +2991,22 @@ footer {
         .har-projs .dplaces li .circle :hover, .har-projs .dplaces li .circle.active {
           background-color: #ea5b06; }
 
+.loc-name {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 100%;
+  padding: 15px;
+  text-align: center;
+  font-size: 13px;
+  color: #333333;
+  text-transform: capitalize;
+  font-family: "flexoregular", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+
 .iw-container {
   color: #ea5b06;
   font-family: 'flexoregular';
-  /*animation-name: bounce;
-    animation-duration: .5s;
-    animation-fill-mode: both;
-    animation-timing-function: linear;
-    animation-iteration-count: 3;
-    animation-delay: .5s;*/
   top: -75px;
   opacity: 0;
   -webkit-transition-delay: .3s;
@@ -3012,8 +3019,25 @@ footer {
           transition-timing-function: ease-out;
   width: 142px;
   height: 212px; }
+  .kartalMap .iw-container {
+    height: 140px; }
+    .kartalMap .iw-container.active {
+      top: 0; }
+    .kartalMap .iw-container .mi-content {
+      background-color: #fff;
+      color: #333333; }
+      .kartalMap .iw-container .mi-content a {
+        display: none; }
+    .kartalMap .iw-container .loc-name {
+      background: none; }
   .kartalMap .iw-container.DKYBusinessKartal {
-    height: 212px; }
+    height: 64px; }
+    .kartalMap .iw-container.DKYBusinessKartal .si-pointer-bg-top {
+      border-top-color: #ea5b06; }
+    .kartalMap .iw-container.DKYBusinessKartal .si-content-wrapper {
+      padding: 0; }
+    .kartalMap .iw-container.DKYBusinessKartal.active {
+      top: -50px; }
     .kartalMap .iw-container.DKYBusinessKartal .loc-name {
       display: none; }
     .kartalMap .iw-container.DKYBusinessKartal .mi-content a {
@@ -3178,22 +3202,6 @@ footer {
     padding-left: 10px;
     font-size: 18px;
     margin-bottom: 0; }
-
-.loc-name {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  left: 0;
-  padding: 10px 30px 10px 10px;
-  font-size: 12px;
-  color: #fff;
-  background-color: rgba(0, 0, 0, 0.7); }
-
-.kartalMap .mi-content a {
-  display: none; }
-
-.kartalMap .iw-container {
-  height: 112px; }
 
 .swiper-container, .krtl-slider-container, .kartal-galeri-slider-container,
 .kg-mimari-slider-container,
