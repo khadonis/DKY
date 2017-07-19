@@ -101,9 +101,11 @@ var swiperKrtlPlans = new Swiper('.plans-slider-container', {
   speed: 400,
   spaceBetween: 40,
   onSlideChangeStart: function () {
-    $('.plans-menu li').find('a').removeClass('active');
-    $('.plans-menu li').eq(swiperKrtlPlans.activeIndex).find('a').addClass('active');
-  },
+    $('#plans li').find('a').removeClass('active');
+    $('#plans li').eq(swiperKrtlPlans.activeIndex).find('a').addClass('active');
+    $('#plansMobile li').find('a').removeClass('active');
+    $('#plansMobile li').eq(swiperKrtlPlans.activeIndex).find('a').addClass('active');
+  }
 });
 var swiperKrtlPlan1 = new Swiper('.plan-1-slide-container', {
   speed: 400,
@@ -203,7 +205,8 @@ function linkOutSlide(link, slider) {
 linkOutSlide($('.krtl-tnt-aciklama .head li'), swiperKrtl);
 linkOutSlide($('.krtl-tnt-aciklama .head li'), swiperKrtlVideo);
 linkOutSlide($('.kartal-galeri .head div'), swiperKrtlGaleri);
-linkOutSlide($('.plans-menu li'), swiperKrtlPlans);
+linkOutSlide($('#plans li'), swiperKrtlPlans);
+linkOutSlide($('#plansMobile li'), swiperKrtlPlans);
 linkOutSlide($('.rooms li'), swiperKrtlPlan1);
 linkOutSlide($('.rooms2 li'), swiperKrtlPlan2);
 linkOutSlide($('.rooms3 li'), swiperKrtlPlan3);

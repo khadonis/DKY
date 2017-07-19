@@ -1,6 +1,40 @@
 // Responsive
 //1440< (Laptop L)
 @media screen and (max-width: 1440px) {
+    section.kartal-galeri {
+        .head {
+            &:after {
+                font-size: 105px;
+                left: -110px;
+                top: 565px;
+            }
+        }
+        .kartal-galeri-slider-container {
+            min-height: 460px;
+            .swiper-slide {
+                min-height: 350px;
+            }
+        }
+    }
+    section.krtl-plans {
+        /* .side-txt {
+            top: 540px;
+        } */
+        ul.plans-menu {
+            min-height: auto;
+            li {
+                a {
+                    height: 133px;
+                }
+            }
+        }
+        .plans-slider-container {
+            .swiper-slide {
+                min-height: 530px;
+            }
+            min-height: 530px;
+        }
+    }
     .mo-head {
         top: $mo-height/1.15;
         h2 {
@@ -59,13 +93,64 @@
 
 //1024< (Laptop)
 @media screen and (max-width: 1024px) {
+    .proje-footer .contact-items {
+        li {
+            display: block;
+            text-align: left;
+            &:after {
+                display: none;
+            }
+        }
+    }
+    .har-projs .dplaces li {
+        font-size: 15px;
+        .circle {
+            margin-right: 8px;
+            width: 14px;
+            height: 14px;
+        }
+    }
+    section.krtl-plans {
+        padding: 80px 30px;
+        .side-txt {
+            display: none;
+        }
+    }
+    body section.krtl-tanitim {
+        .krtl-tnt-aciklama {
+            .head {
+                padding: 30px 15px;
+                li {
+                    a {
+                        margin: 0 7px;
+                        &:after {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    body section.kartal-galeri {
+        padding: 30px;
+        .kg-odaire-slider-container,
+        .kg-icmimari-slider-container,
+        .kg-mimari-slider-container {
+            min-height: 350px;
+        }
+        .head {
+            &:after {
+                display: none;
+            }
+        }
+    }
     .hide-in-mobil {
         display: none;
     }
     .show-in-mobil {
         display: block;
     }
-    .tel.show-in-mobil{
+    .tel.show-in-mobil {
         display: none;
     }
     .map.ilt-map {
@@ -81,8 +166,7 @@
         width: 100%;
     }
     body .b-talep-form {
-        right: -10px;
-        //padding: 7px 30px;
+        right: -10px; //padding: 7px 30px;
         font-size: 14px;
         &:hover {
             right: 0;
@@ -163,6 +247,86 @@
 
 //768< (Tablet)
 @media screen and (max-width: 768px) {
+    .proje-footer {
+        .social-media-icons {
+            a {
+                font-size: 18px;
+                margin: 0;
+                width: 36px;
+                height: 36px;
+                padding: 8px;
+            }
+        }
+    }
+    .mapWr {
+        display: none;
+    }
+    section.krtl-plans {
+        padding: 80px 0;
+        .plans-menu {
+            display: none;
+            li {
+                a {
+                    font-size: 24px;
+                }
+            }
+        }
+        .plans-menu-mobile {
+            .plans-menu {
+                display: block;
+                margin-bottom: 30px;
+                li {
+                    float: left;
+                    width: 25%;
+                    &:last-child {
+                        a {
+                            border: none;
+                        }
+                    }
+                    a {
+                        border-bottom: none;
+                        border-right: 1px solid #fff;
+                        height: 60px;
+                        padding: 15px;
+                        &:hover,
+                        &:active,
+                        &.active {
+                            &:after {
+                                top: auto;
+                                bottom: -10px;
+                                left: auto;
+                                @include horizontal-align(absolute);
+                                transform: rotate(45deg) translateX(-50%);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    body section.kartal-galeri {
+        padding: 0;
+        background-color: #fff;
+    }
+    body section.krtl-tanitim {
+        .krtl-tnt-aciklama {
+            .swiper-slide {
+                padding: 80px 15px;
+                min-height: 420px;
+                h3 {
+                    padding-top: 0;
+                    padding-bottom: 0;
+                }
+            }
+            .head {
+                li {
+                    a {
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
     .tp-projects-top {
         .detay-link {
             @include detay-link($width: auto, $font-size:22px, $before-left:-15px, $before-top:-10px, $top:-24px, $before-width:15px, $before-height:35px, $before-padding:5px);
@@ -258,7 +422,92 @@
 
 //425< (All Phones)
 @media screen and (max-width: 425px) {
-    .tel.show-in-mobil{
+    section.krtl-tanitim {
+        padding-top: 0;
+    }
+    .proje-footer {
+        .social-media-icons {
+            margin-bottom: 30px;
+        }
+        .foot-logo {
+            text-align: center;
+        }
+        .contact-items {
+            li {
+                display: inline;
+                float: none;
+                &:after {
+                    display: block;
+                }
+            }
+        }
+    }
+    .modal-body {
+        img {
+            width: 100%;
+        }
+    }
+    body section.krtl-plans {
+        .desc {
+            h5,
+            p {
+                text-align: center;
+            }
+        }
+        .plans-slider-container {
+            min-height: 880px;
+            .rooms {
+                margin-top: 30px;
+            }
+            .swiper-slide {
+                display: block;
+                min-height: 200px;
+            }
+            top: 0;
+        }
+        .room-images {
+            img {
+                top: 0;
+                left: 50%;
+                transform: translateX(-50%);
+                height: 100%;
+                width: auto;
+            }
+        }
+    }
+    body .plans-slider-container,
+    body .plans-slider-container .plan-1-slide-container,
+    body .plans-slider-container .plan-2-slide-container,
+    body .plans-slider-container .plan-3-slide-container,
+    body .plans-slider-container .plan-4-slide-container {
+        .rooms {
+            &,
+            &2,
+            &3,
+            &4 {
+                margin-top: 30px;
+            }
+        }
+        min-height: 0;
+        top: 0;
+    }
+    section.kartal-galeri {
+        .kartal-galeri-slider-container {
+            top: 0;
+        }
+        .kg-icmimari-slider-container,
+        .kg-mimari-slider-container,
+        .kg-odaire-slider-container {
+            top: 0;
+        }
+        .head {
+            a {
+                padding: 15px 0;
+                font-size: 16px;
+            }
+        }
+    }
+    .tel.show-in-mobil {
         display: block;
     }
     body .bt-form label {

@@ -2316,6 +2316,17 @@ Custom SCSS File
   width: 100%;
   height: 100vmin; }
 
+section.krtl-plans .side-txt, section.krtl-ozellikler .container .side-txt, section.mapWr .side-txt {
+  font-size: 80px;
+  color: #cac1b0;
+  top: 50%;
+  -webkit-transform: rotate(-90deg) translateX(-50%);
+          transform: rotate(-90deg) translateX(-50%);
+  -webkit-transform-origin: top left;
+          transform-origin: top left;
+  position: absolute;
+  left: -96px; }
+
 @font-face {
   font-family: 'flexoregular';
   src: url("../font/flexo-regular-webfont.woff2") format("woff2"), url("../font/flexo-regular-webfont.woff") format("woff");
@@ -4228,6 +4239,18 @@ ul {
     font-family: "flexoregular", "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
 .krtl-hero {
+  height: 400px;
+  margin-top: 67px;
+  position: relative;
+  /*  .hero-slogan{
+        margin-top: 30px;
+        font-family: $f-bold;
+        @include vertical-align();
+        z-index: 1;
+        font-size: 32px;
+        text-align: center;
+        color: #fff;
+    } */
   /* .krtl-form-btn {
         position: absolute;
         bottom: 60px;
@@ -4263,6 +4286,24 @@ ul {
             }
         }
     } */ }
+  .krtl-hero:before {
+    content: '';
+    position: absolute;
+    display: block;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 0; }
+  .krtl-hero .hero-logo {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    z-index: 1; }
+    .krtl-hero .hero-logo img {
+      display: block;
+      margin: 0 auto; }
 
 section.krtl-tanitim {
   padding: 80px 0; }
@@ -4351,21 +4392,14 @@ section.kartal-galeri {
       left: -127px;
       top: 706px; }
 
+.plans-menu-mobile .plans-menu {
+  display: none; }
+
 section.krtl-plans {
   padding: 80px 40px; }
   section.krtl-plans .container {
     position: relative;
     background-color: #eeeeee; }
-  section.krtl-plans .side-txt {
-    font-size: 120px;
-    color: #cac1b0;
-    -webkit-transform: rotate(-90deg);
-            transform: rotate(-90deg);
-    -webkit-transform-origin: top left;
-            transform-origin: top left;
-    position: absolute;
-    left: -124px;
-    top: 610px; }
   section.krtl-plans .plans-menu {
     background-color: #cac1b0;
     padding: 0;
@@ -4457,8 +4491,48 @@ section.krtl-plans {
       section.krtl-plans .desc h5 + p {
         text-align: left; }
 
+section.krtl-ozellikler {
+  margin: 80px 0; }
+  section.krtl-ozellikler .container {
+    min-height: 530px;
+    position: relative; }
+    section.krtl-ozellikler .container .ozellik {
+      display: block;
+      width: 100%;
+      text-align: center;
+      padding: 20px;
+      height: 80px;
+      position: relative;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+      min-height: 180px;
+      border: 1px solid #fff; }
+      section.krtl-ozellikler .container .ozellik:hover span {
+        opacity: 0; }
+      section.krtl-ozellikler .container .ozellik span {
+        background: #fff;
+        opacity: 0.8;
+        -webkit-transition: all ease .3s;
+        transition: all ease .3s;
+        display: block;
+        width: 100%;
+        height: 100%;
+        position: relative; }
+        section.krtl-ozellikler .container .ozellik span h3 {
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          -webkit-transform: translate(-50%, -50%);
+                  transform: translate(-50%, -50%);
+          font-size: 18px;
+          font-family: "flexoregular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+          margin: 0; }
+
 section.mapWr {
   margin: 0 0 80px 0; }
+  section.mapWr .container {
+    position: relative; }
 
 section.bi-tal-form {
   background-image: url("../images/kartal-balkon-gece.jpg");
@@ -4469,6 +4543,26 @@ section.bi-tal-form {
     background: rgba(202, 193, 176, 0.85); }
 
 @media screen and (max-width: 1440px) {
+  section.kartal-galeri .head:after {
+    font-size: 105px;
+    left: -110px;
+    top: 565px; }
+  section.kartal-galeri .kartal-galeri-slider-container {
+    min-height: 460px; }
+    section.kartal-galeri .kartal-galeri-slider-container .swiper-slide {
+      min-height: 350px; }
+  section.krtl-plans {
+    /* .side-txt {
+            top: 540px;
+        } */ }
+    section.krtl-plans ul.plans-menu {
+      min-height: auto; }
+      section.krtl-plans ul.plans-menu li a {
+        height: 133px; }
+    section.krtl-plans .plans-slider-container {
+      min-height: 530px; }
+      section.krtl-plans .plans-slider-container .swiper-slide {
+        min-height: 530px; }
   .mo-head, .mo-places {
     top: 547.82609px; }
     .mo-head h2, .mo-places h2 {
@@ -4544,6 +4638,35 @@ section.bi-tal-form {
     max-height: 636px; } }
 
 @media screen and (max-width: 1024px) {
+  .proje-footer .contact-items li {
+    display: block;
+    text-align: left; }
+    .proje-footer .contact-items li:after {
+      display: none; }
+  .har-projs .dplaces li {
+    font-size: 15px; }
+    .har-projs .dplaces li .circle {
+      margin-right: 8px;
+      width: 14px;
+      height: 14px; }
+  section.krtl-plans {
+    padding: 80px 30px; }
+    section.krtl-plans .side-txt {
+      display: none; }
+  body section.krtl-tanitim .krtl-tnt-aciklama .head {
+    padding: 30px 15px; }
+    body section.krtl-tanitim .krtl-tnt-aciklama .head li a {
+      margin: 0 7px; }
+      body section.krtl-tanitim .krtl-tnt-aciklama .head li a:after {
+        display: none; }
+  body section.kartal-galeri {
+    padding: 30px; }
+    body section.kartal-galeri .kg-odaire-slider-container,
+    body section.kartal-galeri .kg-icmimari-slider-container,
+    body section.kartal-galeri .kg-mimari-slider-container {
+      min-height: 350px; }
+    body section.kartal-galeri .head:after {
+      display: none; }
   .hide-in-mobil {
     display: none; }
   .show-in-mobil {
@@ -4645,6 +4768,54 @@ section.bi-tal-form {
     font-size: 14px; } }
 
 @media screen and (max-width: 768px) {
+  .proje-footer .social-media-icons a {
+    font-size: 18px;
+    margin: 0;
+    width: 36px;
+    height: 36px;
+    padding: 8px; }
+  .mapWr {
+    display: none; }
+  section.krtl-plans {
+    padding: 80px 0; }
+    section.krtl-plans .plans-menu {
+      display: none; }
+      section.krtl-plans .plans-menu li a {
+        font-size: 24px; }
+    section.krtl-plans .plans-menu-mobile .plans-menu {
+      display: block;
+      margin-bottom: 30px; }
+      section.krtl-plans .plans-menu-mobile .plans-menu li {
+        float: left;
+        width: 25%; }
+        section.krtl-plans .plans-menu-mobile .plans-menu li:last-child a {
+          border: none; }
+        section.krtl-plans .plans-menu-mobile .plans-menu li a {
+          border-bottom: none;
+          border-right: 1px solid #fff;
+          height: 60px;
+          padding: 15px; }
+          section.krtl-plans .plans-menu-mobile .plans-menu li a:hover:after, section.krtl-plans .plans-menu-mobile .plans-menu li a:active:after, section.krtl-plans .plans-menu-mobile .plans-menu li a.active:after {
+            top: auto;
+            bottom: -10px;
+            left: auto;
+            position: absolute;
+            left: 50%;
+            -webkit-transform: translateX(-50%);
+                    transform: translateX(-50%);
+            -webkit-transform: rotate(45deg) translateX(-50%);
+                    transform: rotate(45deg) translateX(-50%); }
+  body section.kartal-galeri {
+    padding: 0;
+    background-color: #fff; }
+  body section.krtl-tanitim .krtl-tnt-aciklama .swiper-slide {
+    padding: 80px 15px;
+    min-height: 420px; }
+    body section.krtl-tanitim .krtl-tnt-aciklama .swiper-slide h3 {
+      padding-top: 0;
+      padding-bottom: 0; }
+  body section.krtl-tanitim .krtl-tnt-aciklama .head li a {
+    font-size: 16px; }
   .tp-projects-top .detay-link {
     position: absolute;
     white-space: nowrap;
@@ -4769,6 +4940,71 @@ section.bi-tal-form {
       margin-bottom: 15px; } }
 
 @media screen and (max-width: 425px) {
+  section.krtl-tanitim {
+    padding-top: 0; }
+  .proje-footer .social-media-icons {
+    margin-bottom: 30px; }
+  .proje-footer .foot-logo {
+    text-align: center; }
+  .proje-footer .contact-items li {
+    display: inline;
+    float: none; }
+    .proje-footer .contact-items li:after {
+      display: block; }
+  .modal-body img {
+    width: 100%; }
+  body section.krtl-plans .desc h5,
+  body section.krtl-plans .desc p {
+    text-align: center; }
+  body section.krtl-plans .plans-slider-container {
+    min-height: 880px;
+    top: 0; }
+    body section.krtl-plans .plans-slider-container .rooms {
+      margin-top: 30px; }
+    body section.krtl-plans .plans-slider-container .swiper-slide {
+      display: block;
+      min-height: 200px; }
+  body section.krtl-plans .room-images img {
+    top: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    height: 100%;
+    width: auto; }
+  body .plans-slider-container,
+  body .plans-slider-container .plan-1-slide-container,
+  body .plans-slider-container .plan-2-slide-container,
+  body .plans-slider-container .plan-3-slide-container,
+  body .plans-slider-container .plan-4-slide-container {
+    min-height: 0;
+    top: 0; }
+    body .plans-slider-container .rooms, body .plans-slider-container .rooms2, body .plans-slider-container .rooms3, body .plans-slider-container .rooms4,
+    body .plans-slider-container .plan-1-slide-container .rooms,
+    body .plans-slider-container .plan-1-slide-container .rooms2,
+    body .plans-slider-container .plan-1-slide-container .rooms3,
+    body .plans-slider-container .plan-1-slide-container .rooms4,
+    body .plans-slider-container .plan-2-slide-container .rooms,
+    body .plans-slider-container .plan-2-slide-container .rooms2,
+    body .plans-slider-container .plan-2-slide-container .rooms3,
+    body .plans-slider-container .plan-2-slide-container .rooms4,
+    body .plans-slider-container .plan-3-slide-container .rooms,
+    body .plans-slider-container .plan-3-slide-container .rooms2,
+    body .plans-slider-container .plan-3-slide-container .rooms3,
+    body .plans-slider-container .plan-3-slide-container .rooms4,
+    body .plans-slider-container .plan-4-slide-container .rooms,
+    body .plans-slider-container .plan-4-slide-container .rooms2,
+    body .plans-slider-container .plan-4-slide-container .rooms3,
+    body .plans-slider-container .plan-4-slide-container .rooms4 {
+      margin-top: 30px; }
+  section.kartal-galeri .kartal-galeri-slider-container {
+    top: 0; }
+  section.kartal-galeri .kg-icmimari-slider-container,
+  section.kartal-galeri .kg-mimari-slider-container,
+  section.kartal-galeri .kg-odaire-slider-container {
+    top: 0; }
+  section.kartal-galeri .head a {
+    padding: 15px 0;
+    font-size: 16px; }
   .tel.show-in-mobil {
     display: block; }
   body .bt-form label {

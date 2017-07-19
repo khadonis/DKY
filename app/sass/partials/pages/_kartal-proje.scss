@@ -43,6 +43,37 @@
 
 .krtl-hero {
     @extend %hero;
+    height: 400px;
+    margin-top: $header-height;
+    position: relative;
+    &:before{
+        content: '';
+        position: absolute;
+        display: block;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,0.4);
+        z-index: 0;
+    }
+    .hero-logo {
+        //padding-top: 60px;
+        @include vertical-align();
+        z-index: 1;
+        img {
+            display: block;
+            margin: 0 auto;
+        }
+    }
+   /*  .hero-slogan{
+        margin-top: 30px;
+        font-family: $f-bold;
+        @include vertical-align();
+        z-index: 1;
+        font-size: 32px;
+        text-align: center;
+        color: #fff;
+    } */
     /* .krtl-form-btn {
         position: absolute;
         bottom: 60px;
@@ -190,6 +221,12 @@ section.kartal-galeri {
     }
 }
 
+.plans-menu-mobile {
+    .plans-menu {
+        display: none;
+    }
+}
+
 section.krtl-plans {
     padding: $section-padding $section-padding/2;
     .container {
@@ -197,13 +234,7 @@ section.krtl-plans {
         background-color: $gray-lighter;
     }
     .side-txt {
-        font-size: 120px;
-        color: $krtl-color;
-        transform: rotate(-90deg);
-        transform-origin: top left;
-        position: absolute;
-        left: -124px;
-        top: 610px;
+        @extend %side-text;
     }
     .plans-menu {
         background-color: $krtl-color;
@@ -251,7 +282,7 @@ section.krtl-plans {
                 width: 90%;
                 display: block;
                 cursor: text;
-                &:hover{
+                &:hover {
                     color: inherit;
                 }
                 .room-meters {
@@ -295,8 +326,60 @@ section.krtl-plans {
     }
 }
 
+section.krtl-ozellikler {
+    margin: $section-padding 0;
+    .container {
+        min-height: 530px;
+        position: relative;
+        .side-txt {
+            @extend %side-text;
+        }
+        .ozellik {
+            display: block;
+            width: 100%;
+            text-align: center;
+            padding: 20px;
+            height: 80px;
+            position: relative;
+            background: {
+                repeat: no-repeat;
+                size: cover;
+                position: center center;
+            }
+            min-height: 180px;
+            border: 1px solid #fff;
+            &:hover {
+                span {
+                    opacity: 0;
+                }
+            }
+            span {
+                background: #fff;
+                opacity: 0.8;
+                transition: all ease .3s;
+                display: block;
+                width: 100%;
+                height: 100%;
+                position: relative;
+                h3 {
+                    @include complate-align(absolute);
+                    font-size: 18px;
+                    font-family: $f-normal;
+                    margin: 0;
+                }
+            }
+        }
+    }
+}
+
 section.mapWr {
     margin: 0 0 $section-padding 0;
+    .container {
+        position: relative;
+    }
+    .side-txt {
+        @extend %side-text;
+    }
 }
 
 section.bi-tal-form {
