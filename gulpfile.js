@@ -63,7 +63,7 @@ gulp.task('import', function () {
 gulp.task('browser-sync', function() {
     browserSync.init(["dist/css/*.css", "dist/js/*.js"],{
         server: {
-            baseDir: "./"
+            baseDir: "./dist"
         }
 	});
 });

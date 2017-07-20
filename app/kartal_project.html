@@ -51,10 +51,17 @@
                     <div class="krtl-video-slider-container">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
-                                <iframe src="https://www.youtube.com/embed/NBldK9HYe6k" frameborder="0" allowfullscreen></iframe>
+                                <div id="videoRun" class="iframe-image"></div>
+                                <!-- <iframe width="800" height="450" src="https://www.youtube.com/embed/NBldK9HYe6k?controls=2&amp;showinfo=0&amp;modestbranding=0&amp;version=3&amp;enablejsapi=1"
+                                    frameborder="0" allowfullscreen></iframe> -->
+                                <div id="video1" class="videoFrame"></div>
                             </div>
                             <div class="swiper-slide">
-                                <iframe src="https://www.youtube.com/embed/NhsJY7Zf6cc" frameborder="0" allowfullscreen></iframe>
+                                <div id="videoRun2" class="iframe-image"></div>
+                                <!-- <iframe height="450" src="https://www.youtube.com/embed/NhsJY7Zf6cc?controls=2&amp;showinfo=0&amp;modestbranding=0&amp;version=3&amp;enablejsapi=1" frameborder="0"
+                                    allowfullscreen></iframe> -->
+                                <div id="video2" class="videoFrame"></div>
+
                             </div>
                             <div class="swiper-slide" style="background-image:url('images/DKY-2015-156_ Business_Outdoor-min.jpg')">
 
@@ -453,7 +460,7 @@
     </section>
     <section class="mapWr">
         <div class="container">
-                <div class="side-txt">LOKASYON</div>
+            <div class="side-txt">LOKASYON</div>
             <div class="row">
                 <div class="col-sm-10 col-xs-12 no-pad">
                     <div id="kartalMap" class="map kartalMap"></div>
@@ -721,6 +728,59 @@
             evt.stopPropagation();
             kartalMap.set('scrollwheel', true);
         });
+    </script>
+    <script>
+        var videoId_1 = 'NBldK9HYe6k';
+        var videoId_2 = 'NhsJY7Zf6cc';
+        var tag = document.createElement('script');
+        tag.src = "https://www.youtube.com/iframe_api";
+        var firstScriptTag = document.getElementsByTagName('script')[0];
+        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+        var player;
+        var player2;
+        function onYouTubeIframeAPIReady() {
+            player = new YT.Player('video1', {
+                height: '450',
+                width: '585',
+                videoId: videoId_1,
+                events: {
+                    'onReady': onPlayerReady
+                }
+            });
+            player2 = new YT.Player('video2', {
+                height: '450',
+                width: '585',
+                videoId: videoId_2,
+                events: {
+                    'onReady': onPlayerReady2
+                }
+            });
+        }
+
+        var linkVideo = 'http://img.youtube.com/vi/' + videoId_1 + '/0.jpg';
+        var linkVideo2 = 'http://img.youtube.com/vi/' + videoId_2 + '/0.jpg';
+        $('#videoRun').css('background-image', 'url(' + linkVideo + ')');
+        $('#videoRun2').css('background-image', 'url(' + linkVideo2 + ')');
+        function onPlayerReady(event) {
+            $('#videoRun').click(function () {
+                $(this).hide();
+                player.playVideo();
+            });
+        }
+        function onPlayerReady2(event) {
+            $('#videoRun2').click(function () {
+                $(this).hide();
+                player2.playVideo();
+            });
+        }
+        
+
+        /* swiperKrtlVideo.slideNext(function () {
+            $('#video1').get(0).stopVideo();
+        });
+        swiperKrtlVideo.slidePrev(function () {
+            $('#video2').get(0).stopVideo();
+        }); */
     </script>
 
 </body>

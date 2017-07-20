@@ -66,7 +66,7 @@ var swiperKrtl = new Swiper('.krtl-slider-container', {
 var swiperKrtlVideo = new Swiper('.krtl-video-slider-container', {
   speed: 400,
   nextButton: '.swiper-krtl-btn-next',
-  prevButton: '.swiper-krtl-btn-prev',
+  prevButton: '.swiper-krtl-btn-prev'
 });
 var swiperKrtlGaleri = new Swiper('.kartal-galeri-slider-container', {
   speed: 400,
@@ -130,37 +130,37 @@ var swiperKrtlPlan1 = new Swiper('.plan-1-slide-container', {
 
 
 var swiperKrtlPlan2 = new Swiper('.plan-2-slide-container', {
-    speed: 400,
-    //direction:'vertical',
-    effect: 'fade',
-    spaceBetween: 40,
-    onSlideChangeStart: function () {
-      $('.rooms2 li').find('a').removeClass('active');
-      $('.rooms2 li').eq(swiperKrtlPlan2.activeIndex).find('a').addClass('active');
-    },
-  });
+  speed: 400,
+  //direction:'vertical',
+  effect: 'fade',
+  spaceBetween: 40,
+  onSlideChangeStart: function () {
+    $('.rooms2 li').find('a').removeClass('active');
+    $('.rooms2 li').eq(swiperKrtlPlan2.activeIndex).find('a').addClass('active');
+  },
+});
 
-  var swiperKrtlPlan3 = new Swiper('.plan-3-slide-container', {
-    speed: 400,
-    //direction:'vertical',
-    effect: 'fade',
-    spaceBetween: 40,
-    onSlideChangeStart: function () {
-      $('.rooms3 li').find('a').removeClass('active');
-      $('.rooms3 li').eq(swiperKrtlPlan3.activeIndex).find('a').addClass('active');
-    },
-  });
-  var swiperKrtlPlan4 = new Swiper('.plan-4-slide-container', {
-    speed: 400,
-    //direction:'vertical',
-    effect: 'fade',
-    spaceBetween: 40,
-    onSlideChangeStart: function () {
-      $('.rooms4 li').find('a').removeClass('active');
-      $('.rooms4 li').eq(swiperKrtlPlan4.activeIndex).find('a').addClass('active');
-    },
-  });
-  
+var swiperKrtlPlan3 = new Swiper('.plan-3-slide-container', {
+  speed: 400,
+  //direction:'vertical',
+  effect: 'fade',
+  spaceBetween: 40,
+  onSlideChangeStart: function () {
+    $('.rooms3 li').find('a').removeClass('active');
+    $('.rooms3 li').eq(swiperKrtlPlan3.activeIndex).find('a').addClass('active');
+  },
+});
+var swiperKrtlPlan4 = new Swiper('.plan-4-slide-container', {
+  speed: 400,
+  //direction:'vertical',
+  effect: 'fade',
+  spaceBetween: 40,
+  onSlideChangeStart: function () {
+    $('.rooms4 li').find('a').removeClass('active');
+    $('.rooms4 li').eq(swiperKrtlPlan4.activeIndex).find('a').addClass('active');
+  },
+});
+
 
 
 var swiperHaberler = new Swiper('.basin-slide-container', {
@@ -271,9 +271,29 @@ yUyariBtn.click(function () {
 //bootstrap modal popup convert to lightbox
 $('a.thumb').click(function (event) {
   event.preventDefault();
-  var src= $(this).attr('href');
+  var src = $(this).attr('href');
   var content = $('.modal-body');
   content.empty();
-  content.html('<img src="'+src+'">');
+  content.html('<img src="' + src + '">');
   $('.modal-profile').modal('{show:true}');
 });
+
+/*  $('.krtl-video-slider-container .videoFrame').each(function () {
+  var src = $(this).attr('src');
+  vidcode = src.split('/').pop().split('?').shift();
+  var link = 'http://img.youtube.com/vi/' + vidcode + '/0.jpg';
+  var $this = $(this);
+  $this.siblings().css('background-image', 'url(' + link + ')');
+  $this.siblings('.iframe-image').click(function () {
+    $(this).hide();
+    $this.attr('src', src + '&autoplay=1');
+  });
+  swiperKrtlVideo.slideNext(function () {
+    $this.stopVideo();
+  });
+  swiperKrtlVideo.slidePrev(function () {
+    $this.stopVideo();
+  });
+});  */
+
+
