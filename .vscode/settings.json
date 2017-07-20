@@ -5,8 +5,10 @@
     "editor.minimap.enabled": false,
     "php.validate.executablePath": "C:/xampp/php/php.exe",
     "emmet.useNewEmmet": true,
-    "emmet.showExpandedAbbreviation": "always",
     "emmet.includeLanguages": {
-        "css":"scss"
+        "css": "scss"
+    },
+    "emmet.syntaxProfiles": {
+        "scss": "css"
     }
 }

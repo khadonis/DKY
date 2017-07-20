@@ -63,6 +63,7 @@
         img {
             display: block;
             margin: 0 auto;
+            
         }
     }
    /*  .hero-slogan{
@@ -376,6 +377,7 @@ section.mapWr {
     margin: 0 0 $section-padding 0;
     .container {
         position: relative;
+        background: $dty-map-color;
     }
     .side-txt {
         @extend %side-text;

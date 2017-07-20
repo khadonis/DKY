@@ -17,9 +17,6 @@
         }
     }
     section.krtl-plans {
-        /* .side-txt {
-            top: 540px;
-        } */
         ul.plans-menu {
             min-height: auto;
             li {
@@ -93,6 +90,9 @@
 
 //1024< (Laptop)
 @media screen and (max-width: 1024px) {
+    section.mapWr {
+        margin: 120px 0 80px;
+    }
     .proje-footer .contact-items {
         li {
             display: block;
@@ -111,9 +111,12 @@
         }
     }
     section.krtl-plans {
-        padding: 80px 30px;
+        padding: 120px 30px 30px;
         .side-txt {
-            display: none;
+            transform: rotate(0) translateY(-100%);
+            top: -29px;
+            left: -6px;
+            margin-top: 60px;
         }
     }
     body section.krtl-tanitim {
@@ -132,7 +135,7 @@
         }
     }
     body section.kartal-galeri {
-        padding: 30px;
+        padding: 110px 30px 30px;
         .kg-odaire-slider-container,
         .kg-icmimari-slider-container,
         .kg-mimari-slider-container {
@@ -140,7 +143,13 @@
         }
         .head {
             &:after {
-                display: none;
+                // Galeri Başlık Burada (.side-txt)
+                transform: rotate(0) translateY(-100%);
+                top: -23px;
+                left: -6px;
+                margin-top: 23px;
+                line-height: 0;
+                pointer-events: none;
             }
         }
     }
@@ -247,6 +256,9 @@
 
 //768< (Tablet)
 @media screen and (max-width: 768px) {
+    .krtl-hero {
+        height: 300px;
+    }
     .proje-footer {
         .social-media-icons {
             a {
@@ -262,7 +274,7 @@
         display: none;
     }
     section.krtl-plans {
-        padding: 80px 0;
+        padding: 110px 0;
         .plans-menu {
             display: none;
             li {
@@ -305,8 +317,7 @@
         }
     }
     body section.kartal-galeri {
-        padding: 0;
-        background-color: #fff;
+        padding: 110px 0 10px 0;
     }
     body section.krtl-tanitim {
         .krtl-tnt-aciklama {
@@ -322,8 +333,10 @@
                 li {
                     a {
                         font-size: 16px;
+                        margin: 0 4px;
                     }
                 }
+                padding: 30px 5px;
             }
         }
     }
@@ -422,7 +435,34 @@
 
 //425< (All Phones)
 @media screen and (max-width: 425px) {
-    section.krtl-tanitim {
+    body .krtl-video-slider-container {
+        &,
+        iframe {
+            height: 260px !important;
+        }
+        .swiper-slide {
+            min-height: 260px;
+        }
+    }
+    body section.krtl-tanitim {
+        .krtl-tnt-aciklama {
+            .krtl-slider-container {
+                .swiper-slide {
+                    min-height: 360px;
+                    height: 360px;
+                }
+                height: 360px;
+            }
+            .head{
+                li{
+                    a{
+                        font-size: 13px;
+                        margin: 0 2px;
+                        letter-spacing: 0;
+                    }
+                }
+            }
+        }
         padding-top: 0;
     }
     .proje-footer {
@@ -439,7 +479,16 @@
                 &:after {
                     display: block;
                 }
+                a{
+                    margin:0 5px;
+                }
+                padding-right: 5px;
+                padding-left: 5px;
             }
+            text-align: center;
+        }
+        .col-xs-12{
+            padding: 0;
         }
     }
     .modal-body {
@@ -491,19 +540,34 @@
         min-height: 0;
         top: 0;
     }
-    section.kartal-galeri {
+  body section.kartal-galeri {
         .kartal-galeri-slider-container {
+            .swiper-slide{
+                min-height: 160px;
+            }
             top: 0;
+            min-height: 160px;
+            padding: 80px 15px;
+            .kg-btn-prev{
+                right: 67px;
+            }
+            .kg-btn-next{
+                right: 15px;
+            }
         }
         .kg-icmimari-slider-container,
         .kg-mimari-slider-container,
         .kg-odaire-slider-container {
             top: 0;
+            min-height: 160px;
         }
         .head {
             a {
                 padding: 15px 0;
-                font-size: 16px;
+                font-size: 14px;
+            }
+            &:after{
+                font-size: 85px;
             }
         }
     }

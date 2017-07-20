@@ -77,7 +77,12 @@ var swiperKrtlGaleri = new Swiper('.kartal-galeri-slider-container', {
     $('.kartal-galeri .head div').find('a').removeClass('active');
     $('.kartal-galeri .head div').eq(swiperKrtlGaleri.activeIndex).find('a').addClass('active');
   },
-  spaceBetween: 40
+  spaceBetween: 40,
+  breakpoints: {
+    425: {
+      spaceBetween: 0
+    }
+  }
 });
 var swiperKrtlMimari = new Swiper('.kg-mimari-slider-container', {
   speed: 400,
@@ -156,23 +161,6 @@ var swiperKrtlPlan2 = new Swiper('.plan-2-slide-container', {
     },
   });
   
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 var swiperHaberler = new Swiper('.basin-slide-container', {

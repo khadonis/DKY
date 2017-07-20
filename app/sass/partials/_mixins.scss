@@ -204,6 +204,16 @@
     transform: rotate(-90deg) translateX(-50%);
     transform-origin: top left;
     position: absolute;
-    left: -96px;
-    
+    left: -96px; //mobile 1024px>
+    @media screen and (max-width: 1024px) {
+        transform: rotate(0) translateY(-100%);
+        top: -29px;
+        left: -6px;
+        margin-top: 60px;
+    }
+    @media screen and (max-width: 425px) {
+        font-size: 60px;
+        top: -37px !important;
+        left: -4px !important;
+    }
 }
