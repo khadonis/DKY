@@ -10,6 +10,14 @@
         display: block;
     }
 }
+.hero-video{
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    @include complate-align(absolute);
+    z-index: 9;
+}
 
 .odul-slide-container {
     height: 295px;

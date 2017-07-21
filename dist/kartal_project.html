@@ -648,6 +648,29 @@
             </div>
         </div>
     </div>
+    <script>
+       
+        var tag = document.createElement('script');
+        tag.src = "https://www.youtube.com/iframe_api";
+        var firstScriptTag = document.getElementsByTagName('script')[0];
+        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+       
+        /* if (swiperKrtlVideo.activeIndex !== swiperKrtlVideo.slides[0]) {
+            $('#buton').click();
+        } */
+       /*  $('#buton').click(function () {
+            player.pauseVideo();
+        }); */
+        /* swiperKrtlVideo.slideNext(function () {
+            player.pauseVideo();
+        }); */
+        /* swiperKrtlVideo.slideNext(function () {
+            $('#video1').get(0).stopVideo();
+        });
+        swiperKrtlVideo.slidePrev(function () {
+            $('#video2').get(0).stopVideo();
+        }); */
+    </script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB2V7XQtDZSOvcJzylGchYrL8nqzfsTsFg"></script>
     <footer class="proje-footer">
   <div class="container">
@@ -850,59 +873,7 @@
             kartalMap.set('scrollwheel', true);
         });
     </script>
-    <script>
-        var videoId_1 = 'NBldK9HYe6k';
-        var videoId_2 = 'NhsJY7Zf6cc';
-        var tag = document.createElement('script');
-        tag.src = "https://www.youtube.com/iframe_api";
-        var firstScriptTag = document.getElementsByTagName('script')[0];
-        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-        var player;
-        var player2;
-        function onYouTubeIframeAPIReady() {
-            player = new YT.Player('video1', {
-                height: '450',
-                width: '585',
-                videoId: videoId_1,
-                events: {
-                    'onReady': onPlayerReady
-                }
-            });
-            player2 = new YT.Player('video2', {
-                height: '450',
-                width: '585',
-                videoId: videoId_2,
-                events: {
-                    'onReady': onPlayerReady2
-                }
-            });
-        }
-
-        var linkVideo = 'http://img.youtube.com/vi/' + videoId_1 + '/0.jpg';
-        var linkVideo2 = 'http://img.youtube.com/vi/' + videoId_2 + '/0.jpg';
-        $('#videoRun').css('background-image', 'url(' + linkVideo + ')');
-        $('#videoRun2').css('background-image', 'url(' + linkVideo2 + ')');
-        function onPlayerReady(event) {
-            $('#videoRun').click(function () {
-                $(this).hide();
-                player.playVideo();
-            });
-        }
-        function onPlayerReady2(event) {
-            $('#videoRun2').click(function () {
-                $(this).hide();
-                player2.playVideo();
-            });
-        }
-        
-
-        /* swiperKrtlVideo.slideNext(function () {
-            $('#video1').get(0).stopVideo();
-        });
-        swiperKrtlVideo.slidePrev(function () {
-            $('#video2').get(0).stopVideo();
-        }); */
-    </script>
+    
 
 </body>
 
