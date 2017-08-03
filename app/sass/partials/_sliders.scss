@@ -10,6 +10,11 @@
         display: block;
     }
 }
+.swiper-container{
+    .swiper-slide{
+        overflow: hidden;
+    }
+}
 .hero-video{
     min-width: 100%;
     min-height: 100%;

@@ -3316,6 +3316,14 @@ footer {
     width: 100%;
     display: block; }
 
+.swiper-container .swiper-slide, .krtl-slider-container .swiper-slide, .kartal-galeri-slider-container .swiper-slide,
+.kg-mimari-slider-container .swiper-slide,
+.kg-icmimari-slider-container .swiper-slide,
+.kg-odaire-slider-container .swiper-slide, .plans-slider-container .swiper-slide,
+.plan-1-slide-container .swiper-slide, .plan-2-slide-container .swiper-slide, .plan-3-slide-container .swiper-slide, .plan-4-slide-container .swiper-slide,
+.krtl-video-slider-container .swiper-slide {
+  overflow: hidden; }
+
 .hero-video {
   min-width: 100%;
   min-height: 100%;
