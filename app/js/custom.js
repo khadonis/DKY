@@ -53,8 +53,17 @@ function onPlayerReady2(event) {
 
 
 
-//Sliders
 
+
+//Sliders
+var vid = document.getElementById('video1'),vid2 = document.getElementById('video2');
+
+function playVid(vid) {
+  vid.play();
+}
+function pauseVid(vid) {
+  vid.pause();
+}
 var activeClassTxt = '.swiper-pagination-bullet-active .res', bullts = ".swiper-pagination-bullet";
 function addTxt(sira, txtM) {
   $(bullts + ':eq(' + (sira - 1) + ')').html('<div class="res">' + txtM + '</div>');
@@ -77,6 +86,7 @@ var swiper = new Swiper('.swiper-container', {
       addTxt(3, 'DKY Kartal');
       $(activeClassTxt).show();
     }, 500);
+
   },
   onAfterResize: function (swiper) {
     addTxt(1, 'DKY Sahil');
@@ -87,6 +97,18 @@ var swiper = new Swiper('.swiper-container', {
   onSlideChangeStart: function (swiper) {
     $('.res').hide();
     $(activeClassTxt).show();
+
+    if (swiper.realIndex == 0 ) {
+      playVid(vid);
+    } else {
+      pauseVid(vid);
+    };
+    if (swiper.realIndex == 1 ) {
+      playVid(vid2);
+    } else {
+      pauseVid(vid2);
+    };
+
   }
 });
 
@@ -118,12 +140,12 @@ var swiperKrtlVideo = new Swiper('.krtl-video-slider-container', {
     $('.krtl-tnt-aciklama .head li').eq(swiperKrtlVideo.activeIndex).find('a').addClass('active');
     if (swiperKrtlVideo.activeIndex == 0) {
       player.playVideo();
-    } else{
+    } else {
       player.pauseVideo();
     }
     if (swiperKrtlVideo.activeIndex == 1) {
       player2.playVideo();
-    } else{
+    } else {
       player2.pauseVideo();
     }
   }
@@ -259,6 +281,8 @@ linkOutSlide($('.rooms li'), swiperKrtlPlan1);
 linkOutSlide($('.rooms2 li'), swiperKrtlPlan2);
 linkOutSlide($('.rooms3 li'), swiperKrtlPlan3);
 linkOutSlide($('.rooms4 li'), swiperKrtlPlan4);
+
+//html5 video
 
 
 

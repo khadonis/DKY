@@ -2828,21 +2828,28 @@ footer {
     position: absolute;
     background-color: #000;
     border-radius: 5px;
-    width: 80%;
-    -webkit-transition: all 300ms cubic-bezier(0.215, 0.61, 0.355, 1) 200ms;
-    transition: all 300ms cubic-bezier(0.215, 0.61, 0.355, 1) 200ms; }
+    width: 80%; }
     .menu-toggle .line-h:nth-child(1) {
       top: 0;
       -webkit-transform: rotate(0deg);
-              transform: rotate(0deg); }
+              transform: rotate(0deg);
+      -webkit-transition: top 300ms cubic-bezier(0.215, 0.61, 0.355, 1) 200ms, background-color 300ms cubic-bezier(0.215, 0.61, 0.355, 1) 0ms, -webkit-transform 300ms cubic-bezier(0.215, 0.61, 0.355, 1) 200ms;
+      transition: top 300ms cubic-bezier(0.215, 0.61, 0.355, 1) 200ms, background-color 300ms cubic-bezier(0.215, 0.61, 0.355, 1) 0ms, -webkit-transform 300ms cubic-bezier(0.215, 0.61, 0.355, 1) 200ms;
+      transition: top 300ms cubic-bezier(0.215, 0.61, 0.355, 1) 200ms, transform 300ms cubic-bezier(0.215, 0.61, 0.355, 1) 200ms, background-color 300ms cubic-bezier(0.215, 0.61, 0.355, 1) 0ms;
+      transition: top 300ms cubic-bezier(0.215, 0.61, 0.355, 1) 200ms, transform 300ms cubic-bezier(0.215, 0.61, 0.355, 1) 200ms, background-color 300ms cubic-bezier(0.215, 0.61, 0.355, 1) 0ms, -webkit-transform 300ms cubic-bezier(0.215, 0.61, 0.355, 1) 200ms; }
     .menu-toggle .line-h:nth-child(2) {
       top: 12px;
-      -webkit-transition: all 200ms cubic-bezier(0.8, 0.9, 0.95, 1) 0ms;
-      transition: all 200ms cubic-bezier(0.8, 0.9, 0.95, 1) 0ms; }
+      opacity: 1;
+      -webkit-transition: opacity 200ms linear 0ms, width 200ms linear 400ms, background-color 300ms cubic-bezier(0.215, 0.61, 0.355, 1) 0ms;
+      transition: opacity 200ms linear 0ms, width 200ms linear 400ms, background-color 300ms cubic-bezier(0.215, 0.61, 0.355, 1) 0ms; }
     .menu-toggle .line-h:nth-child(3) {
       top: 24px;
       -webkit-transform: rotate(0deg);
-              transform: rotate(0deg); }
+              transform: rotate(0deg);
+      -webkit-transition: top 300ms cubic-bezier(0.215, 0.61, 0.355, 1) 200ms, background-color 300ms cubic-bezier(0.215, 0.61, 0.355, 1) 0ms, -webkit-transform 300ms cubic-bezier(0.215, 0.61, 0.355, 1) 200ms;
+      transition: top 300ms cubic-bezier(0.215, 0.61, 0.355, 1) 200ms, background-color 300ms cubic-bezier(0.215, 0.61, 0.355, 1) 0ms, -webkit-transform 300ms cubic-bezier(0.215, 0.61, 0.355, 1) 200ms;
+      transition: top 300ms cubic-bezier(0.215, 0.61, 0.355, 1) 200ms, transform 300ms cubic-bezier(0.215, 0.61, 0.355, 1) 200ms, background-color 300ms cubic-bezier(0.215, 0.61, 0.355, 1) 0ms;
+      transition: top 300ms cubic-bezier(0.215, 0.61, 0.355, 1) 200ms, transform 300ms cubic-bezier(0.215, 0.61, 0.355, 1) 200ms, background-color 300ms cubic-bezier(0.215, 0.61, 0.355, 1) 0ms, -webkit-transform 300ms cubic-bezier(0.215, 0.61, 0.355, 1) 200ms; }
   .menu-toggle:hover .line-h {
     background-color: #ea5b06; }
   .menu-toggle.active {
@@ -2853,7 +2860,8 @@ footer {
               transform: rotate(-45deg);
       top: 11px; }
     .menu-toggle.active .line-h:nth-child(2) {
-      width: 0; }
+      width: 0;
+      opacity: 0; }
     .menu-toggle.active .line-h:nth-child(3) {
       -webkit-transform: rotate(45deg);
               transform: rotate(45deg);
@@ -3297,7 +3305,10 @@ footer {
 .kg-mimari-slider-container,
 .kg-icmimari-slider-container,
 .kg-odaire-slider-container, .plans-slider-container,
-.plan-1-slide-container, .plan-2-slide-container, .plan-3-slide-container, .plan-4-slide-container,
+.plan-1-slide-container,
+.plan-2-slide-container,
+.plan-3-slide-container,
+.plan-4-slide-container,
 .krtl-video-slider-container,
 .odul-slide-container,
 .basin-slide-container,
@@ -3309,7 +3320,10 @@ footer {
   .kg-mimari-slider-container img,
   .kg-icmimari-slider-container img,
   .kg-odaire-slider-container img, .plans-slider-container img,
-  .plan-1-slide-container img, .plan-2-slide-container img, .plan-3-slide-container img, .plan-4-slide-container img,
+  .plan-1-slide-container img,
+  .plan-2-slide-container img,
+  .plan-3-slide-container img,
+  .plan-4-slide-container img,
   .krtl-video-slider-container img,
   .odul-slide-container img, .basin-slide-container img,
   .basin-slide-container img {
@@ -3320,7 +3334,10 @@ footer {
 .kg-mimari-slider-container .swiper-slide,
 .kg-icmimari-slider-container .swiper-slide,
 .kg-odaire-slider-container .swiper-slide, .plans-slider-container .swiper-slide,
-.plan-1-slide-container .swiper-slide, .plan-2-slide-container .swiper-slide, .plan-3-slide-container .swiper-slide, .plan-4-slide-container .swiper-slide,
+.plan-1-slide-container .swiper-slide,
+.plan-2-slide-container .swiper-slide,
+.plan-3-slide-container .swiper-slide,
+.plan-4-slide-container .swiper-slide,
 .krtl-video-slider-container .swiper-slide {
   overflow: hidden; }
 
@@ -3334,7 +3351,7 @@ footer {
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  z-index: 9; }
+  z-index: 0; }
 
 .odul-slide-container, .basin-slide-container {
   height: 295px; }
@@ -3487,6 +3504,15 @@ footer {
     background-image: url("../images/dkyon_dis.png"); }
   .swiper-slide.r3 {
     background-image: url("../images/DKY-KARTAL.jpg"); }
+  .swiper-slide:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 1; }
 
 .swiper-container-vertical > .swiper-pagination-bullets {
   left: 20px; }
@@ -3520,15 +3546,24 @@ footer {
 .kg-mimari-slider-container .swiper-container,
 .kg-icmimari-slider-container .swiper-container,
 .kg-odaire-slider-container .swiper-container, .plans-slider-container .swiper-container,
-.plan-1-slide-container .swiper-container, .plan-2-slide-container .swiper-container, .plan-3-slide-container .swiper-container, .plan-4-slide-container .swiper-container, .krtl-slider-container .krtl-slider-container, .kartal-galeri-slider-container .krtl-slider-container,
+.plan-1-slide-container .swiper-container,
+.plan-2-slide-container .swiper-container,
+.plan-3-slide-container .swiper-container,
+.plan-4-slide-container .swiper-container, .krtl-slider-container .krtl-slider-container, .kartal-galeri-slider-container .krtl-slider-container,
 .kg-mimari-slider-container .krtl-slider-container,
 .kg-icmimari-slider-container .krtl-slider-container,
 .kg-odaire-slider-container .krtl-slider-container, .plans-slider-container .krtl-slider-container,
-.plan-1-slide-container .krtl-slider-container, .plan-2-slide-container .krtl-slider-container, .plan-3-slide-container .krtl-slider-container, .plan-4-slide-container .krtl-slider-container, .krtl-slider-container .kartal-galeri-slider-container, .kartal-galeri-slider-container .kartal-galeri-slider-container,
+.plan-1-slide-container .krtl-slider-container,
+.plan-2-slide-container .krtl-slider-container,
+.plan-3-slide-container .krtl-slider-container,
+.plan-4-slide-container .krtl-slider-container, .krtl-slider-container .kartal-galeri-slider-container, .kartal-galeri-slider-container .kartal-galeri-slider-container,
 .kg-mimari-slider-container .kartal-galeri-slider-container,
 .kg-icmimari-slider-container .kartal-galeri-slider-container,
 .kg-odaire-slider-container .kartal-galeri-slider-container, .plans-slider-container .kartal-galeri-slider-container,
-.plan-1-slide-container .kartal-galeri-slider-container, .plan-2-slide-container .kartal-galeri-slider-container, .plan-3-slide-container .kartal-galeri-slider-container, .plan-4-slide-container .kartal-galeri-slider-container, .krtl-slider-container
+.plan-1-slide-container .kartal-galeri-slider-container,
+.plan-2-slide-container .kartal-galeri-slider-container,
+.plan-3-slide-container .kartal-galeri-slider-container,
+.plan-4-slide-container .kartal-galeri-slider-container, .krtl-slider-container
 .kg-mimari-slider-container, .kartal-galeri-slider-container
 .kg-mimari-slider-container,
 .kg-mimari-slider-container
@@ -3539,9 +3574,12 @@ footer {
 .kg-mimari-slider-container, .plans-slider-container
 .kg-mimari-slider-container,
 .plan-1-slide-container
-.kg-mimari-slider-container, .plan-2-slide-container
-.kg-mimari-slider-container, .plan-3-slide-container
-.kg-mimari-slider-container, .plan-4-slide-container
+.kg-mimari-slider-container,
+.plan-2-slide-container
+.kg-mimari-slider-container,
+.plan-3-slide-container
+.kg-mimari-slider-container,
+.plan-4-slide-container
 .kg-mimari-slider-container, .krtl-slider-container
 .kg-icmimari-slider-container, .kartal-galeri-slider-container
 .kg-icmimari-slider-container,
@@ -3553,9 +3591,12 @@ footer {
 .kg-icmimari-slider-container, .plans-slider-container
 .kg-icmimari-slider-container,
 .plan-1-slide-container
-.kg-icmimari-slider-container, .plan-2-slide-container
-.kg-icmimari-slider-container, .plan-3-slide-container
-.kg-icmimari-slider-container, .plan-4-slide-container
+.kg-icmimari-slider-container,
+.plan-2-slide-container
+.kg-icmimari-slider-container,
+.plan-3-slide-container
+.kg-icmimari-slider-container,
+.plan-4-slide-container
 .kg-icmimari-slider-container, .krtl-slider-container
 .kg-odaire-slider-container, .kartal-galeri-slider-container
 .kg-odaire-slider-container,
@@ -3567,14 +3608,20 @@ footer {
 .kg-odaire-slider-container, .plans-slider-container
 .kg-odaire-slider-container,
 .plan-1-slide-container
-.kg-odaire-slider-container, .plan-2-slide-container
-.kg-odaire-slider-container, .plan-3-slide-container
-.kg-odaire-slider-container, .plan-4-slide-container
+.kg-odaire-slider-container,
+.plan-2-slide-container
+.kg-odaire-slider-container,
+.plan-3-slide-container
+.kg-odaire-slider-container,
+.plan-4-slide-container
 .kg-odaire-slider-container, .krtl-slider-container .plans-slider-container, .kartal-galeri-slider-container .plans-slider-container,
 .kg-mimari-slider-container .plans-slider-container,
 .kg-icmimari-slider-container .plans-slider-container,
 .kg-odaire-slider-container .plans-slider-container, .plans-slider-container .plans-slider-container,
-.plan-1-slide-container .plans-slider-container, .plan-2-slide-container .plans-slider-container, .plan-3-slide-container .plans-slider-container, .plan-4-slide-container .plans-slider-container, .krtl-slider-container
+.plan-1-slide-container .plans-slider-container,
+.plan-2-slide-container .plans-slider-container,
+.plan-3-slide-container .plans-slider-container,
+.plan-4-slide-container .plans-slider-container, .krtl-slider-container
 .plan-1-slide-container, .kartal-galeri-slider-container
 .plan-1-slide-container,
 .kg-mimari-slider-container
@@ -3585,22 +3632,64 @@ footer {
 .plan-1-slide-container, .plans-slider-container
 .plan-1-slide-container,
 .plan-1-slide-container
-.plan-1-slide-container, .plan-2-slide-container
-.plan-1-slide-container, .plan-3-slide-container
-.plan-1-slide-container, .plan-4-slide-container
-.plan-1-slide-container, .krtl-slider-container .plan-2-slide-container, .kartal-galeri-slider-container .plan-2-slide-container,
-.kg-mimari-slider-container .plan-2-slide-container,
-.kg-icmimari-slider-container .plan-2-slide-container,
-.kg-odaire-slider-container .plan-2-slide-container, .plans-slider-container .plan-2-slide-container,
-.plan-1-slide-container .plan-2-slide-container, .plan-2-slide-container .plan-2-slide-container, .plan-3-slide-container .plan-2-slide-container, .plan-4-slide-container .plan-2-slide-container, .krtl-slider-container .plan-3-slide-container, .kartal-galeri-slider-container .plan-3-slide-container,
-.kg-mimari-slider-container .plan-3-slide-container,
-.kg-icmimari-slider-container .plan-3-slide-container,
-.kg-odaire-slider-container .plan-3-slide-container, .plans-slider-container .plan-3-slide-container,
-.plan-1-slide-container .plan-3-slide-container, .plan-2-slide-container .plan-3-slide-container, .plan-3-slide-container .plan-3-slide-container, .plan-4-slide-container .plan-3-slide-container, .krtl-slider-container .plan-4-slide-container, .kartal-galeri-slider-container .plan-4-slide-container,
-.kg-mimari-slider-container .plan-4-slide-container,
-.kg-icmimari-slider-container .plan-4-slide-container,
-.kg-odaire-slider-container .plan-4-slide-container, .plans-slider-container .plan-4-slide-container,
-.plan-1-slide-container .plan-4-slide-container, .plan-2-slide-container .plan-4-slide-container, .plan-3-slide-container .plan-4-slide-container, .plan-4-slide-container .plan-4-slide-container, .krtl-slider-container
+.plan-1-slide-container,
+.plan-2-slide-container
+.plan-1-slide-container,
+.plan-3-slide-container
+.plan-1-slide-container,
+.plan-4-slide-container
+.plan-1-slide-container, .krtl-slider-container
+.plan-2-slide-container, .kartal-galeri-slider-container
+.plan-2-slide-container,
+.kg-mimari-slider-container
+.plan-2-slide-container,
+.kg-icmimari-slider-container
+.plan-2-slide-container,
+.kg-odaire-slider-container
+.plan-2-slide-container, .plans-slider-container
+.plan-2-slide-container,
+.plan-1-slide-container
+.plan-2-slide-container,
+.plan-2-slide-container
+.plan-2-slide-container,
+.plan-3-slide-container
+.plan-2-slide-container,
+.plan-4-slide-container
+.plan-2-slide-container, .krtl-slider-container
+.plan-3-slide-container, .kartal-galeri-slider-container
+.plan-3-slide-container,
+.kg-mimari-slider-container
+.plan-3-slide-container,
+.kg-icmimari-slider-container
+.plan-3-slide-container,
+.kg-odaire-slider-container
+.plan-3-slide-container, .plans-slider-container
+.plan-3-slide-container,
+.plan-1-slide-container
+.plan-3-slide-container,
+.plan-2-slide-container
+.plan-3-slide-container,
+.plan-3-slide-container
+.plan-3-slide-container,
+.plan-4-slide-container
+.plan-3-slide-container, .krtl-slider-container
+.plan-4-slide-container, .kartal-galeri-slider-container
+.plan-4-slide-container,
+.kg-mimari-slider-container
+.plan-4-slide-container,
+.kg-icmimari-slider-container
+.plan-4-slide-container,
+.kg-odaire-slider-container
+.plan-4-slide-container, .plans-slider-container
+.plan-4-slide-container,
+.plan-1-slide-container
+.plan-4-slide-container,
+.plan-2-slide-container
+.plan-4-slide-container,
+.plan-3-slide-container
+.plan-4-slide-container,
+.plan-4-slide-container
+.plan-4-slide-container, .krtl-slider-container
 .krtl-video-slider-container, .kartal-galeri-slider-container
 .krtl-video-slider-container,
 .kg-mimari-slider-container
@@ -3611,15 +3700,21 @@ footer {
 .krtl-video-slider-container, .plans-slider-container
 .krtl-video-slider-container,
 .plan-1-slide-container
-.krtl-video-slider-container, .plan-2-slide-container
-.krtl-video-slider-container, .plan-3-slide-container
-.krtl-video-slider-container, .plan-4-slide-container
+.krtl-video-slider-container,
+.plan-2-slide-container
+.krtl-video-slider-container,
+.plan-3-slide-container
+.krtl-video-slider-container,
+.plan-4-slide-container
 .krtl-video-slider-container,
 .krtl-slider-container .swiper-slide, .kartal-galeri-slider-container .swiper-slide,
 .kg-mimari-slider-container .swiper-slide,
 .kg-icmimari-slider-container .swiper-slide,
 .kg-odaire-slider-container .swiper-slide, .plans-slider-container .swiper-slide,
-.plan-1-slide-container .swiper-slide, .plan-2-slide-container .swiper-slide, .plan-3-slide-container .swiper-slide, .plan-4-slide-container .swiper-slide,
+.plan-1-slide-container .swiper-slide,
+.plan-2-slide-container .swiper-slide,
+.plan-3-slide-container .swiper-slide,
+.plan-4-slide-container .swiper-slide,
 .krtl-video-slider-container .swiper-container,
 .krtl-video-slider-container .krtl-slider-container,
 .krtl-video-slider-container .kartal-galeri-slider-container,
@@ -3632,9 +3727,12 @@ footer {
 .krtl-video-slider-container .plans-slider-container,
 .krtl-video-slider-container
 .plan-1-slide-container,
-.krtl-video-slider-container .plan-2-slide-container,
-.krtl-video-slider-container .plan-3-slide-container,
-.krtl-video-slider-container .plan-4-slide-container,
+.krtl-video-slider-container
+.plan-2-slide-container,
+.krtl-video-slider-container
+.plan-3-slide-container,
+.krtl-video-slider-container
+.plan-4-slide-container,
 .krtl-video-slider-container
 .krtl-video-slider-container,
 .krtl-video-slider-container .swiper-slide {
@@ -3647,7 +3745,10 @@ footer {
 .kg-mimari-slider-container,
 .kg-icmimari-slider-container,
 .kg-odaire-slider-container, .plans-slider-container,
-.plan-1-slide-container, .plan-2-slide-container, .plan-3-slide-container, .plan-4-slide-container {
+.plan-1-slide-container,
+.plan-2-slide-container,
+.plan-3-slide-container,
+.plan-4-slide-container {
   max-height: 450px; }
 
 .swiper-krtl-btn-next,
@@ -3778,19 +3879,31 @@ footer {
   padding: 0; }
 
 .plans-slider-container,
-.plan-1-slide-container, .plan-2-slide-container, .plan-3-slide-container, .plan-4-slide-container {
+.plan-1-slide-container,
+.plan-2-slide-container,
+.plan-3-slide-container,
+.plan-4-slide-container {
   position: relative;
   min-height: 600px;
   overflow: hidden; }
   .plans-slider-container .swiper-slide,
-  .plan-1-slide-container .swiper-slide, .plan-2-slide-container .swiper-slide, .plan-3-slide-container .swiper-slide, .plan-4-slide-container .swiper-slide {
+  .plan-1-slide-container .swiper-slide,
+  .plan-2-slide-container .swiper-slide,
+  .plan-3-slide-container .swiper-slide,
+  .plan-4-slide-container .swiper-slide {
     width: 100%;
     min-height: 600px; }
   .plans-slider-container .room-images,
-  .plan-1-slide-container .room-images, .plan-2-slide-container .room-images, .plan-3-slide-container .room-images, .plan-4-slide-container .room-images {
+  .plan-1-slide-container .room-images,
+  .plan-2-slide-container .room-images,
+  .plan-3-slide-container .room-images,
+  .plan-4-slide-container .room-images {
     overflow: hidden; }
 
-.plan-1-slide-container .swiper-slide, .plan-2-slide-container .swiper-slide, .plan-3-slide-container .swiper-slide, .plan-4-slide-container .swiper-slide {
+.plan-1-slide-container .swiper-slide,
+.plan-2-slide-container .swiper-slide,
+.plan-3-slide-container .swiper-slide,
+.plan-4-slide-container .swiper-slide {
   min-height: 450px; }
 
 a {
@@ -4977,14 +5090,20 @@ section.bi-tal-form {
   .kg-mimari-slider-container,
   .kg-icmimari-slider-container,
   .kg-odaire-slider-container, .plans-slider-container,
-  .plan-1-slide-container, .plan-2-slide-container, .plan-3-slide-container, .plan-4-slide-container,
+  .plan-1-slide-container,
+  .plan-2-slide-container,
+  .plan-3-slide-container,
+  .plan-4-slide-container,
   .krtl-video-slider-container {
     height: 420px; }
     .swiper-container .scroll-down-i, .krtl-slider-container .scroll-down-i, .kartal-galeri-slider-container .scroll-down-i,
     .kg-mimari-slider-container .scroll-down-i,
     .kg-icmimari-slider-container .scroll-down-i,
     .kg-odaire-slider-container .scroll-down-i, .plans-slider-container .scroll-down-i,
-    .plan-1-slide-container .scroll-down-i, .plan-2-slide-container .scroll-down-i, .plan-3-slide-container .scroll-down-i, .plan-4-slide-container .scroll-down-i,
+    .plan-1-slide-container .scroll-down-i,
+    .plan-2-slide-container .scroll-down-i,
+    .plan-3-slide-container .scroll-down-i,
+    .plan-4-slide-container .scroll-down-i,
     .krtl-video-slider-container .scroll-down-i {
       display: none; }
   body .hero-proj {
@@ -5032,13 +5151,19 @@ section.bi-tal-form {
     .kg-mimari-slider-container, body section.krtl-tanitim .krtl-tnt-aciklama
     .kg-icmimari-slider-container, body section.krtl-tanitim .krtl-tnt-aciklama
     .kg-odaire-slider-container, body section.krtl-tanitim .krtl-tnt-aciklama .plans-slider-container, body section.krtl-tanitim .krtl-tnt-aciklama
-    .plan-1-slide-container, body section.krtl-tanitim .krtl-tnt-aciklama .plan-2-slide-container, body section.krtl-tanitim .krtl-tnt-aciklama .plan-3-slide-container, body section.krtl-tanitim .krtl-tnt-aciklama .plan-4-slide-container {
+    .plan-1-slide-container, body section.krtl-tanitim .krtl-tnt-aciklama
+    .plan-2-slide-container, body section.krtl-tanitim .krtl-tnt-aciklama
+    .plan-3-slide-container, body section.krtl-tanitim .krtl-tnt-aciklama
+    .plan-4-slide-container {
       height: 360px; }
       body section.krtl-tanitim .krtl-tnt-aciklama .krtl-slider-container .swiper-slide, body section.krtl-tanitim .krtl-tnt-aciklama .kartal-galeri-slider-container .swiper-slide, body section.krtl-tanitim .krtl-tnt-aciklama
       .kg-mimari-slider-container .swiper-slide, body section.krtl-tanitim .krtl-tnt-aciklama
       .kg-icmimari-slider-container .swiper-slide, body section.krtl-tanitim .krtl-tnt-aciklama
       .kg-odaire-slider-container .swiper-slide, body section.krtl-tanitim .krtl-tnt-aciklama .plans-slider-container .swiper-slide, body section.krtl-tanitim .krtl-tnt-aciklama
-      .plan-1-slide-container .swiper-slide, body section.krtl-tanitim .krtl-tnt-aciklama .plan-2-slide-container .swiper-slide, body section.krtl-tanitim .krtl-tnt-aciklama .plan-3-slide-container .swiper-slide, body section.krtl-tanitim .krtl-tnt-aciklama .plan-4-slide-container .swiper-slide {
+      .plan-1-slide-container .swiper-slide, body section.krtl-tanitim .krtl-tnt-aciklama
+      .plan-2-slide-container .swiper-slide, body section.krtl-tanitim .krtl-tnt-aciklama
+      .plan-3-slide-container .swiper-slide, body section.krtl-tanitim .krtl-tnt-aciklama
+      .plan-4-slide-container .swiper-slide {
         min-height: 360px;
         height: 360px; }
     body section.krtl-tanitim .krtl-tnt-aciklama .head li a {
@@ -5248,7 +5373,10 @@ section.bi-tal-form {
   .kg-mimari-slider-container, body
   .kg-icmimari-slider-container, body
   .kg-odaire-slider-container, body .plans-slider-container, body
-  .plan-1-slide-container, body .plan-2-slide-container, body .plan-3-slide-container, body .plan-4-slide-container, body
+  .plan-1-slide-container, body
+  .plan-2-slide-container, body
+  .plan-3-slide-container, body
+  .plan-4-slide-container, body
   .krtl-video-slider-container,
   body .odul-slide-container,
   body .basin-slide-container,
@@ -5404,7 +5532,8 @@ section.bi-tal-form {
   position: absolute;
   top: 55%;
   left: 9%;
-  opacity: 0.75; }
+  opacity: 0.75;
+  z-index: 1; }
   .btn-sahil:hover {
     opacity: 1;
     color: #fff; }

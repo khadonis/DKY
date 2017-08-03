@@ -10,18 +10,20 @@
         display: block;
     }
 }
-.swiper-container{
-    .swiper-slide{
+
+.swiper-container {
+    .swiper-slide {
         overflow: hidden;
     }
 }
-.hero-video{
+
+.hero-video {
     min-width: 100%;
     min-height: 100%;
     width: auto;
     height: auto;
     @include complate-align(absolute);
-    z-index: 9;
+    z-index: 0;
 }
 
 .odul-slide-container {
@@ -214,6 +216,16 @@
             image: url('../images/DKY-KARTAL.jpg');
         }
     }
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, .3);
+        z-index: 1;
+    }
 }
 
 .swiper-container-vertical>.swiper-pagination-bullets {
@@ -370,7 +382,10 @@
 }
 
 .plans-slider-container,
-.plan-1-slide-container, .plan-2-slide-container, .plan-3-slide-container, .plan-4-slide-container {
+.plan-1-slide-container,
+.plan-2-slide-container,
+.plan-3-slide-container,
+.plan-4-slide-container {
     @extend .krtl-slider-container;
     position: relative;
     min-height: 600px;
@@ -384,7 +399,10 @@
     }
 }
 
-.plan-1-slide-container, .plan-2-slide-container, .plan-3-slide-container, .plan-4-slide-container {
+.plan-1-slide-container,
+.plan-2-slide-container,
+.plan-3-slide-container,
+.plan-4-slide-container {
     @extend .krtl-slider-container;
     .swiper-slide {
         min-height: 450px;
