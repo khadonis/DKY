@@ -77,7 +77,7 @@ var swiper = new Swiper('.swiper-container', {
   //effect: "fade",
   speed: 1000,
   loop: true,
-  autoplay: 3000,
+  autoplay: 12000,
   queueStartCallbacks: true,
   onInit: function (swiper) {
     setTimeout(function () {

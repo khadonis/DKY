@@ -3504,7 +3504,7 @@ footer {
     background-image: url("../images/dkyon_dis.png"); }
   .swiper-slide.r3 {
     background-image: url("../images/DKY-KARTAL.jpg"); }
-  .swiper-slide:before {
+  .swiper-slide .dark {
     content: '';
     position: absolute;
     top: 0;
