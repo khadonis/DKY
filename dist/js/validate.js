@@ -33,7 +33,7 @@ function validateForm() {
         });
         event.preventDefault();
     }
-    /*if (projects == "") {
+    if (projects == "" || projects == '0') {
         swal({
             title: 'Uyarı!',
             text: 'Lütfen bir proje seçiniz',
@@ -41,7 +41,7 @@ function validateForm() {
             confirmButtonText: 'OK'
         });
         event.preventDefault();
-    }*/
+    }
 
 
 
@@ -82,7 +82,7 @@ function validateForm() {
     }
 
 
-    /*if (surname == "") {
+    if (surname == "") {
         swal({
             title: 'Uyarı!',
             text: 'Lütfen soyadınızı giriniz',
@@ -98,7 +98,7 @@ function validateForm() {
             confirmButtonText: 'OK'
         });
         event.preventDefault();
-    }*/
+    }
 
 
 

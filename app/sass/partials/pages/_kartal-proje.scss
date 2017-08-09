@@ -355,7 +355,7 @@ section.krtl-plans {
 }
 
 section.krtl-ozellikler {
-    margin: $section-padding 0;
+    margin:0 0 $section-padding;
     .container {
         min-height: 530px;
         position: relative;
@@ -378,12 +378,12 @@ section.krtl-ozellikler {
             border: 1px solid #fff;
             &:hover {
                 span {
-                    opacity: 0;
+                    opacity: 1;
                 }
             }
             span {
                 background: #fff;
-                opacity: 0.8;
+                opacity: 0.35;
                 transition: all ease .3s;
                 display: block;
                 width: 100%;

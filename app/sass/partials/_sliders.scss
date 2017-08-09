@@ -216,16 +216,19 @@
             image: url('../images/DKY-KARTAL.jpg');
         }
     }
-    .dark {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0, 0, 0, .3);
-        z-index: 1;
-    }
+}
+.dark {
+    //content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .3);
+    //background-image: url('../images/noise.png');
+    //background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAFElEQVQImWNgYGD4D8UoAKsgBQAAYRYD/VvnelMAAAAASUVORK5CYII=);
+    z-index: 0;
+    //opacity: .5;
 }
 
 .swiper-container-vertical>.swiper-pagination-bullets {

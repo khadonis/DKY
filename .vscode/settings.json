@@ -3,7 +3,6 @@
     "editor.wordWrap": "on",
     "git.ignoreLimitWarning": true,
     "editor.minimap.enabled": false,
-    "php.validate.executablePath": "C:/xampp/php/php.exe",
     "emmet.useNewEmmet": true,
     "emmet.includeLanguages": {
         "css": "scss"

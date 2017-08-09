@@ -21,31 +21,31 @@ var dkyVizyon = [
     */
 ];
 var dkySahil = [
-    ['DKY Sahil', 40.8944685, 29.171256, 'images/' + sahilIcon + '', '#dkySahilLink', 'images/DKY-KARTAL-GECE.jpg', 1]
+    ['DKY Sahil', 40.8944685, 29.171256, 'images/' + sahilIcon + '', '#dkySahilLink', 'images/map-sahil.jpg', 1]
 ]
 var dkyOnKagithane = [
-    ['DKY On Kağıthane', 41.085888, 28.9703857, 'images/' + onIcon + '', '#dkyOnKagithaneLink', 'images/DKY-KARTAL-GECE.jpg', 1]
+    ['DKY On Kağıthane', 41.085888, 28.9703857, 'images/' + onIcon + '', '#dkyOnKagithaneLink', 'images/map-on.jpg', 1]
 ];
 var dkyGoztepe = [
-    ['DKY Cadde Göztepe 05', 40.9801883, 29.0653588, 'images/' + goztepeIcon + '', '#dkyGoztepeLink', 'images/DKY-KARTAL-GECE.jpg', 1]
+    ['DKY Cadde Göztepe 05', 40.9801883, 29.0653588, 'images/' + goztepeIcon + '', '#dkyGoztepeLink', 'images/map-goztepe.jpg', 1]
 ];
 var dkyBusiness = [
-    ['DKY Business Kartal', 40.9090283, 29.2100452, 'images/' + businessIcon + '', '#dkyBusinessLink', 'images/DKY-KARTAL-GECE.jpg', 1]
+    ['DKY Business Kartal', 40.9090283, 29.2100452, 'images/' + businessIcon + '', '#dkyBusinessLink', 'images/map-business.jpg', 1]
 ];
 var dkyLokumEvler = [
-    ['Lokum Evler', 40.8750308, 29.3239722, 'images/' + lokumIcon + '', '#dkyLokumEvlerLink', 'images/DKY-KARTAL-GECE.jpg', 1]
+    ['Lokum Evler', 40.8750308, 29.3239722, 'images/' + lokumIcon + '', '#dkyLokumEvlerLink', 'images/map-lokum.jpg', 1]
 ];
 var dkyAda = [
-    ['DKY Ada', 40.905396, 29.185898, 'images/' + adaIcon + '', '#dkyAdaLink', 'images/DKY-KARTAL-GECE.jpg', 1]
+    ['DKY Ada', 40.905396, 29.185898, 'images/' + adaIcon + '', '#dkyAdaLink', 'images/map-ada.jpg', 1]
 ];
 var dkyBusinessTuzla = [
-    ['DKY Business Tuzla', 40.847713, 29.2967011, 'images/' + businessTuzlaIcon + '', '#dkyBusinezzTuzlaLink', 'images/DKY-KARTAL-GECE.jpg', 1]
+    ['DKY Business Tuzla', 40.847713, 29.2967011, 'images/' + businessTuzlaIcon + '', '#dkyBusinezzTuzlaLink', 'images/map-tuzla.jpg', 1]
 ];
 var dkyCaddeSuadiye = [
-    ['DKY Cadde Suadiye 12', 40.96679, 29.085285, 'images/' + suadiyeIcon + '', '#dkyCaddeSuadiyeLink', 'images/DKY-KARTAL-GECE.jpg', 1]
+    ['DKY Cadde Suadiye 12', 40.96679, 29.085285, 'images/' + suadiyeIcon + '', '#dkyCaddeSuadiyeLink', 'images/map-suadiye.jpg', 1]
 ];
 var dkyCaddeErenkoy = [
-    ['DKY Cadde Erenköy 86', 40.978263, 29.073121, 'images/' + erenkoyIcon + '', '#dkyCaddeErenkoyLink', 'images/DKY-KARTAL-GECE.jpg', 1]
+    ['DKY Cadde Erenköy 86', 40.978263, 29.073121, 'images/' + erenkoyIcon + '', '#dkyCaddeErenkoyLink', 'images/map-erenkoy.jpg', 1]
 ];
 var tamamlanan = [
     ['DKY Cadde Erenköy 86', 40.978263, 29.073121, 'images/' + erenkoyIcon + '', '#dkyCaddeErenkoyLink', 'images/DKY-KARTAL-GECE.jpg', 1], ['DKY Cadde Suadiye 12', 40.96679, 29.085285, 'images/' + suadiyeIcon + '', '#dkyCaddeSuadiyeLink', 'images/DKY-KARTAL-GECE.jpg', 1]

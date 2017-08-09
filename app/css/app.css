@@ -2473,6 +2473,8 @@ section.krtl-plans .side-txt, section.krtl-ozellikler .container .side-txt, sect
     background-repeat: no-repeat;
     background-size: cover;
     opacity: 0.08; }
+  .gradient.bf-wr, .gradient .bf-wr.back-effect {
+    position: relative; }
 
 .no-left-pad, .no-pad {
   padding-left: 0; }
@@ -3504,15 +3506,15 @@ footer {
     background-image: url("../images/dkyon_dis.png"); }
   .swiper-slide.r3 {
     background-image: url("../images/DKY-KARTAL.jpg"); }
-  .swiper-slide .dark {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.3);
-    z-index: 1; }
+
+.dark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 0; }
 
 .swiper-container-vertical > .swiper-pagination-bullets {
   left: 20px; }
@@ -4661,7 +4663,7 @@ section.krtl-plans {
         text-align: left; }
 
 section.krtl-ozellikler {
-  margin: 80px 0; }
+  margin: 0 0 80px; }
   section.krtl-ozellikler .container {
     min-height: 530px;
     position: relative; }
@@ -4678,10 +4680,10 @@ section.krtl-ozellikler {
       min-height: 180px;
       border: 1px solid #fff; }
       section.krtl-ozellikler .container .ozellik:hover span {
-        opacity: 0; }
+        opacity: 1; }
       section.krtl-ozellikler .container .ozellik span {
         background: #fff;
-        opacity: 0.8;
+        opacity: 0.35;
         -webkit-transition: all ease .3s;
         transition: all ease .3s;
         display: block;
@@ -4711,6 +4713,92 @@ section.bi-tal-form {
   background-position: center center; }
   section.bi-tal-form .bt-form {
     background: rgba(202, 193, 176, 0.85); }
+
+.bf-wr {
+  color: #fff;
+  margin-top: 67px;
+  padding: 60px 0; }
+  .bf-wr .back-effect {
+    z-index: 0; }
+  .bf-wr .container {
+    z-index: 1;
+    position: relative; }
+  .bf-wr h2 {
+    color: #fff;
+    padding: 60px 0;
+    font-size: 48px; }
+  .bf-wr input[type="text"],
+  .bf-wr input[type="tel"],
+  .bf-wr input[type="mail"],
+  .bf-wr select {
+    font-size: 24px;
+    background: transparent;
+    background-color: transparent;
+    width: 100%;
+    padding: 20px 10px;
+    border: none;
+    border-bottom: 2px solid #fff;
+    -webkit-appearance: none; }
+    .bf-wr input[type="text"]::-webkit-input-placeholder,
+    .bf-wr input[type="tel"]::-webkit-input-placeholder,
+    .bf-wr input[type="mail"]::-webkit-input-placeholder,
+    .bf-wr select::-webkit-input-placeholder {
+      color: #fff; }
+    .bf-wr input[type="text"]:-ms-input-placeholder,
+    .bf-wr input[type="tel"]:-ms-input-placeholder,
+    .bf-wr input[type="mail"]:-ms-input-placeholder,
+    .bf-wr select:-ms-input-placeholder {
+      color: #fff; }
+    .bf-wr input[type="text"]::placeholder,
+    .bf-wr input[type="tel"]::placeholder,
+    .bf-wr input[type="mail"]::placeholder,
+    .bf-wr select::placeholder {
+      color: #fff; }
+  .bf-wr option,
+  .bf-wr select option {
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    background: #010101; }
+  .bf-wr .y-uyari {
+    margin: 30px 0;
+    font-size: 12px; }
+  .bf-wr .fieldset span {
+    font-size: 18px; }
+  .bf-wr label:first-child {
+    margin-right: 90px; }
+  .bf-wr input[type="radio"] {
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    background-color: transparent;
+    width: 13px;
+    height: 13px;
+    border-radius: 23px;
+    margin-right: 15px;
+    margin-left: 15px;
+    margin-top: 5px;
+    float: left; }
+    .bf-wr input[type="radio"]:after {
+      content: '';
+      display: block;
+      border: 2px solid #fff;
+      border-radius: 20px;
+      background: transparent;
+      height: 23px;
+      width: 23px;
+      margin-top: -5px;
+      margin-left: -5px; }
+    .bf-wr input[type="radio"]:focus {
+      background-color: #fff; }
+  .bf-wr input[type="submit"] {
+    background: transparent;
+    border: none;
+    font-size: 48px;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 30px auto;
+    display: block; }
 
 @media screen and (max-width: 1440px) {
   .proje-harita-head {

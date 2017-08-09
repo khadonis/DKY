@@ -56,7 +56,7 @@ function onPlayerReady2(event) {
 
 
 //Sliders
-var vid = document.getElementById('video1'),vid2 = document.getElementById('video2');
+var vid = document.getElementById('video1'), vid2 = document.getElementById('video2');
 
 function playVid(vid) {
   vid.play();
@@ -80,30 +80,30 @@ var swiper = new Swiper('.swiper-container', {
   autoplay: 12000,
   queueStartCallbacks: true,
   onInit: function (swiper) {
-    setTimeout(function () {
-      addTxt(1, 'DKY Sahil');
-      addTxt(2, 'DKY On');
+    /* setTimeout(function () {
+      addTxt(1, 'DKY Ada');
+      addTxt(2, 'DKY Sahil');
       addTxt(3, 'DKY Kartal');
       $(activeClassTxt).show();
-    }, 500);
+    }, 500); */
 
   },
   onAfterResize: function (swiper) {
-    addTxt(1, 'DKY Sahil');
-    addTxt(2, 'DKY On');
+    /* addTxt(1, 'DKY Ada');
+    addTxt(2, 'DKY Sahil');
     addTxt(3, 'DKY Kartal');
-    $(activeClassTxt).show();
+    $(activeClassTxt).show(); */
   },
   onSlideChangeStart: function (swiper) {
-    $('.res').hide();
-    $(activeClassTxt).show();
+    /* $('.res').hide();
+    $(activeClassTxt).show(); */
 
-    if (swiper.realIndex == 0 ) {
+    if (swiper.realIndex == 0) {
       playVid(vid);
     } else {
       pauseVid(vid);
     };
-    if (swiper.realIndex == 1 ) {
+    if (swiper.realIndex == 1) {
       playVid(vid2);
     } else {
       pauseVid(vid2);
@@ -138,12 +138,16 @@ var swiperKrtlVideo = new Swiper('.krtl-video-slider-container', {
   onSlideChangeStart: function () {
     $('.krtl-tnt-aciklama .head li').find('a').removeClass('active');
     $('.krtl-tnt-aciklama .head li').eq(swiperKrtlVideo.activeIndex).find('a').addClass('active');
-    if (swiperKrtlVideo.activeIndex == 0) {
+
+    var isHidden = $('#videoRun').is(':hidden');
+    if (swiperKrtlVideo.activeIndex == 0 && isHidden) {
       player.playVideo();
     } else {
       player.pauseVideo();
     }
-    if (swiperKrtlVideo.activeIndex == 1) {
+
+    var isHidden2 = $('#videoRun2').is(':hidden');
+    if (swiperKrtlVideo.activeIndex == 1 && isHidden2) {
       player2.playVideo();
     } else {
       player2.pauseVideo();

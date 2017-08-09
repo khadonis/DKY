@@ -60,6 +60,9 @@
         @extend .gradient;
         opacity: 0.08;
     }
+    &.bf-wr {
+        position: relative;
+    }
 }
 
 .no-left-pad {
