@@ -39,13 +39,22 @@
         margin: 30px 0;
         font-size: 12px;
     }
-    .fieldset{
-        span{
+    .fieldset {
+        span {
             font-size: 18px;
         }
     }
-    label:first-child{
+    label {
+        @media screen and (max-width: 425px) {
+            float: left;
+            margin-bottom: 20px;
+        }
+    }
+    label:first-child {
         margin-right: 90px;
+        @media screen and (max-width: 425px) {
+            margin-right: 0;
+        }
     }
     input[type="radio"] {
         appearance: none;
@@ -57,8 +66,8 @@
         margin-left: 15px;
         margin-top: 5px;
         float: left;
-        &:after{
-            content:'';
+        &:after {
+            content: '';
             display: block;
             border: 2px solid #fff;
             border-radius: 20px;
@@ -68,17 +77,25 @@
             margin-top: -5px;
             margin-left: -5px;
         }
-        &:focus{
+        &:focus,
+        &::selection,
+        &:checked,
+        &:active {
             background-color: #fff;
         }
     }
-    input[type="submit"]{
+    input[type="submit"] {
         background: transparent;
-        border:none;
+        border: none;
         font-size: 48px;
         text-transform: uppercase;
         text-align: center;
         margin: 30px auto;
         display: block;
+    }
+}
+.btf-sayfa{
+    .b-talep-form{
+        display: none;
     }
 }

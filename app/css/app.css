@@ -3938,6 +3938,12 @@ ul {
     line-height: 1;
     top: 160px;
     right: 360px; }
+  @media screen and (max-width: 768px) {
+    .hero-img {
+      height: 300px; } }
+  @media screen and (max-width: 425px) {
+    .hero-img {
+      height: 125px; } }
 
 .spot {
   display: none;
@@ -4316,7 +4322,7 @@ ul {
     background: #fff;
     padding: 12px;
     position: relative; }
-    .bt-form input[type="radio"]:focus:after {
+    .bt-form input[type="radio"]:focus:after, .bt-form input[type="radio"]:checked:after {
       content: '\f00c';
       font-family: 'fontawesome';
       font-size: 24px;
@@ -4765,8 +4771,15 @@ section.bi-tal-form {
     font-size: 12px; }
   .bf-wr .fieldset span {
     font-size: 18px; }
+  @media screen and (max-width: 425px) {
+    .bf-wr label {
+      float: left;
+      margin-bottom: 20px; } }
   .bf-wr label:first-child {
     margin-right: 90px; }
+    @media screen and (max-width: 425px) {
+      .bf-wr label:first-child {
+        margin-right: 0; } }
   .bf-wr input[type="radio"] {
     -webkit-appearance: none;
        -moz-appearance: none;
@@ -4789,7 +4802,9 @@ section.bi-tal-form {
       width: 23px;
       margin-top: -5px;
       margin-left: -5px; }
-    .bf-wr input[type="radio"]:focus {
+    .bf-wr input[type="radio"]:focus, .bf-wr input[type="radio"]::-moz-selection, .bf-wr input[type="radio"]:checked, .bf-wr input[type="radio"]:active {
+      background-color: #fff; }
+    .bf-wr input[type="radio"]:focus, .bf-wr input[type="radio"]::selection, .bf-wr input[type="radio"]:checked, .bf-wr input[type="radio"]:active {
       background-color: #fff; }
   .bf-wr input[type="submit"] {
     background: transparent;
@@ -4799,6 +4814,9 @@ section.bi-tal-form {
     text-align: center;
     margin: 30px auto;
     display: block; }
+
+.btf-sayfa .b-talep-form {
+  display: none; }
 
 @media screen and (max-width: 1440px) {
   .proje-harita-head {
@@ -4880,7 +4898,7 @@ section.bi-tal-form {
     font-size: 80%; }
   .hero-img h1 {
     top: 40px;
-    right: 320px; }
+    right: 220px; }
   .spot {
     height: 903px;
     width: 65%;
@@ -4904,6 +4922,10 @@ section.bi-tal-form {
     max-height: 576px; } }
 
 @media screen and (max-width: 1024px) {
+  body .basin-slide-container .golge:before {
+    right: 232px; }
+  body .basin-slide-container .golge:after {
+    left: 218px; }
   section.mapWr {
     margin: 120px 0 80px; }
   .proje-footer .contact-items li {
@@ -5046,6 +5068,16 @@ section.bi-tal-form {
     font-size: 14px; } }
 
 @media screen and (max-width: 768px) {
+  body .basin-slide-container .golge {
+    padding-left: 15px; }
+    body .basin-slide-container .golge:before {
+      right: 176px; }
+    body .basin-slide-container .golge:after {
+      left: 184px; }
+  .basin-slide-container .swiper-slide:after {
+    right: -15px; }
+  .basin-slide-container .golge img {
+    height: 125px; }
   .krtl-hero {
     height: 300px; }
   .proje-footer .social-media-icons a {
@@ -5422,6 +5454,8 @@ section.bi-tal-form {
       width: auto !important; }
   body section h2 {
     text-align: center; }
+  body .section-medya .v-sep {
+    display: none; }
   body .b-talep-form {
     -webkit-transform-origin: center bottom;
             transform-origin: center bottom;
@@ -5465,19 +5499,25 @@ section.bi-tal-form {
   .plan-2-slide-container, body
   .plan-3-slide-container, body
   .plan-4-slide-container, body
-  .krtl-video-slider-container,
-  body .odul-slide-container,
-  body .basin-slide-container,
+  .krtl-video-slider-container {
+    height: 240px;
+    display: block;
+    top: 67px; }
+  body .odul-slide-container, body .basin-slide-container,
   body .basin-slide-container {
     height: 40%;
     display: block;
-    top: 74px; }
+    top: 67px; }
   body .basin-slide-container {
     height: 50%;
     margin-top: 15px; }
     body .basin-slide-container .btn-more {
       text-align: center;
       font-size: 90%; }
+  body .hero-video {
+    min-height: 240px;
+    height: 200px;
+    margin-top: 0 !important; }
   section[class^='section'] .container-fluid {
     padding: 0;
     margin-left: 0; }
@@ -5487,8 +5527,13 @@ section.bi-tal-form {
       text-align: center; }
   .basin-slide-container h3 {
     text-align: center; }
+  .basin-slide-container .golge:after,
+  .basin-slide-container .golge:before {
+    display: none; }
   .basin-slide-container .swiper-slide {
     padding: 0; }
+    .basin-slide-container .swiper-slide:after {
+      display: none; }
   body .section-projeler {
     padding-bottom: 0; }
     body .section-projeler .hero-proj h3 {

@@ -21,6 +21,12 @@
         top: 160px;
         right: 360px;
     }
+    @media screen and (max-width: 768px) {
+        height: 300px;
+    }
+    @media screen and (max-width: 425px) {
+        height: 125px;
+    }
 }
 
 .spot {

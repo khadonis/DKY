@@ -262,7 +262,7 @@ var swiperHaberler = new Swiper('.basin-slide-container', {
       slidesPerView: 1,
       spaceBetween: 0
     },
-    1023: {
+    1365: {
       slidesPerView: 2,
       spaceBetween: 15
     }

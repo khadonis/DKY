@@ -4,10 +4,10 @@
     .proje-harita-head {
         margin: 30px auto 15px;
     }
-    .proje-listesi>li{
+    .proje-listesi>li {
         top: 20px;
     }
-    .proje-listesi h4{
+    .proje-listesi h4 {
         margin-top: 0;
     }
     .vertical-h-menu {
@@ -73,7 +73,7 @@
     }
     .hero-img h1 {
         top: 40px;
-        right: 320px;
+        right: 220px;
     }
     .spot {
         height: 903px;
@@ -108,6 +108,15 @@
 
 //1024< (Laptop)
 @media screen and (max-width: 1024px) {
+    body .basin-slide-container .golge {
+        //padding-left: 15px;
+        &:before {
+            right: 232px;
+        }
+        &:after {
+            left: 218px;
+        }
+    }
     section.mapWr {
         margin: 120px 0 80px;
     }
@@ -274,6 +283,21 @@
 
 //768< (Tablet)
 @media screen and (max-width: 768px) {
+    body .basin-slide-container .golge {
+        padding-left: 15px;
+        &:before {
+            right: 176px;
+        }
+        &:after {
+            left: 184px;
+        }
+    }
+    .basin-slide-container .swiper-slide:after {
+        right: -15px;
+    }
+    .basin-slide-container .golge img {
+        height: 125px;
+    }
     .krtl-hero {
         height: 300px;
     }
@@ -653,6 +677,11 @@
                 text-align: center;
             }
         }
+        .section-medya {
+            .v-sep {
+                display: none;
+            }
+        }
         .b-talep-form {
             transform-origin: center bottom;
             transform: rotate(0deg);
@@ -699,12 +728,16 @@
             top: 40%;
             padding: 0;
         }
-        .swiper-container,
+        .swiper-container {
+            height: 240px;
+            display: block;
+            top: 67px;
+        }
         .odul-slide-container,
         .basin-slide-container {
             height: 40%;
             display: block;
-            top: 74px;
+            top: 67px;
         }
         .basin-slide-container {
             height: 50%;
@@ -713,6 +746,11 @@
                 text-align: center;
                 font-size: 90%;
             }
+        }
+        .hero-video {
+            min-height: 240px;
+            height: 200px;
+            margin-top: 0 !important;
         }
     }
     section[class^='section'] {
@@ -731,9 +769,16 @@
         h3 {
             text-align: center;
         }
+        .golge:after,
+        .golge:before {
+            display: none;
+        }
     }
     .basin-slide-container .swiper-slide {
         padding: 0;
+        &:after {
+            display: none;
+        }
     }
     body .section-projeler {
         padding-bottom: 0;
