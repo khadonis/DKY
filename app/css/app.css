@@ -5769,6 +5769,42 @@ section.bi-tal-form {
     padding-top: 15px;
     border-top: 1px solid #222222; } }
 
+#loaderWr {
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-position: 50% 30%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  -webkit-transition: background 0.3s linear;
+  transition: background 0.3s linear;
+  z-index: 9999; }
+  #loaderWr .loader {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 80%;
+    height: 2px;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.1); }
+    #loaderWr .loader div {
+      margin: auto;
+      height: 100%;
+      background-color: #ea5b06;
+      width: 0%; }
+  #loaderWr .percentage {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    margin-top: 5px;
+    color: #383838;
+    font-family: "flexobold", "flexoregular", "Helvetica Neue", Times, serif, Impact, Arial;
+    font-size: 24px;
+    text-align: center; }
+
 .btn-sahil {
   border-top: 4px solid #fff;
   border-bottom: 4px solid #fff;

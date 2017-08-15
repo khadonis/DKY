@@ -1,0 +1,39 @@
+#loaderWr {
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-position: 50% 30%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    transition: background 0.3s linear;
+    z-index: 9999;
+    .loader {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 80%;
+        height: 2px;
+        margin: auto;
+        background-color: rgba(0, 0, 0, 0.1);
+        div {
+            margin: auto;
+            height: 100%;
+            background-color: $sec-color;
+            width: 0%;
+        }
+    }
+    .percentage {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        margin-top: 5px;
+        color: #383838;
+       // color: rgba(255, 255, 255, 0.1);
+        font-family: $f-f-flexobold, Impact, Arial ;
+        font-size: 24px;
+        text-align: center;
+    }
+}

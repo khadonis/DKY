@@ -1,6 +1,35 @@
 
 /*! my custom javascript file */
 
+//loader
+
+var progress = $('#loaderWr').find('.percentage');
+var progress_loader = $('#loaderWr').find('.loader div');
+
+updateProgress(progress);
+
+function updateProgress(element) {
+  var num = parseInt(element.text(), 10);
+
+  if (num === 100) {
+    $('#loaderWr').hide();
+    num = 0;
+    return false;
+  }
+
+  element.text(num + 1 + '%');
+  progress_loader.width(num + 1 + '%');
+
+  setTimeout(function () {
+    updateProgress(element);
+  }, 0);
+  $(document).ready(function () {
+    return false;
+  });
+
+}
+$(document).on('load', updateProgress, false);
+
 //menu panel
 $('.menu-toggle').click(function () {
   $('.menu').toggleClass('opened');
@@ -313,7 +342,7 @@ if ($(window).width() > 767) {
   $('.side-menu').height($('.content-inner').height() - 60);
 }
 
-$(function () {
+/* $(function () {
   var current = location.pathname;
   $('.side-menu a').each(function () {
     var $this = $(this);
@@ -324,7 +353,7 @@ $(function () {
       $this.addClass('active');
     }
   });
-});
+}); */
 
 //projeler responsive set
 // function setWidths(wrapperDiv) {
