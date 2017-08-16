@@ -30,7 +30,7 @@ var dkyGoztepe = [
     ['DKY Cadde Göztepe 05', 40.9801883, 29.0653588, 'images/' + goztepeIcon + '', '#dkyGoztepeLink', 'images/map-goztepe.jpg', 1]
 ];
 var dkyBusiness = [
-    ['DKY Business Kartal', 40.9090283, 29.2100452, 'images/' + businessIcon + '', '#dkyBusinessLink', 'images/map-business.jpg', 1]
+    ['DKY Business Kartal', 40.909721, 29.212279, 'images/' + businessIcon + '', '#dkyBusinessLink', 'images/map-business.jpg', 1]
 ];
 var dkyLokumEvler = [
     ['Lokum Evler', 40.8750308, 29.3239722, 'images/' + lokumIcon + '', '#dkyLokumEvlerLink', 'images/map-lokum.jpg', 1]
