@@ -5774,7 +5774,8 @@ section.bi-tal-form {
   background-repeat: no-repeat;
   background-position: 50% 30%;
   height: 100%;
-  position: relative;
+  position: fixed;
+  width: 100%;
   overflow: hidden;
   -webkit-transition: background 0.3s linear;
   transition: background 0.3s linear;
