@@ -2528,9 +2528,7 @@ section.krtl-plans .side-txt, section.krtl-ozellikler .container .side-txt, sect
   width: 100%;
   background: #fff;
   top: 0;
-  z-index: 11;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0 3px 5px;
-          box-shadow: rgba(0, 0, 0, 0.3) 0 3px 5px; }
+  z-index: 11; }
   .header.static, .static.krtl-header {
     position: static; }
 
@@ -5771,6 +5769,8 @@ section.bi-tal-form {
 
 #loaderWr {
   background-color: #fff;
+  top: 0;
+  left: 0;
   background-repeat: no-repeat;
   background-position: 50% 30%;
   height: 100%;

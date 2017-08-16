@@ -1,5 +1,7 @@
 #loaderWr {
     background-color: #fff;
+    top: 0;
+    left: 0;
     background-repeat: no-repeat;
     background-position: 50% 30%;
     height: 100%;
@@ -31,9 +33,8 @@
         left: 0;
         right: 0;
         margin-top: 5px;
-        color: #383838;
-       // color: rgba(255, 255, 255, 0.1);
-        font-family: $f-f-flexobold, Impact, Arial ;
+        color: #383838; // color: rgba(255, 255, 255, 0.1);
+        font-family: $f-f-flexobold, Impact, Arial;
         font-size: 24px;
         text-align: center;
     }
