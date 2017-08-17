@@ -2522,6 +2522,17 @@ section.krtl-plans .side-txt, section.krtl-ozellikler .container .side-txt, sect
 .haber-detay .p {
   padding-bottom: 15px; }
 
+.icon-phone {
+  max-width: 60px;
+  max-height: 60px;
+  width: 30px;
+  height: 30px;
+  background-image: url(data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCA0NTUgNDU1IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA0NTUgNDU1OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjY0cHgiIGhlaWdodD0iNjRweCI+CjxwYXRoIGQ9Ik0xMTAuNzQ4LDI4Ny40OGw0NC4xNjksNDQuMTY5bDE3Ni43MzItMTc2LjczMmwtNDQuMTY5LTQ0LjE2OUwzOTguMjI5LDBjMCwwLDUyLjkyNCw0OC42ODYsNTYuNDgzLDg3LjMwMiAgYzQuNzYzLDUxLjY4OC00OS45NSwxNDUuNjYyLTEzNS44NDksMjMxLjU2MmMtODUuODk5LDg1Ljg5OC0xNzkuODczLDE0MC42MTEtMjMxLjU2LDEzNS44NDlDNDguNjg3LDQ1MS4xNTIsMCwzOTguMjI5LDAsMzk4LjIyOSAgTDExMC43NDgsMjg3LjQ4eiIgZmlsbD0iI0ZGRkZGRiIvPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8L3N2Zz4K);
+  background-size: 20px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  display: block; }
+
 .header, .krtl-header {
   padding: 15px;
   position: fixed;
@@ -2530,7 +2541,14 @@ section.krtl-plans .side-txt, section.krtl-ozellikler .container .side-txt, sect
   top: 0;
   z-index: 11; }
   .header.static, .static.krtl-header {
-    position: static; }
+    position: absolute;
+    height: 0;
+    overflow: hidden;
+    z-index: 99;
+    padding: 0; }
+  .header.shdw, .shdw.krtl-header {
+    -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0 1px 1px;
+            box-shadow: rgba(0, 0, 0, 0.3) 0 1px 1px; }
 
 footer {
   /*height: 60px;*/
@@ -2889,6 +2907,8 @@ footer {
   transition: all ease-out .2s;
   opacity: 0; }
   .menu.opened, .opened.search {
+    top: 0;
+    right: 0;
     width: 100%;
     height: 100%;
     opacity: 1;
@@ -3001,7 +3021,13 @@ footer {
   position: absolute;
   left: auto;
   right: 70px;
-  font-size: 33px; }
+  font-size: 33px;
+  border-radius: 60px;
+  background-color: #222222;
+  padding: 5px;
+  top: 15px; }
+  .tel.show-in-mobil:hover {
+    background-color: #ea5b06; }
 
 .close-search {
   position: fixed;
@@ -4886,12 +4912,15 @@ section.bi-tal-form {
   display: block;
   padding-bottom: 15px;
   margin-bottom: 15px;
-  border-bottom: 1px solid #777777; }
+  border-bottom: 1px solid #777777;
+  text-align: center; }
   .h-box:last-of-type {
     border-bottom: none; }
   .h-box .h-info {
     margin-bottom: 15px;
     margin-top: -15px; }
+  .h-box img {
+    margin-right: 0; }
 
 .haberler .daha-fazla-haber {
   font-family: "flexobold", "flexoregular", "Helvetica Neue", Times, serif;
@@ -4904,21 +4933,39 @@ section.bi-tal-form {
 .haberler .basinda-list {
   padding: 0; }
   .haberler .basinda-list li {
-    padding: 5px;
+    padding: 0;
     overflow: hidden;
-    height: 160px;
+    min-height: 160px;
+    height: 250px;
+    padding-bottom: 80px;
     margin-right: 15px;
     width: 31.8%;
-    margin-bottom: 15px;
+    position: relative;
+    margin-bottom: 30px;
     overflow: hidden;
-    border: 1px solid #777777; }
+    border: 1px solid #dedede;
+    -webkit-box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+            box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3); }
+    .haberler .basinda-list li h4 {
+      font-size: 16px;
+      font-family: "flexoregular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      min-height: 40px; }
     .haberler .basinda-list li a {
       margin-bottom: 0;
-      padding-bottom: 0; }
+      padding-bottom: 0;
+      height: 160px;
+      overflow: hidden; }
     .haberler .basinda-list li .h-info {
-      margin-bottom: 0; }
+      margin-bottom: 0;
+      margin-left: 5px;
+      margin-right: 5px;
+      position: absolute;
+      bottom: 10px;
+      max-height: 70px; }
     .haberler .basinda-list li img {
-      width: 100%; }
+      min-width: 100%;
+      max-width: 100%;
+      min-height: 160px; }
     @media screen and (max-width: 768px) {
       .haberler .basinda-list li {
         width: 100%;
@@ -4928,6 +4975,46 @@ section.bi-tal-form {
           text-align: center; } }
     .haberler .basinda-list li:nth-child(3n) {
       margin-right: 0; }
+    .haberler .basinda-list li:hover {
+      -webkit-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+              box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); }
+
+.modal-body {
+  position: relative;
+  overflow-y: auto;
+  max-height: 400px;
+  padding: 15px; }
+
+.modal-content {
+  width: auto; }
+  .modal-content img {
+    max-width: 100%;
+    max-height: 80vh; }
+
+body .modal-dialog {
+  /* Width */
+  max-width: 100%;
+  width: auto !important;
+  display: inline-block; }
+
+body .modal.fade .modal-dialog, body .modal.in .modal-dialog {
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%); }
+
+.modal-header .close {
+  background-color: #222222;
+  border-radius: 40px;
+  border: none;
+  color: #fff;
+  font-size: 30px;
+  line-height: 0;
+  width: 40px;
+  height: 40px;
+  padding: 5px;
+  padding-top: 3px; }
+  .modal-header .close:hover {
+    background-color: #ea5b06; }
 
 @media screen and (max-width: 1440px) {
   .proje-harita-head {
@@ -5179,6 +5266,18 @@ section.bi-tal-form {
     font-size: 14px; } }
 
 @media screen and (max-width: 768px) {
+  body .haberler .basinda-list li {
+    height: 59vh; }
+  body .haberler .basinda-list a {
+    height: 50vh; }
+  body .haberler .basinda-list img {
+    min-height: 50vh; }
+  .h-info {
+    padding-top: 10px;
+    width: 100%; }
+  body .section-projeler .container {
+    padding-left: 0;
+    padding-right: 0; }
   body .basin-slide-container .golge {
     padding-left: 15px; }
     body .basin-slide-container .golge:before {
@@ -5337,6 +5436,8 @@ section.bi-tal-form {
     .plan-4-slide-container .scroll-down-i,
     .krtl-video-slider-container .scroll-down-i {
       display: none; }
+  footer .blog {
+    display: none; }
   body .hero-proj {
     width: 70%;
     left: 50%;
@@ -5371,6 +5472,12 @@ section.bi-tal-form {
       margin-bottom: 15px; } }
 
 @media screen and (max-width: 425px) {
+  body .haberler .basinda-list li {
+    height: 64vh; }
+  body .haberler .basinda-list a {
+    height: 50vh; }
+  body .haberler .basinda-list img {
+    min-height: 50vh; }
   body .krtl-video-slider-container,
   body .krtl-video-slider-container iframe {
     height: 260px !important; }

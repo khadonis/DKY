@@ -283,6 +283,27 @@
 
 //768< (Tablet)
 @media screen and (max-width: 768px) {
+    body .haberler .basinda-list {
+        li {
+            height: $basin_box_image_small + 9;
+        }
+        a {
+            height: $basin_box_image_small;
+        }
+        img {
+            min-height: $basin_box_image_small;
+        }
+    }
+    .h-info {
+        padding-top: 10px;
+        width: 100%;
+    }
+    body .section-projeler {
+        .container {
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
     body .basin-slide-container .golge {
         padding-left: 15px;
         &:before {
@@ -430,6 +451,9 @@
             display: none;
         }
     }
+    footer .blog {
+        display: none;
+    }
     body .hero-proj {
         width: 70%;
         left: 50%;
@@ -477,6 +501,17 @@
 
 //425< (All Phones)
 @media screen and (max-width: 425px) {
+    body .haberler .basinda-list {
+        li {
+            height: $basin_box_image_small + 14;
+        }
+        a {
+            height: $basin_box_image_small;
+        }
+        img {
+            min-height: $basin_box_image_small;
+        }
+    }
     body .krtl-video-slider-container {
         &,
         iframe {
