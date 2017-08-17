@@ -4912,8 +4912,18 @@ section.bi-tal-form {
   display: block;
   padding-bottom: 15px;
   margin-bottom: 15px;
-  border-bottom: 1px solid #777777;
-  text-align: center; }
+  /*  .videolar & {
+        padding-top: 30px;
+    } */ }
+  @media screen and (max-width: 768px) {
+    .h-box h5 {
+      padding-top: 15px; } }
+  .h-box iframe {
+    border-bottom: 1px solid #777777;
+    padding-bottom: 30px;
+    width: 100%; }
+  .basinda-list .h-box {
+    text-align: center; }
   .h-box:last-of-type {
     border-bottom: none; }
   .h-box .h-info {
@@ -4997,7 +5007,8 @@ body .modal-dialog {
   width: auto !important;
   display: inline-block; }
 
-body .modal.fade .modal-dialog, body .modal.in .modal-dialog {
+body .modal.fade .modal-dialog,
+body .modal.in .modal-dialog {
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%); }
@@ -5015,6 +5026,37 @@ body .modal.fade .modal-dialog, body .modal.in .modal-dialog {
   padding-top: 3px; }
   .modal-header .close:hover {
     background-color: #ea5b06; }
+
+.kanal,
+.program {
+  font-family: "flexobold", "flexoregular", "Helvetica Neue", Times, serif; }
+  .kanal,
+  .kanal + .tarih,
+  .program,
+  .program + .tarih {
+    padding-right: 10px;
+    padding-left: 10px; }
+    @media screen and (max-width: 768px) {
+      .kanal,
+      .kanal + .tarih,
+      .program,
+      .program + .tarih {
+        padding: 0; } }
+
+.kanal {
+  padding-left: 0; }
+
+.program {
+  color: #ea5b06;
+  border-right: 1px solid #333333;
+  border-left: 1px solid #333333; }
+  @media screen and (max-width: 768px) {
+    .program {
+      display: block;
+      border: none; } }
+
+.tarih {
+  font-family: "flexoregular", "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
 @media screen and (max-width: 1440px) {
   .proje-harita-head {

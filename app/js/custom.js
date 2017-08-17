@@ -405,7 +405,7 @@ $('a.thumb').click(function (event) {
   content.html('<img src="' + src + '">');
   $('.modal-profile').modal('{show:true}');
 });
-
+$('#myModal').modal('handleUpdate');
 $('#myModal').on('show.bs.modal', function () {
   $(this).find('.modal-body').css({
     width: 'auto', //probably not needed
@@ -433,3 +433,18 @@ $('#myModal').on('show.bs.modal', function () {
 });  */
 
 
+//video sizing
+$(document).ready(function () {
+  function videoSizing() {
+    $('.h-box iframe').each(function () {
+      var h = $(this).height();
+      var w = $(this).width();
+
+      h = w / 1.7;
+      $(this).attr('height', h+30);
+      return;
+    });
+  };
+  setTimeout(videoSizing, 10);
+  $(window).resize(videoSizing);
+});
