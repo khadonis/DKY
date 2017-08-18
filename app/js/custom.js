@@ -382,7 +382,7 @@ function resizes(targetEl) {
     var ph = $(this).parent().width();
     $(this).height(h);
     $(this).parent().height(ph);
-    $(this).find('img').height(h);
+    $(this).find('img:not(h4 img)').height(h);
   });
 };
 resizes('.tp-box-field a');
@@ -441,10 +441,24 @@ $(document).ready(function () {
       var w = $(this).width();
 
       h = w / 1.7;
-      $(this).attr('height', h+30);
+      $(this).attr('height', h + 30);
       return;
     });
   };
   setTimeout(videoSizing, 10);
   $(window).resize(videoSizing);
+});
+
+
+
+//Tüm Projeler Navigation
+$('.nav-proj a').each(function () {
+  $(this).click(function (evt) {
+    evt.preventDefault();
+    var navDiv = $(this).attr('href');
+    navDiv = $(navDiv);
+    $('html, body').animate({
+      scrollTop: navDiv.offset().top - 60
+    }, 2500);
+  });
 });

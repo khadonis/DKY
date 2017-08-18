@@ -49,7 +49,7 @@
     font-smoothing: antialiased;
 }
 
-.oi-internet:before {
+/* .oi-internet:before {
     content: "\f100";
 }
 
@@ -85,6 +85,22 @@
     content: "\f108";
 }
 
+.oi-technology:before {
+    content: "\f109";
+} */
+
+
+.oi-chat:before { content: "\f100"; }
+.oi-pin:before { content: "\f101"; }
+.oi-clock:before { content: "\f102"; }
+.oi-arrows:before { content: "\f103"; }
+.oi-internet:before { content: "\f104"; }
+.oi-mail:before { content: "\f105"; }
+.oi-phone:before { content: "\f106"; }
+.oi-360:before { content: "\f107"; }
+.oi-talepform:before { content: "\f108"; }
+.oi-technology:before { content: "\f109"; }
+
 $font-oi-internet: "\f100";
 $font-oi-cell-phone: "\f101";
 $font-oi-black-back-closed-envelope-shape: "\f102";
@@ -94,3 +110,4 @@ $font-oi-arrows: "\f105";
 $font-oi-chat: "\f106";
 $font-oi-360: "\f107";
 $font-oi-talepform: "\f108";
+$font-oi-technology: "\f109";

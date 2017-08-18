@@ -270,11 +270,13 @@
     .swiper-slide {
         @include square(100%);
         min-height: 450px;
+        max-height:450px;
         background: transparent;
     }
 }
 
-.krtl-slider-container {
+.krtl-slider-container,
+.krtl-video-slider-container {
     max-height: 450px;
 }
 
