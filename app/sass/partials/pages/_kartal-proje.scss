@@ -201,10 +201,10 @@ section.krtl-tanitim {
             left: 0;
             width: 100%;
             height: 100%;
-            background : {
+            background: {
                 color: rgba(0, 0, 0, .7);
                 image: url('../images/play_icon3.png');
-                position:center center;
+                position: center center;
                 size: auto;
                 repeat: no-repeat;
             }
@@ -244,7 +244,7 @@ section.kartal-galeri {
             position: absolute;
             font-family: $f-f-flexobold;
             left: -127px;
-            top: 706px;
+            top: 391px;
         }
     }
 }
@@ -288,7 +288,12 @@ section.krtl-plans {
                     &:after {
                         content: '';
                         @include vertical-align(absolute);
-                        @include ucgen(12px, 2px, 0, 0, 2px, -45deg);
+                        @include ucgen(12px,
+                        2px,
+                        0,
+                        0,
+                        2px,
+                        -45deg);
                         left: -6px;
                         border-color: $gray-light;
                         background-color: $gray-light;
@@ -355,7 +360,7 @@ section.krtl-plans {
 }
 
 section.krtl-ozellikler {
-    margin:0 0 $section-padding;
+    margin: 0 0 $section-padding;
     .container {
         min-height: 530px;
         position: relative;
@@ -421,4 +426,62 @@ section.bi-tal-form {
     .bt-form {
         background: rgba($krtl-color, .85);
     }
+}
+
+.gal-item {
+    img {
+        width: 100%;
+        min-height: 168px;
+    }
+    .mask {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, .3);
+        transition: all ease .3s;
+        .k-pln-wr & {
+            background-color: rgba($sec-color, .65);
+            color: #fff;
+            font-size: 24px;
+            font-family: $f-f-flexobold;
+            p {
+                padding: 10px;
+                margin: 0;
+                position: absolute;
+                /* width: 100%;
+                height: 100%; */
+                top: auto;
+                bottom: 0;
+                font-size: 42px;
+                transition: opacity ease .3s;
+                line-height: .8;
+            }
+        }
+    }
+    &:hover .mask {
+        &:after {
+            content: "\f067";
+            @include complate-align(absolute);
+            font-family: 'FontAwesome';
+            font-size: 48px;
+            color: #fff;
+            opacity:1;
+        }
+        .k-pln-wr & {
+            background-color: rgba($sec-color, .85);
+            p {
+                opacity: 0;
+            }
+        }
+    }
+    height: 168px;
+    background-color: rgba($sec-color,
+    0.8);
+    display: block;
+    overflow: hidden;
+    box-sizing: border-box;
+    border: 1px solid #fff;
+    position: relative;
 }

@@ -462,3 +462,13 @@ $('.nav-proj a').each(function () {
     }, 2500);
   });
 });
+
+//fancybox
+$("a.gal-item").fancybox({
+  'transitionIn'	:	'elastic',
+  'transitionOut'	:	'elastic',
+  'speedIn'		:	600, 
+  'speedOut'		:	200,
+  'padding': 0,
+  'margin': 0
+});

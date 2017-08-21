@@ -30,7 +30,7 @@ gulp.task('cleanCSS', function () {
 });
 
 gulp.task('manage', function () {
-	return gulp.src(['app/js/jquery-1.12.4.min.js', 'app/js/swiper.jquery.min.js', 'app/js/*.js'])
+	return gulp.src(['app/js/jquery-1.12.4.min.js', 'app/js/swiper.jquery.min.js', 'app/js/jquery-migrate-1.4.1.min.js', 'app/js/fancybox-1.3.4.pack.js', 'app/js/*.js'])
 		.pipe(cache(uglify({ output: { comments: /^!/ } })))
 		.pipe(concat('app.js'))
 		.pipe(rename('app.min.js'))
