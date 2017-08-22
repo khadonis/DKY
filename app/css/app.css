@@ -2321,7 +2321,7 @@ Custom SCSS File
   width: 100%;
   height: 100vmin; }
 
-section.krtl-plans .side-txt, section.krtl-ozellikler .container .side-txt, section.mapWr .side-txt {
+section.kartal-galeri .side-txt, section.krtl-plans .side-txt, section.krtl-ozellikler .container .side-txt, section.mapWr .side-txt {
   font-size: 80px;
   color: #cac1b0;
   top: 50%;
@@ -2332,14 +2332,14 @@ section.krtl-plans .side-txt, section.krtl-ozellikler .container .side-txt, sect
   position: absolute;
   left: -96px; }
   @media screen and (max-width: 1024px) {
-    section.krtl-plans .side-txt, section.krtl-ozellikler .container .side-txt, section.mapWr .side-txt {
+    section.kartal-galeri .side-txt, section.krtl-plans .side-txt, section.krtl-ozellikler .container .side-txt, section.mapWr .side-txt {
       -webkit-transform: rotate(0) translateY(-100%);
               transform: rotate(0) translateY(-100%);
       top: -29px;
       left: -6px;
       margin-top: 60px; } }
   @media screen and (max-width: 425px) {
-    section.krtl-plans .side-txt, section.krtl-ozellikler .container .side-txt, section.mapWr .side-txt {
+    section.kartal-galeri .side-txt, section.krtl-plans .side-txt, section.krtl-ozellikler .container .side-txt, section.mapWr .side-txt {
       font-size: 60px;
       top: -37px !important;
       left: -4px !important; } }
@@ -4671,7 +4671,27 @@ section.krtl-tanitim {
 
 section.kartal-galeri {
   padding: 80px;
-  background: #cac1b0; }
+  background: #cac1b0;
+  position: relative; }
+  section.kartal-galeri .side-txt {
+    font-size: 120px;
+    color: #fff;
+    font-family: "flexobold", "flexoregular", "Helvetica Neue", Times, serif;
+    left: 240px; }
+    @media screen and (max-width: 1440px) {
+      section.kartal-galeri .side-txt {
+        font-size: 100px;
+        left: -15px; } }
+    @media screen and (max-width: 1024px) {
+      section.kartal-galeri .side-txt {
+        font-size: 100px;
+        left: 22px;
+        top: 86px; } }
+    @media screen and (max-width: 425px) {
+      body section.kartal-galeri .side-txt {
+        font-size: 85px;
+        left: 0px !important;
+        top: 82px !important; } }
   section.kartal-galeri .head {
     text-align: center;
     position: relative; }
@@ -5332,7 +5352,7 @@ body .modal.in .modal-dialog {
       width: 14px;
       height: 14px; }
   section.krtl-plans {
-    padding: 120px 30px 30px; }
+    padding: 120px 30px 120px; }
     section.krtl-plans .side-txt {
       -webkit-transform: rotate(0) translateY(-100%);
               transform: rotate(0) translateY(-100%);
