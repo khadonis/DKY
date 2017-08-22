@@ -1,3 +1,7 @@
 [0808/123432.462:ERROR:process_info.cc(632)] range at 0x2af62df400000000, size 0xe9 fully unreadable
 [0808/123432.462:ERROR:process_info.cc(632)] range at 0x2af62e5a00000000, size 0xe9 fully unreadable
 [0808/123432.462:ERROR:process_info.cc(632)] range at 0x0, size 0xe9 fully unreadable
+[0822/122109.593:ERROR:process_info.cc(632)] range at 0x118c2e3e00000000, size 0x76 fully unreadable
+[0822/122109.594:ERROR:process_info.cc(632)] range at 0x118c2ea600000000, size 0x76 fully unreadable
+[0822/122109.594:ERROR:process_info.cc(632)] range at 0x0, size 0x76 fully unreadable
+[0822/122109.930:ERROR:http_transport_win.cc(267)] WinHttpSendRequest: Sunucu adý veya adresi çözümlenemedi  (0x2ee7)

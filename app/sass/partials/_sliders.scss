@@ -217,6 +217,7 @@
         }
     }
 }
+
 .dark {
     //content: '';
     position: absolute;
@@ -224,11 +225,9 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, .3);
-    //background-image: url('../images/noise.png');
+    background-color: rgba(0, 0, 0, .3); //background-image: url('../images/noise.png');
     //background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAFElEQVQImWNgYGD4D8UoAKsgBQAAYRYD/VvnelMAAAAASUVORK5CYII=);
-    z-index: 0;
-    //opacity: .5;
+    z-index: 0; //opacity: .5;
 }
 
 .swiper-container-vertical>.swiper-pagination-bullets {
@@ -270,7 +269,7 @@
     .swiper-slide {
         @include square(100%);
         min-height: 450px;
-        max-height:450px;
+        max-height: 450px;
         background: transparent;
     }
 }
@@ -282,6 +281,8 @@
 
 .swiper-krtl-btn-next,
 .swiper-krtl-btn-prev,
+.ozellikler-krtl-btn-next,
+.ozellikler-krtl-btn-prev,
 .kg-btn-prev,
 .kg-btn-next {
     position: absolute;
@@ -305,6 +306,7 @@
 }
 
 .swiper-krtl-btn-prev,
+.ozellikler-krtl-btn-prev,
 .kg-btn-prev {
     left: auto;
     right: 82px;
@@ -322,6 +324,7 @@
 }
 
 .swiper-krtl-btn-next,
+.ozellikler-krtl-btn-next,
 .kg-btn-next {
     left: auto;
     right: 30px;
@@ -411,5 +414,53 @@
     @extend .krtl-slider-container;
     .swiper-slide {
         min-height: 450px;
+    }
+}
+
+.ozellik-swiper-container {
+    width: 100%;
+    height: 100%;
+    min-height: 530px;
+    overflow: hidden;
+    .swiper-slide {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+        height: 100%;
+        min-height: 530px;
+        @media screen and (max-width:767px){
+            display: block;
+        }
+    }
+    h3,
+    p {
+        display: block;
+        width: 100%;
+        text-align: left;
+    }
+    h3{
+        font-family: $f-f-flexobold;
+    }
+    .o-txt-wr {
+        display: block;
+        @extend .clearfix;
+        padding: 30px 60px;
+    }
+    img {
+        border-radius: 100%;
+        @media screen and (max-width:767px){
+            display: block;
+            width: 100%;
+            margin-top: 30px;
+        }
     }
 }

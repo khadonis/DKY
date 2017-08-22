@@ -309,6 +309,11 @@ var swiperHaberler = new Swiper('.basin-slide-container', {
   }
 });
 
+var swiper = new Swiper('.ozellik-swiper-container', {
+  nextButton: '.ozellikler-krtl-btn-next',
+  prevButton: '.ozellikler-krtl-btn-prev',
+});
+
 function linkOutSlide(link, slider) {
   link.each(function (index) {
     link.eq(index).find('a').click(function () {
