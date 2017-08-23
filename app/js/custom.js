@@ -42,7 +42,8 @@ $(window).scroll(function () {
 
 
 //menu panel
-$('.menu-toggle').click(function () {
+$('.menu-toggle').click(function (evt) {
+  evt.preventDefault();
   $('.menu').toggleClass('opened');
   $(this).toggleClass('active');
   $('.header').toggleClass('static');
@@ -313,6 +314,11 @@ var swiper = new Swiper('.ozellik-swiper-container', {
   nextButton: '.ozellikler-krtl-btn-next',
   prevButton: '.ozellikler-krtl-btn-prev',
 });
+var swiper = new Swiper('.k-sldr-cont', {
+  nextButton: '.k-sldr-btn-next',
+  prevButton: '.k-sldr-btn-prev',
+  loop: true
+});
 
 function linkOutSlide(link, slider) {
   link.each(function (index) {
@@ -340,7 +346,8 @@ linkOutSlide($('.rooms4 li'), swiperKrtlPlan4);
 
 //search panel
 var searchButon = '.languages .search-btn', searchDiv = '.search', closeButon = '.close-search';
-$(searchButon).click(function () {
+$(searchButon).click(function (evt) {
+  evt.preventDefault();
   $(searchDiv).addClass('opened');
 
 });
@@ -470,10 +477,10 @@ $('.nav-proj a').each(function () {
 
 //fancybox
 $("a.gal-item").fancybox({
-  'transitionIn'	:	'elastic',
-  'transitionOut'	:	'elastic',
-  'speedIn'		:	600, 
-  'speedOut'		:	200,
+  'transitionIn': 'elastic',
+  'transitionOut': 'elastic',
+  'speedIn': 600,
+  'speedOut': 200,
   'padding': 0,
   'margin': 0
 });

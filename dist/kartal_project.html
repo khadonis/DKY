@@ -8,6 +8,7 @@
 <link rel="shortcut icon" href="images/DKY-ico.png" />
 <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 <link href="css/app.min.css" rel="stylesheet">
+<script src="js/jquery-1.12.4.min.js"></script>
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 <!--[if lt IE 9]>
@@ -17,7 +18,7 @@
     <title>DKY Kartal Projesi</title>
 </head>
 
-<body>
+<body class="proje-detay-body">
     <div id="loaderWr">
     <div class="loader"><div></div></div>
     <div class="percentage">0%</div>
@@ -91,12 +92,37 @@
   </div>
 </div>
 <a href="bilgi_talep_formu.html" class="b-talep-form"><span>Bilgi Talep Formu</span></a>
-    <div class="krtl-hero" style="background-image:url('images/kartal-balkon-gece.jpg');">
+    <div class="k-sldr-cont">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide" style="background-image:url('images/DKY KARTAL Balkon gece2-min.jpg')">
+                <div class="sldr-txt">
+                    <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa sed nulla qui!
+
+                    </span>
+                </div>
+            </div>
+            <div class="swiper-slide" style="background-image:url('images/DKY-KARTAL.jpg')">
+                <div class="sldr-txt">
+                    <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa sed nulla qui!
+
+                    </span>
+                </div>
+            </div>
+            <div class="swiper-slide" style="background-image:url('images/kurumsal.jpg')">
+                <div class="sldr-txt">
+                    <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa sed nulla qui!
+
+                    </span>
+                </div>
+            </div>
+        </div>
         <div class="hero-logo">
             <img src="images/DKY-Kartal-Beyaz.png" alt="DKY Kartal Logo">
         </div>
-        <!-- <div class="hero-slogan">Yeni Hayatınız Kartal'da Başlıyor!</div> -->
+        <div class="k-sldr-btn-next"></div>
+        <div class="k-sldr-btn-prev"></div>
     </div>
+
     <!-- kartal hero section -->
     <section class="krtl-tanitim">
         <div class="container">
@@ -206,7 +232,7 @@
 
             <div class="row">
                 <div class="k-pln-wr">
-                    <a href="images/2+1.jpg" rel="g" class="gal-item col-sm-3 col-xs-6  no-pad">
+                    <a href="images/2+1.jpg" rel="gP" class="gal-item col-sm-3 col-xs-6  no-pad">
                         <div class="mask">
                             <p>
                                 2+1 Daire Planı
@@ -214,7 +240,7 @@
                         </div>
                         <img src="images/2+1.jpg" alt="mimari">
                     </a>
-                    <a href="images/2+1.jpg" rel="g" class="gal-item col-sm-3 col-xs-6  no-pad">
+                    <a href="images/2+1.jpg" rel="gP" class="gal-item col-sm-3 col-xs-6  no-pad">
                         <div class="mask">
                             <p>
                                 2+1 Daire Planı
@@ -222,7 +248,7 @@
                         </div>
                         <img src="images/2+1.jpg" alt="mimari">
                     </a>
-                    <a href="images/2+1.jpg" rel="g" class="gal-item col-sm-3 col-xs-6  no-pad">
+                    <a href="images/2+1.jpg" rel="gP" class="gal-item col-sm-3 col-xs-6  no-pad">
                         <div class="mask">
                             <p>
                                 2+1 Daire Planı
@@ -230,7 +256,7 @@
                         </div>
                         <img src="images/2+1.jpg" alt="mimari">
                     </a>
-                    <a href="images/2+1.jpg" rel="g" class="gal-item col-sm-3 col-xs-6  no-pad">
+                    <a href="images/2+1.jpg" rel="gP" class="gal-item col-sm-3 col-xs-6  no-pad">
                         <div class="mask">
                             <p>
                                 2+1 Daire Planı
@@ -238,7 +264,7 @@
                         </div>
                         <img src="images/2+1.jpg" alt="mimari">
                     </a>
-                    <a href="images/2+1.jpg" rel="g" class="gal-item col-sm-3 col-xs-6  no-pad">
+                    <a href="images/2+1.jpg" rel="gP" class="gal-item col-sm-3 col-xs-6  no-pad">
                         <div class="mask">
                             <p>
                                 2+1 Daire Planı
@@ -246,7 +272,7 @@
                         </div>
                         <img src="images/2+1.jpg" alt="mimari">
                     </a>
-                    <a href="images/2+1.jpg" rel="g" class="gal-item col-sm-3 col-xs-6  no-pad">
+                    <a href="images/2+1.jpg" rel="gP" class="gal-item col-sm-3 col-xs-6  no-pad">
                         <div class="mask">
                             <p>
                                 2+1 Daire Planı
@@ -254,7 +280,7 @@
                         </div>
                         <img src="images/2+1.jpg" alt="mimari">
                     </a>
-                    <a href="images/2+1.jpg" rel="g" class="gal-item col-sm-3 col-xs-6  no-pad">
+                    <a href="images/2+1.jpg" rel="gP" class="gal-item col-sm-3 col-xs-6  no-pad">
                         <div class="mask">
                             <p>
                                 2+1 Daire Planı
@@ -262,7 +288,7 @@
                         </div>
                         <img src="images/2+1.jpg" alt="mimari">
                     </a>
-                    <a href="images/2+1.jpg" rel="g" class="gal-item col-sm-3 col-xs-6  no-pad">
+                    <a href="images/2+1.jpg" rel="gP" class="gal-item col-sm-3 col-xs-6  no-pad">
                         <div class="mask">
                             <p>
                                 2+1 Daire Planı
@@ -270,7 +296,7 @@
                         </div>
                         <img src="images/2+1.jpg" alt="mimari">
                     </a>
-                    <a href="images/2+1.jpg" rel="g" class="gal-item col-sm-3 col-xs-6  no-pad">
+                    <a href="images/2+1.jpg" rel="gP" class="gal-item col-sm-3 col-xs-6  no-pad">
                         <div class="mask">
                             <p>
                                 2+1 Daire Planı
@@ -278,7 +304,7 @@
                         </div>
                         <img src="images/2+1.jpg" alt="mimari">
                     </a>
-                    <a href="images/2+1.jpg" rel="g" class="gal-item col-sm-3 col-xs-6  no-pad">
+                    <a href="images/2+1.jpg" rel="gP" class="gal-item col-sm-3 col-xs-6  no-pad">
                         <div class="mask">
                             <p>
                                 2+1 Daire Planı
@@ -286,7 +312,7 @@
                         </div>
                         <img src="images/2+1.jpg" alt="mimari">
                     </a>
-                    <a href="images/2+1.jpg" rel="g" class="gal-item col-sm-3 col-xs-6  no-pad">
+                    <a href="images/2+1.jpg" rel="gP" class="gal-item col-sm-3 col-xs-6  no-pad">
                         <div class="mask">
                             <p>
                                 2+1 Daire Planı
@@ -294,7 +320,7 @@
                         </div>
                         <img src="images/2+1.jpg" alt="mimari">
                     </a>
-                    <a href="images/2+1.jpg" rel="g" class="gal-item col-sm-3 col-xs-6  no-pad">
+                    <a href="images/2+1.jpg" rel="gP" class="gal-item col-sm-3 col-xs-6  no-pad">
                         <div class="mask">
                             <p>
                                 2+1 Daire Planı
@@ -414,6 +440,9 @@
                 <div class="col-sm-2 col-xs-12">
                     <div class="har-projs">
                         <ul class="dplaces col-md-12">
+                            <li id="tumu">
+                                <span class="circle"></span> Tümü
+                            </li>
                             <li id="hastaneler">
                                 <span class="circle"></span> Hastaneler
                             </li>
@@ -443,8 +472,8 @@
                             <li id="spor">
                                 <span class="circle"></span> Spor
                             </li>
-                            <li id="tumu">
-                                <span class="circle"></span> Tümü
+                            <li id="yolTarifi">
+                                <span class="circle"></span> Yol Tarifi
                             </li>
                         </ul>
 
@@ -669,9 +698,10 @@
         var kartalMarker, i;
         var kartalMarkers = [];
         var kartalInfowindow;
+        var wayDir;
         function test(locatis, map) {
             for (i = 0; i < locatis.length; i++) {
-                var wayDir = 'https://www.google.com.tr/maps/dir//' + locatis[i][1] + ',' + locatis[i][2];
+                wayDir = 'https://www.google.com.tr/maps/dir//' + locatis[i][1] + ',' + locatis[i][2];
                 kartalMarker = new google.maps.Marker({
                     position: new google.maps.LatLng(locatis[i][1], locatis[i][2]),
                     map: map,
@@ -745,6 +775,9 @@
         $("#kartalMap").click(function (evt) {
             evt.stopPropagation();
             kartalMap.set('scrollwheel', true);
+        });
+        $('#yolTarifi').click(function () {
+           window.open(wayDir);
         });
     </script>
 

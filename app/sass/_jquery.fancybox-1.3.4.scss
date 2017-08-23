@@ -70,6 +70,7 @@
 	width: 100%;
 	height: 100%;
 	background: #fff;
+	top: 20px;
 }
 
 #fancybox-content {
@@ -113,8 +114,10 @@
 }
 
 #fancybox-img {
-	width: 100%;
+	width: auto;
 	height: 100%;
+	max-height: 95vh;
+	max-width: 95vw;
 	padding: 0;
 	margin: 0;
 	border: none;
