@@ -3,104 +3,42 @@
 /*!**********************/
 /*! Map Api Js Start */
 
-var vizyonIcon = 'Merkez_map_icon.png';
-var sahilIcon = 'Sahil_map_icon.png';
-var onIcon = 'On_map_icon.png';
-var goztepeIcon = 'Goztepe_map_icon.png';
-var businessIcon = 'Businesskar_map_icon.png';
-var lokumIcon = 'Lokum_map_icon.png';
-var adaIcon = 'Ada_map_icon.png';
-var businessTuzlaIcon = 'Businesstuz_map_icon.png';
-var suadiyeIcon = 'Suadiye_map_icon.png';
-var erenkoyIcon = 'Erenkoy_map_icon.png';
-
-
 $.getJSON('js/json_deneme.json', function (data) {
-    var proj, name, lat, lng, picon, dkyVizyon;
-    var pUrl = 'http://dkykule.com';
-    $.each(data, function (index, proj) {
-        name = proj.name;
-        lat = proj.lat;
-        lng = proj.lng;
-        picon = proj.icon;
-        category_name = proj.category_name;
-        c_id = proj.c_id;
-
-
-
-        var satisiDevamEdenProj = data.filter(function (proje) { return proje.c_id == "1" });
-        var gelecekProj = data.filter(function (proje) { return proje.c_id == "3" });
-        //console.log(satisiDevamEdenProj[index]);
-        console.log(gelecekProj[index]);
-    });
-    var dkyVizyon = [
-        [name, parseFloat(lat), parseFloat(lng), "http://dkykule.com" + picon, "#dkyVizyonLink", "images/DKY-KARTAL-GECE.jpg", c_id]
-    ];
-    var dkySahil = [
-        ['DKY Sahil', 40.8944685, 29.171256, 'images/' + sahilIcon + '', '#dkySahilLink', 'images/map-sahil.jpg', 1]
-    ];
-    var dkyOnKagithane = [
-        ['DKY On Kağıthane', 41.085888, 28.9703857, 'images/' + onIcon + '', '#dkyOnKagithaneLink', 'images/map-on.jpg', 1]
-    ];
-    var dkyGoztepe = [
-        ['DKY Cadde Göztepe 05', 40.9801883, 29.0653588, 'images/' + goztepeIcon + '', '#dkyGoztepeLink', 'images/map-goztepe.jpg', 1]
-    ];
-    var dkyBusiness = [
-        ['DKY Business Kartal', 40.909721, 29.212279, 'images/' + businessIcon + '', '#dkyBusinessLink', 'images/map-business.jpg', 1]
-    ];
-    var dkyLokumEvler = [
-        ['Lokum Evler', 40.8750308, 29.3239722, 'images/' + lokumIcon + '', '#dkyLokumEvlerLink', 'images/map-lokum.jpg', 1]
-    ];
-    var dkyAda = [
-        ['DKY Ada', 40.905396, 29.185898, 'images/' + adaIcon + '', '#dkyAdaLink', 'images/map-ada.jpg', 1]
-    ];
-    var dkyBusinessTuzla = [
-        ['DKY Business Tuzla', 40.847713, 29.2967011, 'images/' + businessTuzlaIcon + '', '#dkyBusinezzTuzlaLink', 'images/map-tuzla.jpg', 1]
-    ];
-    var dkyCaddeSuadiye = [
-        ['DKY Cadde Suadiye 12', 40.96679, 29.085285, 'images/' + suadiyeIcon + '', '#dkyCaddeSuadiyeLink', 'images/map-suadiye.jpg', 1]
-    ];
-    var dkyCaddeErenkoy = [
-        ['DKY Cadde Erenköy 86', 40.978263, 29.073121, 'images/' + erenkoyIcon + '', '#dkyCaddeErenkoyLink', 'images/map-erenkoy.jpg', 1]
-    ];
-    var tamamlanan = [
-        ['DKY Cadde Erenköy 86', 40.978263, 29.073121, 'images/' + erenkoyIcon + '', '#dkyCaddeErenkoyLink', 'images/DKY-KARTAL-GECE.jpg', 1], ['DKY Cadde Suadiye 12', 40.96679, 29.085285, 'images/' + suadiyeIcon + '', '#dkyCaddeSuadiyeLink', 'images/DKY-KARTAL-GECE.jpg', 1]
-    ];
-
-    var devamEden = dkyAda.concat(dkyBusinessTuzla);
-    var gelecek = dkySahil.concat(dkyVizyon, dkyOnKagithane, dkyGoztepe, dkyBusiness, dkyLokumEvler);
-    var hepsi = dkySahil.concat(dkyVizyon, dkyOnKagithane, dkyGoztepe, dkyBusiness, dkyLokumEvler, dkyAda, dkyBusinessTuzla, dkyCaddeErenkoy, dkyCaddeSuadiye);
+    // global değişkenler
     var stls = [{ "featureType": "all", "elementType": "geometry", "stylers": [{ "color": "#25292e" }] }, { "featureType": "all", "elementType": "labels.text.fill", "stylers": [{ "gamma": 0.01 }, { "lightness": 20 }, { "color": "#47546e" }] }, { "featureType": "all", "elementType": "labels.text.stroke", "stylers": [{ "saturation": -31 }, { "lightness": -33 }, { "weight": 2 }, { "gamma": "0.00" }, { "visibility": "off" }] }, { "featureType": "all", "elementType": "labels.icon", "stylers": [{ "visibility": "on" }] }, { "featureType": "administrative.country", "elementType": "all", "stylers": [{ "visibility": "off" }] }, { "featureType": "administrative.province", "elementType": "all", "stylers": [{ "visibility": "off" }] }, { "featureType": "administrative.locality", "elementType": "all", "stylers": [{ "visibility": "simplified" }] }, { "featureType": "administrative.locality", "elementType": "labels.text.fill", "stylers": [{ "lightness": "45" }] }, { "featureType": "administrative.locality", "elementType": "labels.icon", "stylers": [{ "visibility": "on" }] }, { "featureType": "administrative.neighborhood", "elementType": "all", "stylers": [{ "visibility": "off" }] }, { "featureType": "administrative.land_parcel", "elementType": "all", "stylers": [{ "visibility": "off" }] }, { "featureType": "landscape", "elementType": "geometry", "stylers": [{ "lightness": 30 }, { "saturation": 30 }, { "color": "#30363d" }, { "visibility": "on" }] }, { "featureType": "poi", "elementType": "geometry", "stylers": [{ "saturation": "0" }, { "lightness": "0" }, { "gamma": "0.30" }, { "weight": "0.01" }, { "visibility": "off" }] }, { "featureType": "poi.park", "elementType": "geometry", "stylers": [{ "lightness": "100" }, { "saturation": -20 }, { "visibility": "simplified" }, { "color": "#32383d" }] }, { "featureType": "road", "elementType": "geometry", "stylers": [{ "lightness": 10 }, { "saturation": -30 }, { "color": "#2a3037" }] }, { "featureType": "road", "elementType": "geometry.stroke", "stylers": [{ "saturation": "-100" }, { "lightness": "-100" }, { "gamma": "0.00" }, { "color": "#2a3037" }] }, { "featureType": "road", "elementType": "labels", "stylers": [{ "visibility": "on" }] }, { "featureType": "road", "elementType": "labels.text", "stylers": [{ "visibility": "on" }, { "color": "#575e6b" }] }, { "featureType": "road", "elementType": "labels.text.stroke", "stylers": [{ "visibility": "off" }] }, { "featureType": "road", "elementType": "labels.icon", "stylers": [{ "visibility": "on" }, { "weight": "1" }, { "gamma": "1" }, { "saturation": "100" }, { "lightness": "1" }] }, { "featureType": "road.highway", "elementType": "geometry.fill", "stylers": [{ "color": "#474b51" }, { "visibility": "on" }, { "weight": "0.78" }] }, { "featureType": "road.highway", "elementType": "geometry.stroke", "stylers": [{ "visibility": "off" }, { "weight": "1.06" }] }, { "featureType": "road.highway", "elementType": "labels.icon", "stylers": [{ "visibility": "on" }, { "saturation": "75" }] }, { "featureType": "road.highway.controlled_access", "elementType": "labels.text", "stylers": [{ "visibility": "on" }] }, { "featureType": "road.highway.controlled_access", "elementType": "labels.icon", "stylers": [{ "visibility": "on" }, { "hue": "#ff6600" }, { "lightness": "1" }, { "saturation": "100" }, { "gamma": "1" }, { "weight": "2.08" }] }, { "featureType": "road.arterial", "elementType": "labels.icon", "stylers": [{ "visibility": "on" }] }, { "featureType": "road.local", "elementType": "labels.icon", "stylers": [{ "hue": "#ff0000" }, { "visibility": "on" }] }, { "featureType": "transit", "elementType": "all", "stylers": [{ "visibility": "off" }] }, { "featureType": "transit.station.airport", "elementType": "all", "stylers": [{ "visibility": "off" }] }, { "featureType": "water", "elementType": "all", "stylers": [{ "lightness": -20 }, { "color": "#35485f" }] }, { "featureType": "transit.station.rail", "elementType": "labels.icon", "stylers": [{ "hue": "#1f2d79" }, { "visibility": "on" }] }, { "featureType": "poi.park", "elementType": "labels.icon", "stylers": [{ "color": "#7cb342" }] }];
-
     var mapOpt = {
         zoom: 11,
         scrollwheel: false,
-        center: new google.maps.LatLng(hepsi[3][1], hepsi[1][2]),
+        //center: new google.maps.LatLng(40.9801883, 29.171256),
+        center: new google.maps.LatLng([data[3].lat], [data[1].lng]),
         mapTypeId: google.maps.MapTypeId.ROADMAP,
-        types: ['hospital', 'school', 'shopping_mall', 'amusement_park', 'park', 'food', 'gym', 'mosque', 'subway_station', 'train_station', 'bus_station'],
         styles: stls
     };
     var map = new google.maps.Map(document.getElementById('map'), mapOpt);
-
-
     var marker, i;
     var markers = [];
     var infowindow;
-    function test(locatis, map) {
+    var satisiDevamEdenProj = data.filter(function (proje) { return proje.c_id == "1" });
+    var tamamlananProj = data.filter(function (proje) { return proje.c_id == "2" });
+    var gelecekProj = data.filter(function (proje) { return proje.c_id == "3" });
+    var defaultProj = [data[0]];
+    //console.log(defaultProj);
+    // tüm haritaları çalıştıma için ana fonksiyon
+    function runMap(data, map) {
+        clearMarkers();
+        for (i = 0; i < data.length; i++) {
 
-        for (i = 0; i < locatis.length; i++) {
-            var wayDir = 'https://www.google.com.tr/maps/dir//' + locatis[i][1] + ',' + locatis[i][2];
+            var wayDir = 'https://www.google.com.tr/maps/dir//' + data[i]["lat"] + ',' + data[i]["lng"];
+
             marker = new google.maps.Marker({
-                position: new google.maps.LatLng(locatis[i][1], locatis[i][2]),
+                position: new google.maps.LatLng(data[i]["lat"], data[i]["lng"]),
                 map: map,
                 animation: google.maps.Animation.DROP,
-                icon: new google.maps.MarkerImage(locatis[i][3])
-
+                icon: new google.maps.MarkerImage(data[i]["icon"])
             });
-            markers.push(marker);
             infowindow = new SnazzyInfoWindow({
                 marker: marker,
-                content: '<div class="mi-content"><div class="mi-image" style="background-image:url(' + locatis[i][5] + ');" ></div><a target="_blank" href="' + wayDir + '" class="mi-tarif">Yol Tarifi</a><a href="' + locatis[i][4] + '" class="mi-detay">Proje Detayı</a></div>',
+                content: '<div class="mi-content"><div class="mi-image" style="background-image:url(' + data[i]["image"] + ');" ></div><a target="_blank" href="' + wayDir + '" class="mi-tarif">Yol Tarifi</a><a href="' + data[i]["link"] + '" class="mi-detay">Proje Detayı</a></div>',
                 wrapperClass: 'iw-container',
                 placement: 'top',
                 closeWhenOthersOpen: true,
@@ -110,6 +48,7 @@ $.getJSON('js/json_deneme.json', function (data) {
                     }
                 }
             });
+            markers.push(marker);
             //infowindow.open();
             google.maps.event.addListener(marker, 'mouseover', (function (marker, i) {
                 return function () {
@@ -122,124 +61,68 @@ $.getJSON('js/json_deneme.json', function (data) {
             })(marker, i));
         }
     };
-    test(hepsi, map);
+    // kategori olarak haritaları toplu çalıştırma
+    function runMapCat(btn, data, map) {
+        $(btn).click(function () {
+            clearMarkers();
+            runMap(data, map);
+            $('.proje-listesi a').removeClass('active');
+            $('.dprojs li').removeClass('active');
+            $('.vertical-h-menu a').removeClass('active');
+            $(btn).addClass('active');
+        });
+    }
+
+    // linke çevirme
+    function linkeCevir(ref) {
+        var tr = new Array("ı", "ş", "ç", "ü", "ö", "ğ", "İ", "Ş", "Ç", "Ü", "Ö", "Ğ");
+        var en = new Array("i", "s", "c", "u", "o", "g", "I", "S", "C", "U", "O", "G");
+        for (var i = 0; i < tr.length; i++) {
+            ref = ref.replace(new RegExp(tr[i], "g"), en[i]);
+        }
+        ref = ref.replace(/\s/g, '_');
+        ref = ref.replace(/\W+/g, '');
+        return ref;
+    }
+
+    // her proje için harita çalıştırma
+    function runTekProj(proj, uLl, parentBtn) {
+        var ul = $(uLl);
+        ul.empty();
+        $.each(proj, function (i, obj) {
+            var className = linkeCevir(proj[i].name);
+            var li = $('<li class="' + className + '">').appendTo(ul);
+            $('<a class="' + className + '">').text(proj[i].name).appendTo(li);
+            li.click(function () {
+                runMap([proj[i]], map);
+                $('.proje-listesi a').removeClass('active');
+                $('.dprojs li').removeClass('active');
+                $('.vertical-h-menu a').removeClass('active');
+                li.find('a').addClass('active');
+                $(parentBtn).addClass('active');
+            });
+        });
+    };
+
+    // tüm markerları bulma
     function setMapOnAll(map) {
         for (var i = 0; i < markers.length; i++) {
             markers[i].setMap(map);
         }
     }
+
+    // tüm markerları temizleme
     function clearMarkers() {
         setMapOnAll(null);
     }
-    function runMap(button, locations, latLng, zoom) {
-        $(button).click(function (event) {
-            $('.si-float-wrapper').remove();
-            clearMarkers();
-            infowindow.close();
-            map.setZoom(zoom);
-            map.panTo(latLng);
-            test(locations, map);
-            $('.proje-listesi a').removeClass('active');
-            $('.dprojs li').removeClass('active');
-            $('.vertical-h-menu a').removeClass('active');
-            $(button).addClass('active');
-            aktifs();
 
-        });
-    }
-    runMap('.dky-sahil-harbtn', dkySahil, { lat: hepsi[3][1], lng: hepsi[1][2] }, 11);
-    runMap('.dky-kartal-harbtn', dkyVizyon, { lat: hepsi[3][1], lng: hepsi[1][2] }, 11);
-    runMap('.dky-on-harbtn', dkyOnKagithane, { lat: hepsi[3][1], lng: hepsi[1][2] }, 11);
-    runMap('.dky-cadde-goztepe-harbtn', dkyGoztepe, { lat: hepsi[3][1], lng: hepsi[1][2] }, 11);
-    runMap('.dky-bsness-kartal-harbtn', dkyBusiness, { lat: hepsi[3][1], lng: hepsi[1][2] }, 11);
-    runMap('.dky-lokum-harbtn', dkyLokumEvler, { lat: hepsi[3][1], lng: hepsi[1][2] }, 11);
-    runMap('.dky-ada-harbtn', dkyAda, { lat: hepsi[3][1], lng: hepsi[1][2] }, 11);
-    runMap('.dky-bsness-tuzla-harbtn', dkyBusinessTuzla, { lat: hepsi[3][1], lng: hepsi[1][2] }, 11);
-    runMap('.dky-cadde-suadiye-harbtn', dkyCaddeSuadiye, { lat: hepsi[3][1], lng: hepsi[1][2] }, 11);
-    runMap('.dky-cadde-erenkoy-harbtn', dkyCaddeErenkoy, { lat: hepsi[3][1], lng: hepsi[1][2] }, 11);
-    runMap('.tamamlanan-harbtn', tamamlanan, { lat: hepsi[3][1], lng: hepsi[1][2] }, 11);
-    runMap('.devam-eden-harbtn', devamEden, { lat: hepsi[3][1], lng: hepsi[1][2] }, 11);
-    runMap('.gelecek-harbtn', gelecek, { lat: hepsi[3][1], lng: hepsi[1][2] }, 11);
-    runMap('.hepsi-harbtn', hepsi, { lat: hepsi[3][1], lng: hepsi[1][2] }, 11);
-
-    var projeParentLink = '.proje-listesi h4 a';
-
-    var pli = '.dprojs li', plli = '.dplaces li';
-    function adcls(eq) {
-        $(plli).eq(eq).find('span').addClass('active');
-    }
-    var hastane = 0, okul = 1, resmiKurum = 2, avm = 3, orman = 4, ulasim = 5, cami = 6, park = 7, yemek = 8, spor = 9;
-
-
-
-    function aktifs() {
-        $(projeParentLink).each(function () {
-            if ($(this).parent().siblings('ul').find('li a').hasClass('active')) {
-                $(projeParentLink).removeClass('active');
-                $(this).addClass('active');
-                if ($(this).hasClass('tamamlanan-harbtn')) {
-                    $('.vertical-h-menu .tamamlanan-harbtn').addClass('active');
-                }
-                if ($(this).hasClass('devam-eden-harbtn')) {
-                    $('.vertical-h-menu .devam-eden-harbtn').addClass('active');
-                }
-                if ($(this).hasClass('gelecek-harbtn')) {
-                    $('.vertical-h-menu .gelecek-harbtn').addClass('active');
-                }
-
-            }
-
-        });
-
-
-        if ($(pli).eq(0).hasClass('active')) {
-            $(plli + ' span').removeClass('active');
-            adcls(okul), adcls(resmiKurum), adcls(avm), adcls(yemek);
-        }
-        if ($(pli).eq(1).hasClass('active')) {
-            $(plli + ' span').removeClass('active');
-            adcls(okul), adcls(resmiKurum), adcls(avm), adcls(ulasim), adcls(park), adcls(yemek);
-        }
-        if ($(pli).eq(2).hasClass('active')) {
-            $(plli + ' span').removeClass('active');
-            adcls(okul), adcls(resmiKurum), adcls(avm), adcls(ulasim), adcls(cami), adcls(yemek), adcls(park);
-        }
-        if ($(pli).eq(3).hasClass('active')) {
-            $(plli + ' span').removeClass('active');
-            adcls(okul), adcls(hastane), adcls(avm), adcls(yemek), adcls(ulasim), adcls(cami), adcls(resmiKurum);
-        }
-        if ($(pli).eq(4).hasClass('active')) {
-            $(plli + ' span').removeClass('active');
-            adcls(avm), adcls(yemek), adcls(ulasim), adcls(resmiKurum);
-        }
-        if ($(pli).eq(5).hasClass('active')) {
-            $(plli + ' span').removeClass('active');
-            adcls(avm), adcls(yemek), adcls(ulasim), adcls(resmiKurum), adcls(okul);
-        }
-        if ($(pli).eq(6).hasClass('active')) {
-            $(plli + ' span').removeClass('active');
-            adcls(avm), adcls(yemek), adcls(ulasim), adcls(cami), adcls(okul), adcls(park);
-        }
-        if ($(pli).eq(7).hasClass('active')) {
-            $(plli + ' span').removeClass('active');
-            adcls(avm), adcls(hastane), adcls(ulasim), adcls(yemek);
-        }
-        if ($(pli).eq(8).hasClass('active')) {
-            $(plli + ' span').removeClass('active');
-            adcls(avm), adcls(ulasim), adcls(yemek), adcls(okul);
-        }
-        if ($(pli).eq(9).hasClass('active')) {
-            $(plli + ' span').removeClass('active');
-            adcls(avm), adcls(ulasim), adcls(yemek), adcls(okul), adcls(resmiKurum), adcls(cami), adcls(hastane);
-        }
-    }
-    aktifs();
-
-    $(document).click(function (evt) {
-        map.set('scrollwheel', false);
-    });
-    $("#map").click(function (evt) {
-        evt.stopPropagation();
-        map.set('scrollwheel', true);
-    });
+    // parametreleri eklenmiş fonksiyonları çalıştırma
+    runMap(defaultProj, map);
+    runTekProj(tamamlananProj, '.proje-listesi li:first-child ul', '.tamamlanan-harbtn');
+    runTekProj(satisiDevamEdenProj, '.proje-listesi li:nth-child(2) ul', '.devam-eden-harbtn');
+    runTekProj(gelecekProj, '.proje-listesi li:nth-child(3) ul', '.gelecek-harbtn');
+    runMapCat('.gelecek-harbtn', gelecekProj, map);
+    runMapCat('.devam-eden-harbtn', satisiDevamEdenProj, map);
+    runMapCat('.tamamlanan-harbtn', tamamlananProj, map);
+    runMapCat('.hepsi-harbtn', data, map);
 });

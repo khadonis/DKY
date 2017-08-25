@@ -3,7 +3,7 @@
         "name": "DKY Vizyon Kartal",
         "lat": "40.894315",
         "lng": "29.171416",
-        "icon": "\/images\/Sahil_map_icon.png",
+        "icon": "\/images\/Merkez_map_icon.png",
         "link": "#dkyVizyonLink",
         "image": "\/images\/map-sahil.jpg",
         "c_id": "1",
@@ -68,5 +68,35 @@
         "image": "images/map-ada.jpg",
         "c_id": "1",
         "category_name":"Sat\u0131\u015f\u0131 Devam Eden Projeler"
+    },
+    {
+        "name":"DKY Business Tuzla",
+        "lat": "40.847713",
+        "lng": "29.2967011",
+        "icon": "images/Businesstuz_map_icon.png",
+        "link": "#dkyBusinezzTuzlaLink",
+        "image": "images/map-tuzla.jpg",
+        "c_id": "1",
+        "category_name":"Sat\u0131\u015f\u0131 Devam Eden Projeler"
+    },
+    {
+        "name":"DKY Cadde Suadiye 12",
+        "lat": "40.96679",
+        "lng": "29.085285",
+        "icon": "images/Suadiye_map_icon.png",
+        "link": "#dkyCaddeSuadiyeLink",
+        "image": "images/map-suadiye.jpg",
+        "c_id": "2",
+        "category_name":"Tamamlanan Projeler"
+    },
+    {
+        "name":"DKY Cadde Erenköy 86",
+        "lat": "40.978263",
+        "lng": "29.073121",
+        "icon": "images/Erenkoy_map_icon.png",
+        "link": "#dkyCaddeErenkoyLink",
+        "image": "images/map-erenkoy.jpg",
+        "c_id": "2",
+        "category_name":"Tamamlanan Projeler"
     }
 ]
