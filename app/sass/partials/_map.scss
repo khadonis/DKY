@@ -6,12 +6,12 @@
     right: -15px;
     &.ilt-map,
     &.kartalMap {
-        right: 0;
+        right: 15px;
         height: 650px;
         top: $header-height;
     }
     &.kartalMap {
-        height: 450px;
+        height: 489px;
         top: 0;
     }
 }

@@ -2322,27 +2322,61 @@ Custom SCSS File
   height: 100vmin; }
 
 section.kartal-galeri .side-txt, section.krtl-plans .side-txt, section.krtl-ozellikler .container .side-txt, section.mapWr .side-txt {
-  font-size: 80px;
-  color: #cac1b0;
+  text-align: center;
   top: 50%;
   -webkit-transform: rotate(-90deg) translateX(-50%);
           transform: rotate(-90deg) translateX(-50%);
   -webkit-transform-origin: top left;
           transform-origin: top left;
   position: absolute;
-  left: -96px; }
+  /* @media screen and (max-width: 1024px) {
+        top: -29px;
+        left: -6px;
+    } */
+  /* @media screen and (max-width: 425px) {
+        font-size: 60px;
+        top: -37px !important;
+        left: -4px !important;
+    } */
+  font-size: 72px;
+  color: #fff;
+  font-family: "flexobold", "flexoregular", "Helvetica Neue", Times, serif;
+  left: 366px;
+  width: 488px;
+  height: 170px;
+  padding: 30px 44px;
+  background-color: #333333;
+  color: #fff; }
+  @media screen and (max-width: 1440px) {
+    section.kartal-galeri .side-txt, section.krtl-plans .side-txt, section.krtl-ozellikler .container .side-txt, section.mapWr .side-txt {
+      padding: 20px 0;
+      font-size: 72px;
+      left: 90px;
+      height: 143px; } }
   @media screen and (max-width: 1024px) {
     section.kartal-galeri .side-txt, section.krtl-plans .side-txt, section.krtl-ozellikler .container .side-txt, section.mapWr .side-txt {
       -webkit-transform: rotate(0) translateY(-100%);
               transform: rotate(0) translateY(-100%);
-      top: -29px;
-      left: -6px;
-      margin-top: 60px; } }
+      margin-top: 60px;
+      font-size: 100px;
+      text-align: left;
+      left: 22px;
+      top: 86px;
+      padding: 0;
+      background-color: transparent;
+      color: #333333; }
+      .krtl-ozellikler section.kartal-galeri .side-txt, section.kartal-galeri .krtl-ozellikler .side-txt, .krtl-ozellikler section.krtl-plans .side-txt, section.krtl-plans .krtl-ozellikler .side-txt, section.krtl-ozellikler .container .side-txt, .krtl-ozellikler section.mapWr .side-txt, section.mapWr .krtl-ozellikler .side-txt, .mapWr section.kartal-galeri .side-txt, section.kartal-galeri .mapWr .side-txt, .mapWr section.krtl-plans .side-txt, section.krtl-plans .mapWr .side-txt, .mapWr section.krtl-ozellikler .container .side-txt, section.krtl-ozellikler .container .mapWr .side-txt, section.mapWr .side-txt {
+        margin-top: -15px;
+        left: 30px; }
+      .krtl-ozellikler section.kartal-galeri .side-txt, section.kartal-galeri .krtl-ozellikler .side-txt, .krtl-ozellikler section.krtl-plans .side-txt, section.krtl-plans .krtl-ozellikler .side-txt, section.krtl-ozellikler .container .side-txt, .krtl-ozellikler section.mapWr .side-txt, section.mapWr .krtl-ozellikler .side-txt {
+        margin-top: 65px; } }
   @media screen and (max-width: 425px) {
-    section.kartal-galeri .side-txt, section.krtl-plans .side-txt, section.krtl-ozellikler .container .side-txt, section.mapWr .side-txt {
-      font-size: 60px;
-      top: -37px !important;
-      left: -4px !important; } }
+    body section.kartal-galeri .side-txt, section.kartal-galeri body .side-txt, body section.krtl-plans .side-txt, section.krtl-plans body .side-txt, body section.krtl-ozellikler .container .side-txt, section.krtl-ozellikler .container body .side-txt, body section.mapWr .side-txt, section.mapWr body .side-txt {
+      font-size: 45px;
+      left: 0px !important;
+      top: 100px !important;
+      text-align: center;
+      width: 100%; } }
 
 @font-face {
   font-family: 'flexoregular';
@@ -3153,11 +3187,11 @@ footer {
   margin: 0;
   right: -15px; }
   .map.ilt-map, .map.kartalMap {
-    right: 0;
+    right: 15px;
     height: 650px;
     top: 67px; }
   .map.kartalMap {
-    height: 450px;
+    height: 489px;
     top: 0; }
 
 .har-projs {
@@ -3451,16 +3485,27 @@ footer {
     width: 100%;
     display: block; }
 
-.swiper-container .swiper-slide, .krtl-slider-container .swiper-slide, .kartal-galeri-slider-container .swiper-slide,
-.kg-mimari-slider-container .swiper-slide,
-.kg-icmimari-slider-container .swiper-slide,
-.kg-odaire-slider-container .swiper-slide, .plans-slider-container .swiper-slide,
-.plan-1-slide-container .swiper-slide,
-.plan-2-slide-container .swiper-slide,
-.plan-3-slide-container .swiper-slide,
-.plan-4-slide-container .swiper-slide,
-.krtl-video-slider-container .swiper-slide {
+.swiper-container, .krtl-slider-container, .kartal-galeri-slider-container,
+.kg-mimari-slider-container,
+.kg-icmimari-slider-container,
+.kg-odaire-slider-container, .plans-slider-container,
+.plan-1-slide-container,
+.plan-2-slide-container,
+.plan-3-slide-container,
+.plan-4-slide-container,
+.krtl-video-slider-container {
+  height: 100vh;
   overflow: hidden; }
+  .swiper-container .swiper-slide, .krtl-slider-container .swiper-slide, .kartal-galeri-slider-container .swiper-slide,
+  .kg-mimari-slider-container .swiper-slide,
+  .kg-icmimari-slider-container .swiper-slide,
+  .kg-odaire-slider-container .swiper-slide, .plans-slider-container .swiper-slide,
+  .plan-1-slide-container .swiper-slide,
+  .plan-2-slide-container .swiper-slide,
+  .plan-3-slide-container .swiper-slide,
+  .plan-4-slide-container .swiper-slide,
+  .krtl-video-slider-container .swiper-slide {
+    overflow: hidden; }
 
 .hero-video {
   min-width: 100%;
@@ -4042,8 +4087,11 @@ footer {
 .ozellik-swiper-container {
   width: 100%;
   height: 100%;
-  min-height: 530px;
-  overflow: hidden; }
+  min-height: 490px;
+  overflow: hidden;
+  position: relative;
+  background-color: #fff;
+  padding: 0 40px; }
   .ozellik-swiper-container .swiper-slide {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -4055,7 +4103,7 @@ footer {
     -ms-flex-align: center;
     align-items: center;
     height: 100%;
-    min-height: 530px; }
+    min-height: 490px; }
     @media screen and (max-width: 767px) {
       .ozellik-swiper-container .swiper-slide {
         display: block; } }
@@ -4069,6 +4117,9 @@ footer {
   .ozellik-swiper-container .o-txt-wr {
     display: block;
     padding: 30px 60px; }
+    @media screen and (max-width: 768px) {
+      .ozellik-swiper-container .o-txt-wr {
+        padding: 30px; } }
   .ozellik-swiper-container img {
     border-radius: 100%; }
     @media screen and (max-width: 767px) {
@@ -4084,6 +4135,9 @@ footer {
   width: 100%;
   min-height: 41.66667vw;
   overflow: hidden; }
+  @media screen and (max-width: 1440px) {
+    .k-sldr-cont {
+      margin-top: 67px; } }
   .k-sldr-cont .swiper-slide {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -4750,7 +4804,7 @@ ul {
 section.krtl-tanitim {
   padding: 80px 0; }
   section.krtl-tanitim .krtl-tnt-aciklama {
-    background-color: #cac1b0; }
+    background-color: #ccccce; }
     section.krtl-tanitim .krtl-tnt-aciklama .head {
       position: absolute;
       top: 0;
@@ -4760,7 +4814,7 @@ section.krtl-tanitim {
       padding: 0;
       padding: 30px;
       z-index: 2;
-      background: #cac1b0; }
+      background: #ccccce; }
       section.krtl-tanitim .krtl-tnt-aciklama .head li {
         text-align: center;
         display: inline; }
@@ -4827,27 +4881,8 @@ section.krtl-tanitim {
 
 section.kartal-galeri {
   padding: 80px;
-  background: #cac1b0;
+  background: #ccccce;
   position: relative; }
-  section.kartal-galeri .side-txt {
-    font-size: 120px;
-    color: #fff;
-    font-family: "flexobold", "flexoregular", "Helvetica Neue", Times, serif;
-    left: 240px; }
-    @media screen and (max-width: 1440px) {
-      section.kartal-galeri .side-txt {
-        font-size: 100px;
-        left: -15px; } }
-    @media screen and (max-width: 1024px) {
-      section.kartal-galeri .side-txt {
-        font-size: 100px;
-        left: 22px;
-        top: 86px; } }
-    @media screen and (max-width: 425px) {
-      body section.kartal-galeri .side-txt {
-        font-size: 85px;
-        left: 0px !important;
-        top: 82px !important; } }
   section.kartal-galeri .head {
     text-align: center;
     position: relative; }
@@ -4875,17 +4910,43 @@ section.kartal-galeri {
       font-family: "flexobold", "flexoregular", "Helvetica Neue", Times, serif;
       left: -127px;
       top: 391px; }
+  section.kartal-galeri .container {
+    width: 999px;
+    margin-left: 466px; }
+    @media screen and (max-width: 1366px) {
+      section.kartal-galeri .container {
+        width: 1026px;
+        margin-left: 162px; } }
+    @media screen and (max-width: 1024px) {
+      section.kartal-galeri .container {
+        width: 999px;
+        margin-left: 0px; } }
+    @media screen and (max-width: 768px) {
+      section.kartal-galeri .container {
+        width: 100%; } }
 
 .plans-menu-mobile .plans-menu {
   display: none; }
 
 section.krtl-plans {
-  padding: 80px 40px; }
+  padding: 80px;
+  position: relative; }
   section.krtl-plans .container {
-    position: relative;
-    background-color: #eeeeee; }
+    width: 999px;
+    margin-left: 466px; }
+    @media screen and (max-width: 1440px) {
+      section.krtl-plans .container {
+        width: 1027px;
+        margin-left: 161px; } }
+    @media screen and (max-width: 1024px) {
+      section.krtl-plans .container {
+        width: 999px;
+        margin-left: 0px; } }
+    @media screen and (max-width: 768px) {
+      section.krtl-plans .container {
+        width: 100%; } }
   section.krtl-plans .plans-menu {
-    background-color: #cac1b0;
+    background-color: #ccccce;
     padding: 0;
     margin: 0;
     position: relative;
@@ -4896,7 +4957,7 @@ section.krtl-plans {
       padding: 50px 15px;
       border-bottom: 1px solid #fff;
       color: #fff;
-      background-color: #cac1b0;
+      background-color: #ccccce;
       display: block;
       text-align: center;
       position: relative; }
@@ -4961,7 +5022,7 @@ section.krtl-plans {
         cursor: -webkit-zoom-in;
         cursor: zoom-in; }
   section.krtl-plans .sizes h3 {
-    color: #cac1b0;
+    color: #ccccce;
     font-size: 64px;
     font-family: "flexobold", "flexoregular", "Helvetica Neue", Times, serif; }
   section.krtl-plans .sizes h4 {
@@ -4970,16 +5031,20 @@ section.krtl-plans {
     margin-top: 30px; }
     section.krtl-plans .desc h5 {
       font-size: 24px;
-      color: #cac1b0; }
+      color: #ccccce; }
       section.krtl-plans .desc h5,
       section.krtl-plans .desc h5 + p {
         text-align: left; }
 
 section.krtl-ozellikler {
-  margin: 0 0 80px; }
+  margin: 0 0 80px;
+  position: relative;
+  padding: 80px;
+  background-color: #ccccce; }
   section.krtl-ozellikler .container {
-    min-height: 530px;
-    position: relative; }
+    min-height: 490px;
+    width: 982px;
+    margin-left: 473px; }
     section.krtl-ozellikler .container .ozellik {
       display: block;
       width: 100%;
@@ -5012,12 +5077,47 @@ section.krtl-ozellikler {
           font-size: 18px;
           font-family: "flexoregular", "Helvetica Neue", Helvetica, Arial, sans-serif;
           margin: 0; }
+    @media screen and (max-width: 1440px) {
+      section.krtl-ozellikler .container {
+        width: 1011px;
+        margin-left: 169px; } }
+    @media screen and (max-width: 1024px) {
+      section.krtl-ozellikler .container {
+        width: 940px;
+        margin-left: 0px;
+        padding: 0; } }
+    @media screen and (max-width: 768px) {
+      section.krtl-ozellikler .container {
+        width: 100%; } }
+  @media screen and (max-width: 1024px) {
+    section.krtl-ozellikler {
+      padding: 130px 60px; } }
+  @media screen and (max-width: 768px) {
+    section.krtl-ozellikler {
+      padding: 130px 0px; } }
+  @media screen and (max-width: 425px) {
+    section.krtl-ozellikler {
+      padding: 20px; } }
 
 section.mapWr {
-  margin: 0 0 80px 0; }
+  position: relative;
+  margin: 0 0 80px 0;
+  padding: 40px; }
   section.mapWr .container {
-    position: relative;
-    background: #cec6bb; }
+    background-color: #ccccce;
+    width: 983px;
+    margin-left: 512px; }
+    @media screen and (max-width: 1440px) {
+      section.mapWr .container {
+        width: 1012px;
+        margin-left: 208px; } }
+    @media screen and (max-width: 1024px) {
+      section.mapWr .container {
+        width: 970px;
+        margin-left: 0px; } }
+    @media screen and (max-width: 768px) {
+      section.mapWr .container {
+        width: 100%; } }
 
 section.bi-tal-form {
   background-image: url("../images/kartal-balkon-gece.jpg");
@@ -5025,7 +5125,7 @@ section.bi-tal-form {
   background-size: cover;
   background-position: center center; }
   section.bi-tal-form .bt-form {
-    background: rgba(202, 193, 176, 0.85); }
+    background: rgba(204, 204, 206, 0.85); }
 
 .gal-item {
   height: 168px;
@@ -5046,14 +5146,19 @@ section.bi-tal-form {
     height: 100%;
     top: 0;
     left: 0;
-    background-color: rgba(0, 0, 0, 0.3);
     -webkit-transition: all ease .3s;
     transition: all ease .3s; }
+    @media screen and (max-width: 425px) {
+      .gal-item .mask {
+        display: none; } }
     .k-pln-wr .gal-item .mask {
       background-color: rgba(234, 91, 6, 0.65);
       color: #fff;
       font-size: 24px;
       font-family: "flexobold", "flexoregular", "Helvetica Neue", Times, serif; }
+      @media screen and (max-width: 425px) {
+        .k-pln-wr .gal-item .mask {
+          display: none; } }
       .k-pln-wr .gal-item .mask p {
         padding: 10px;
         margin: 0;
@@ -5529,13 +5634,13 @@ body .modal.in .modal-dialog {
       width: 14px;
       height: 14px; }
   section.krtl-plans {
-    padding: 120px 30px 120px; }
-    section.krtl-plans .side-txt {
-      -webkit-transform: rotate(0) translateY(-100%);
-              transform: rotate(0) translateY(-100%);
-      top: -29px;
-      left: -6px;
-      margin-top: 60px; }
+    padding: 120px 30px 120px;
+    /* .side-txt {
+            transform: rotate(0) translateY(-100%);
+            top: -29px;
+            left: -6px;
+            margin-top: 60px;
+        } */ }
   body section.krtl-tanitim .krtl-tnt-aciklama .head {
     padding: 30px 15px; }
     body section.krtl-tanitim .krtl-tnt-aciklama .head li a {
@@ -9907,7 +10012,6 @@ body.swal2-iosfix {
   position: absolute;
   top: 0;
   left: 0;
-  padding: 20px;
   z-index: 1101;
   outline: none;
   display: none; }
@@ -9917,16 +10021,19 @@ body.swal2-iosfix {
   width: 100%;
   height: 100%;
   background: #fff;
-  top: 20px; }
+  top: 20px;
+  max-height: 85vh !important; }
 
 #fancybox-content {
   width: 0;
   height: 0;
+  max-height: 85vh !important;
   padding: 0;
   outline: none;
   position: relative;
   overflow: hidden;
   z-index: 1102;
+  text-align: center;
   border: 0px solid #fff; }
 
 #fancybox-hide-sel-frame {
@@ -9958,8 +10065,7 @@ body.swal2-iosfix {
 #fancybox-img {
   width: auto;
   height: 100%;
-  max-height: 95vh;
-  max-width: 95vw;
+  max-height: 85vh !important;
   padding: 0;
   margin: 0;
   border: none;

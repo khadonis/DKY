@@ -313,6 +313,7 @@ var swiperHaberler = new Swiper('.basin-slide-container', {
 var swiper = new Swiper('.ozellik-swiper-container', {
   nextButton: '.ozellikler-krtl-btn-next',
   prevButton: '.ozellikler-krtl-btn-prev',
+  spaceBetween: 40
 });
 var swiper = new Swiper('.k-sldr-cont', {
   nextButton: '.k-sldr-btn-next',

@@ -1,8 +1,9 @@
-.proje-detay-body{
-    .b-talep-form{
+.proje-detay-body {
+    .b-talep-form {
         display: none;
     }
 }
+
 .krtl-header {
     @extend .header;
     padding: 30px;
@@ -55,6 +56,7 @@
         margin: 0 auto;
     }
 }
+
 .krtl-hero {
     @extend %hero;
     height: 400px;
@@ -223,26 +225,6 @@ section.kartal-galeri {
     position: relative;
     .side-txt {
         @extend %side-text;
-        font-size: 120px;
-        color: #fff;
-        font-family: $f-f-flexobold;
-        left: 240px;
-        @media screen and (max-width: 1440px) {
-            font-size: 100px;
-            left: -15px;
-        }
-        @media screen and (max-width: 1024px) {
-            font-size: 100px;
-            left: 22px;
-            top: 86px;
-        }
-        body & {
-            @media screen and (max-width: 425px) {
-                font-size: 85px;
-                left: 0px !important;
-                top: 82px !important;
-            }
-        }
     }
     .head {
         text-align: center;
@@ -276,6 +258,21 @@ section.kartal-galeri {
             top: 391px;
         }
     }
+    .container {
+        width: (1170px) - 171;
+        margin-left: 466px;
+        @media screen and (max-width: 1366px) {
+            width: (1170px) - 144;
+            margin-left: 162px;
+        }
+        @media screen and (max-width:1024px) {
+            width: (1170px) - 171;
+            margin-left: 0px;
+        }
+        @media screen and (max-width:768px) {
+            width: 100%;
+        }
+    }
 }
 
 .plans-menu-mobile {
@@ -285,13 +282,25 @@ section.kartal-galeri {
 }
 
 section.krtl-plans {
-    padding: $section-padding $section-padding/2;
-    .container {
-        position: relative;
-        background-color: $gray-lighter;
-    }
+    padding: $section-padding;
+    position: relative;
     .side-txt {
         @extend %side-text;
+    }
+    .container {
+        width: (1170px) - 171;
+        margin-left: 466px;
+        @media screen and (max-width: 1440px) {
+            width: (1170px) - 143;
+            margin-left: 161px;
+        }
+        @media screen and (max-width:1024px) {
+            width: (1170px) - 171;
+            margin-left: 0px;
+        }
+        @media screen and (max-width:768px) {
+            width: 100%;
+        }
     }
     .plans-menu {
         background-color: $krtl-color;
@@ -390,9 +399,11 @@ section.krtl-plans {
 
 section.krtl-ozellikler {
     margin: 0 0 $section-padding;
+    position: relative;
+    padding: 80px;
+    background-color: $krtl-color;
     .container {
-        min-height: 530px;
-        position: relative;
+        min-height: 490px;
         .side-txt {
             @extend %side-text;
         }
@@ -431,14 +442,51 @@ section.krtl-ozellikler {
                 }
             }
         }
+        width: (1170px) - 188;
+        margin-left: 473px;
+        @media screen and (max-width: 1440px) {
+            width: (1170px) - 159;
+            margin-left: 169px;
+        }
+        @media screen and (max-width:1024px) {
+            width: (1170px) - 230;
+            margin-left: 0px;
+            padding: 0;
+        }
+        @media screen and (max-width:768px) {
+            width: 100%;
+        }
+    }
+    @media screen and (max-width:1024px) {
+        padding: 130px 60px;
+    }
+    @media screen and (max-width:768px) {
+        padding: 130px 0px;
+    }
+    @media screen and (max-width:425px) {
+        padding: 20px;
     }
 }
 
 section.mapWr {
+    position: relative;
     margin: 0 0 $section-padding 0;
+    padding: 40px;
     .container {
-        position: relative;
-        background: $dty-map-color;
+        background-color: $krtl-color;
+        width: (1170px) - 187;
+        margin-left: 512px;
+        @media screen and (max-width: 1440px) {
+            width: (1170px) - 158;
+            margin-left: 208px;
+        }
+        @media screen and (max-width:1024px) {
+            width: (1170px) - 200;
+            margin-left: 0px;
+        }
+        @media screen and (max-width:768px) {
+            width: 100%;
+        }
     }
     .side-txt {
         @extend %side-text;
@@ -467,11 +515,17 @@ section.bi-tal-form {
         width: 100%;
         height: 100%;
         top: 0;
-        left: 0;
-        background-color: rgba(0, 0, 0, .3);
+        left: 0; // background-color: rgba(0, 0, 0, .3);
         transition: all ease .3s;
+        @media screen and (max-width: 425px) {
+            display: none;
+        }
         .k-pln-wr & {
-            background-color: rgba($sec-color, .65);
+            @media screen and (max-width: 425px) {
+                display: none;
+            }
+            background-color: rgba($sec-color,
+            .65);
             color: #fff;
             font-size: 24px;
             font-family: $f-f-flexobold;

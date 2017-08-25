@@ -198,22 +198,64 @@
 }
 
 %side-text {
-    font-size: 80px;
-    color: $krtl-color;
+    //font-size: 80px;
+    text-align: center;
+    //color: $krtl-color;
     top: 50%;
     transform: rotate(-90deg) translateX(-50%);
     transform-origin: top left;
     position: absolute;
-    left: -96px; //mobile 1024px>
-    @media screen and (max-width: 1024px) {
-        transform: rotate(0) translateY(-100%);
+    //left: -96px; //mobile 1024px>
+    /* @media screen and (max-width: 1024px) {
         top: -29px;
         left: -6px;
-        margin-top: 60px;
-    }
-    @media screen and (max-width: 425px) {
+    } */
+    /* @media screen and (max-width: 425px) {
         font-size: 60px;
         top: -37px !important;
         left: -4px !important;
+    } */
+    //@extend %side-text;
+    font-size: 72px;
+    color: #fff; 
+    font-family: $f-f-flexobold;
+    left: 366px;
+    width: 488px;
+    height: 170px;
+    padding: 30px 44px;
+    background-color: $gray-dark;
+    color: #fff;
+    @media screen and (max-width: 1440px) {
+        padding: 20px 0;
+        font-size: 72px;
+        left: 90px;
+        height: 143px;
+    }
+    @media screen and (max-width: 1024px) {
+        transform: rotate(0) translateY(-100%);
+        margin-top: 60px;
+        font-size: 100px;
+        text-align: left;
+        left: 22px;
+        top: 86px;
+        padding: 0;
+        background-color: transparent;
+        color: $gray-dark;
+        .krtl-ozellikler &, .mapWr & {
+            margin-top: -15px;
+            left: 30px;
+        }
+        .krtl-ozellikler & {
+            margin-top: 65px;
+        }
+    }
+    body & {
+        @media screen and (max-width: 425px) {
+            font-size: 45px;
+            left: 0px !important;
+            top: 100px !important;
+            text-align: center;
+            width: 100%;
+        }
     }
 }
