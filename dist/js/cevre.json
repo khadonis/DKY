@@ -1,0 +1,36 @@
+[
+    {
+        "proje": [
+            {
+                "name": "DKY Vizyon Kartal",
+                "lat": "40.894315",
+                "lng": "29.171416",
+                "icon": "\/images\/Merkez_map_icon.png",
+                "link": "#dkyVizyonLink",
+                "image": "\/images\/map-sahil.jpg",
+                "c_id": "1",
+                "category_name": "Sat\u0131\u015f\u0131 Devam Eden Projeler"
+            }
+        ]
+    },
+    {
+        "hastaneler": [
+            {
+                "name": "Kartal Ağız ve Diş Hastanesi",
+                "lat": "40.9106752",
+                "lng": "29.2029738",
+                "icon": "images/Hastane-Gold.png",
+                "link": "#kartalProjesi",
+                "image": "https://lh3.googleusercontent.com/proxy/LazHRGojZ4P-WqQopdUayiMYvzmIC34vhiCqT1qcr9naIpcZ5BBo3qpBPNhycjOJphk5rGY0SwbapznGoKWljwa8lDY7GYIu5mlhLvxuck10vgg9gf90Xz6H-1lWobnwkqfLKWyPxqaJYBxThFQQBAxi5PB2yR8=w408-h228-k-no"
+            },
+            {
+                "name": "KARTAL DR. LÜTFİ KIRDAR EĞİTİM VE ARAŞTIRMA HASTANESİ",
+                "lat": "40.9090207",
+                "lng": "29.1940152",
+                "icon": "images/Hastane-Gold.png",
+                "link": "#kartalProjesi",
+                "image": "https://lh4.googleusercontent.com/proxy/HfRzUZiuoyrXlGQoC3IsUi8K2qmkXo3cGr6MQnR74ox9I0ZGgB-6bmSuapZxO0jW3jKMdPc5ayR5t8jFKKrrwsgQk9uDWeJlQBAQoEssuiH79yEsw2p_EwapTXpK_f_3lEZLZgYJP8BVHURez7qo1mI5b-tgLg=w408-h209-k-no"
+            }
+        ]
+    }
+]
