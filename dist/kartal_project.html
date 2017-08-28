@@ -697,7 +697,7 @@
             var kartalMapOpt = {
                 zoom: 11,
                 scrollwheel: false,
-                center: new google.maps.LatLng([data[0].lat], [data[0].lng]),
+                center: new google.maps.LatLng(data.proje[0]["lat"], data.proje[0]["lng"]),
                 mapTypeId: google.maps.MapTypeId.ROADMAP,
                 styles: stls
             };
@@ -708,21 +708,22 @@
             var wayDir;
             // haritayı döngüde oluşturan fonksiyon
             function runMap(data, map) {
+
                 for (i = 0; i < data.length; i++) {
-                    wayDir = 'https://www.google.com.tr/maps/dir//' + data[i]["lat"] + ',' + data[i]["lng"];
+                    wayDir = 'https://www.google.com.tr/maps/dir//' + data[i].lat + ',' + data[i].lng;
 
                     kartalMarker = new google.maps.Marker({
-                        position: new google.maps.LatLng(data[i]["lat"], data[i]["lng"]),
+                        position: new google.maps.LatLng(data[i].lat, data[i].lng),
                         map: map,
                         animation: google.maps.Animation.DROP,
-                        icon: new google.maps.MarkerImage(data[i]["icon"])
+                        icon: new google.maps.MarkerImage(data[i].icon)
 
                     });
                     kartalMarkers.push(kartalMarker);
                     kartalInfowindow = new SnazzyInfoWindow({
                         marker: kartalMarker,
-                        content: '<div class="mi-content"><div class="loc-name">' + data[i]["name"].toLowerCase() + '</div><a target="_blank" href="' + wayDir + '" class="mi-tarif">Yol Tarifi</a>',
-                        wrapperClass: 'iw-container ' + data[i]["name"].replace(/\s/g, '') + '',
+                        content: '<div class="mi-content"><div class="loc-name">' + data[i].name.toLowerCase() + '</div><a target="_blank" href="' + wayDir + '" class="mi-tarif">Yol Tarifi</a>',
+                        wrapperClass: 'iw-container ' + data[i].name.replace(/\s/g, '') + '',
                         placement: 'top',
                         closeWhenOthersOpen: true,
                         callbacks: {
@@ -764,7 +765,7 @@
                     $(btn).addClass('active');
                 });
             } */
-            var ul = $('.dplaces');
+            /* var ul = $('.dplaces');
             ul.empty();
             $.each(data, function (i, obj) {
                 var li = $('<li id="' + obj.c_id + '">').text(obj.c_id).appendTo(ul);
@@ -772,13 +773,17 @@
                 //console.log(obj.c_id);
                 var groupedData = _.groupBy(obj, function (d) { return d.c_id });
                 console.log(groupedData);
-            });
+            }); */
 
 
 
 
             // fonksiyonların hepsi çalıştırılıyor
-            runMap([data[0]], kartalMap);
+            runMap(data.proje, kartalMap);
+            console.log(data.lokasyonlar[0]["hastaneler"]);
+            
+
+
 
 
 
