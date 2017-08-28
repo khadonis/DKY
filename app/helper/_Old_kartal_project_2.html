@@ -2,96 +2,12 @@
 <html lang="tr">
 
 <head>
-    <meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="shortcut icon" href="images/DKY-ico.png" />
-<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-<link href="css/app.min.css" rel="stylesheet">
-<script src="js/jquery-1.12.4.min.js"></script>
-<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-<!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    @import "head.html"
     <title>DKY Kartal Projesi</title>
 </head>
 
 <body class="proje-detay-body">
-    <div id="loaderWr">
-    <div class="loader"><div></div></div>
-    <div class="percentage">0%</div>
-</div>
-<div class="menu">
-  <div id="canvas" class="gradient">
-    <div class="back-effect"></div>
-  </div>
-  <div class="languages">
-    <a href="#tr" class="tr">
-      <h3>TR</h3>
-    </a>
-    <a href="#en" class="en">
-      <h3>EN</h3>
-    </a>
-    <a href="#ar" class="ar">
-      <h3>AR</h3>
-    </a>
-  </div>
-  <ul class="navig">
-    <li><a href="#Kurumsal">Kurumsal</a></li>
-    <li><a href="#Projeler">Projeler</a></li>
-    <li><a href="#Medya_Merkezi">Medya Merkezi</a></li>
-    <li><a href="#Insan_Kaynaklari">İnsan Kaynakları</a></li>
-    <li><a href="#Iletisim">İletişim</a></li> 
-    <li>
-      <a href="https://www.facebook.com/dkyinsaat/"><i class="fa fa-facebook"></i></a>
-      <a href="https://www.instagram.com/dkyinsaat/"><i class="fa fa-instagram"></i></a>
-    </li>
-  </ul>
-</div>
-<div class="search">
-  <div id="canvas" class="gradient">
-    <div class="back-effect">
-    </div>
-    <a href="#" class="close-search">
-      <div class="line-h"></div>
-      <div class="line-h"></div>
-      <div class="line-h"></div>
-    </a>
-  </div>
-  <div class="form-group">
-    <input type="text" name="search" value="" placeholder="Ara">
-  </div>
-</div>
-
-
-<div class="container-fluid header shdw">
-  <a href="#" class="menu-toggle">
-    <div class="line-h"></div>
-    <div class="line-h"></div>
-    <div class="line-h"></div>
-  </a>
-  <a href="tel:02165179517" class="tel show-in-mobil"><span class="oi oi-technology"></span></a>
-  <div class="logo center-block">
-    <a href="index.html"><img src="images/DKY-logo.png" alt="DKY İnşaat Logo"></a>
-  </div>
-  <div class="languages">
-    <a href="#tr" class="tr">
-      <h3>TR</h3>
-    </a>
-    <a href="#en" class="en">
-      <h3>EN</h3>
-    </a>
-    <a href="#ar" class="ar">
-      <h3>AR</h3>
-    </a>
-    <a href="#" class="search-btn">
-      <i class="fa fa-search"></i>
-    </a>
-  </div>
-</div>
-<a href="bilgi_talep_formu.html" class="b-talep-form"><span>Bilgi Talep Formu</span></a>
+    @import "header.html"
     <div class="k-sldr-cont">
         <div class="swiper-wrapper">
             <div class="swiper-slide" style="background-image:url('images/DKY KARTAL Balkon gece2-min.jpg')">
@@ -577,50 +493,7 @@
     </script>
 
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB2V7XQtDZSOvcJzylGchYrL8nqzfsTsFg"></script>
-    <footer class="proje-footer">
-  <div class="container">
-    <h2>İLETİŞİM</h2>
-    <div class="foot-in">
-      <h3>SATIŞ OFİSİ</h3>
-      <h4>
-        Merkez Mahallesi Kemerburgaz Caddesi No: 74 Kağıthane / İstanbul
-      </h4>
-      <h3><a href="tel:444 9 359">444 9 359</a></h3>
-      <a href="#" class="bulten-input">Kroki için tıklayın</a>
-    </div>
-    <div class="col-sm-4 col-xs-12">
-      <ul class="contact-items">
-        <li><a href="#">BASINDA DKY</a></li>
-        <li><a href="#">MEDYA MERKEZİ</a></li>
-      </ul>
-    </div>
-    <div class="col-sm-4 col-xs-12">
-      <div class="social-media-icons">
-        <a href="#">
-            <i class="fa fa-facebook"></i>
-          </a>
-        <a href="#">
-            <i class="fa fa-twitter"></i>
-          </a>
-        <a href="#">
-            <i class="fa fa-instagram"></i>
-          </a>
-        <a href="#">
-            <i class="fa fa-youtube"></i>
-          </a>
-        <a href="#">
-            <i class="fa fa-google-plus"></i>
-          </a>
-      </div>
-    </div>
-    <div class="col-sm-4 col-xs-12">
-      <a class="foot-logo" href="#"><img src="images/DKY-logo.png" alt="DKY İnşaat Logo"></a>
-    </div>
-  </div>
-
-</footer>
-<!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="js/app.min.js"></script>
+    @import "proje_footer.html"
     <script src="js/sweetalert2.min.js"></script>
     <script src="js/validate.js"></script>
     <script>
@@ -693,7 +566,8 @@
 
 
         $.getJSON('js/cevre.json', function (data) {
-            // json için local değişkenler
+            var defaultProj = data.filter(function (proje) { return proje.c_id == "1" });;
+            var hastaneler = data.filter(function (proje) { return proje.category_name == "hastaneler" });
             var kartalMapOpt = {
                 zoom: 11,
                 scrollwheel: false,
@@ -702,12 +576,14 @@
                 styles: stls
             };
             var kartalMap = new google.maps.Map(document.getElementById('kartalMap'), kartalMapOpt);
+
+
             var kartalMarker, i;
             var kartalMarkers = [];
             var kartalInfowindow;
             var wayDir;
-            // haritayı döngüde oluşturan fonksiyon
-            function runMap(data, map) {
+            function test(data, map) {
+
                 for (i = 0; i < data.length; i++) {
                     wayDir = 'https://www.google.com.tr/maps/dir//' + data[i]["lat"] + ',' + data[i]["lng"];
 
@@ -743,17 +619,18 @@
                     })(marker, i));
                 }
             };
-            //tüm markerları bulmak için fonksiyon
+            test(defaultProj, kartalMap);
             function setMapOnAll(map) {
                 for (var i = 0; i < kartalMarkers.length; i++) {
                     kartalMarkers[i].setMap(map);
                 }
             }
-            // bulunan markerları temizlemek için fonksiyon
             function clearMarkers() {
                 setMapOnAll(null);
+
+
             }
-            /* function runMap(btn, data, map) {
+            function runMap(btn, data, map) {
                 $(btn).click(function () {
                     clearMarkers();
                     kartalMarkers[0].setMap(map);
@@ -763,26 +640,24 @@
                     $('.si-float-wrapper').remove();
                     $(btn).addClass('active');
                 });
-            } */
-            var ul = $('.dplaces');
-            ul.empty();
-            $.each(data, function (i, obj) {
-                var li = $('<li id="' + obj.c_id + '">').text(obj.c_id).appendTo(ul);
-                var span = $('<span class="circle">').appendTo(li);
-                //console.log(obj.c_id);
-                var groupedData = _.groupBy(obj, function (d) { return d.c_id });
-                console.log(groupedData);
-            });
+            }
+
+            
+
+            runMap('#hastaneler', hastaneler, kartalMap);
+            
 
 
-
-
-            // fonksiyonların hepsi çalıştırılıyor
-            runMap([data[0]], kartalMap);
-
-
-
-
+            /*  runMap('#okul', kartalOkullari, { lat: 40.929925, lng: 29.190001 }, 13); */
+            /*  runMap('#resmi', kartalResmiKurumlar, { lat: 40.908384, lng: 29.186632 }, 13);
+             runMap('#avm', kartalAvmler, { lat: 40.90833, lng: 29.2206733 }, 13);
+             runMap('#orman', kartalOrmanlar, { lat: 40.934958, lng: 29.216759 }, 13);
+             runMap('#ulasim', kartalUlasim, { lat: 40.902068, lng: 29.212533 }, 14);
+             runMap('#cami', kartalCamiileri, { lat: 40.9112589, lng: 29.2119724 }, 16);
+             runMap('#park', kartalparklari, { lat: 40.9119004, lng: 29.2143647 }, 16);
+             runMap('#yemek', kartalYemekleri, { lat: 40.9084652, lng: 29.2268644 }, 15);
+             runMap('#spor', kartalSporMerkezleri, { lat: 40.9109233, lng: 29.211235 }, 15);
+             runMap('#tumu', data, { lat: 40.929569, lng: 29.21402 }, 12);  */
             $(document).click(function (evt) {
                 kartalMap.set('scrollwheel', false);
             });

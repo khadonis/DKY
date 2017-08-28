@@ -35,7 +35,7 @@ $(window).scroll(function () {
   if ($(this).scrollTop() >= 50) {
     $('.header').addClass('shdw');
     return;
-  } else {
+  } else if (screen.width > 425) {
     $('.header').removeClass('shdw');
   }
 });
@@ -394,7 +394,7 @@ function resizes(targetEl) {
     var h = $(this).width();
     var ph = $(this).parent().width();
     $(this).height(h);
-    $(this).parent().height(ph);
+    $(this).siblings().height(h);
     $(this).find('img:not(h4 img)').height(h);
   });
 };
@@ -474,6 +474,14 @@ $('.nav-proj a').each(function () {
       scrollTop: navDiv.offset().top - 60
     }, 2500);
   });
+});
+
+// Anasayfa Scroll Button
+
+$('.scroll-down-i').click(function () {
+  $('html, body').animate({
+    scrollTop: window.innerHeight - 40
+  }, 2000);
 });
 
 //fancybox

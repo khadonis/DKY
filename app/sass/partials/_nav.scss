@@ -1,13 +1,13 @@
 // Menu
 .menu-toggle {
     position: fixed;
-    @include square(60px);
+    @include square(40px);
     display: block;
     top: 22px;
-    z-index: 12;
+    z-index: 99;
     right: 30px;
     .line-h {
-        height: 4px;
+        height: 2px;
         position: absolute;
         background-color: $gray-base;
         border-radius: 5px;
@@ -18,19 +18,19 @@
             transition: top 300ms cubic-bezier(0.215, .61, .355, 1) 200ms, transform 300ms cubic-bezier(0.215, .61, .355, 1) 200ms, background-color 300ms cubic-bezier(0.215, .61, .355, 1) 0ms;
         }
         &:nth-child(2) {
-            top: 12px;
+            top: 9px;
             opacity: 1;
             transition: opacity 200ms linear 0ms, width 200ms linear 400ms, background-color 300ms cubic-bezier(0.215, .61, .355, 1) 0ms;
         }
         &:nth-child(3) {
-            top: 24px;
+            top: 18px;
             transform: rotate(0deg);
             transition: top 300ms cubic-bezier(0.215, .61, .355, 1) 200ms, transform 300ms cubic-bezier(0.215, .61, .355, 1) 200ms, background-color 300ms cubic-bezier(0.215, .61, .355, 1) 0ms;
         }
     }
     &:hover {
         .line-h {
-            background-color: $sec-color;
+            background-color: $gray-dark;
         }
     }
     &.active {
@@ -63,8 +63,7 @@
     width: 0%;
     height: 0%;
     background: rgba($main-color, .9);
-    transition: opacity ease .6s, height .2s .6s, width .2s .6s;
-    //z-index: 98;
+    transition: opacity ease .6s, height .2s .6s, width .2s .6s; //z-index: 98;
     opacity: 0;
     &.opened {
         top: 0;
@@ -106,7 +105,7 @@
 .logo {
     text-align: center;
     img {
-        width: 140px;
+        width: 120px;
     }
 }
 
@@ -196,14 +195,14 @@
 .tel.show-in-mobil {
     position: absolute;
     left: auto;
-    right: 70px;
+    right: 50px;
     font-size: 21px;
     border-radius: 60px;
     background-color: $gray-darker;
     line-height: 0;
     padding: 10px;
     color: #fff;
-    top: 15px;
+    top: 10px;
     &:hover {
         background-color: $sec-color;
     }
@@ -248,6 +247,7 @@
     margin: 0 0 30px;
     border-bottom: 1px solid lighten($gray-dark, 60%);
     padding: 0 0 30px;
+    
     &,
     li {
         list-style: none;
@@ -264,6 +264,9 @@
                 display: none;
             }
         }
+    }
+    @media screen and (max-width: 425px) {
+        display: none;
     }
     li {
         &:after {

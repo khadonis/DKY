@@ -234,6 +234,9 @@
 
 .swiper-container-vertical>.swiper-pagination-bullets {
     left: 20px;
+    @media screen and (max-width:425px) {
+        display: none;
+    }
 }
 
 .swiper-container-vertical>.swiper-pagination-bullets .swiper-pagination-bullet {
@@ -481,7 +484,7 @@
     min-height: $video_diagonal_ratio / 2.4;
     overflow: hidden;
     @media screen and (max-width:1440px) {
-        margin-top: 67px;
+        margin-top: 60px;
     }
     .swiper-slide {
         display: -webkit-box;

@@ -693,7 +693,8 @@
 
 
         $.getJSON('js/cevre.json', function (data) {
-            // json için local değişkenler
+            var defaultProj = data.filter(function (proje) { return proje.c_id == "1" });;
+            var hastaneler = data.filter(function (proje) { return proje.category_name == "hastaneler" });
             var kartalMapOpt = {
                 zoom: 11,
                 scrollwheel: false,
@@ -702,12 +703,14 @@
                 styles: stls
             };
             var kartalMap = new google.maps.Map(document.getElementById('kartalMap'), kartalMapOpt);
+
+
             var kartalMarker, i;
             var kartalMarkers = [];
             var kartalInfowindow;
             var wayDir;
-            // haritayı döngüde oluşturan fonksiyon
-            function runMap(data, map) {
+            function test(data, map) {
+
                 for (i = 0; i < data.length; i++) {
                     wayDir = 'https://www.google.com.tr/maps/dir//' + data[i]["lat"] + ',' + data[i]["lng"];
 
@@ -743,17 +746,18 @@
                     })(marker, i));
                 }
             };
-            //tüm markerları bulmak için fonksiyon
+            test(defaultProj, kartalMap);
             function setMapOnAll(map) {
                 for (var i = 0; i < kartalMarkers.length; i++) {
                     kartalMarkers[i].setMap(map);
                 }
             }
-            // bulunan markerları temizlemek için fonksiyon
             function clearMarkers() {
                 setMapOnAll(null);
+
+
             }
-            /* function runMap(btn, data, map) {
+            function runMap(btn, data, map) {
                 $(btn).click(function () {
                     clearMarkers();
                     kartalMarkers[0].setMap(map);
@@ -763,26 +767,24 @@
                     $('.si-float-wrapper').remove();
                     $(btn).addClass('active');
                 });
-            } */
-            var ul = $('.dplaces');
-            ul.empty();
-            $.each(data, function (i, obj) {
-                var li = $('<li id="' + obj.c_id + '">').text(obj.c_id).appendTo(ul);
-                var span = $('<span class="circle">').appendTo(li);
-                //console.log(obj.c_id);
-                var groupedData = _.groupBy(obj, function (d) { return d.c_id });
-                console.log(groupedData);
-            });
+            }
+
+            
+
+            runMap('#hastaneler', hastaneler, kartalMap);
+            
 
 
-
-
-            // fonksiyonların hepsi çalıştırılıyor
-            runMap([data[0]], kartalMap);
-
-
-
-
+            /*  runMap('#okul', kartalOkullari, { lat: 40.929925, lng: 29.190001 }, 13); */
+            /*  runMap('#resmi', kartalResmiKurumlar, { lat: 40.908384, lng: 29.186632 }, 13);
+             runMap('#avm', kartalAvmler, { lat: 40.90833, lng: 29.2206733 }, 13);
+             runMap('#orman', kartalOrmanlar, { lat: 40.934958, lng: 29.216759 }, 13);
+             runMap('#ulasim', kartalUlasim, { lat: 40.902068, lng: 29.212533 }, 14);
+             runMap('#cami', kartalCamiileri, { lat: 40.9112589, lng: 29.2119724 }, 16);
+             runMap('#park', kartalparklari, { lat: 40.9119004, lng: 29.2143647 }, 16);
+             runMap('#yemek', kartalYemekleri, { lat: 40.9084652, lng: 29.2268644 }, 15);
+             runMap('#spor', kartalSporMerkezleri, { lat: 40.9109233, lng: 29.211235 }, 15);
+             runMap('#tumu', data, { lat: 40.929569, lng: 29.21402 }, 12);  */
             $(document).click(function (evt) {
                 kartalMap.set('scrollwheel', false);
             });

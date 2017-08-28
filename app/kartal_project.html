@@ -491,22 +491,22 @@
             $('#video2').get(0).stopVideo();
         }); */
     </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB2V7XQtDZSOvcJzylGchYrL8nqzfsTsFg"></script>
 
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB2V7XQtDZSOvcJzylGchYrL8nqzfsTsFg"></script>
     @import "proje_footer.html"
     <script src="js/sweetalert2.min.js"></script>
     <script src="js/validate.js"></script>
     <script>
-        var dkyBusiness = [
-            ['DKY Business Kartal', 40.909721, 29.212279, 'images/' + businessIcon + '', '#dkyBusinessLink', 'images/map-business.jpg', 1]
-        ];
-        var kartalHastanesleri = [
-            ['Kartal Ağız ve Diş Hastanesi', 40.9106752, 29.2029738, 'images/Hastane-Gold.png', '#kartalProjesi', 'https://lh3.googleusercontent.com/proxy/LazHRGojZ4P-WqQopdUayiMYvzmIC34vhiCqT1qcr9naIpcZ5BBo3qpBPNhycjOJphk5rGY0SwbapznGoKWljwa8lDY7GYIu5mlhLvxuck10vgg9gf90Xz6H-1lWobnwkqfLKWyPxqaJYBxThFQQBAxi5PB2yR8=w408-h228-k-no', 1],
-            ['KARTAL DR. LÜTFİ KIRDAR EĞİTİM VE ARAŞTIRMA HASTANESİ', 40.9090207, 29.1940152, 'images/Hastane-Gold.png', '#kartalProjesi', 'https://lh4.googleusercontent.com/proxy/HfRzUZiuoyrXlGQoC3IsUi8K2qmkXo3cGr6MQnR74ox9I0ZGgB-6bmSuapZxO0jW3jKMdPc5ayR5t8jFKKrrwsgQk9uDWeJlQBAQoEssuiH79yEsw2p_EwapTXpK_f_3lEZLZgYJP8BVHURez7qo1mI5b-tgLg=w408-h209-k-no', 1],
-            ['YAKACIK DOĞUM VE ÇOCUK HASTALIKLARI HASTANESİ', 40.9162367, 29.2153441, 'images/Hastane-Gold.png', '#kartalProjesi', 'https://lh5.googleusercontent.com/proxy/bPM92hvvhWIpBnXyONrhtVvqzcnhhy7JXSbLlY7g_cPI0MFxvyGMPjwOlSGmwPNHP5H0_hA3HQg1Fbm2BL3_hMLQV4E62Mt1IBhEHdkfma8p8UuJlDs11oDmKR1O10SCBFLa1fpIJ_xY7l_QGHAJT0PEYha09w=w408-h408-k-no', 1],
-            ['Kartal Yavuz Selim Devlet Hastanesi Poliklinikleri', 40.901366, 29.2034566, 'images/Hastane-Gold.png', '#kartalProjesi', 'https://lh6.googleusercontent.com/-x2b8K7wF2a8/WAnCUMyQyTI/AAAAAAAAAWI/QQachip6oM0Z8mtzGCIu5OPnbJRE5ft5QCLIB/w408-h229-k-no/', 1]
-        ];
-        var kartalOkullari = [
+        /* var dkyBusiness = [
+            ['DKY Business Kartal', 40.909721, 29.212279, 'images/Businesskar_map_icon.png', '#dkyBusinessLink', 'images/map-business.jpg', 1]
+        ]; */
+        /*  var kartalHastanesleri = [
+             ['Kartal Ağız ve Diş Hastanesi', 40.9106752, 29.2029738, 'images/Hastane-Gold.png', '#kartalProjesi', 'https://lh3.googleusercontent.com/proxy/LazHRGojZ4P-WqQopdUayiMYvzmIC34vhiCqT1qcr9naIpcZ5BBo3qpBPNhycjOJphk5rGY0SwbapznGoKWljwa8lDY7GYIu5mlhLvxuck10vgg9gf90Xz6H-1lWobnwkqfLKWyPxqaJYBxThFQQBAxi5PB2yR8=w408-h228-k-no', 1],
+             ['KARTAL DR. LÜTFİ KIRDAR EĞİTİM VE ARAŞTIRMA HASTANESİ', 40.9090207, 29.1940152, 'images/Hastane-Gold.png', '#kartalProjesi', 'https://lh4.googleusercontent.com/proxy/HfRzUZiuoyrXlGQoC3IsUi8K2qmkXo3cGr6MQnR74ox9I0ZGgB-6bmSuapZxO0jW3jKMdPc5ayR5t8jFKKrrwsgQk9uDWeJlQBAQoEssuiH79yEsw2p_EwapTXpK_f_3lEZLZgYJP8BVHURez7qo1mI5b-tgLg=w408-h209-k-no', 1],
+             ['YAKACIK DOĞUM VE ÇOCUK HASTALIKLARI HASTANESİ', 40.9162367, 29.2153441, 'images/Hastane-Gold.png', '#kartalProjesi', 'https://lh5.googleusercontent.com/proxy/bPM92hvvhWIpBnXyONrhtVvqzcnhhy7JXSbLlY7g_cPI0MFxvyGMPjwOlSGmwPNHP5H0_hA3HQg1Fbm2BL3_hMLQV4E62Mt1IBhEHdkfma8p8UuJlDs11oDmKR1O10SCBFLa1fpIJ_xY7l_QGHAJT0PEYha09w=w408-h408-k-no', 1],
+             ['Kartal Yavuz Selim Devlet Hastanesi Poliklinikleri', 40.901366, 29.2034566, 'images/Hastane-Gold.png', '#kartalProjesi', 'https://lh6.googleusercontent.com/-x2b8K7wF2a8/WAnCUMyQyTI/AAAAAAAAAWI/QQachip6oM0Z8mtzGCIu5OPnbJRE5ft5QCLIB/w408-h229-k-no/', 1]
+         ]; */
+        /* var kartalOkullari = [
             ['Marmara Üniversitesi', 40.9128932, 29.1729242, 'images/Okul-Gold.png', '#dkyOnKagithaneLink', 'https://maps.gstatic.com/tactile/pane/default_geocode-1x.png', 1],
             ['Gedik Üniversitesi', 40.9053038, 29.2005188, 'images/Okul-Gold.png', '#dkyOnKagithaneLink', 'https://lh6.googleusercontent.com/proxy/LoTIewZKqx66yOeIUDPeK9bGpMhmJyjhcGXuDEbVZkji4GEasp75SRw0YlMNALbDs614SVI7hTzhxWWCL_ihqP65Oq6c5ATjAsONuu_XbLGuzDHtmHCUWW6xFNd9L7Ejmh4RW-JodelYquVuCdaDSBRZJ4MhreA=w603-h200-k-no', 1],
             ['Maltepe Üniversitesi Mühendislik ve Doğa Bilimleri Fakültesi', 40.9475857, 29.1729671, 'images/Okul-Gold.png', '#dkyOnKagithaneLink', 'https://maps.gstatic.com/tactile/pane/default_geocode-1x.png', 1],
@@ -560,105 +560,112 @@
             ['Ironman Fıtness Center', 40.9150007, 29.206073, 'images/Spor-Gold.png', '#dkyOnKagithaneLink', 'https://lh3.googleusercontent.com/009OjKaduJigtjBN8P7J3yq1QmvnUk_XTxdonQ663Bo7oR91oxFmQsKjhfjz1cl_=w408-h230-k-no', 1],
             ['B-fit Kartal Kurfalı', 40.9060088, 29.2152033, 'images/Spor-Gold.png', '#dkyOnKagithaneLink', 'https://lh4.googleusercontent.com/-Jvrfo85qLYI/WULP0kibQOI/AAAAAAACJPc/8m1tJtH7yZohIwpGHVvT7R0cRNrP6oyTQCLIBGAYYCw/w408-h408-k-no/', 1],
 
-        ];
+        ]; */
 
-        var kartalTumu = kartalAvmler.concat(kartalCamiileri, kartalHastanesleri, kartalOkullari, kartalOrmanlar, kartalparklari, kartalResmiKurumlar, kartalSporMerkezleri, kartalUlasim, kartalYemekleri);
-
-
-
-        var kartalMapOpt = {
-            zoom: 11,
-            scrollwheel: false,
-            center: new google.maps.LatLng(dkyBusiness[0][1], dkyBusiness[0][2]),
-            mapTypeId: google.maps.MapTypeId.ROADMAP,
-            styles: stls
-        };
-        var kartalMap = new google.maps.Map(document.getElementById('kartalMap'), kartalMapOpt);
+        /* var kartalTumu = kartalAvmler.concat(kartalCamiileri, kartalHastanesleri, kartalOkullari, kartalOrmanlar, kartalparklari, kartalResmiKurumlar, kartalSporMerkezleri, kartalUlasim, kartalYemekleri); */
 
 
-        var kartalMarker, i;
-        var kartalMarkers = [];
-        var kartalInfowindow;
-        var wayDir;
-        function test(locatis, map) {
-            for (i = 0; i < locatis.length; i++) {
-                wayDir = 'https://www.google.com.tr/maps/dir//' + locatis[i][1] + ',' + locatis[i][2];
-                kartalMarker = new google.maps.Marker({
-                    position: new google.maps.LatLng(locatis[i][1], locatis[i][2]),
-                    map: map,
-                    animation: google.maps.Animation.DROP,
-                    icon: new google.maps.MarkerImage(locatis[i][3])
+        $.getJSON('js/cevre.json', function (data) {
+            // json için local değişkenler
+            var kartalMapOpt = {
+                zoom: 11,
+                scrollwheel: false,
+                center: new google.maps.LatLng([data[0].lat], [data[0].lng]),
+                mapTypeId: google.maps.MapTypeId.ROADMAP,
+                styles: stls
+            };
+            var kartalMap = new google.maps.Map(document.getElementById('kartalMap'), kartalMapOpt);
+            var kartalMarker, i;
+            var kartalMarkers = [];
+            var kartalInfowindow;
+            var wayDir;
+            // haritayı döngüde oluşturan fonksiyon
+            function runMap(data, map) {
+                for (i = 0; i < data.length; i++) {
+                    wayDir = 'https://www.google.com.tr/maps/dir//' + data[i]["lat"] + ',' + data[i]["lng"];
 
-                });
-                kartalMarkers.push(kartalMarker);
-                kartalInfowindow = new SnazzyInfoWindow({
-                    marker: kartalMarker,
-                    content: '<div class="mi-content"><div class="loc-name">' + locatis[i][0].toLowerCase() + '</div><a target="_blank" href="' + wayDir + '" class="mi-tarif">Yol Tarifi</a>',
-                    wrapperClass: 'iw-container ' + locatis[i][0].replace(/\s/g, '') + '',
-                    placement: 'top',
-                    closeWhenOthersOpen: true,
-                    callbacks: {
-                        afterOpen: function () {
-                            $(this.getWrapper()).addClass('active');
+                    kartalMarker = new google.maps.Marker({
+                        position: new google.maps.LatLng(data[i]["lat"], data[i]["lng"]),
+                        map: map,
+                        animation: google.maps.Animation.DROP,
+                        icon: new google.maps.MarkerImage(data[i]["icon"])
+
+                    });
+                    kartalMarkers.push(kartalMarker);
+                    kartalInfowindow = new SnazzyInfoWindow({
+                        marker: kartalMarker,
+                        content: '<div class="mi-content"><div class="loc-name">' + data[i]["name"].toLowerCase() + '</div><a target="_blank" href="' + wayDir + '" class="mi-tarif">Yol Tarifi</a>',
+                        wrapperClass: 'iw-container ' + data[i]["name"].replace(/\s/g, '') + '',
+                        placement: 'top',
+                        closeWhenOthersOpen: true,
+                        callbacks: {
+                            afterOpen: function () {
+                                $(this.getWrapper()).addClass('active');
+                            }
                         }
-                    }
-                });
-                google.maps.event.addListener(kartalMarker, 'click', (function (marker, i) {
-                    return function () {
-                        var kartalInfowindow = null;
-                        if (kartalInfowindow) {
-                            kartalInfowindow.close();
+                    });
+                    google.maps.event.addListener(kartalMarker, 'click', (function (marker, i) {
+                        return function () {
+                            var kartalInfowindow = null;
+                            if (kartalInfowindow) {
+                                kartalInfowindow.close();
+                            }
+                            kartalInfowindow.open();
                         }
-                        kartalInfowindow.open();
-                    }
 
-                })(marker, i));
+                    })(marker, i));
+                }
+            };
+            //tüm markerları bulmak için fonksiyon
+            function setMapOnAll(map) {
+                for (var i = 0; i < kartalMarkers.length; i++) {
+                    kartalMarkers[i].setMap(map);
+                }
             }
-        };
-        test(dkyBusiness, kartalMap);
-        function setMapOnAll(map) {
-            for (var i = 0; i < kartalMarkers.length; i++) {
-                kartalMarkers[i].setMap(map);
+            // bulunan markerları temizlemek için fonksiyon
+            function clearMarkers() {
+                setMapOnAll(null);
             }
-        }
-        function clearMarkers() {
-            setMapOnAll(null);
-
-
-        }
-        function runMap(button, locations, latLng, zoom) {
-            $(button).click(function (event) {
-                $(this).siblings().find('.circle').removeClass('active');
-                $(this).find('.circle').addClass('active');
-                $('.si-float-wrapper').remove();
-                clearMarkers();
-                kartalMarkers[0].setMap(kartalMap);
-                kartalInfowindow.close();
-                kartalMap.setZoom(zoom);
-                kartalMap.panTo(latLng);
-                test(locations, kartalMap);
+            /* function runMap(btn, data, map) {
+                $(btn).click(function () {
+                    clearMarkers();
+                    kartalMarkers[0].setMap(map);
+                    test(data, map);
+                    $(this).siblings().find('.circle').removeClass('active');
+                    $(this).find('.circle').addClass('active');
+                    $('.si-float-wrapper').remove();
+                    $(btn).addClass('active');
+                });
+            } */
+            var ul = $('.dplaces');
+            ul.empty();
+            $.each(data, function (i, obj) {
+                var li = $('<li id="' + obj.c_id + '">').text(obj.c_id).appendTo(ul);
+                var span = $('<span class="circle">').appendTo(li);
+                //console.log(obj.c_id);
+                var groupedData = _.groupBy(obj, function (d) { return d.c_id });
+                console.log(groupedData);
             });
-        }
-        runMap('#hastaneler', kartalHastanesleri, { lat: 40.909197, lng: 29.204851 }, 14);
-        runMap('#okul', kartalOkullari, { lat: 40.929925, lng: 29.190001 }, 13);
-        runMap('#resmi', kartalResmiKurumlar, { lat: 40.908384, lng: 29.186632 }, 13);
-        runMap('#avm', kartalAvmler, { lat: 40.90833, lng: 29.2206733 }, 13);
-        runMap('#orman', kartalOrmanlar, { lat: 40.934958, lng: 29.216759 }, 13);
-        runMap('#ulasim', kartalUlasim, { lat: 40.902068, lng: 29.212533 }, 14);
-        runMap('#cami', kartalCamiileri, { lat: 40.9112589, lng: 29.2119724 }, 16);
-        runMap('#park', kartalparklari, { lat: 40.9119004, lng: 29.2143647 }, 16);
-        runMap('#yemek', kartalYemekleri, { lat: 40.9084652, lng: 29.2268644 }, 15);
-        runMap('#spor', kartalSporMerkezleri, { lat: 40.9109233, lng: 29.211235 }, 15);
-        runMap('#tumu', kartalTumu, { lat: 40.929569, lng: 29.21402 }, 12);
-        $(document).click(function (evt) {
-            kartalMap.set('scrollwheel', false);
-        });
-        $("#kartalMap").click(function (evt) {
-            evt.stopPropagation();
-            kartalMap.set('scrollwheel', true);
-        });
-        $('#yolTarifi').click(function () {
-            window.open(wayDir);
+
+
+
+
+            // fonksiyonların hepsi çalıştırılıyor
+            runMap([data[0]], kartalMap);
+
+
+
+
+            $(document).click(function (evt) {
+                kartalMap.set('scrollwheel', false);
+            });
+            $("#kartalMap").click(function (evt) {
+                evt.stopPropagation();
+                kartalMap.set('scrollwheel', true);
+            });
+            $('#yolTarifi').click(function () {
+                window.open(wayDir);
+            });
         });
     </script>
 

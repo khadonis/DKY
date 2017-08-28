@@ -680,6 +680,7 @@
         }
     }
     html body .section-projeler {
+        display: none;
         .standart-proj {
             left: 50%;
             transform: translateX(-50%);
@@ -717,6 +718,8 @@
             .v-sep {
                 display: none;
             }
+
+            padding: 80px 0 0;
         }
         .b-talep-form {
             transform-origin: center bottom;
@@ -767,7 +770,7 @@
         .swiper-container {
             height: 240px;
             display: block;
-            top: 67px;
+            top: 60px;
         }
         .odul-slide-container,
         .basin-slide-container {
