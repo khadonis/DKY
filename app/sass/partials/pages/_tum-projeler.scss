@@ -30,7 +30,7 @@
         @media screen and (max-width: 425px) {
             margin-bottom: 15px;
             border: 1px solid lighten($gray-light, 30%);
-            padding: 10px;
+            padding: 5px;
         }
     }
     h2 {
@@ -59,6 +59,7 @@
     &-head {
         font-size: 16px;
         display: block;
+        font-family: $f-f-flexobold;
     }
     &-p {
         font-size: 12px;

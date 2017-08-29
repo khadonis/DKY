@@ -32,11 +32,13 @@ $(document).on('load', updateProgress, false);
 
 //header shadow
 $(window).scroll(function () {
-  if ($(this).scrollTop() >= 50) {
+  if ($(this).scrollTop() >= 50 && screen.width > 425) {
     $('.header').addClass('shdw');
     return;
   } else if (screen.width > 425) {
     $('.header').removeClass('shdw');
+  } else if (screen.width < 425) {
+    $('.header').addClass('shdw');
   }
 });
 
@@ -492,4 +494,14 @@ $("a.gal-item").fancybox({
   'speedOut': 200,
   'padding': 0,
   'margin': 0
+});
+// Proje detay sayfa içi navigasyonfonksiyonları
+$('.nav-page-link').each(function (params) {
+  $(this).click(function (e) {
+    e.preventDefault();
+    var href = $(this).attr('href');
+    $('html, body').animate({
+      scrollTop: $(href).offset().top - 60
+    }, 2000);
+  });
 });

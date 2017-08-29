@@ -234,7 +234,7 @@
 
 .swiper-container-vertical>.swiper-pagination-bullets {
     left: 20px;
-    @media screen and (max-width:425px) {
+    @media screen and (max-width: 425px) {
         display: none;
     }
 }
@@ -462,7 +462,7 @@
         display: block;
         @extend .clearfix;
         padding: 30px 60px;
-        @media screen and (max-width:768px) {
+        @media screen and (max-width: 768px) {
             padding: 30px;
         }
     }
@@ -483,7 +483,7 @@
     width: 100%;
     min-height: $video_diagonal_ratio / 2.4;
     overflow: hidden;
-    @media screen and (max-width:1440px) {
+    @media screen and (max-width: 1440px) {
         margin-top: 60px;
     }
     .swiper-slide {
@@ -569,7 +569,10 @@
         }
     }
     @media screen and (max-width:768px) {
+        height: $video_diagonal_ratio / 1.8;
+        min-height: $video_diagonal_ratio / 1.8;
         .swiper-slide {
+            height: $video_diagonal_ratio / 1.8;
             .sldr-txt {
                 width: 100%;
                 padding-right: 60px;
@@ -586,8 +589,8 @@
                 font-size: 12px;
             }
         }
-        .hero-logo{
-            img{
+        .hero-logo {
+            img {
                 width: 50%;
             }
         }

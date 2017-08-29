@@ -119,8 +119,20 @@
 }
 
 section.krtl-tanitim {
-    padding: 80px 0;
-    .krtl-tnt-aciklama {
+    padding: 80px 0 100px 0;
+    text-align: center;
+    font-family: $f-normal;
+    h2{
+        font-family: $f-f-flexobold;
+        font-size: 42px;
+        margin-bottom: 30px; 
+    }
+    p{
+        font-size: 24px;
+        padding: 10px;
+    }
+
+   /*  .krtl-tnt-aciklama {
         background-color: $krtl-color;
         .head {
             position: absolute;
@@ -216,7 +228,7 @@ section.krtl-tanitim {
                 repeat: no-repeat;
             }
         }
-    }
+    } */
 }
 
 section.kartal-galeri {
