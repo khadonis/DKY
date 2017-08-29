@@ -6536,6 +6536,10 @@ section.kartal-galeri .side-txt, section.krtl-plans .side-txt, section.krtl-ozel
   .header.shdw, .shdw.krtl-header {
     -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0 1px 1px;
             box-shadow: rgba(0, 0, 0, 0.3) 0 1px 1px; }
+  @media screen and (max-width: 425px) {
+    .header, .krtl-header {
+      -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0 1px 1px;
+              box-shadow: rgba(0, 0, 0, 0.3) 0 1px 1px; } }
 
 footer {
   /*height: 60px;*/

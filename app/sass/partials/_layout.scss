@@ -16,6 +16,9 @@
     &.shdw {
         box-shadow: rgba(#000, .3) 0 1px 1px;
     }
+    @media screen and (max-width:425px) {
+        box-shadow: rgba(#000, .3) 0 1px 1px;
+    }
 }
 
 //Footer

@@ -31,16 +31,18 @@ function updateProgress(element) {
 $(document).on('load', updateProgress, false);
 
 //header shadow
-$(window).scroll(function () {
-  if ($(this).scrollTop() >= 50 && screen.width > 425) {
-    $('.header').addClass('shdw');
-    return;
-  } else if (screen.width > 425) {
-    $('.header').removeClass('shdw');
-  } else if (screen.width < 425) {
-    $('.header').addClass('shdw');
-  }
-});
+if (screen.width > 425) {
+  $('.header').removeClass('shdw');
+  $(window).scroll(function () {
+    if ($(this).scrollTop() >= 50) {
+      $('.header').addClass('shdw');
+    } else { 
+      $('.header').removeClass('shdw'); 
+    }
+  });
+} else {
+  $('.header').addClass('shdw');
+}
 
 
 //menu panel

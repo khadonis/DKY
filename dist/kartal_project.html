@@ -522,22 +522,6 @@
         tag.src = "https://www.youtube.com/iframe_api";
         var firstScriptTag = document.getElementsByTagName('script')[0];
         firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-
-        /* if (swiperKrtlVideo.activeIndex !== swiperKrtlVideo.slides[0]) {
-            $('#buton').click();
-        } */
-       /*  $('#buton').click(function () {
-            player.pauseVideo();
-        }); */
-        /* swiperKrtlVideo.slideNext(function () {
-            player.pauseVideo();
-        }); */
-        /* swiperKrtlVideo.slideNext(function () {
-            $('#video1').get(0).stopVideo();
-        });
-        swiperKrtlVideo.slidePrev(function () {
-            $('#video2').get(0).stopVideo();
-        }); */
     </script>
 
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB2V7XQtDZSOvcJzylGchYrL8nqzfsTsFg"></script>
@@ -588,74 +572,10 @@
     <script src="js/sweetalert2.min.js"></script>
     <script src="js/validate.js"></script>
     <script>
-        /* var dkyBusiness = [
-            ['DKY Business Kartal', 40.909721, 29.212279, 'images/Businesskar_map_icon.png', '#dkyBusinessLink', 'images/map-business.jpg', 1]
-        ]; */
-        /*  var kartalHastanesleri = [
-             ['Kartal Ağız ve Diş Hastanesi', 40.9106752, 29.2029738, 'images/Hastane-Gold.png', '#kartalProjesi', 'https://lh3.googleusercontent.com/proxy/LazHRGojZ4P-WqQopdUayiMYvzmIC34vhiCqT1qcr9naIpcZ5BBo3qpBPNhycjOJphk5rGY0SwbapznGoKWljwa8lDY7GYIu5mlhLvxuck10vgg9gf90Xz6H-1lWobnwkqfLKWyPxqaJYBxThFQQBAxi5PB2yR8=w408-h228-k-no', 1],
-             ['KARTAL DR. LÜTFİ KIRDAR EĞİTİM VE ARAŞTIRMA HASTANESİ', 40.9090207, 29.1940152, 'images/Hastane-Gold.png', '#kartalProjesi', 'https://lh4.googleusercontent.com/proxy/HfRzUZiuoyrXlGQoC3IsUi8K2qmkXo3cGr6MQnR74ox9I0ZGgB-6bmSuapZxO0jW3jKMdPc5ayR5t8jFKKrrwsgQk9uDWeJlQBAQoEssuiH79yEsw2p_EwapTXpK_f_3lEZLZgYJP8BVHURez7qo1mI5b-tgLg=w408-h209-k-no', 1],
-             ['YAKACIK DOĞUM VE ÇOCUK HASTALIKLARI HASTANESİ', 40.9162367, 29.2153441, 'images/Hastane-Gold.png', '#kartalProjesi', 'https://lh5.googleusercontent.com/proxy/bPM92hvvhWIpBnXyONrhtVvqzcnhhy7JXSbLlY7g_cPI0MFxvyGMPjwOlSGmwPNHP5H0_hA3HQg1Fbm2BL3_hMLQV4E62Mt1IBhEHdkfma8p8UuJlDs11oDmKR1O10SCBFLa1fpIJ_xY7l_QGHAJT0PEYha09w=w408-h408-k-no', 1],
-             ['Kartal Yavuz Selim Devlet Hastanesi Poliklinikleri', 40.901366, 29.2034566, 'images/Hastane-Gold.png', '#kartalProjesi', 'https://lh6.googleusercontent.com/-x2b8K7wF2a8/WAnCUMyQyTI/AAAAAAAAAWI/QQachip6oM0Z8mtzGCIu5OPnbJRE5ft5QCLIB/w408-h229-k-no/', 1]
-         ]; */
-        /* var kartalOkullari = [
-            ['Marmara Üniversitesi', 40.9128932, 29.1729242, 'images/Okul-Gold.png', '#dkyOnKagithaneLink', 'https://maps.gstatic.com/tactile/pane/default_geocode-1x.png', 1],
-            ['Gedik Üniversitesi', 40.9053038, 29.2005188, 'images/Okul-Gold.png', '#dkyOnKagithaneLink', 'https://lh6.googleusercontent.com/proxy/LoTIewZKqx66yOeIUDPeK9bGpMhmJyjhcGXuDEbVZkji4GEasp75SRw0YlMNALbDs614SVI7hTzhxWWCL_ihqP65Oq6c5ATjAsONuu_XbLGuzDHtmHCUWW6xFNd9L7Ejmh4RW-JodelYquVuCdaDSBRZJ4MhreA=w603-h200-k-no', 1],
-            ['Maltepe Üniversitesi Mühendislik ve Doğa Bilimleri Fakültesi', 40.9475857, 29.1729671, 'images/Okul-Gold.png', '#dkyOnKagithaneLink', 'https://maps.gstatic.com/tactile/pane/default_geocode-1x.png', 1],
-            ['Yeditepe Üniversitesi', 40.96939, 29.183306, 'images/Okul-Gold.png', '#dkyOnKagithaneLink', 'https://lh3.googleusercontent.com/-PFEtpoxBsKE/Vwa8MfguPCI/AAAAAAAAABc/-qWIupQHANEfmf8gXGWIpdTUwToHioz-ACJkC/w408-h407-k-no/', 1]
-        ];
-        var kartalResmiKurumlar = [
-            ['Istanbul Bolge Trafik Sube Mudurlugu Bölge Trafik Denetleme Şube Müdürlüğü', 40.9091203, 29.2132587, 'images/Resmi-Kurum-Gold.png', '#dkyOnKagithaneLink', 'https://geo2.ggpht.com/cbk?panoid=9qdaFz1q2hRr8-WiMd0sOQ&output=thumbnail&cb_client=search.TACTILE.gps&thumb=2&w=408&h=200&yaw=29.8958&pitch=0&thumbfov=100', 1],
-            ['Kartal İlçe Seçim Kurulu Başkanlığı', 40.913278, 29.187911, 'images/Resmi-Kurum-Gold.png', '#dkyOnKagithaneLink', 'https://geo2.ggpht.com/cbk?panoid=9qdaFz1q2hRr8-WiMd0sOQ&output=thumbnail&cb_client=search.TACTILE.gps&thumb=2&w=408&h=200&yaw=29.8958&pitch=0&thumbfov=100', 1],
-            ['İSTANBUL ANADOLU ADALET SARAYI', 40.913617, 29.1608285, 'images/Resmi-Kurum-Gold.png', '#dkyOnKagithaneLink', 'https://lh5.googleusercontent.com/-uJ4JMo5oTEs/VS1GsLmDqbI/AAAAAAAAADY/-IsrGm7XzgIDTi0bZtz0fg_jqZhuamaxQCJkC/w560-h200-k-no/', 1],
-            ['Kartal İlçe Emniyet Müdürlüğü', 40.8968255, 29.1848593, 'images/Resmi-Kurum-Gold.png', '#dkyOnKagithaneLink', 'https://lh3.googleusercontent.com/-6q2ywWC33Qo/WWM-jbpx0NI/AAAAAAACQVk/G9XbL5gUQ-kBRbcqcC0bPk1HhiB5N_QnQCLIBGAYYCw/w408-h544-k-no/', 1]
-
-        ];
-        var kartalAvmler = [
-            ['Maltepe Park Mall', 40.9151243, 29.1690643, 'images/AVM-Gold.png', '#dkyOnKagithaneLink', 'https://lh3.googleusercontent.com/proxy/OCfZ9ww70q4igJ0kQ5T9w8efilF3oDaabIRuUx28no6L7noy1AHYXwdJeL9huYdQon9V5F8d6FAAiAy1sZIh3Ms2r5PCVUBlzFB-DeqsNKTjoWbkQboq-yuGcoKTC1WQ4wtb3PlJ_0t_u9LrPG-KjW9TJA=w408-h272-k-no', 1],
-            ['M1 Merkez AVM', 40.9138595, 29.1917665, 'images/AVM-Gold.png', '#dkyOnKagithaneLink', 'https://lh6.googleusercontent.com/-jqoYTb4GX_U/VN3NJ4CM84I/AAAAAAAAAAo/T4UbkLd8g20jKNIGRZJqbEEDkhARGm-SACJkC/w408-h272-k-no/', 1],
-            ['Fuaye', 40.9302297, 29.1721967, 'images/AVM-Gold.png', '#dkyOnKagithaneLink', 'https://lh6.googleusercontent.com/-kz_6uI4KUgw/Vk46J4f8GwI/AAAAAAAAACg/dkH-1h2VHmcykNR0N1LJBZRuOz4pW4ZwACJkC/w408-h303-k-no/', 1],
-            ['Neomarin AVM', 40.8757922, 29.2481568, 'images/AVM-Gold.png', '#dkyOnKagithaneLink', 'https://lh3.googleusercontent.com/-s1XPViTvMsE/WEbc0mQVH-I/AAAAAAAA4G0/pAESSi-PxcwnhGwR6owvBNN0ib8iZOkkACLIB/w408-h304-k-no/', 1],
-        ];
-        var kartalOrmanlar = [
-            ['Aydos Ormanı', 40.940668, 29.2246592, 'images/Orman-Gold.png', '#dkyOnKagithaneLink', 'https://lh5.googleusercontent.com/-cM_MPA18Aoo/U5niRQu-8cI/AAAAAAAAACo/pF0SyPyUjDcala7jbq4UZGnB0dYpOsVLACJkC/w408-h306-k-no/', 1],
-            ['Burçin Yazan Hatıra Ormanı', 40.9300341, 29.2373192, 'images/Orman-Gold.png', '#dkyOnKagithaneLink', 'https://lh6.googleusercontent.com/-rgzm2EQb8OE/WSMoNvRiKFI/AAAAAAAAEi4/Id8Mb980GgY1Xvv3hlRwRl_KoiRAsRFrwCLIB/w408-h229-k-no/', 1],
-            ['Kültür Parkı Et Mangal Piknik Alanı', 40.9481237, 29.207021, 'images/Orman-Gold.png', '#dkyOnKagithaneLink', 'https://lh5.googleusercontent.com/-BXSte9lQa4U/WSAyjLdPKHI/AAAAAAAAIk4/OT5BhCSj8xseRYEhBwqYkoiLppo-WZ8PQCLIB/w408-h725-k-no/', 1],
-        ];
-        var kartalUlasim = [
-            ['kartal dörtyol taksi', 40.9072469, 29.2129211, 'images/taxi.png', '#dkyOnKagithaneLink', 'https://geo3.ggpht.com/cbk?panoid=DlXDSjsVADv1BRatTt8JdA&output=thumbnail&cb_client=search.TACTILE.gps&thumb=2&w=408&h=200&yaw=215.76624&pitch=0&thumbfov=100', 1],
-            ['Kartal Metro', 40.9068252, 29.2112903, 'images/metro-Gold.png', '#dkyOnKagithaneLink', 'https://lh4.googleusercontent.com/-4VgaEGiqLDU/Vvo4yXXMTJI/AAAAAAAAFnY/ezlFKgF0800MLbrIiIZy_VhhZ_9C9IBfACJkC/w408-h229-k-no/', 1],
-            ['İdo Kartal Deniz Otobüsü İskelesi', 40.8871194, 29.1875874, 'images/Feribot-Gold.png', '#dkyOnKagithaneLink', 'https://lh4.googleusercontent.com/-2wF8V0FxclY/WCnZTBL7uUI/AAAAAAABOZY/Q8Fnr7hosj49LCbxIumXOTT6y8XUw5EgQCLIB/w408-h306-k-no/', 1],
-            ['Sabiha Gökçen Uluslararası Havalimanı', 40.9004679, 29.2424149, 'images/Havaalani-Gold.png', '#dkyOnKagithaneLink', 'https://lh3.googleusercontent.com/-o1Txb-Vppcg/WUv2eVU2ygI/AAAAAAAAAPM/b8WqgJJAT-kD07NW9he3crf8xxVHTzDHQCLIBGAYYCw/w408-h267-k-no/', 1]
-
-        ];
-        var kartalCamiileri = [
-            ['Hacilar Cami', 40.9113809, 29.2077789, 'images/Camii-Gold.png', '#dkyOnKagithaneLink', 'https://lh5.googleusercontent.com/-wFc2ixDa5pk/WTbWLVHTQBI/AAAAAAAAABs/ISQnYXNqTxEVI0mzjo35JcQzmoyn0UtUgCLIB/w408-h544-k-no/', 1],
-            ['Şeyh Edebali Cami', 40.9084537, 29.2157826, 'images/Camii-Gold.png', '#dkyOnKagithaneLink', 'https://lh5.googleusercontent.com/-6M-igsZJ7sY/WRiCFU1Z9kI/AAAAAAAB1v0/B0AvJvLSqqw71u_f_wi76eqmz6IfQPszQCLIB/w408-h408-k-no/', 1],
-            ['Yakacık Hacılar Cami', 40.9128074, 29.2172364, 'images/Camii-Gold.png', '#dkyOnKagithaneLink', 'https://geo3.ggpht.com/cbk?panoid=yXmV552r_Pg2sB0yBGZgCA&output=thumbnail&cb_client=search.TACTILE.gps&thumb=2&w=408&h=200&yaw=261.81027&pitch=0&thumbfov=100', 1],
-            ['Soğanlık Ulu Cami', 40.9124507, 29.2050699, 'images/Camii-Gold.png', '#dkyOnKagithaneLink', 'https://lh6.googleusercontent.com/proxy/z0mHMreig0PMhaNfgGTz6XruPusXGVT4myfuWpuhIeyE-NB_NiMf2fEz9IBaHKF3UWMIMvjYO63DAzOuhvSjM33wQ233AA=w408-h306-k-no', 1],
-        ];
-        var kartalparklari = [
-            ['Uplife Park', 40.9134332, 29.2106689, 'images/Park-Gold.png', '#dkyOnKagithaneLink', 'https://lh6.googleusercontent.com/-96xvuejFlYU/WIHgoR8rXlI/AAAAAAAAa5Y/2-B-2q2MSTsEwW8sFa9bYZhHVGmtZO6dgCLIB/w408-h306-k-no/', 1],
-            ['Balkanlılar Kültür Parkı', 40.9134118, 29.2079504, 'images/Park-Gold.png', '#dkyOnKagithaneLink', 'https://lh5.googleusercontent.com/D424VF7tIXhzsj1_iinZs2HdIuo4fn1M3STqucTMaSxgdIAX0yXNvHdaRonDjCHD=w408-h306-k-no', 1],
-            ['Fatih Sultan Mehmet Parkı', 40.9118976, 29.2210168, 'images/Park-Gold.png', '#dkyOnKagithaneLink', 'https://lh3.googleusercontent.com/-53Hstm-jKbQ/WRNLRMzD-DI/AAAAAAAB0vw/PGk0Oa81FiM_M-L8Otr_8piSFpUMzRS7ACLIB/w408-h408-k-no/', 1],
-            ['Manolya Parkı', 40.9176185, 29.2169173, 'images/Park-Gold.png', '#dkyOnKagithaneLink', 'https://lh6.googleusercontent.com/-dj96tJQ7GEA/WGj-_O4UDsI/AAAAAAAAAcM/bKe--yMKgvkavIh3nSVDZd6FPOd515tMACLIB/w408-h229-k-no/', 1],
-        ];
-        var kartalYemekleri = [
-            ['Safari Restaurant Bar', 40.9109995, 29.2102144, 'images/Yemek-Gold.png', '#dkyOnKagithaneLink', 'https://lh4.googleusercontent.com/-kEUWwJUYxt0/WF2vTVt-HvI/AAAAAAAADY0/W1zJfij88aowPrkZUY-sQEu0N4F8knD7gCLIB/w408-h306-k-no/', 1],
-            ['Tarihi Çınaraltı Restaurant', 40.9120853, 29.2233035, 'images/Yemek-Gold.png', '#dkyOnKagithaneLink', 'https://lh6.googleusercontent.com/-MVE-g6HOtDU/V2E1qmpWHtI/AAAAAAAAADs/zTN07IYnzIge33kft7BwoCAeVqmz15YLACJkC/w408-h407-k-no/', 1],
-            ['Esinti Kırevi', 40.912361, 29.2292688, 'images/Yemek-Gold.png', '#dkyOnKagithaneLink', 'https://lh5.googleusercontent.com/-NTqDz9WjrHc/WMWH8G9mxuI/AAAAAAAADNI/HUF_nfvi7l0LLPOx-7u0gGPkaAnrqKuQgCLIB/w408-h272-k-no/', 1],
-            ['Gala', 40.9031498, 29.2424438, 'images/Yemek-Gold.png', '#dkyOnKagithaneLink', 'https://geo0.ggpht.com/cbk?panoid=JFZ4U_Dm8Z3Dxokv8T0__Q&output=thumbnail&cb_client=search.TACTILE.gps&thumb=2&w=408&h=200&yaw=102.72571&pitch=0&thumbfov=100', 1],
-        ];
-        var kartalSporMerkezleri = [
-            ['Life Experss Fitness Clu-b', 40.911636, 29.2050538, 'images/Spor-Gold.png', '#dkyOnKagithaneLink', 'https://lh5.googleusercontent.com/M0WEBXMqoo19Vl5QoojID6v742Eoggvtjcjv6bOH3dXwhyjKVkkPABmz-Zf-zhu8=w408-h229-k-no', 1],
-            ['Ironman Fıtness Center', 40.9150007, 29.206073, 'images/Spor-Gold.png', '#dkyOnKagithaneLink', 'https://lh3.googleusercontent.com/009OjKaduJigtjBN8P7J3yq1QmvnUk_XTxdonQ663Bo7oR91oxFmQsKjhfjz1cl_=w408-h230-k-no', 1],
-            ['B-fit Kartal Kurfalı', 40.9060088, 29.2152033, 'images/Spor-Gold.png', '#dkyOnKagithaneLink', 'https://lh4.googleusercontent.com/-Jvrfo85qLYI/WULP0kibQOI/AAAAAAACJPc/8m1tJtH7yZohIwpGHVvT7R0cRNrP6oyTQCLIBGAYYCw/w408-h408-k-no/', 1],
-
-        ]; */
-
-        /* var kartalTumu = kartalAvmler.concat(kartalCamiileri, kartalHastanesleri, kartalOkullari, kartalOrmanlar, kartalparklari, kartalResmiKurumlar, kartalSporMerkezleri, kartalUlasim, kartalYemekleri); */
         $.getJSON('js/cevre.json', function (data) {
+
             // json için local değişkenler
+            var latLng = { lat: parseFloat(data.proje[0][0]["lat"]), lng: parseFloat(data.proje[0][0]["lng"]) };
             var kartalMapOpt = {
                 zoom: 11,
                 scrollwheel: false,
@@ -706,49 +626,49 @@
                     })(marker, i));
                 }
             };
-            //tüm markerları bulmak için fonksiyon
+            //ilk yüklenen hariç tüm markerları bulmak için fonksiyon
             function setMapOnAll(map) {
                 for (var i = 1; i < kartalMarkers.length; i++) {
                     kartalMarkers[i].setMap(map);
                 }
             }
+
             // bulunan markerları temizlemek için fonksiyon
             function clearMarkers() {
                 setMapOnAll(null);
             }
-
             function runLocationsMap() {
-                // for (var i = 0; i < data.lokasyonlar.length; i++) {
                 var ul = $('.dplaces');
                 ul.empty();
+                var tumu = $('<li id="#tumu">').text('Tümü').appendTo(ul);
+                $('<span class="circle">').appendTo(tumu);
                 $.each(data.lokasyonlar, function (i, obj) {
-                    var li = $('<li id="' + obj[i].category_name + '">').text(obj[i].category_name).appendTo(ul);
+                    var li = $('<li id="' + obj[i].category_name + '">').text(obj[i].category_name).prependTo(ul);
                     var span = $('<span class="circle">').appendTo(li);
 
                     $(li).each(function () {
                         $(this).click(function () {
-                            //obj = obj[i];
-                            //$.each(obj, function (j, subObj) {
-                                console.log(obj);
-                                clearMarkers();
-                                //kartalMarker[0].setMap(kartalMap);
-                                runMap(obj, kartalMap);
-                           // });
-                            //runMap(obj[i], kartalMap);
-
+                            ul.find('li').removeClass('active');
+                            $(this).addClass('active');
+                            console.log(obj);
+                            clearMarkers();
+                            runMap(obj, kartalMap);
+                            kartalMap.setZoom(11);
+                            kartalMap.panTo(latLng);
                         });
                     });
+                    tumu.click(function () {
+                        ul.find('li').removeClass('active');
+                        $(this).addClass('active');
+                        runMap(obj, kartalMap);
+                        kartalMap.setZoom(11);
+                        kartalMap.panTo(latLng);
+                    });
                 });
-
-                // };
             };
-            
-            
-            
             // fonksiyonların hepsi çalıştırılıyor
             runMap(data.proje[0], kartalMap);
             runLocationsMap();
-
             //console.log(data.proje);
             $(document).click(function (evt) {
                 kartalMap.set('scrollwheel', false);

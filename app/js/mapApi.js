@@ -7,8 +7,9 @@ var stls = [{ "featureType": "all", "elementType": "geometry", "stylers": [{ "co
 var marker, i;
 var markers = [];
 var infowindow;
+var latLng;
 $.getJSON('js/json_deneme.json', function (data) {
-
+    latLng = { lat: parseFloat(data[3]["lat"]), lng: parseFloat(data[1]["lng"]) };
     var mapOpt = {
         zoom: 11,
         scrollwheel: false,
@@ -61,12 +62,15 @@ $.getJSON('js/json_deneme.json', function (data) {
                 }
             })(marker, i));
         }
+
     };
     // kategori olarak haritaları toplu çalıştırma
     function runMapCat(btn, data, map) {
         $(btn).click(function () {
             clearMarkers();
             runMap(data, map);
+            map.setZoom(11);
+            map.panTo(latLng);
             $('.proje-listesi a').removeClass('active');
             $('.dprojs li').removeClass('active');
             $('.vertical-h-menu a').removeClass('active');
@@ -96,6 +100,8 @@ $.getJSON('js/json_deneme.json', function (data) {
             $('<a class="' + className + '">').text(proj[i].name).appendTo(li);
             li.click(function () {
                 runMap([proj[i]], map);
+                map.setZoom(11);
+                map.panTo(latLng);
                 $('.proje-listesi a').removeClass('active');
                 $('.dprojs li').removeClass('active');
                 $('.vertical-h-menu a').removeClass('active');
