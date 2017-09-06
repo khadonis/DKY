@@ -118,7 +118,7 @@
         &:after {
             box-shadow: rgba(0, 0, 0, .5) 2px 2px 5px;
             top: 38px;
-            left: 177px;
+            left: 208px;
             border-bottom: 0 solid $sec-color;
             border-right: 0 solid $sec-color;
         }
@@ -127,7 +127,7 @@
             top: auto;
             left: auto;
             bottom: 178px;
-            right: 192px;
+            right: 223px;
             border-top: 0 solid $sec-color;
             border-left: 0 solid $sec-color;
         }
@@ -165,6 +165,12 @@
     bottom: auto;
     &:before {
         font-size: 20px;
+    }
+    &.swiper-button-disabled{
+        cursor:default;
+        &:before{
+            color: lighten($main-color,  60%);
+        }
     }
 }
 

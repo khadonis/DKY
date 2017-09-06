@@ -300,12 +300,11 @@ var swiperHaberler = new Swiper('.basin-slide-container', {
   prevButton: '.swiper-haber-btn-prev',
   slidesPerView: 3,
   spaceBetween: 30,
-  autoplay: 2000,
-  loop: true,
+  loop: false,
   breakpoints: {
     767: {
       slidesPerView: 1,
-      spaceBetween: 0
+      spaceBetween: 15
     },
     1365: {
       slidesPerView: 2,

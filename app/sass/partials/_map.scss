@@ -47,6 +47,7 @@
         float: left;
         li {
             cursor: pointer;
+            text-transform: capitalize;
             font-size: 20px;
             &:hover,
             &.active {

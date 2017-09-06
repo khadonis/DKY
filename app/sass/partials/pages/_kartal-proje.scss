@@ -122,17 +122,16 @@ section.krtl-tanitim {
     padding: 80px 0 100px 0;
     text-align: center;
     font-family: $f-normal;
-    h2{
+    h2 {
         font-family: $f-f-flexobold;
         font-size: 42px;
-        margin-bottom: 30px; 
+        margin-bottom: 30px;
     }
-    p{
+    p {
         font-size: 24px;
         padding: 10px;
     }
-
-   /*  .krtl-tnt-aciklama {
+    /*  .krtl-tnt-aciklama {
         background-color: $krtl-color;
         .head {
             position: absolute;
@@ -294,6 +293,52 @@ section.kartal-galeri {
 }
 
 section.krtl-plans {
+    .ozl-wr{
+        padding: 0 7px;
+    }
+    .ozellik {
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding: 20px;
+        height: 80px;
+        position: relative;
+        background: {
+            repeat: no-repeat;
+            size: cover;
+            position: center center;
+        }
+        min-height: 164px;
+        border: 1px solid #fff;
+        &:hover {
+            span {
+                opacity: 1;
+            }
+        }
+        span {
+            background: #fff;
+            opacity: 0.35;
+            transition: all ease .3s;
+            display: block;
+            width: 100%;
+            height: 100%;
+            position: relative;
+            h3 {
+                @include complate-align(absolute);
+                font-size: 18px;
+                font-family: $f-normal;
+                margin: 0;
+            }
+        }
+    }
+    &.hidden {
+        &-xxs {
+            display: block;
+            @media screen and (max-width: 425px) {
+                display: none;
+            }
+        }
+    }
     padding: $section-padding;
     position: relative;
     .side-txt {
@@ -338,12 +383,7 @@ section.krtl-plans {
                     &:after {
                         content: '';
                         @include vertical-align(absolute);
-                        @include ucgen(12px,
-                        2px,
-                        0,
-                        0,
-                        2px,
-                        -45deg);
+                        @include ucgen(12px, 2px, 0, 0, 2px, -45deg);
                         left: -6px;
                         border-color: $gray-light;
                         background-color: $gray-light;
@@ -410,6 +450,14 @@ section.krtl-plans {
 }
 
 section.krtl-ozellikler {
+    &.visible {
+        &-xxs {
+            display: none;
+            @media screen and (max-width: 425px) {
+                display: block;
+            }
+        }
+    }
     margin: 0 0 $section-padding;
     position: relative;
     padding: 80px;
@@ -476,7 +524,7 @@ section.krtl-ozellikler {
         padding: 130px 0px;
     }
     @media screen and (max-width:425px) {
-        padding: 20px;
+        padding:100px 20px;
     }
 }
 
@@ -529,15 +577,14 @@ section.bi-tal-form {
         top: 0;
         left: 0; // background-color: rgba(0, 0, 0, .3);
         transition: all ease .3s;
-        @media screen and (max-width: 425px) {
+        /* @media screen and (max-width: 425px) {
             display: none;
-        }
+        } */
         .k-pln-wr & {
-            @media screen and (max-width: 425px) {
+            /* @media screen and (max-width: 425px) {
                 display: none;
-            }
-            background-color: rgba($sec-color,
-            .65);
+            } */
+            background-color: rgba($sec-color, .65);
             color: #fff;
             font-size: 24px;
             font-family: $f-f-flexobold;
@@ -563,9 +610,16 @@ section.bi-tal-form {
             font-size: 48px;
             color: #fff;
             opacity: 1;
+            @media screen and (max-width: 425px) {
+                display: none;
+            }
         }
         .k-pln-wr & {
-            background-color: rgba($sec-color, .85);
+            @media screen and (max-width: 425px) {
+                display: none;
+            }
+            background-color: rgba($sec-color,
+            .85);
             p {
                 opacity: 0;
             }

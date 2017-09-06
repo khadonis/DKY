@@ -71,10 +71,10 @@
         width: 270px;
         font-size: 80%;
     }
-    .hero-img h1 {
-        top: 40px;
-        right: 220px;
-    }
+    /* .hero-img h1 {
+        /* top: 40px;
+        right: 220px; 
+    } */
     .spot {
         height: 903px;
         width: 65%;
@@ -111,10 +111,10 @@
     body .basin-slide-container .golge {
         //padding-left: 15px;
         &:before {
-            right: 232px;
+            right: 272px;
         }
         &:after {
-            left: 218px;
+            left: 258px;
         }
     }
     section.mapWr {
@@ -217,9 +217,9 @@
             font-size: 18px;
         }
     }
-    .hero-img h1 {
-        right: 70px;
-    }
+    /* .hero-img h1 {
+        //right: 70px;
+    } */
     .kurum-content {
         margin-top: 100px;
         .container {
@@ -279,10 +279,18 @@
             }
         }
     }
+    .swiper-container {
+        height: 420px;
+    }
 }
 
 //768< (Tablet)
 @media screen and (max-width: 768px) {
+    body .content-inner {
+        h2 {
+            font-size: 33px;
+        }
+    }
     body .haberler .basinda-list {
         li {
             height: $basin_box_image_small + 9;
@@ -307,10 +315,10 @@
     body .basin-slide-container .golge {
         padding-left: 15px;
         &:before {
-            right: 176px;
+            right: 208px;
         }
         &:after {
-            left: 184px;
+            left: 209px;
         }
     }
     .basin-slide-container .swiper-slide:after {
@@ -409,8 +417,13 @@
             font-size: 14px;
         }
     }
+    .hero-img {
+        height: 55.55556vw;
+        margin-top: 60px;
+    }
     .hero-img h1 {
         font-size: 46px;
+        margin-top: 0;
     }
     .kurum-content {
         margin-top: 30px;
@@ -501,6 +514,11 @@
 
 //425< (All Phones)
 @media screen and (max-width: 425px) {
+    body .content-inner {
+        h2 {
+            font-size: 26px;
+        }
+    }
     body .haberler .basinda-list {
         li {
             height: $basin_box_image_small + 14;
@@ -653,9 +671,9 @@
         display: block;
     }
     body .bt-form label {
-        margin-left: 20vmin;
-        width: 60vmin;
-        font-size: 14px
+        margin-left: 0px;
+        width: 48%;
+        font-size: 13px
     }
     body .satis-ofisleri .so-ofis {
         p,
@@ -718,7 +736,6 @@
             .v-sep {
                 display: none;
             }
-
             padding: 80px 0 0;
         }
         .b-talep-form {
@@ -937,8 +954,8 @@
     }
     .hero-img h1 {
         font-size: 16px;
-        top: 0;
-        right: 25px;
+        /* top: 0;
+        right: 25px; */
         border-left-width: 6px;
     }
     .spot .spot-text {
