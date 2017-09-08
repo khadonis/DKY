@@ -1,0 +1,428 @@
+{
+    "proje": [
+        [
+            {
+                "name": "DKY Kartal",
+                "lat": "40.9096779",
+                "lng": "29.2107595",
+                "icon": "\/images\/Merkez_map_icon.png",
+                "link": "#",
+                "image": "\/images\/map-business.jpg",
+                "c_id": "1",
+                "category_name": "Sat\u0131\u015f\u0131 Devam Eden Projeler"
+            }
+        ]
+    ],
+    "lokasyonlar": [
+        [
+            {
+                "name": "Kartal Ağız ve Diş Hastanesi",
+                "lat": "40.9106752",
+                "lng": "29.2029738",
+                "icon": "images/Hastane-Gold.png",
+                "link": "#kartalProjesi",
+                "image": "https://lh3.googleusercontent.com/proxy/LazHRGojZ4P-WqQopdUayiMYvzmIC34vhiCqT1qcr9naIpcZ5BBo3qpBPNhycjOJphk5rGY0SwbapznGoKWljwa8lDY7GYIu5mlhLvxuck10vgg9gf90Xz6H-1lWobnwkqfLKWyPxqaJYBxThFQQBAxi5PB2yR8=w408-h228-k-no",
+                "c_id": "2",
+                "category_name": "hastaneler"
+            },
+            {
+                "name": "KARTAL DR. LÜTFİ KIRDAR EĞİTİM VE ARAŞTIRMA HASTANESİ",
+                "lat": "40.9090207",
+                "lng": "29.1940152",
+                "icon": "images/Hastane-Gold.png",
+                "link": "#kartalProjesi",
+                "image": "https://lh4.googleusercontent.com/proxy/HfRzUZiuoyrXlGQoC3IsUi8K2qmkXo3cGr6MQnR74ox9I0ZGgB-6bmSuapZxO0jW3jKMdPc5ayR5t8jFKKrrwsgQk9uDWeJlQBAQoEssuiH79yEsw2p_EwapTXpK_f_3lEZLZgYJP8BVHURez7qo1mI5b-tgLg=w408-h209-k-no",
+                "c_id": "2",
+                "category_name": "hastaneler"
+            },
+            {
+                "name": "Özel Megapol Hastanesi",
+                "lat": "40.913082",
+                "lng": "29.1969621",
+                "icon": "images/Hastane-Gold.png",
+                "link": "#",
+                "image": "https://lh3.googleusercontent.com/proxy/2JLdOtEYqarADfUz1vEB36q5HDEZe_lVE0qJHzWMXa3dCiFS2TH0e0V9HR5E6bUSQyReyouS0-rEdbhMh6NqQMsJymWJToA-Dwx2eB5zUnCbVcAmJMOQn6TaWtZ5SnabnZOzZUdjUaiSO1OXcqCWJ4DK9w8_fA=w577-h200-k-no",
+                "c_id": "2",
+                "category_name": "hastaneler"
+            },
+            {
+                "name": "Marmara Üniversitesi Pendik Eğitim ve Araştırma Hastanesi",
+                "lat": "40.8931824",
+                "lng": "29.2460358",
+                "icon": "images/Hastane-Gold.png",
+                "link": "#",
+                "image": "https://lh4.googleusercontent.com/proxy/H0Ml27-zuFEcit29IOFH9sKNJ2sToatz2Nyn-_8l7SnIQH0tI0KG90iDvukF7F9MunG5Q8DHk1h3omOw8JozKX_wy0N_oXGxNmPIkVfH1OLndv7ADjhvyaPEvPvPIxIaqewaVnn7vfEb5CdtDknJTgb_TYGSkOs=w408-h236-k-no",
+                "c_id": "2",
+                "category_name": "hastaneler"
+            }
+        ],
+        [
+            {
+                "name": "Marmara Üniversitesi",
+                "lat": "40.9128932",
+                "lng": "29.1729242",
+                "icon": "images/Okul-Gold.png",
+                "link": "#dkyOnKagithaneLink",
+                "image": "https://maps.gstatic.com/tactile/pane/default_geocode-1x.png",
+                "c_id": "3",
+                "category_name": "okullar"
+            },
+            {
+                "name": "Maltepe Üniversitesi Mühendislik ve Doğa Bilimleri Fakültesi",
+                "lat": "40.9475857",
+                "lng": "29.1729671",
+                "icon": "images/Okul-Gold.png",
+                "link": "#dkyOnKagithaneLink",
+                "image": "https://maps.gstatic.com/tactile/pane/default_geocode-1x.png",
+                "c_id": "3",
+                "category_name": "okullar"
+            },
+            {
+                "name": "Gedik Üniversitesi",
+                "lat": "40.8931599",
+                "lng": "29.1803738",
+                "icon": "images/Okul-Gold.png",
+                "link": "#",
+                "image": "https://lh6.googleusercontent.com/proxy/LoTIewZKqx66yOeIUDPeK9bGpMhmJyjhcGXuDEbVZkji4GEasp75SRw0YlMNALbDs614SVI7hTzhxWWCL_ihqP65Oq6c5ATjAsONuu_XbLGuzDHtmHCUWW6xFNd9L7Ejmh4RW-JodelYquVuCdaDSBRZJ4MhreA=w603-h200-k-no",
+                "c_id": "3",
+                "category_name": "okullar"
+            },
+            {
+                "name": "Yeditepe Üniversitesi İletişim Fakültesi",
+                "lat": "40.9730151",
+                "lng": "29.1503978",
+                "icon": "images/Okul-Gold.png",
+                "link": "#",
+                "image": "https://maps.gstatic.com/tactile/pane/default_geocode-1x.png",
+                "c_id": "3",
+                "category_name": "okullar"
+            }
+        ],
+        [
+            {
+                "name": "Kartal Metro",
+                "lat": "40.9064957",
+                "lng": "29.2106083",
+                "icon": "images/metro-Gold.png",
+                "link": "#",
+                "image": "https://lh5.googleusercontent.com/p/AF1QipOccGVvu7ty2NDv0Hc2POr92OnztrbCdQFV_GMI=w408-h304-k-no",
+                "c_id": "3",
+                "category_name": "ulaşım"
+            },
+            {
+                "name": "kartal dörtyol taksi",
+                "lat": "40.9100312",
+                "lng": "29.2091149",
+                "icon": "images/taxi.png",
+                "link": "#",
+                "image": "https://geo2.ggpht.com/cbk?panoid=NmHN3TPgOYKnhbJ9m4gKBQ&output=thumbnail&cb_client=search.TACTILE.gps&thumb=2&w=408&h=200&yaw=219.6857&pitch=0&thumbfov=100",
+                "c_id": "3",
+                "category_name": "ulaşım"
+            },
+            {
+                "name": "İdo Kartal Deniz Otobüsü İskelesi",
+                "lat": "40.887774",
+                "lng": "29.185493",
+                "icon": "images/Feribot-Gold.png",
+                "link": "#",
+                "image": "https://lh5.googleusercontent.com/p/AF1QipMMO48UH_TilaZ81J8FRUQUmb653_8RnnlVi7hT=w408-h306-k-no",
+                "c_id": "3",
+                "category_name": "ulaşım"
+            }
+        ],
+        [
+            {
+                "name": "İSTANBUL ANADOLU ADALET SARAYI",
+                "lat": "40.909559",
+                "lng": "29.1943496",
+                "icon": "images/Resmi-Kurum-Gold.png",
+                "link": "#",
+                "image": "https://lh6.googleusercontent.com/proxy/xoF4_SnVU-JJXix7SBgeQMmvQJkKYdbypX6NcGG9TF8xGozsaZSVMw-0NZfQ2IiCHujci60sGZR1Lh7B_mK9VPdjnBuSApJF2EHFz5Kls1Ogdt8bqMD24vTotkT6oRBN2J4dsLYe9MyCItBKqsTcrzsvK2MQxXg=w408-h262-k-no",
+                "c_id": "4",
+                "category_name": "resmi kurum"
+            },
+            {
+                "name": "PTT Soğanlık",
+                "lat": "40.9095564",
+                "lng": "29.1943496",
+                "icon": "images/Resmi-Kurum-Gold.png",
+                "link": "#",
+                "image": "https://lh4.googleusercontent.com/FfCXdGfa-AYRP1SdQsRP8sIFL2cQfONqyFfeLULHmFJ_msI40wDuihnFWMDK9A0O=w408-h229-k-no",
+                "c_id": "4",
+                "category_name": "resmi kurum"
+            },
+            {
+                "name": "İstanbul Vergi Dairesi Başkanlığı",
+                "lat": "40.9031767",
+                "lng": "29.2092367",
+                "icon": "images/Resmi-Kurum-Gold.png",
+                "link": "#",
+                "image": "https://lh5.googleusercontent.com/p/AF1QipOVnNMnQFYzXyqE9Wi-RVdULrHAcvRNy4jD6Ary=w408-h303-k-no",
+                "c_id": "4",
+                "category_name": "resmi kurum"
+            },
+            {
+                "name": "Kartal Belediyesi",
+                "lat": "40.8932255",
+                "lng": "29.1932107",
+                "icon": "images/Resmi-Kurum-Gold.png",
+                "link": "#",
+                "image": "https://lh5.googleusercontent.com/p/AF1QipOICJkjcTAhKy2v79jacgHv-ymnHQGaA1XiVztl=w408-h271-k-no",
+                "c_id": "4",
+                "category_name": "resmi kurum"
+            },
+            {
+                "name": "Kartal Belediyesi Evlendirme Dairesi",
+                "lat": "40.8953665",
+                "lng": "29.2026092",
+                "icon": "images/Resmi-Kurum-Gold.png",
+                "link": "#",
+                "image": "https://lh4.googleusercontent.com/proxy/TbSRLWFE1U9PR-mzztJrC3L9sho0UTgZPT3EuRUy58sJoOroOwpfTIiIZMfsNwsAquVY2JtZVtxwWF7iRgvc34f8Yxyiuww7XNuDTVWdatwISm3uLpSUIs1g0qnnodyVlZUnOfaAGoDkGiFme_mPclQsIPArpRc=w408-h270-k-no",
+                "c_id": "4",
+                "category_name": "resmi kurum"
+            }
+        ],
+        [
+            {
+                "name": "M1 Merkez AVM",
+                "lat": "40.903873",
+                "lng": "29.1989587",
+                "icon": "images/AVM-Gold.png",
+                "link": "#",
+                "image": "https://lh3.googleusercontent.com/proxy/8UzTCCC4mu1SGZQLQtcXg4LeaJukXEXqaHd8Iwg-8N83MvSD7xUaBIc7MmyP2P3pgNDmKCoPfro2uR8qe6dTRCxQpTotOhShDBCVcvSe32dSqIe_f4Nj0AxtBsCSg58xpcpiG0ufZjwCMkjsov5hUxE9y5c68g=w408-h271-k-no",
+                "c_id": "4",
+                "category_name": "AVM"
+            },
+            {
+                "name": "Maltepe Park",
+                "lat": "40.9167692",
+                "lng": "29.1665752",
+                "icon": "images/AVM-Gold.png",
+                "link": "#",
+                "image": "https://lh4.googleusercontent.com/proxy/dvMZkm6PZsHPfDBTt-yBj9fVE2R3HgeIDKd74kmPlOUmXWJBRiBvBA9eE2unDXXdFttRdK0dEIYEE9H7f8D0VUqjD_fDbc6Zrb3VxMx8xOteGL8ApsLs-2WaIqFMVh5nitXNVS09V1Ei99--nt6NdzOzWX258Q0=w408-h307-k-no",
+                "c_id": "4",
+                "category_name": "AVM"
+            },
+            {
+                "name": "Viaport Alışveriş Merkezi",
+                "lat": "40.9235646",
+                "lng": "29.2524567",
+                "icon": "images/AVM-Gold.png",
+                "link": "#",
+                "image": "https://lh4.googleusercontent.com/proxy/dvMZkm6PZsHPfDBTt-yBj9fVE2R3HgeIDKd74kmPlOUmXWJBRiBvBA9eE2unDXXdFttRdK0dEIYEE9H7f8D0VUqjD_fDbc6Zrb3VxMx8xOteGL8ApsLs-2WaIqFMVh5nitXNVS09V1Ei99--nt6NdzOzWX258Q0=w408-h307-k-no",
+                "c_id": "4",
+                "category_name": "AVM"
+            },
+            {
+                "name": "Neomarin AVM",
+                "lat": "40.867567",
+                "lng": "29.276935",
+                "icon": "images/AVM-Gold.png",
+                "link": "#",
+                "image": "https://lh5.googleusercontent.com/p/AF1QipPA1ZJrsYjjWepP4zc7F2v1iDgz-oTk3wd75zdn=w408-h304-k-no",
+                "c_id": "4",
+                "category_name": "AVM"
+            },
+            {
+                "name": "Pendorya Alışveriş Merkezi",
+                "lat": "40.8644131",
+                "lng": "29.2750013",
+                "icon": "images/AVM-Gold.png",
+                "link": "#",
+                "image": "https://lh6.googleusercontent.com/proxy/s-R1xcM61edpDWJXVUBoC8UmjUxff9Q4O7eMM08NFn4vX8HBAwtgn5XjDjojvBz5iBTInmcQH_zjkWQ4axl4K7F7me0c7kGs2EQZwnuSKYawC5fvewAqVlJ42e6IcNndirP2vRvuhx0fNzNl2XNUdsU6eakwWw=w408-h258-k-no",
+                "c_id": "4",
+                "category_name": "AVM"
+            },
+            {
+                "name": "Marinturk",
+                "lat": "40.8710947",
+                "lng": "29.2521798",
+                "icon": "images/AVM-Gold.png",
+                "link": "#",
+                "image": "https://lh5.googleusercontent.com/p/AF1QipO4vCp-UHezzsNt0g_8q5yQKz4uPadDihYIte0E=w408-h410-k-no",
+                "c_id": "4",
+                "category_name": "AVM"
+            }
+        ],
+        [
+            {
+                "name": "Burçin Yazan Hatıra Ormanı",
+                "lat": "40.9161075",
+                "lng": "29.2298835",
+                "icon": "images/Orman-Gold.png",
+                "link": "#",
+                "image": "https://lh5.googleusercontent.com/p/AF1QipMPrNnaBQgl4iD9Iwd3U04TjDH5kR-jquX8Jc43=w408-h229-k-no",
+                "c_id": "5",
+                "category_name": "Orman"
+            },
+            {
+                "name": "Aydos Ormanı",
+                "lat": "40.9373389",
+                "lng": "29.2378862",
+                "icon": "images/Orman-Gold.png",
+                "link": "#",
+                "image": "https://lh5.googleusercontent.com/p/AF1QipNk5i_nfJpoH8Wd0yWiHUXPdCFozObhnvokZivG=w408-h306-k-no",
+                "c_id": "5",
+                "category_name": "Orman"
+            }
+        ],
+        [
+            {
+                "name": "Şeyh Edebali Cami",
+                "lat": "40.9069247",
+                "lng": "29.2150585",
+                "icon": "images/Camii-Gold.png",
+                "link": "#",
+                "image": "https://lh5.googleusercontent.com/p/AF1QipMUNtvs21bCt9tLScx44k4udin2r7Oj0LI-UKWJ=w408-h408-k-no",
+                "c_id": "6",
+                "category_name": "Cami"
+            },
+            {
+                "name": "Yakacık Hacılar Cami",
+                "lat": "40.9105213",
+                "lng": "29.2123526",
+                "icon": "images/Camii-Gold.png",
+                "link": "#",
+                "image": "https://lh6.googleusercontent.com/proxy/utSbg3DyXJCoCVchrk07CRlRagj2OCRLTAX5aCx71o7Pi8b8FLUhK3w9cANOG-PlZZKudomaLKPGQ0lehT566OU3oH4pPMzmzMTr1LUo7-jiTq4MGrULERDRtRq9BrsHO65kQO2WyIgHQ1oesRhjoKNzOSccog=w408-h228-k-no",
+                "c_id": "6",
+                "category_name": "Cami"
+            },
+            {
+                "name": "Soğanlık Hacılar Camii",
+                "lat": "40.9121132",
+                "lng": "29.2015165",
+                "icon": "images/Camii-Gold.png",
+                "link": "#",
+                "image": "https://lh5.googleusercontent.com/p/AF1QipO4iyDp6FW-QasSR64rOVRYEeRJRVUtWNf7aHs1=w408-h544-k-no",
+                "c_id": "6",
+                "category_name": "Cami"
+            },
+            {
+                "name": "Soğanlık Ulu Cami",
+                "lat": "40.912243",
+                "lng": "29.2028254",
+                "icon": "images/Camii-Gold.png",
+                "link": "#",
+                "image": "https://lh5.googleusercontent.com/p/AF1QipP-UNvesXXIsEuSod_jxgvyG9o31_8fhSnd0f1V=w408-h229-k-no",
+                "c_id": "6",
+                "category_name": "Cami"
+            }
+        ],
+        [
+            {
+                "name": "Balkanlılar Kültür Parkı",
+                "lat": "40.9117644",
+                "lng": "29.2023319",
+                "icon": "images/Park-Gold2.png",
+                "link": "#",
+                "image": "https://lh5.googleusercontent.com/D424VF7tIXhzsj1_iinZs2HdIuo4fn1M3STqucTMaSxgdIAX0yXNvHdaRonDjCHD=w408-h306-k-no",
+                "c_id": "7",
+                "category_name": "Park"
+            },
+            {
+                "name": "Apaydın Parkı",
+                "lat": "40.9158341",
+                "lng": "29.2023319",
+                "icon": "images/Park-Gold2.png",
+                "link": "#",
+                "image": "https://lh5.googleusercontent.com/D424VF7tIXhzsj1_iinZs2HdIuo4fn1M3STqucTMaSxgdIAX0yXNvHdaRonDjCHD=w408-h306-k-no",
+                "c_id": "7",
+                "category_name": "Park"
+            },
+            {
+                "name": "Hoca Fuat Efendi Parki",
+                "lat": "40.9152951",
+                "lng": "29.213216",
+                "icon": "images/Park-Gold2.png",
+                "link": "#",
+                "image": "https://lh5.googleusercontent.com/ZZ72OEamL1Nk78NyKjfopG3AH_-unuOxL_GVofMQjU6HmahvQAOVQ21-mft0q-n6QQ=w408-h306-k-no",
+                "c_id": "7",
+                "category_name": "Park"
+            },
+            {
+                "name": "Fatih Sultan Mehmet Parkı",
+                "lat": "40.9117547",
+                "lng": "29.2212213",
+                "icon": "images/Park-Gold2.png",
+                "link": "#",
+                "image": "https://lh5.googleusercontent.com/p/AF1QipMisVZLK-nGa9ssxQslK7mSaMnPyLkayA7KBPNr=w408-h229-k-no",
+                "c_id": "7",
+                "category_name": "Park"
+            }
+        ],
+        [
+            {
+                "name": "Safari Restaurant Bar",
+                "lat": "40.909702",
+                "lng": "29.2111133",
+                "icon": "images/Yemek-Gold.png",
+                "link": "#",
+                "image": "https://lh5.googleusercontent.com/p/AF1QipPGjg8Amo0QMFxyz8e4S4j_oYYmSJHfOuwdodtU=w408-h306-k-no",
+                "c_id": "8",
+                "category_name": "Yemek"
+            },
+            {
+                "name": "Zümrüt Aile Restaurant",
+                "lat": "40.9107842",
+                "lng": "29.2251394",
+                "icon": "images/Yemek-Gold.png",
+                "link": "#",
+                "image": "https://lh5.googleusercontent.com/p/AF1QipM1OArtEtjSr9mEvSacVr30OP2Ov1oAHe67Kwbf=w408-h407-k-no",
+                "c_id": "8",
+                "category_name": "Yemek"
+            },
+            {
+                "name": "Tarihi Çınaraltı Restaurant",
+                "lat": "40.9129112",
+                "lng": "29.2287126",
+                "icon": "images/Yemek-Gold.png",
+                "link": "#",
+                "image": "https://lh5.googleusercontent.com/p/AF1QipM0UmAypjYeHC76mInLyn-LeRICka1150Se5WrR=w408-h407-k-no",
+                "c_id": "8",
+                "category_name": "Yemek"
+            }
+        ],
+        [
+            {
+                "name": "Öncü Halı Saha & Cafe",
+                "lat": "40.9071344",
+                "lng": "29.2188091",
+                "icon": "images/Spor-Gold.png",
+                "link": "#",
+                "image": "https://lh4.googleusercontent.com/_fyn-JCr76ODzlYUQZrmptnd0DQj1wl7s-pVgyLiRwvqZrdzN2ilwAX0WYFoHYss=w408-h229-k-no",
+                "c_id": "9",
+                "category_name": "Spor"
+            },  
+            {
+                "name": "Giray Bulak Futbol Okulu",
+                "lat": "40.9072692",
+                "lng": "29.2189906",
+                "icon": "images/Spor-Gold.png",
+                "link": "#",
+                "image": "https://lh5.googleusercontent.com/p/AF1QipOLyawOA3VJHzuJ_kb33grLfk7gSZBVm92VAY-c=w408-h408-k-no",
+                "c_id": "9",
+                "category_name": "Spor"
+            },  
+            {
+                "name": "Loop Fitness&Spa",
+                "lat": "40.910054",
+                "lng": "29.2028899",
+                "icon": "images/Spor-Gold.png",
+                "link": "#",
+                "image": "https://lh5.googleusercontent.com/p/AF1QipMiHfIO12s1REDhNYB590HJDALdM9pfnxDDN9I=w408-h306-k-no",
+                "c_id": "9",
+                "category_name": "Spor"
+            },  
+            {
+                "name": "Life Experss Fitness Clu-b",
+                "lat": "40.9128756",
+                "lng": "29.2079646",
+                "icon": "images/Spor-Gold.png",
+                "link": "#",
+                "image": "https://lh5.googleusercontent.com/M0WEBXMqoo19Vl5QoojID6v742Eoggvtjcjv6bOH3dXwhyjKVkkPABmz-Zf-zhu8=w408-h229-k-no",
+                "c_id": "9",
+                "category_name": "Spor"
+            }  
+        ]
+    ]
+}

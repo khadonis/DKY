@@ -9,5 +9,6 @@
     },
     "emmet.syntaxProfiles": {
         "scss": "css"
-    }
+    },
+    "emmet.showSuggestionsAsSnippets": true
 }

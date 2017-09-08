@@ -1,0 +1,428 @@
+{
+    "proje": [
+        [
+            {
+                "name": "DKY On Kağıthane",
+                "lat": "41.086567",
+                "lng": "28.971741",
+                "icon": "\/images\/On_map_icon.png",
+                "link": "#",
+                "image": "\/images\/map-on.jpg",
+                "c_id": "1",
+                "category_name": "Sat\u0131\u015f\u0131 Devam Eden Projeler"
+            }
+        ]
+    ],
+    "lokasyonlar": [
+        [
+            {
+                "name": "Hastane Derindere",
+                "lat": "41.082542",
+                "lng": "28.970796",
+                "icon": "images/Hastane-Gold.png",
+                "link": "#",
+                "image": "https://lh5.googleusercontent.com/p/AF1QipO2GWj9xDMVSxiZz_MpdMGiR20E4NVcVtpkVPaB=w408-h406-k-no",
+                "c_id": "2",
+                "category_name": "hastaneler"
+            },
+            {
+                "name": "Gültepe Avicenna Hastanesi",
+                "lat": "41.078730",
+                "lng": "28.998642",
+                "icon": "images/Hastane-Gold.png",
+                "link": "#",
+                "image": "https://lh5.googleusercontent.com/p/AF1QipMInl3ibwhsbUQBqCOJj9IbvmUVo0KWW7VGBW_r=w408-h229-k-no",
+                "c_id": "2",
+                "category_name": "hastaneler"
+            },
+            {
+                "name": "Eyüp Devlet Hastanesi Alibeyköy Semt Polikliniği ve Eyüp ADSM",
+                "lat": "41.074293",
+                "lng": "28.940601",
+                "icon": "images/Hastane-Gold.png",
+                "link": "#",
+                "image": "https://lh3.googleusercontent.com/TTZShYdYHOIXUZSuEXRFqkR35Yq3MWrYyxavdDc3wxfXKDEwscq0P0HVIC9NM1v_=w408-h229-k-no",
+                "c_id": "2",
+                "category_name": "hastaneler"
+            },
+            {
+                "name": "Sisli Florence Nightingale Hospital",
+                "lat": "41.068958",
+                "lng": "28.983537",
+                "icon": "images/Hastane-Gold.png",
+                "link": "#",
+                "image": "https://geo3.ggpht.com/cbk?panoid=xknLxC5_u8H77PGOkBu7GQ&output=thumbnail&cb_client=search.TACTILE.gps&thumb=2&w=408&h=200&yaw=52.449226&pitch=0&thumbfov=100",
+                "c_id": "2",
+                "category_name": "hastaneler"
+            },
+            {
+                "name": "Memorial Şişli Hastanesi",
+                "lat": "41.061655",
+                "lng": "28.972696",
+                "icon": "images/Hastane-Gold.png",
+                "link": "#",
+                "image": "https://lh5.googleusercontent.com/p/AF1QipOMjdLaEG6Pj8-cP50dPB0IRTb4jyAsxOijI1yN=w408-h340-k-no",
+                "c_id": "2",
+                "category_name": "hastaneler"
+            }
+        ],
+        [
+            {
+                "name": "Haliç Üniversitesi",
+                "lat": "41.084755",
+                "lng": "28.977304",
+                "icon": "images/Okul-Gold.png",
+                "link": "#dkyOnKagithaneLink",
+                "image": "https://lh5.googleusercontent.com/p/AF1QipOg1Z-QkItc0oQabJYTad0moEWsiEqEiH703Nxk=w408-h240-k-no",
+                "c_id": "3",
+                "category_name": "okullar"
+            },
+            {
+                "name": "İstanbul Bilgi Üniversitesi Kuştepe Kampüsü",
+                "lat": "41.072925",
+                "lng": "28.991530",
+                "icon": "images/Okul-Gold.png",
+                "link": "#dkyOnKagithaneLink",
+                "image": "https://lh5.googleusercontent.com/p/AF1QipNYUk5CyTGwM4mmvEEabqmkMZULawc3BnhGkjHl=w408-h229-k-no",
+                "c_id": "3",
+                "category_name": "okullar"
+            },
+            {
+                "name": "İstanbul Ticaret Üniversitesi",
+                "lat": "41.058262",
+                "lng": "28.951313",
+                "icon": "images/Okul-Gold.png",
+                "link": "#dkyOnKagithaneLink",
+                "image": "https://lh5.googleusercontent.com/p/AF1QipMQmXUIgGDa68QRiow6LG86wHKsZjngE8Rcrwme=w408-h291-k-no",
+                "c_id": "3",
+                "category_name": "okullar"
+            },
+            {
+                "name": "İstanbul Üniversitesi Florence Nightingale Hemşirelik Fakültesi",
+                "lat": "41.069981",
+                "lng": "28.985246",
+                "icon": "images/Okul-Gold.png",
+                "link": "#dkyOnKagithaneLink",
+                "image": "https://lh3.googleusercontent.com/59yamnuOfdHrwrBntJ5Ag7smKgqQlWSfMoe94tRCRebjNfKq894xJyXlm1AYmmZT=w408-h229-k-no",
+                "c_id": "3",
+                "category_name": "okullar"
+            }
+        ],
+        [
+            {
+                "name": "4.Levent Metro",
+                "lat": "41.084812",
+                "lng": "29.007043",
+                "icon": "images/metro-Gold.png",
+                "link": "#",
+                "image": "https://lh5.googleusercontent.com/p/AF1QipOVNyDL77hw6xt_v2NHwySsHhKb4BtgLh4WXBAt=w408-h229-k-no",
+                "c_id": "4",
+                "category_name": "ulaşım"
+            },
+            {
+                "name": "Osman Pasa Taxi",
+                "lat": "41.083196",
+                "lng": "28.963141",
+                "icon": "images/taxi.png",
+                "link": "#",
+                "image": "https://lh5.googleusercontent.com/ZDCsNUU0_9Au4UxpSZZEeS0m4hNCJKLorokZ5xRY4LSFX2XDqKFeW5sRvadAoYd4lQ=w408-h229-k-no",
+                "c_id": "4",
+                "category_name": "ulaşım"
+            },
+            {
+                "name": "Atatürk Airport",
+                "lat": "40.982989",
+                "lng": "28.810443",
+                "icon": "images/Havaalani-Gold.png",
+                "link": "#",
+                "image": "https://lh5.googleusercontent.com/p/AF1QipPsGH7g4m0KE2FOoObMn6CnqSXFQrago949nvax=w408-h306-k-no",
+                "c_id": "4",
+                "category_name": "ulaşım"
+            }
+        ],
+        [
+            {
+                "name": "Kağıthane Kaymakamlığı",
+                "lat": "41.079174",
+                "lng": "28.976064",
+                "icon": "images/Resmi-Kurum-Gold.png",
+                "link": "#",
+                "image": "https://lh5.googleusercontent.com/p/AF1QipMlWuUYcVRGdGFJMfLb7zPYKzrTWpO3oAvJTbSz=w408-h306-k-no",
+                "c_id": "5",
+                "category_name": "resmi kurum"
+            },
+            {
+                "name": "Sadabad Kültür Ve Nikah Sarayı",
+                "lat": "41.079549",
+                "lng": "28.972117",
+                "icon": "images/Resmi-Kurum-Gold.png",
+                "link": "#",
+                "image": "https://lh5.googleusercontent.com/p/AF1QipOqB2-IZSBQoB2mIm_h5ZtW1ZTeokGDqT_RrINY=w408-h306-k-no",
+                "c_id": "5",
+                "category_name": "resmi kurum"
+            },
+            {
+                "name": "T.C. Sağlık Bakanlığı Kağıthane İlçe Sağlık Müdürlüğü",
+                "lat": "41.091621",
+                "lng": "28.977905",
+                "icon": "images/Resmi-Kurum-Gold.png",
+                "link": "#",
+                "image": "https://lh5.googleusercontent.com/p/AF1QipNmOBYHBo7dQTprmpBuvmnGAnKt4FM5lmsKuWGO=w408-h408-k-no",
+                "c_id": "5",
+                "category_name": "resmi kurum"
+            },
+            {
+                "name": "Kağıthane İlçe Seçim Kurulu Başkanlığı",
+                "lat": "41.083943",
+                "lng": "28.985801",
+                "icon": "images/Resmi-Kurum-Gold.png",
+                "link": "#",
+                "image": "https://geo0.ggpht.com/cbk?panoid=rVEEzwnO0ykTk4U3saHUeg&output=thumbnail&cb_client=search.TACTILE.gps&thumb=2&w=408&h=200&yaw=12.772362&pitch=0&thumbfov=100",
+                "c_id": "5",
+                "category_name": "resmi kurum"
+            }
+        ],
+        [
+            {
+                "name": "AXİS AVM",
+                "lat": "41.086207",
+                "lng": "28.981981",
+                "icon": "images/AVM-Gold.png",
+                "link": "#",
+                "image": "https://lh5.googleusercontent.com/p/AF1QipNM1-Jo0RvfhS2AYCINHMgbcnZhQauzeIzASzFU=w408-h229-k-no",
+                "c_id": "6",
+                "category_name": "AVM"
+            },
+            {
+                "name": "Biz Cevahir Haliç AVM",
+                "lat": "41.075866",
+                "lng": "28.945170",
+                "icon": "images/AVM-Gold.png",
+                "link": "#",
+                "image": "https://lh5.googleusercontent.com/p/AF1QipPPlU_2AXf7BtaHjBjIGjoeWsOHuBlxzlzo-3_r=w408-h306-k-no",
+                "c_id": "6",
+                "category_name": "AVM"
+            },
+            {
+                "name": "Istanbul Sapphire",
+                "lat": "41.085083",
+                "lng": "29.006454",
+                "icon": "images/AVM-Gold.png",
+                "link": "#",
+                "image": "https://lh5.googleusercontent.com/p/AF1QipNA6PbbY_9c0onAjI1Leoo66Qj6l1_vPX4RPeO2=w408-h306-k-no",
+                "c_id": "6",
+                "category_name": "AVM"
+            },
+            {
+                "name": "ÖzdilekPark İstanbul AVM",
+                "lat": "41.077415",
+                "lng": "29.012717",
+                "icon": "images/AVM-Gold.png",
+                "link": "#",
+                "image": "https://lh5.googleusercontent.com/p/AF1QipM0VyN-IOMnxrojYjamuj1q0f1FmqhIBghWJCXx=w408-h408-k-no",
+                "c_id": "6",
+                "category_name": "AVM"
+            }
+        ],
+        [
+            {
+                "name": "Eyüp Jandarma Hatıra Ormanı",
+                "lat": "41.158376",
+                "lng": "28.879688",
+                "icon": "images/Orman-Gold.png",
+                "link": "#",
+                "image": "https://lh5.googleusercontent.com/p/AF1QipPG5zbKV9SNwJWBgSF8W7mxoyO1iaJmBH7G7Gpy=w408-h229-k-no",
+                "c_id": "7",
+                "category_name": "Orman"
+            },
+            {
+                "name": "Belgrad Ormanı",
+                "lat": "41.183715",
+                "lng": "28.988864",
+                "icon": "images/Orman-Gold.png",
+                "link": "#",
+                "image": "https://lh5.googleusercontent.com/p/AF1QipNNph2Ah3llQJJ-D3IHu_h-FHQlQYcHBewM1wDY=w408-h306-k-no",
+                "c_id": "7",
+                "category_name": "Orman"
+            },
+            {
+                "name": "Sevgililer Ormanı",
+                "lat": "41.166885",
+                "lng": "28.882356",
+                "icon": "images/Orman-Gold.png",
+                "link": "#",
+                "image": "https://lh5.googleusercontent.com/p/AF1QipOu-ilX1hVviVm2WVIVWHkdmHiXfJx0c9GDj1wK=w408-h229-k-no",
+                "c_id": "7",
+                "category_name": "Orman"
+            },
+            {
+                "name": "Fatih Ormanı",
+                "lat": "41.142297",
+                "lng": "29.010818",
+                "icon": "images/Orman-Gold.png",
+                "link": "#",
+                "image": "https://maps.gstatic.com/tactile/pane/default_geocode-1x.png",
+                "c_id": "7",
+                "category_name": "Orman"
+            }
+        ],
+        [
+            {
+                "name": "Süleymaniye Cami",
+                "lat": "41.087246",
+                "lng": "28.973520",
+                "icon": "images/Camii-Gold.png",
+                "link": "#",
+                "image": "https://lh5.googleusercontent.com/p/AF1QipOenVy_aowh0LoJSq7s3RvAAYHz1NcMthNjM48f=w408-h229-k-no",
+                "c_id": "8",
+                "category_name": "Cami"
+            },
+            {
+                "name": "Havuzlar Cami",
+                "lat": "41.087065",
+                "lng": "28.968135",
+                "icon": "images/Camii-Gold.png",
+                "link": "#",
+                "image": "https://lh5.googleusercontent.com/p/AF1QipNIV7ztOLqv1Y_uSLvU5XvxGdeUiTwyGbwIC1P8=w408-h544-k-no",
+                "c_id": "8",
+                "category_name": "Cami"
+            },
+            {
+                "name": "Semerkand Camii",
+                "lat": "41.082237",
+                "lng": "28.970680",
+                "icon": "images/Camii-Gold.png",
+                "link": "#",
+                "image": "https://lh4.googleusercontent.com/sx6ke5hYhLGfVprS98RApigi5kHMiOUp4UUrnBWtltjxOBGAYcLrCl5Lh1wogN3ZoQ=w408-h229-k-no",
+                "c_id": "8",
+                "category_name": "Cami"
+            }
+        ],
+        [
+            {
+                "name": "Bahri Beşler Parkı",
+                "lat": "41.085934",
+                "lng": "28.970835",
+                "icon": "images/Park-Gold2.png",
+                "link": "#",
+                "image": "https://lh5.googleusercontent.com/p/AF1QipMgsLg8de3n595aZ-solq6sOuvI1x3UawUmeGAs=w408-h725-k-no",
+                "c_id": "9",
+                "category_name": "Park"
+            },
+            {
+                "name": "Ayışığı Parkı",
+                "lat": "41.087254",
+                "lng": "28.970127",
+                "icon": "images/Park-Gold2.png",
+                "link": "#",
+                "image": "https://lh5.googleusercontent.com/p/AF1QipM7TqPQYnagyMRitz-8xJr2QWRQkC3Mhc0K2Fgt=w408-h544-k-no",
+                "c_id": "9",
+                "category_name": "Park"
+            },
+            {
+                "name": "Fatih Sultan Mehmet Parkı",
+                "lat": "41.088005",
+                "lng": "28.973411",
+                "icon": "images/Park-Gold2.png",
+                "link": "#",
+                "image": "https://lh5.googleusercontent.com/p/AF1QipOrbpEDD1L1jEgHPpEAxUVsNLaNZPkWi15Tynh_=w408-h302-k-no",
+                "c_id": "9",
+                "category_name": "Park"
+            },
+            {
+                "name": "Havuzlar Parkı",
+                "lat": "41.088063",
+                "lng": "28.967920",
+                "icon": "images/Park-Gold2.png",
+                "link": "#",
+                "image": "https://lh3.googleusercontent.com/TOgk3u_nG2WOWt9BtNskwPKPdp4XRP7giYIqNjuE584WbL9-2fhZV4Ob4X5kTOKe=w408-h229-k-no",
+                "c_id": "9",
+                "category_name": "Park"
+            },
+            {
+                "name": "Rumeli Park",
+                "lat": "41.083160",
+                "lng": "28.969645",
+                "icon": "images/Park-Gold2.png",
+                "link": "#",
+                "image": "https://geo0.ggpht.com/cbk?panoid=ptNJphFJgbulFX80FchMZQ&output=thumbnail&cb_client=search.TACTILE.gps&thumb=2&w=408&h=200&yaw=286.92313&pitch=0&thumbfov=100",
+                "c_id": "9",
+                "category_name": "Park"
+            }
+        ],
+        [
+            {
+                "name": "Little Caesars",
+                "lat": "41.086001",
+                "lng": "28.971638",
+                "icon": "images/Yemek-Gold.png",
+                "link": "#",
+                "image": "https://lh5.googleusercontent.com/p/AF1QipPt-1bQBKgDSdmMrJaIumlezcrXuq2QGQImyG1l=w408-h544-k-no",
+                "c_id": "10",
+                "category_name": "Yemek"
+            },
+            {
+                "name": "Pinokyo Garden cafe lounge hookah",
+                "lat": "41.085773",
+                "lng": "28.969236",
+                "icon": "images/Yemek-Gold.png",
+                "link": "#",
+                "image": "https://lh5.googleusercontent.com/p/AF1QipOUKYHpuzz7ed-AQVx3Ftr4-6VJ2ekQ6NSU1cOD=w408-h408-k-no",
+                "c_id": "10",
+                "category_name": "Yemek"
+            },
+            {
+                "name": "HUB Kağıthane Ofispark",
+                "lat": "41.084279",
+                "lng": "28.973716",
+                "icon": "images/Yemek-Gold.png",
+                "link": "#",
+                "image": "https://lh5.googleusercontent.com/p/AF1QipOZa3s6jp86lPdGHcOFbSufBHoymidZY5Wg6HEV=w408-h306-k-no",
+                "c_id": "10",
+                "category_name": "Yemek"
+            },
+            {
+                "name": "Huka Restaurant",
+                "lat": "41.082426",
+                "lng": "28.981824",
+                "icon": "images/Yemek-Gold.png",
+                "link": "#",
+                "image": "https://geo1.ggpht.com/cbk?panoid=AVBQSULVsKolFcNwDhIr6g&output=thumbnail&cb_client=search.TACTILE.gps&thumb=2&w=408&h=200&yaw=133.103&pitch=0&thumbfov=100",
+                "c_id": "10",
+                "category_name": "Yemek"
+            }
+        ],
+        [
+            {
+                "name": "Mars Athletic Club",
+                "lat": "41.078271",
+                "lng": "29.010638",
+                "icon": "images/Spor-Gold.png",
+                "link": "#",
+                "image": "https://lh5.googleusercontent.com/p/AF1QipPOnKCFMfus3Sz7X6Ti5IwCXD4wMCZnl9UXX66e=w408-h544-k-no",
+                "c_id": "11",
+                "category_name": "Spor"
+            },
+            {
+                "name": "Njoy Sports Club Profilo",
+                "lat": "41.069839",
+                "lng": "29.001266",
+                "icon": "images/Spor-Gold.png",
+                "link": "#",
+                "image": "https://lh5.googleusercontent.com/p/AF1QipOsW9_2kbM_DC7RbubLMi2tzdu-eMetymxW7xm8=w408-h304-k-no",
+                "c_id": "11",
+                "category_name": "Spor"
+            },
+            {
+                "name": "Essporto Health & Fitness Club",
+                "lat": "41.076097",
+                "lng": "29.013122",
+                "icon": "images/Spor-Gold.png",
+                "link": "#",
+                "image": "https://lh5.googleusercontent.com/p/AF1QipM6M4dUE_w0mKcvt7LJQQ227jttk9Su_VdTZeRV=w408-h306-k-no",
+                "c_id": "11",
+                "category_name": "Spor"
+            }
+        ]
+    ]
+}

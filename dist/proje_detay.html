@@ -299,7 +299,7 @@
     <div style="visibility:hidden;" id="ozellikler"></div>
     <section id="ozellikler-in-screens" class="krtl-plans hidden-xxs">
         <div class="container">
-            
+
             <div class="row">
                 <div class="side-txt">ÖZELLİKLER</div>
                 <div class="ozl-wr">
@@ -669,7 +669,7 @@
     <script src="js/sweetalert2.min.js"></script>
     <script src="js/validate.js"></script>
     <script>
-        $.getJSON('js/cevre.json', function (data) {
+        $.getJSON('js/lokum.json', function (data) {
 
             // json için local değişkenler
             var latLng = { lat: parseFloat(data.proje[0][0]["lat"]), lng: parseFloat(data.proje[0][0]["lng"]) };
@@ -739,15 +739,15 @@
                 ul.empty();
                 var tumu = $('<li id="#tumu">').text('Tümü').appendTo(ul);
                 $('<span class="circle">').appendTo(tumu);
-                $.each(data.lokasyonlar, function (i, obj) {
-                    var li = $('<li id="' + obj[i].category_name + '">').text(obj[i].category_name).prependTo(ul);
+                $.each(data.lokasyonlar, function (index, obj) {
+                    //console.log(obj);
+                    var item = obj[0];
+                    var li = $('<li id="' + item.category_name + '">').text(item.category_name).prependTo(ul);
                     var span = $('<span class="circle">').appendTo(li);
-
                     $(li).each(function () {
                         $(this).click(function () {
                             ul.find('li').removeClass('active');
                             $(this).addClass('active');
-                            console.log(obj);
                             clearMarkers();
                             runMap(obj, kartalMap);
                             kartalMap.setZoom(11);
@@ -757,10 +757,12 @@
                     tumu.click(function () {
                         ul.find('li').removeClass('active');
                         $(this).addClass('active');
+                        //clearMarkers();
                         runMap(obj, kartalMap);
                         kartalMap.setZoom(11);
                         kartalMap.panTo(latLng);
                     });
+
                 });
             };
             // fonksiyonların hepsi çalıştırılıyor

@@ -114,7 +114,7 @@ function addTxt(sira, txtM) {
   $(bullts + ':eq(' + (sira - 1) + ')').html('<div class="res">' + txtM + '</div>');
 }
 var swiper = new Swiper('.swiper-container', {
-  direction: 'vertical',
+  direction: 'horizontal',
   watchSlidesProgress: true,
   pagination: '.swiper-pagination',
   paginationClickable: true,

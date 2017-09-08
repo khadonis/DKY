@@ -1,0 +1,167 @@
+{
+    "proje": [
+        [
+            {
+                "name": "Lokum Evler",
+                "lat": "40.873355",
+                "lng": "29.324669",
+                "icon": "\/images\/Lokum_map_icon.png",
+                "link": "#",
+                "image": "\/images\/map-lokum.jpg",
+                "c_id": "1",
+                "category_name": "Sat\u0131\u015f\u0131 Devam Eden Projeler"
+            }
+        ]
+    ],
+    "lokasyonlar": [
+        [
+            {
+                "name": "Okan Üniversitesi Hastanesi",
+                "lat": "40.849440",
+                "lng": "29.301822",
+                "icon": "images/Hastane-Gold.png",
+                "link": "#",
+                "image": "https://lh5.googleusercontent.com/p/AF1QipPZqAraA6Kw_8NNBybgPhPYYQ4UNd6gWbhAM6vB=w408-h272-k-no",
+                "c_id": "2",
+                "category_name": "hastaneler"
+            },
+            {
+                "name": "SÜREYYAPAŞA GÖĞÜS HASTALIKLARI VE GÖĞÜS CERRAHİSİ EĞİTİM VE ARAŞTIRMA HASTANESİ",
+                "lat": "40.951300",
+                "lng": "29.143434",
+                "icon": "images/Hastane-Gold.png",
+                "link": "#",
+                "image": "https://lh5.googleusercontent.com/p/AF1QipPOBlrnsagCyNXTQuORtI759NwK3oRJrkJ437iK=w408-h306-k-no",
+                "c_id": "2",
+                "category_name": "hastaneler"
+            },
+            {
+                "name": "Özel Maltepe Bölge Hastanesi̇",
+                "lat": "40.921011",
+                "lng": "29.137697",
+                "icon": "images/Hastane-Gold.png",
+                "link": "#",
+                "image": "https://lh5.googleusercontent.com/p/AF1QipN-nnz1_u1Nh-rnlmgRkN4og7o_qS5MpkZnhYpA=w408-h306-k-no",
+                "c_id": "2",
+                "category_name": "hastaneler"
+            }
+        ],
+        [
+            {
+                "name": "Gedik University",
+                "lat": "40.901558",
+                "lng": "29.219312",
+                "icon": "images/Okul-Gold.png",
+                "link": "#dkyOnKagithaneLink",
+                "image": "https://lh5.googleusercontent.com/p/AF1QipMouDm8uYnrlCttsF3IUe0HaxyHR9-YLgsLYNRq=w408-h306-k-no",
+                "c_id": "3",
+                "category_name": "okullar"
+            },
+            {
+                "name": "Balkan University",
+                "lat": "42.001772",
+                "lng": "21.434841",
+                "icon": "images/Okul-Gold.png",
+                "link": "#dkyOnKagithaneLink",
+                "image": "https://lh5.googleusercontent.com/p/AF1QipPEyw8RfTnnZHolGLi1KgVT-SK5iEzSCq9vbweI=w408-h306-k-no",
+                "c_id": "3",
+                "category_name": "okullar"
+            },
+            {
+                "name": "Kocaeli Üniversitesi Gebze Yerleşkesi",
+                "lat": "40.817300",
+                "lng": "29.412400",
+                "icon": "images/Okul-Gold.png",
+                "link": "#dkyOnKagithaneLink",
+                "image": "https://geo3.ggpht.com/cbk?panoid=CWJXRsmyuhqehZPG2j96PA&output=thumbnail&cb_client=search.TACTILE.gps&thumb=2&w=408&h=200&yaw=177.78528&pitch=0&thumbfov=100",
+                "c_id": "3",
+                "category_name": "okullar"
+            },
+            {
+                "name": "Marmara Üniversitesi",
+                "lat": "40.9128932",
+                "lng": "29.1729242",
+                "icon": "images/Okul-Gold.png",
+                "link": "#dkyOnKagithaneLink",
+                "image": "https://maps.gstatic.com/tactile/pane/default_geocode-1x.png",
+                "c_id": "3",
+                "category_name": "okullar"
+            }
+        ],
+        [
+            {
+                "name": "Sabiha Gokcen International Airport (SAW)",
+                "lat": "40.905371",
+                "lng": "29.316860",
+                "icon": "images/Havaalani-Gold.png",
+                "link": "#",
+                "image": "https://lh5.googleusercontent.com/p/AF1QipPmuuCITxG7gKdO_JSrx6CD3IvORTXGb5s7w-W1=w408-h215-k-no",
+                "c_id": "4",
+                "category_name": "ulaşım"
+            },
+            {
+                "name": "Tavşantepe Metro",
+                "lat": "40.882740",
+                "lng": "29.246392",
+                "icon": "images/metro-Gold.png",
+                "link": "#",
+                "image": "https://lh5.googleusercontent.com/p/AF1QipP6chM3AbX1k6bvTIA4OcIzpYTo7XgkgnKMv_aQ=w408-h544-k-no",
+                "c_id": "4",
+                "category_name": "ulaşım"
+            },
+            {
+                "name": "Aydınlı Taksi",
+                "lat": "40.862308",
+                "lng": "29.335095",
+                "icon": "images/taxi.png",
+                "link": "#",
+                "image": "https://lh5.googleusercontent.com/p/AF1QipNXky4U7ICJZOKkZKF-KQRmCNMtdt62yP3OjTmN=w408-h229-k-no",
+                "c_id": "4",
+                "category_name": "ulaşım"
+            }
+        ],
+        [
+            {
+                "name": "Pendik İlçe Milli Eğitim Müdürlüğü",
+                "lat": "40.870660",
+                "lng": "29.272433",
+                "icon": "images/Resmi-Kurum-Gold.png",
+                "link": "#",
+                "image": "https://geo1.ggpht.com/cbk?panoid=PgGnJy5cDIyuEscKGiWdzA&output=thumbnail&cb_client=search.TACTILE.gps&thumb=2&w=408&h=200&yaw=202.27669&pitch=0&thumbfov=100",
+                "c_id": "5",
+                "category_name": "resmi kurum"
+            },
+            {
+                "name": "Kartal Belediyesi Sağlık İşleri Müdürlüğü",
+                "lat": "40.890588",
+                "lng": "29.188098",
+                "icon": "images/Resmi-Kurum-Gold.png",
+                "link": "#",
+                "image": "https://geo2.ggpht.com/cbk?panoid=lf9HaiI52U6Y-Z549MzV9w&output=thumbnail&cb_client=search.TACTILE.gps&thumb=2&w=408&h=200&yaw=126.97355&pitch=0&thumbfov=100",
+                "c_id": "5",
+                "category_name": "resmi kurum"
+            },
+            {
+                "name": "İSKİ İstanbul Şube Müdürlüğü",
+                "lat": "40.974342",
+                "lng": "29.257300",
+                "icon": "images/Resmi-Kurum-Gold.png",
+                "link": "#",
+                "image": "https://lh3.googleusercontent.com/Xefm8_Hy80FAJDLeUL_Qxq0Vctmv2-kLBrXzW0mAskRm15ZNmPyuGNNjkAER__CG8Q=w408-h229-k-no",
+                "c_id": "5",
+                "category_name": "resmi kurum"
+            },
+            {
+                "name": "Kosgeb",
+                "lat": "40.847342",
+                "lng": "29.417803",
+                "icon": "images/Resmi-Kurum-Gold.png",
+                "link": "#",
+                "image": "https://maps.gstatic.com/tactile/pane/default_geocode-1x.png",
+                "c_id": "5",
+                "category_name": "resmi kurum"
+            }
+        ]
+        
+    ]
+}
