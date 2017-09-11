@@ -3,8 +3,8 @@
         [
             {
                 "name": "Lokum Evler",
-                "lat": "40.873355",
-                "lng": "29.324669",
+                "lat": "40.8750745",
+                "lng": "29.3246046",
                 "icon": "\/images\/Lokum_map_icon.png",
                 "link": "#",
                 "image": "\/images\/map-lokum.jpg",
@@ -160,6 +160,128 @@
                 "image": "https://maps.gstatic.com/tactile/pane/default_geocode-1x.png",
                 "c_id": "5",
                 "category_name": "resmi kurum"
+            }
+        ],
+        [
+            {
+                "name": "Neomarin AVM",
+                "lat": "40.864165",
+                "lng": "29.273801",
+                "icon": "images/AVM-Gold.png",
+                "link": "#",
+                "image": "https://lh5.googleusercontent.com/p/AF1QipPA1ZJrsYjjWepP4zc7F2v1iDgz-oTk3wd75zdn=w408-h304-k-no",
+                "c_id": "5",
+                "category_name": "AVM"
+            },
+            {
+                "name": "Atlaspark Mall - Sultanbeyli",
+                "lat": "40.969719",
+                "lng": "29.256329",
+                "icon": "images/AVM-Gold.png",
+                "link": "#",
+                "image": "https://lh5.googleusercontent.com/p/AF1QipN1peQ8-kGcoJwN3gxj844KJxPLMSTYtj4xqDi3=w408-h272-k-no",
+                "c_id": "5",
+                "category_name": "AVM"
+            },
+            {
+                "name": "Viaport Alışveriş Merkezi",
+                "lat": "40.9235646",
+                "lng": "29.2524567",
+                "icon": "images/AVM-Gold.png",
+                "link": "#",
+                "image": "https://lh4.googleusercontent.com/proxy/dvMZkm6PZsHPfDBTt-yBj9fVE2R3HgeIDKd74kmPlOUmXWJBRiBvBA9eE2unDXXdFttRdK0dEIYEE9H7f8D0VUqjD_fDbc6Zrb3VxMx8xOteGL8ApsLs-2WaIqFMVh5nitXNVS09V1Ei99--nt6NdzOzWX258Q0=w408-h307-k-no",
+                "c_id": "5",
+                "category_name": "AVM"
+            }
+        ],
+        [
+            {
+                "name": "Aydos Ormanı",
+                "lat": "40.9373389",
+                "lng": "29.2378862",
+                "icon": "images/Orman-Gold.png",
+                "link": "#",
+                "image": "https://lh5.googleusercontent.com/p/AF1QipNk5i_nfJpoH8Wd0yWiHUXPdCFozObhnvokZivG=w408-h306-k-no",
+                "c_id": "6",
+                "category_name": "Orman"
+            }
+        ],
+        [
+            {
+                "name": "Hüda Camii",
+                "lat": "40.872830",
+                "lng": "29.331367",
+                "icon": "images/Camii-Gold.png",
+                "link": "#",
+                "image": "https://geo2.ggpht.com/cbk?panoid=uBZkcf096zOd3TnyIZ82Ow&output=thumbnail&cb_client=search.TACTILE.gps&thumb=2&w=408&h=200&yaw=255.02148&pitch=0&thumbfov=100",
+                "c_id": "7",
+                "category_name": "Cami"
+            },
+            {
+                "name": "Hz Osman Cami",
+                "lat": "40.875050",
+                "lng": "29.336932",
+                "icon": "images/Camii-Gold.png",
+                "link": "#",
+                "image": "https://geo1.ggpht.com/cbk?panoid=pVtiLKD1LvMextKNAL_azw&output=thumbnail&cb_client=search.TACTILE.gps&thumb=2&w=408&h=200&yaw=120.67982&pitch=0&thumbfov=100",
+                "c_id": "7",
+                "category_name": "Cami"
+            }
+        ],
+        [
+            {
+                "name": "Hacetderesi Milli Park",
+                "lat": "40.877891",
+                "lng": "29.330794   ",
+                "icon": "images/Park-Gold2.png",
+                "link": "#",
+                "image": "https://lh5.googleusercontent.com/p/AF1QipMMLq_QJxdRA4Ek9YTu4im0mAUScYBa1lPCKoR5=w408-h229-k-no",
+                "c_id": "8",
+                "category_name": "Park"
+            }
+        ],
+        [
+            {
+                "name": "Paşa Döner Aydınlı",
+                "lat": "40.869545",
+                "lng": "29.327314",
+                "icon": "images/Yemek-Gold.png",
+                "link": "#",
+                "image": "https://lh5.googleusercontent.com/p/AF1QipO2LmpAYROp7Vxz3IM05kSBCMlTNxcE3ylIBneo=w408-h229-k-no",
+                "c_id": "9",
+                "category_name": "Yemek"
+            },
+            {
+                "name": "Extreme Pizza",
+                "lat": "40.867015",
+                "lng": "29.326804",
+                "icon": "images/Yemek-Gold.png",
+                "link": "#",
+                "image": "https://lh5.googleusercontent.com/f9YH3fSqYkmtEr7LY_4oRMRaP8kuNDXWBogjOsfooscJUpKh4cB9vQ6s126SxRc_6g=w408-h229-k-no",
+                "c_id": "9",
+                "category_name": "Yemek"
+            }
+        ],
+        [
+            {
+                "name": "A&S BODY FITNESS SPOR SALONU",
+                "lat": "40.870047",
+                "lng": "29.328477",
+                "icon": "images/Spor-Gold.png",
+                "link": "#",
+                "image": "https://geo3.ggpht.com/cbk?panoid=MDd9WvSP94n_TFPTbpo42Q&output=thumbnail&cb_client=search.TACTILE.gps&thumb=2&w=408&h=200&yaw=326.02048&pitch=0&thumbfov=100",
+                "c_id": "10",
+                "category_name": "Spor"
+            },
+            {
+                "name": "Gatto Pilates Studio",
+                "lat": "40.872292",
+                "lng": "29.319979",
+                "icon": "images/Spor-Gold.png",
+                "link": "#",
+                "image": "https://lh5.googleusercontent.com/p/AF1QipPsVvArqL1S2EscMgFBqmmy_OC3dwm6PPA4fA-5=w408-h306-k-no",
+                "c_id": "10",
+                "category_name": "Spor"
             }
         ]
         

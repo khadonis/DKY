@@ -1,0 +1,279 @@
+{
+    "proje": [
+        [
+            {
+                "name": "DKY Business Tuzla",
+                "lat": "40.847898", 
+                "lng": "29.299274",
+                "icon": "\/images\/Businesstuz_map_icon.png",
+                "link": "#",
+                "image": "\/images\/map-tuzla.jpg",
+                "c_id": "1",
+                "category_name": "Gelecek Projeler"
+            }
+        ]
+    ],
+    "lokasyonlar": [
+        [
+            {
+                "name": "Okan Üniversitesi Hastanesi",
+                "lat": "40.849440",
+                "lng": "29.301822",
+                "icon": "images/Hastane-Gold.png",
+                "link": "#",
+                "image": "https://lh5.googleusercontent.com/p/AF1QipPZqAraA6Kw_8NNBybgPhPYYQ4UNd6gWbhAM6vB=w408-h272-k-no",
+                "c_id": "2",
+                "category_name": "hastaneler"
+            },
+            {
+                "name": "T.C. SAĞLIK BAKANLIĞI TUZLA DEVLET HASTANESİ",
+                "lat": "40.848296",
+                "lng": "29.305863",
+                "icon": "images/Hastane-Gold.png",
+                "link": "#",
+                "image": "https://lh5.googleusercontent.com/Ck_Awoklgm_vQaoKpzwZUOroy9O9wrwohju3nWG7850-UE5K7vFnc54GwFSFynFJ=w408-h229-k-no",
+                "c_id": "2",
+                "category_name": "hastaneler"
+            },
+            {
+                "name": "ÖZEL GİSBİR HASTANESİ",
+                "lat": "40.847803",
+                "lng": "29.294658",
+                "icon": "images/Hastane-Gold.png",
+                "link": "#",
+                "image": "https://lh5.googleusercontent.com/p/AF1QipMYjbmOI4QKQEHxuaWYzqdGsVE4F0Hoe3LtEvsO=w408-h229-k-no",
+                "c_id": "2",
+                "category_name": "hastaneler"
+            }
+        ],
+        [
+            {
+                "name": "Gedik University",
+                "lat": "40.901558",
+                "lng": "29.219312",
+                "icon": "images/Okul-Gold.png",
+                "link": "#dkyOnKagithaneLink",
+                "image": "https://lh5.googleusercontent.com/p/AF1QipMouDm8uYnrlCttsF3IUe0HaxyHR9-YLgsLYNRq=w408-h306-k-no",
+                "c_id": "3",
+                "category_name": "okullar"
+            },
+            {
+                "name": "Piri Reis Üniversitesi - Deniz Kampüsü",
+                "lat": "40.815425",
+                "lng": "29.290808",
+                "icon": "images/Okul-Gold.png",
+                "link": "#dkyOnKagithaneLink",
+                "image": "https://lh5.googleusercontent.com/p/AF1QipPkzw1k1eg9XV2eNPVB9YCe9cKBtct2QFWo0zbw=w408-h407-k-no",
+                "c_id": "3",
+                "category_name": "okullar"
+            }
+        ],
+        [
+            {
+                "name": "Sabiha Gokcen International Airport (SAW)",
+                "lat": "40.905371",
+                "lng": "29.316860",
+                "icon": "images/Havaalani-Gold.png",
+                "link": "#",
+                "image": "https://lh5.googleusercontent.com/p/AF1QipPmuuCITxG7gKdO_JSrx6CD3IvORTXGb5s7w-W1=w408-h215-k-no",
+                "c_id": "4",
+                "category_name": "ulaşım"
+            },
+            {
+                "name": "İÇMELER TAKSİ DURAĞI",
+                "lat": "40.850343",
+                "lng": "29.298974",
+                "icon": "images/taxi.png",
+                "link": "#",
+                "image": "https://lh6.googleusercontent.com/HwYM0TUAvYNKeJkN9Nek72lYGXTwsnF4WCnx9GKYhVzePv8-uOt3kbafOvZHp12EiQ=w408-h229-k-no",
+                "c_id": "4",
+                "category_name": "ulaşım"
+            },
+            {
+                "name": "İçmeler Tren İstasyonu",
+                "lat": "40.845835",
+                "lng": "29.299893",
+                "icon": "images/metro-Gold.png",
+                "link": "#",
+                "image": "https://lh5.googleusercontent.com/p/AF1QipPOJnMvnPtnM6AXC2b3VzKnkmZEFIgZq538cF7u=w408-h229-k-no",
+                "c_id": "4",
+                "category_name": "ulaşım"
+            },
+            {
+                "name": "Pendik Metro İstasyonu",
+                "lat": "40.868544",
+                "lng": "29.274506",
+                "icon": "images/metro-Gold.png",
+                "link": "#",
+                "image": "https://lh5.googleusercontent.com/p/AF1QipPN4fnCxcgav4glwxDzIyT_hof3zutdxv2wwJJg=w408-h306-k-no",
+                "c_id": "4",
+                "category_name": "ulaşım"
+            }
+        ],
+        [
+            {
+                "name": "Tuzla Ilce Nufus Mudurlugu",
+                "lat": "40.844800",
+                "lng": "29.298906",
+                "icon": "images/Resmi-Kurum-Gold.png",
+                "link": "#",
+                "image": "https://lh5.googleusercontent.com/p/AF1QipN2JeIBtWXZAZ_qFr9e941pCVFghSdsIonpgR64=w408-h229-k-no",
+                "c_id": "5",
+                "category_name": "resmi kurum"
+            },
+            {
+                "name": "Tuzla İlçe Emniyet Müdürlüğü",
+                "lat": "40.841804",
+                "lng": "29.302630",
+                "icon": "images/Resmi-Kurum-Gold.png",
+                "link": "#",
+                "image": "https://lh6.googleusercontent.com/_hdR7IR-azN79pj9Yf9-l1H0lzCUncvGSVvNelDR-Jn_vMRety3mbmitfVXY7Ng=w408-h229-k-no",
+                "c_id": "5",
+                "category_name": "resmi kurum"
+            },
+            {
+                "name": "İdris Güllüce Kütüphanesi",
+                "lat": "440.850067",
+                "lng": "29.303096",
+                "icon": "images/Resmi-Kurum-Gold.png",
+                "link": "#",
+                "image": "https://lh5.googleusercontent.com/p/AF1QipPyhWnEFZHUzDWa8O1JHiiSKUceZGN9BjU6w9xP=w408-h229-k-no",
+                "c_id": "5",
+                "category_name": "resmi kurum"
+            }
+        ],
+        [
+            {
+                "name": "Neomarin AVM",
+                "lat": "40.864165",
+                "lng": "29.273801",
+                "icon": "images/AVM-Gold.png",
+                "link": "#",
+                "image": "https://lh5.googleusercontent.com/p/AF1QipPA1ZJrsYjjWepP4zc7F2v1iDgz-oTk3wd75zdn=w408-h304-k-no",
+                "c_id": "5",
+                "category_name": "AVM"
+            },
+            {
+                "name": "Darıca Park Avm",
+                "lat": "40.780683",
+                "lng": "29.408319",
+                "icon": "images/AVM-Gold.png",
+                "link": "#",
+                "image": "https://lh5.googleusercontent.com/p/AF1QipONfFnOKB-HHKKoxawSNLYzecqFVz32UolUE1Io=w408-h229-k-no",
+                "c_id": "5",
+                "category_name": "AVM"
+            }
+        ],
+        [
+            {
+                "name": "Atatürkçü Düşünce Derneği Ormanı Ve Okul Arazisi",
+                "lat": "40.842718",
+                "lng": "29.407346",
+                "icon": "images/Orman-Gold.png",
+                "link": "#",
+                "image": "https://lh5.googleusercontent.com/p/AF1QipNLIgj7DlHFL0W1oVL9PIHU9YSqsQHQ8nM8yWmz=w408-h229-k-no",
+                "c_id": "6",
+                "category_name": "Orman"
+            },
+            {
+                "name": "Burçin Yazan Hatıra Ormanı",
+                "lat": "40.920399",
+                "lng": "29.249383",
+                "icon": "images/Orman-Gold.png",
+                "link": "#",
+                "image": "https://lh5.googleusercontent.com/p/AF1QipMPrNnaBQgl4iD9Iwd3U04TjDH5kR-jquX8Jc43=w408-h229-k-no",
+                "c_id": "6",
+                "category_name": "Orman"
+            }
+        ],
+        [
+            {
+                "name": "İÇMELER İSTASYON CAMİİ",
+                "lat": "40.845795",
+                "lng": "29.300494",
+                "icon": "images/Camii-Gold.png",
+                "link": "#",
+                "image": "https://lh5.googleusercontent.com/p/AF1QipN_-jnPZwP3kMekHszm_S003BvHR0L8D1tUDyyA=w408-h461-k-no",
+                "c_id": "7",
+                "category_name": "Cami"
+            },
+            {
+                "name": "Aydıntepe Merkez Camii",
+                "lat": "40.388522",
+                "lng": "v",
+                "icon": "images/Camii-Gold.png",
+                "link": "#",
+                "image": "https://geo3.ggpht.com/cbk?panoid=tVWD74NpD6GeoexEkCmESQ&output=thumbnail&cb_client=search.TACTILE.gps&thumb=2&w=408&h=200&yaw=125.235504&pitch=0&thumbfov=100",
+                "c_id": "7",
+                "category_name": "Cami"
+            }
+        ],
+        [
+            {
+                "name": "Ballı Kayalar Tabiat Parkı",
+                "lat": "40.833095",
+                "lng": "29.516802   ",
+                "icon": "images/Park-Gold2.png",
+                "link": "#",
+                "image": "https://lh5.googleusercontent.com/p/AF1QipMtoBDTdsi8r2oJ_0KEOarUJJ8sln7xIK6HKllH=w408-h229-k-no",
+                "c_id": "8",
+                "category_name": "Park"
+            },
+            {
+                "name": "Tuzla şelale park",
+                "lat": "40.858957",
+                "lng": "29.317049   ",
+                "icon": "images/Park-Gold2.png",
+                "link": "#",
+                "image": "https://geo2.ggpht.com/cbk?panoid=U99nJsIWVMf15z_NmRSoPQ&output=thumbnail&cb_client=search.TACTILE.gps&thumb=2&w=408&h=200&yaw=208.6146&pitch=0&thumbfov=100",
+                "c_id": "8",
+                "category_name": "Park"
+            }
+        ],
+        [
+            {
+                "name": "Gaziantep Taş Fırın",
+                "lat": "40.848295",
+                "lng": "29.300813",
+                "icon": "images/Yemek-Gold.png",
+                "link": "#",
+                "image": "https://lh6.googleusercontent.com/xjRzYSuwd0-fFlieEORoo4UN1Jz3YYb-xeHdLKelXizfHpR6kO5lt2gAnyPhiYTP=w408-h229-k-no",
+                "c_id": "9",
+                "category_name": "Yemek"
+            },
+            {
+                "name": "Kumrucu",
+                "lat": "40.849809",
+                "lng": "29.299039",
+                "icon": "images/Yemek-Gold.png",
+                "link": "#",
+                "image": "https://geo2.ggpht.com/cbk?panoid=xIzvJnWVkwEMjBIaCsv2Hw&output=thumbnail&cb_client=search.TACTILE.gps&thumb=2&w=408&h=200&yaw=350.85715&pitch=0&thumbfov=100",
+                "c_id": "9",
+                "category_name": "Yemek"
+            }
+        ],
+        [
+            {
+                "name": "Ali Ciftci SPOR Kulubu",
+                "lat": "40.854165",
+                "lng": "29.297580",
+                "icon": "images/Spor-Gold.png",
+                "link": "#",
+                "image": "https://lh5.googleusercontent.com/p/AF1QipM0lPhb4XxY6CpSysHxLKFUH3Zp3-yv53pblO6H=w408-h229-k-no",
+                "c_id": "10",
+                "category_name": "Spor"
+            },
+            {
+                "name": "Kafkale Spor Kompleksi",
+                "lat": "40.833354",
+                "lng": "29.299891",
+                "icon": "images/Spor-Gold.png",
+                "link": "#",
+                "image": "https://lh5.googleusercontent.com/p/AF1QipNJdrTqqi_zkopFuykfV7EtGyrsY0ZP6U5UhlM_=w408-h229-k-no",
+                "c_id": "10",
+                "category_name": "Spor"
+            }
+        ]
+        
+    ]
+}

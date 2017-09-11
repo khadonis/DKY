@@ -1,0 +1,278 @@
+{
+    "proje": [
+        [
+            {
+                "name": "DKY Cadde Göztepe 05",
+                "lat": "40.991124",
+                "lng": "29.080079",
+                "icon": "\/images\/Goztepe_map_icon.png",
+                "link": "#",
+                "image": "\/images\/goztepe.jpg",
+                "c_id": "1",
+                "category_name": "Sat\u0131\u015f\u0131 Devam Eden Projeler"
+            }
+        ]
+    ],
+    "lokasyonlar": [
+        [
+            {
+                "name": "Medical Park Göztepe Hastanesi",
+                "lat": "40.989899",
+                "lng": "29.077763",
+                "icon": "images/Hastane-Gold.png",
+                "link": "#",
+                "image": "https://lh5.googleusercontent.com/p/AF1QipO3mdTWPxFry3rXTYKtC1PMZLqlZM8_ugVb_1UJ=w408-h229-k-no",
+                "c_id": "2",
+                "category_name": "hastaneler"
+            },
+            {
+                "name": "T.C. SAĞLIK BAKANLIĞI GÖZTEPE EĞİTİM VE ARAŞTIRMA HASTANESİ MERDİVENKÖY POLİKLİNİĞİ",
+                "lat": "40.984739",
+                "lng": "29.066039",
+                "icon": "images/Hastane-Gold.png",
+                "link": "#",
+                "image": "https://lh5.googleusercontent.com/p/AF1QipO3mdTWPxFry3rXTYKtC1PMZLqlZM8_ugVb_1UJ=w408-h229-k-no",
+                "c_id": "2",
+                "category_name": "hastaneler"
+            }
+        ],
+        [
+            {
+                "name": "İstanbul Medeniyet Üniversitesi",
+                "lat": "40.995313",
+                "lng": "29.064570",
+                "icon": "images/Okul-Gold.png",
+                "link": "#",
+                "image": "https://lh5.googleusercontent.com/p/AF1QipN3QSOO83hmsqsOIRG2G3BYv5IYFfeSmHK4JlGb=w408-h272-k-no",
+                "c_id": "3",
+                "category_name": "okullar"
+            },
+            {
+                "name": "Marmara Üniversitesi",
+                "lat": "40.987026",
+                "lng": "29.052813",
+                "icon": "images/Okul-Gold.png",
+                "link": "#",
+                "image": "https://lh5.googleusercontent.com/p/AF1QipNeXa9JtSRXV9UiesuWtAZntN3oR2UnIn_h_3NJ=w408-h408-k-no",
+                "c_id": "3",
+                "category_name": "okullar"
+            }
+        ],
+        [
+            {
+                "name": "Göztepe Metro",
+                "lat": "40.993671",
+                "lng": "29.070305",
+                "icon": "images/metro-Gold.png",
+                "link": "#",
+                "image": "https://lh5.googleusercontent.com/p/AF1QipNQVDyPAvg5UWWdt3QX-sfyGnBypcMG8U4kyBbv=w408-h306-k-no",
+                "c_id": "4",
+                "category_name": "ulaşım"
+            },
+            {
+                "name": "Ornek Taxi",
+                "lat": "40.995671",
+                "lng": "29.082805",
+                "icon": "images/taxi.png",
+                "link": "#",
+                "image": "https://lh5.googleusercontent.com/p/AF1QipMiSwa6_Plhk-df49gauD7ErCkL2dm0l1_yqyM=w408-h408-k-no",
+                "c_id": "4",
+                "category_name": "ulaşım"
+            },
+            {
+                "name": "Ornek Taxi",
+                "lat": "40.995671",
+                "lng": "29.082805",
+                "icon": "images/taxi.png",
+                "link": "#",
+                "image": "https://lh5.googleusercontent.com/p/AF1QipMiSwa6_Plhk-df49gauD7ErCkL2dm0l1_yqyM=w408-h408-k-no",
+                "c_id": "4",
+                "category_name": "ulaşım"
+            },
+            {
+                "name": "İSTANBUL SABİHA GÖKÇEN ULUSLARARASI HAVALİMANI",
+                "lat": "40.905371",
+                "lng": "29.316860",
+                "icon": "images/Havaalani-Gold.png",
+                "link": "#",
+                "image": "https://lh5.googleusercontent.com/p/AF1QipPU_RGHqA6lxybDj4Ti0KUTI26XBvDUHlrvcv1V=w408-h229-k-no",
+                "c_id": "4",
+                "category_name": "ulaşım"
+            }
+        ],
+        [
+            {
+                "name": "Ataşehir Belediyesi",
+                "lat": "40.997422",
+                "lng": "29.100441",
+                "icon": "images/Resmi-Kurum-Gold.png",
+                "link": "#",
+                "image": "https://lh5.googleusercontent.com/p/AF1QipNex3M1_BMQkE0FksLCH1ESVuLIGRE33XKDzoMv=w408-h271-k-no",
+                "c_id": "5",
+                "category_name": "resmi kurum"
+            },
+            {
+                "name": "T.c İstanbul Ataşehir Örnek Mahallesi Muhtarlığı",
+                "lat": "40.998581",
+                "lng": "29.078051",
+                "icon": "images/Resmi-Kurum-Gold.png",
+                "link": "#",
+                "image": "https://lh6.googleusercontent.com/SR66WeXwnGcjrH0pBDtAquGKcxuEYVpJRh50jb2xBaIyegQrHE-jeq_ykahUkvQq=w408-h229-k-no",
+                "c_id": "5",
+                "category_name": "resmi kurum"
+            }
+        ],
+        [
+            {
+                "name": "Optimum Eğlence Mer.",
+                "lat": "40.987843",
+                "lng": "29.086404",
+                "icon": "images/AVM-Gold.png",
+                "link": "#",
+                "image": "https://geo1.ggpht.com/cbk?panoid=aNyRewrQW3dF_tTY0UEGKg&output=thumbnail&cb_client=search.TACTILE.gps&thumb=2&w=408&h=200&yaw=27.567953&pitch=0&thumbfov=100",
+                "c_id": "6",
+                "category_name": "AVM"
+            },
+            {
+                "name": "Palladium Mall",
+                "lat": "40.986126",
+                "lng": "29.100144",
+                "icon": "images/AVM-Gold.png",
+                "link": "#",
+                "image": "https://lh5.googleusercontent.com/p/AF1QipMC1bxQKP6rOg93eYcUpzPzJIAlO6pOtUkVe48z=w408-h306-k-no",
+                "c_id": "6",
+                "category_name": "AVM"
+            },
+            {
+                "name": "Akasya Avm",
+                "lat": "41.000504",
+                "lng": "29.054708",
+                "icon": "images/AVM-Gold.png",
+                "link": "#",
+                "image": "https://lh5.googleusercontent.com/p/AF1QipOuamsPPuzSHJ_IJH_J-PRfkQL9MJC9aDCB0hPD=w408-h306-k-no",
+                "c_id": "6",
+                "category_name": "AVM"
+            },
+            {
+                "name": "Emar AVM",
+                "lat": "41.003173",
+                "lng": "29.072071",
+                "icon": "images/AVM-Gold.png",
+                "link": "#",
+                "image": "https://lh5.googleusercontent.com/p/AF1QipOuMoG_b5Bk6v30iBoFAPQ1TVAfnXkyJCzj5b3q=w408-h229-k-no",
+                "c_id": "6",
+                "category_name": "AVM"
+            }
+        ],
+        [
+            {
+                "name": "Büyük Çamlıca Tepesi",
+                "lat": "41.027604",
+                "lng": "29.068413",
+                "icon": "images/Orman-Gold.png",
+                "link": "#",
+                "image": "https://lh5.googleusercontent.com/p/AF1QipOU3fwu18IFT3d_MqZTxmz36JhmG-G1z22c7k53=w408-h229-k-no",
+                "c_id": "7",
+                "category_name": "Orman"
+            },
+            {
+                "name": "Sultançiftliği Taşlıtepe Devlet Ormanı",
+                "lat": "41.036900",
+                "lng": "29.207044",
+                "icon": "images/Orman-Gold.png",
+                "link": "#",
+                "image": "https://lh5.googleusercontent.com/p/AF1QipO-jAaosAi3QjHW-Lu5uRnQZzhy61rJ1xMWhoip=w408-h229-k-no",
+                "c_id": "7",
+                "category_name": "Orman"
+            }
+        ],
+        [
+            {
+                "name": "LİBADİYE CAMİİ",
+                "lat": "40.993483",
+                "lng": "29.078756",
+                "icon": "images/Camii-Gold.png",
+                "link": "#",
+                "image": "https://lh5.googleusercontent.com/p/AF1QipMUfpQIfwbWsuOJTBbDzETMkxdKQh4jEDP79qM9=w408-h229-k-no",
+                "c_id": "7",
+                "category_name": "Cami"
+            },
+            {
+                "name": "Örnek Mahallesi Mer. Cami",
+                "lat": "40.995863",
+                "lng": "29.083357",
+                "icon": "images/Camii-Gold.png",
+                "link": "#",
+                "image": "https://lh5.googleusercontent.com/p/AF1QipMZydXm7wgNM0YPoEsd7BtLqbO8rDJfMHObMjU=w408-h306-k-no",
+                "c_id": "7",
+                "category_name": "Cami"
+            }
+        ],
+        [
+            {
+                "name": "Örnek Parkı",
+                "lat": "40.992678",
+                "lng": "29.083967",
+                "icon": "images/Park-Gold2.png",
+                "link": "#",
+                "image": "https://lh5.googleusercontent.com/p/AF1QipNG6iFgpvxpXKlSE92hpOFYzfAWVOuE0iwuUMSW=w408-h725-k-no",
+                "c_id": "8",
+                "category_name": "Park"
+            },
+            {
+                "name": "İpek Park",
+                "lat": "40.992041",
+                "lng": "29.087788",
+                "icon": "images/Park-Gold2.png",
+                "link": "#",
+                "image": "https://lh6.googleusercontent.com/cfc-f8aCzp7Lkx2b-yFTWYBZakC-hKfzo2HHNyWacE0ypqL2hAtEpstpazM762X14g=w408-h306-k-no",
+                "c_id": "8",
+                "category_name": "Park"
+            }
+        ],
+        [
+            {
+                "name": "CARL''S JR.",
+                "lat": "40.998485",
+                "lng": "29.099396",
+                "icon": "images/Yemek-Gold.png",
+                "link": "#",
+                "image": "https://lh5.googleusercontent.com/p/AF1QipP4fIBqRdKm3s3LACttZNFSEfe_GnrVQ7QuCHha=w408-h306-k-no",
+                "c_id": "9",
+                "category_name": "Yemek"
+            },
+            {
+                "name": "Arby's",
+                "lat": "40.988489",
+                "lng": "29.085922",
+                "icon": "images/Yemek-Gold.png",
+                "link": "#",
+                "image": "https://lh5.googleusercontent.com/p/AF1QipPW6Ab_Jifh3j67XAufu0_jozzaWj228n_ulU4=w408-h229-k-no",
+                "c_id": "9",
+                "category_name": "Yemek"
+            }
+        ],
+        [
+            {
+                "name": "Fit Point Sport Center",
+                "lat": "40.995229",
+                "lng": "29.083195",
+                "icon": "images/Spor-Gold.png",
+                "link": "#",
+                "image": "https://lh3.googleusercontent.com/bznQOfr6RV42B-5l4sWdvqMQmoy_lDg4xbo9MnB_jUKoyHg-qRZtpgt-dKy7t1vpMA=w408-h229-k-no",
+                "c_id": "10",
+                "category_name": "Spor"
+            },
+            {
+                "name": "Muhsin Yazıcıoğlu Spor Salonu",
+                "lat": "41.002209",
+                "lng": "29.072071",
+                "icon": "images/Spor-Gold.png",
+                "link": "#",
+                "image": "https://geo0.ggpht.com/cbk?panoid=wZocOV1gGL_4G6TZixdtRg&output=thumbnail&cb_client=search.TACTILE.gps&thumb=2&w=408&h=200&yaw=140.70634&pitch=0&thumbfov=100",
+                "c_id": "10",
+                "category_name": "Spor"
+            }
+        ]
+    ]
+}

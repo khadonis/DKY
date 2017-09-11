@@ -1,0 +1,269 @@
+{
+    "proje": [
+        [
+            {
+                "name": "DKY Cadde Suadiye 12",
+                "lat": "40.966844", 
+                "lng": "29.0831708",
+                "icon": "\/images\/Suadiye_map_icon.png",
+                "link": "#",
+                "image": "\/images\/map-suadiye.jpg",
+                "c_id": "1",
+                "category_name": "Tamamlanan Projeler"
+            }
+        ]
+    ],
+    "lokasyonlar": [
+        [
+            {
+                "name": "Dr. Siyami Ersek Göğüs Kalp ve Damar Cerrahisi Eğitim ve Araştırma Hastanesi",
+                "lat": "41.004046",
+                "lng": "29.024368",
+                "icon": "images/Hastane-Gold.png",
+                "link": "#",
+                "image": "https://lh5.googleusercontent.com/p/AF1QipMZMGlSJZeC6oCKpnGhrOv0v0txdB3-mKccR1q-=w408-h306-k-no",
+                "c_id": "2",
+                "category_name": "hastaneler"
+            },
+            {
+                "name": "Central Hospital",
+                "lat": "40.965948",
+                "lng": "29.100378",
+                "icon": "images/Hastane-Gold.png",
+                "link": "#",
+                "image": "https://lh5.googleusercontent.com/p/AF1QipN3ECBxLFanICUOIlpSaHvhp3f3DKa5zG1LJHs=w408-h271-k-no",
+                "c_id": "2",
+                "category_name": "hastaneler"
+            }
+        ],
+        [
+            {
+                "name": "Istanbul Bilgi University Center",
+                "lat": "40.973943",
+                "lng": "29.097666",
+                "icon": "images/Okul-Gold.png",
+                "link": "#dkyOnKagithaneLink",
+                "image": "https://lh5.googleusercontent.com/p/AF1QipONvr8bCz8nuO-9t6uM9sgSTUi0JfPCJAhEb8t7=w408-h229-k-no",
+                "c_id": "3",
+                "category_name": "okullar"
+            },
+            {
+                "name": "Istanbul Bilgi University Center",
+                "lat": "40.973943",
+                "lng": "29.097666",
+                "icon": "images/Okul-Gold.png",
+                "link": "#dkyOnKagithaneLink",
+                "image": "https://lh5.googleusercontent.com/p/AF1QipONvr8bCz8nuO-9t6uM9sgSTUi0JfPCJAhEb8t7=w408-h229-k-no",
+                "c_id": "3",
+                "category_name": "okullar"
+            },
+            {
+                "name": "Marmara Üniversitesi",
+                "lat": "40.9128932",
+                "lng": "29.1729242",
+                "icon": "images/Okul-Gold.png",
+                "link": "#dkyOnKagithaneLink",
+                "image": "https://maps.gstatic.com/tactile/pane/default_geocode-1x.png",
+                "c_id": "3",
+                "category_name": "okullar"
+            }
+        ],
+        [
+            {
+                "name": "Sabiha Gokcen International Airport (SAW)",
+                "lat": "40.905371",
+                "lng": "29.316860",
+                "icon": "images/Havaalani-Gold.png",
+                "link": "#",
+                "image": "https://lh5.googleusercontent.com/p/AF1QipPmuuCITxG7gKdO_JSrx6CD3IvORTXGb5s7w-W1=w408-h215-k-no",
+                "c_id": "4",
+                "category_name": "ulaşım"
+            },
+            {
+                "name": "Kozyatağı Metro",
+                "lat": "40.974935",
+                "lng": "29.098771",
+                "icon": "images/metro-Gold.png",
+                "link": "#",
+                "image": "https://lh5.googleusercontent.com/p/AF1QipPhxX5n9kI54zpBxKgMytCas_zKBYlLaIJQ60Br=w408-h408-k-no",
+                "c_id": "4",
+                "category_name": "ulaşım"
+            },
+            {
+                "name": "Kaptan Taksi",
+                "lat": "40.966517",
+                "lng": "29.082339",
+                "icon": "images/taxi.png",
+                "link": "#",
+                "image": "https://lh5.googleusercontent.com/PK86IqKrYGNjU5naA-75NZGx_TN-tuq_JISMgW-HZozhSfTLGwFQ3WJW-HwchU8IAQ=w408-h306-k-no",
+                "c_id": "4",
+                "category_name": "ulaşım"
+            }
+        ],
+        [
+            {
+                "name": "Ptt Eğitim Merkezi",
+                "lat": "40.966646",
+                "lng": "29.087003",
+                "icon": "images/Resmi-Kurum-Gold.png",
+                "link": "#",
+                "image": "https://lh3.googleusercontent.com/3d8gX4cy6DAdTdEqBEDjkiAXiLG-O2rlxbH60w3nS-3H38siha2qmps-9oAAh0aK=w408-h229-k-no",
+                "c_id": "5",
+                "category_name": "resmi kurum"
+            },
+            {
+                "name": "İstanbul İl Gıda Tarım ve Hayvancılık Müdürlüğü",
+                "lat": "40.967234",
+                "lng": "29.068882",
+                "icon": "images/Resmi-Kurum-Gold.png",
+                "link": "#",
+                "image": "https://lh6.googleusercontent.com/CGHxUGHTgzCQ1u0sNTJiFocHma2pewB3d6lNwoaLR1DmqZXCkqHIqEiG7dEXfGk1Ug=w408-h306-k-no",
+                "c_id": "5",
+                "category_name": "resmi kurum"
+            }
+        ],
+        [
+            {
+                "name": "Kozzy Alışveriş Ve Kültür Merkezi",
+                "lat": "40.969206",
+                "lng": "29.091638",
+                "icon": "images/AVM-Gold.png",
+                "link": "#",
+                "image": "https://lh5.googleusercontent.com/p/AF1QipO2F8tRtq3Pn6FE_jssAJRrCfmhVBGJEETCAKQr=w408-h229-k-no",
+                "c_id": "5",
+                "category_name": "AVM"
+            },  
+            {
+                "name": "Palladium Mall",
+                "lat": "40.986126",
+                "lng": "29.100144",
+                "icon": "images/AVM-Gold.png",
+                "link": "#",
+                "image": "https://lh5.googleusercontent.com/p/AF1QipMC1bxQKP6rOg93eYcUpzPzJIAlO6pOtUkVe48z=w408-h306-k-no",
+                "c_id": "5",
+                "category_name": "AVM"
+            }
+        ],
+        [
+            {
+                "name": "Aydos Ormanı",
+                "lat": "40.9373389",
+                "lng": "29.2378862",
+                "icon": "images/Orman-Gold.png",
+                "link": "#",
+                "image": "https://lh5.googleusercontent.com/p/AF1QipNk5i_nfJpoH8Wd0yWiHUXPdCFozObhnvokZivG=w408-h306-k-no",
+                "c_id": "6",
+                "category_name": "Orman"
+            }
+        ],
+        [
+            {
+                "name": "Kazasker Cami",
+                "lat": "40.969179",
+                "lng": "29.085567",
+                "icon": "images/Camii-Gold.png",
+                "link": "#",
+                "image": "https://lh5.googleusercontent.com/p/AF1QipNlDXinD3dYdhZPeaKEvZEqEZkWXmJ01BAx0D9o=w408-h306-k-no",
+                "c_id": "7",
+                "category_name": "Cami"
+            },
+            {
+                "name": "Mihribah Sultan Cami",
+                "lat": "40.963550",
+                "lng": "29.074183",
+                "icon": "images/Camii-Gold.png",
+                "link": "#",
+                "image": "https://lh5.googleusercontent.com/aVmjV3duAFdF8AADqR9-ZD_iD4KrmeOjMl_iFwjPBSoFxBmhqO-1eQMDfF492SBM=w408-h229-k-no",
+                "c_id": "7",
+                "category_name": "Cami"
+            }
+        ],
+        [
+            {
+                "name": "Dilma Park",
+                "lat": "40.969913",
+                "lng": "29.073857   ",
+                "icon": "images/Park-Gold2.png",
+                "link": "#",
+                "image": "https://lh5.googleusercontent.com/p/AF1QipN4BH8OKRAIJdTldEqwLwIinG5TppONy6WxvYKy=w408-h306-k-no",
+                "c_id": "8",
+                "category_name": "Park"
+            },
+            {
+                "name": "Barış Parkı",
+                "lat": "40.966642",
+                "lng": "29.098787",
+                "icon": "images/Park-Gold2.png",
+                "link": "#",
+                "image": "https://lh5.googleusercontent.com/p/AF1QipP64ZC2cDm4Yo6TTwH1TEbG0s1MVWycimwOKIiN=w408-h229-k-no",
+                "c_id": "8",
+                "category_name": "Park"
+            },
+            {
+                "name": "Ahmet Taner Kışlalı Park",
+                "lat": "40.971484",
+                "lng": "29.092592",
+                "icon": "images/Park-Gold2.png",
+                "link": "#",
+                "image": "https://lh3.googleusercontent.com/KwniutU73mKtG1zIHukbTM5_Mbt1UMqx2myzcRnSswp0os91f4-Z9INdn-SlhUY=w408-h229-k-no",
+                "c_id": "8",
+                "category_name": "Park"
+            }
+        ],
+        [
+            {
+                "name": "Onur Balaban Restaurant",
+                "lat": "40.967124",
+                "lng": "29.086253",
+                "icon": "images/Yemek-Gold.png",
+                "link": "#",
+                "image": "https://lh3.googleusercontent.com/6ir3GOiUu56puQK-3KYKEFoY4IhfPwpZDon61Ug4NBsdm3vAWnqrG-zwOrcPbyC-=w408-h306-k-no",
+                "c_id": "9",
+                "category_name": "Yemek"
+            },
+            {
+                "name": "Ege'nin İncisi",
+                "lat": "40.965036",
+                "lng": "29.087770",
+                "icon": "images/Yemek-Gold.png",
+                "link": "#",
+                "image": "https://lh5.googleusercontent.com/p/AF1QipPtSWu6jYCE4gP3C5_qVRNV2dedycRPWGuM_R0=w408-h229-k-no",
+                "c_id": "9",
+                "category_name": "Yemek"
+            }
+        ],
+        [
+            {
+                "name": "My Gym Bağdat Caddesi",
+                "lat": "40.965974",
+                "lng": "29.071614",
+                "icon": "images/Spor-Gold.png",
+                "link": "#",
+                "image": "https://lh5.googleusercontent.com/p/AF1QipO63DCAjxo624xrlSJOSe20QhK6J5zXaOOBXLtT=w408-h399-k-no",
+                "c_id": "10",
+                "category_name": "Spor"
+            },
+            {
+                "name": "Tunç Fitness Kazasker",
+                "lat": "40.970779",
+                "lng": "29.087769",
+                "icon": "images/Spor-Gold.png",
+                "link": "#",
+                "image": "https://lh5.googleusercontent.com/p/AF1QipOxBJIEM6kQUHsYSY9kHjtoj_kqPqodrlrzXsS2=w408-h229-k-no",
+                "c_id": "10",
+                "category_name": "Spor"
+            },
+            {
+                "name": "Pasha Sports Club",
+                "lat": "40.963128",
+                "lng": "29.076775",
+                "icon": "images/Spor-Gold.png",
+                "link": "#",
+                "image": "https://lh5.googleusercontent.com/p/AF1QipPOv1IalpLkL2uRPvtK8sLNZXhuPPnTIxIwJC8Y=w408-h200-k-no-pi-0-ya257.8153-ro0-fo100",
+                "c_id": "10",
+                "category_name": "Spor"
+            }
+        ]
+        
+    ]
+}
