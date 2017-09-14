@@ -293,8 +293,20 @@ section.kartal-galeri {
 }
 
 section.krtl-plans {
-    .ozl-wr{
+    .col-sm-3.col-lg-4,
+    .col-sm-6.col-lg-4 {
+        a {
+            height: 328px;
+        }
+    }
+    .ozl-wr {
         padding: 0 7px;
+        .col-sm-3.col-lg-4,
+        .col-sm-6.col-lg-4 {
+            a {
+                height: 328px;
+            }
+        }
     }
     .ozellik {
         display: block;
@@ -524,7 +536,7 @@ section.krtl-ozellikler {
         padding: 130px 0px;
     }
     @media screen and (max-width:425px) {
-        padding:100px 20px;
+        padding: 100px 20px;
     }
 }
 
@@ -532,6 +544,9 @@ section.mapWr {
     position: relative;
     margin: 0 0 $section-padding 0;
     padding: 40px;
+    &.no-pad {
+        padding: 0;
+    }
     .container {
         background-color: $krtl-color;
         width: (1170px) - 187;
@@ -567,8 +582,10 @@ section.bi-tal-form {
 
 .gal-item {
     img {
-        width: 100%;
-        min-height: $gal_item_height;
+        width: $gal_item_height*2;
+        height: $gal_item_height;
+        @include complate-align(absolute);
+        z-index: 1;
     }
     .mask {
         position: absolute;
@@ -577,6 +594,7 @@ section.bi-tal-form {
         top: 0;
         left: 0; // background-color: rgba(0, 0, 0, .3);
         transition: all ease .3s;
+        z-index: 2;
         /* @media screen and (max-width: 425px) {
             display: none;
         } */

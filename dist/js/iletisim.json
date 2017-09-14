@@ -1,0 +1,32 @@
+[
+    {
+        "name": "DKY Kartal",
+        "lat": "40.9096779",
+        "lng": "29.2107595",
+        "icon": "\/images\/Merkez_map_icon.png",
+        "link": "#",
+        "image": "\/images\/map-business.jpg",
+        "c_id": "1",
+        "category_name": "Sat\u0131\u015f\u0131 Devam Eden Projeler"
+    },
+    {
+        "name": "DKY Ada",
+        "lat": "40.905370",
+        "lng": "29.185677",
+        "icon": "\/images\/Ada_map_icon.png",
+        "link": "#",
+        "image": "\/images\/map-ada.jpg",
+        "c_id": "1",
+        "category_name": "Gelecek Projeler"
+    },
+    {
+        "name": "DKY On Kağıthane",
+        "lat": "41.086567",
+        "lng": "28.971741",
+        "icon": "\/images\/On_map_icon.png",
+        "link": "#",
+        "image": "\/images\/map-on.jpg",
+        "c_id": "1",
+        "category_name": "Sat\u0131\u015f\u0131 Devam Eden Projeler"
+    }
+]

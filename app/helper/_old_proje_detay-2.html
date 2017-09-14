@@ -2,96 +2,12 @@
 <html lang="tr">
 
 <head>
-    <meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="shortcut icon" href="images/DKY-ico.png" />
-<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-<link href="css/app.min.css" rel="stylesheet">
-<script src="js/jquery-1.12.4.min.js"></script>
-<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-<!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    @import "head.html"
     <title>DKY Kartal Projesi</title>
 </head>
 
 <body class="proje-detay-body">
-    <div id="loaderWr">
-    <div class="loader"><div></div></div>
-    <div class="percentage">0%</div>
-</div>
-<div class="menu">
-  <div id="canvas" class="gradient">
-    <div class="back-effect"></div>
-  </div>
-  <div class="languages">
-    <a href="#tr" class="tr">
-      <h3>TR</h3>
-    </a>
-    <a href="#en" class="en">
-      <h3>EN</h3>
-    </a>
-    <a href="#ar" class="ar">
-      <h3>AR</h3>
-    </a>
-  </div>
-  <ul class="navig">
-    <li><a href="#Kurumsal">Kurumsal</a></li>
-    <li><a href="#Projeler">Projeler</a></li>
-    <li><a href="#Medya_Merkezi">Medya Merkezi</a></li>
-    <li><a href="#Insan_Kaynaklari">İnsan Kaynakları</a></li>
-    <li><a href="#Iletisim">İletişim</a></li> 
-    <li>
-      <a href="https://www.facebook.com/dkyinsaat/"><i class="fa fa-facebook"></i></a>
-      <a href="https://www.instagram.com/dkyinsaat/"><i class="fa fa-instagram"></i></a>
-    </li>
-  </ul>
-</div>
-<div class="search">
-  <div id="canvas" class="gradient">
-    <div class="back-effect">
-    </div>
-    <a href="#" class="close-search">
-      <div class="line-h"></div>
-      <div class="line-h"></div>
-      <div class="line-h"></div>
-    </a>
-  </div>
-  <div class="form-group">
-    <input type="text" name="search" value="" placeholder="Ara">
-  </div>
-</div>
-
-
-<div class="container-fluid header shdw">
-  <a href="#" class="menu-toggle">
-    <div class="line-h"></div>
-    <div class="line-h"></div>
-    <div class="line-h"></div>
-  </a>
-  <a href="tel:02165179517" class="tel show-in-mobil"><span class="oi oi-technology"></span></a>
-  <div class="logo center-block">
-    <a href="index.html"><img src="images/DKY-logo.png" alt="DKY İnşaat Logo"></a>
-  </div>
-  <div class="languages">
-    <a href="#tr" class="tr">
-      <h3>TR</h3>
-    </a>
-    <a href="#en" class="en">
-      <h3>EN</h3>
-    </a>
-    <a href="#ar" class="ar">
-      <h3>AR</h3>
-    </a>
-    <a href="#" class="search-btn">
-      <i class="fa fa-search"></i>
-    </a>
-  </div>
-</div>
-<a href="bilgi_talep_formu.html" class="b-talep-form"><span>Bilgi Talep Formu</span></a>
+    @import "header.html"
     <div class="k-sldr-cont">
         <div class="swiper-wrapper">
             <div class="swiper-slide" style="background-image:url('images/DKY KARTAL Balkon gece2-min.jpg')">
@@ -112,7 +28,6 @@
         </div>
         <div class="k-sldr-btn-next"></div>
         <div class="k-sldr-btn-prev"></div>
-        <div class="k-scroll-down-i"></div>
     </div>
     <!-- kartal hero section -->
 
@@ -147,39 +62,39 @@
     </section>
     <!-- kartal tanıtım section end -->
     <section id="galeri" class="kartal-galeri">
-        <div class="container-fluid">
+        <div class="container">
             <div class="row">
                 <div class="side-txt">GALERİ</div>
                 <div class="k-gal-wr">
-                    <a href="images/galeri-mimari-1.jpg" rel="g" class="gal-item col-sm-3 col-lg-2 col-xs-6  no-pad">
+                    <a href="images/galeri-mimari-1.jpg" rel="g" class="gal-item col-sm-6 col-xs-6  no-pad">
                         <div class="mask"></div>
                         <img src="images/galeri-mimari-1.jpg" alt="mimari">
                     </a>
-                    <a href="images/galeri-mimari-2.jpg" rel="g" class="gal-item col-lg-2 col-sm-3 col-xs-6  no-pad">
+                    <a href="images/galeri-mimari-2.jpg" rel="g" class="gal-item col-sm-3 col-xs-6  no-pad">
                         <div class="mask"></div>
                         <img src="images/galeri-mimari-2.jpg" alt="mimari">
                     </a>
-                    <a href="images/galeri-mimari-3.jpg" rel="g" class="gal-item col-lg-2 col-sm-3 col-xs-6  no-pad">
+                    <a href="images/galeri-mimari-3.jpg" rel="g" class="gal-item col-sm-3 col-xs-6  no-pad">
                         <div class="mask"></div>
                         <img src="images/galeri-mimari-3.jpg" alt="mimari">
                     </a>
-                    <a href="images/galeri-icmimari-1.jpg" rel="g" class="gal-item col-lg-2 col-sm-3 col-xs-6  no-pad">
+                    <a href="images/galeri-icmimari-1.jpg" rel="g" class="gal-item col-sm-3 col-xs-6  no-pad">
                         <div class="mask"></div>
                         <img src="images/galeri-icmimari-1.jpg" alt="mimari">
                     </a>
-                    <a href="images/galeri-mimari-1.jpg" rel="g" class="gal-item col-lg-2 col-sm-3 col-xs-6  no-pad">
+                    <a href="images/galeri-mimari-1.jpg" rel="g" class="gal-item col-sm-3 col-xs-6  no-pad">
                         <div class="mask"></div>
                         <img src="images/galeri-mimari-1.jpg" alt="mimari">
                     </a>
-                    <a href="images/galeri-mimari-2.jpg" rel="g" class="gal-item col-lg-2 col-sm-3 col-xs-6  no-pad">
+                    <a href="images/galeri-mimari-2.jpg" rel="g" class="gal-item col-sm-3 col-xs-6  no-pad">
                         <div class="mask"></div>
                         <img src="images/galeri-mimari-2.jpg" alt="mimari">
                     </a>
-                    <a href="images/galeri-mimari-3.jpg" rel="g" class="gal-item col-lg-2 col-sm-3 col-xs-6  no-pad">
+                    <a href="images/galeri-mimari-3.jpg" rel="g" class="gal-item col-sm-3 col-xs-6  no-pad">
                         <div class="mask"></div>
                         <img src="images/galeri-mimari-3.jpg" alt="mimari">
                     </a>
-                    <a href="images/galeri-icmimari-1.jpg" rel="g" class="gal-item col-lg-2 col-sm-3 col-xs-6  no-pad">
+                    <a href="images/galeri-icmimari-1.jpg" rel="g" class="gal-item col-sm-3 col-xs-6  no-pad">
                         <div class="mask"></div>
                         <img src="images/galeri-icmimari-1.jpg" alt="mimari">
                     </a>
@@ -191,12 +106,12 @@
     </section>
     <!-- kartal galeri section end -->
     <section id="planlar" class="krtl-plans">
-        <div class="container-fluid">
+        <div class="container">
 
             <div class="row">
                 <div class="side-txt">PLANLAR</div>
                 <div class="k-pln-wr clearfix">
-                    <a href="images/galeri-icmimari-3.jpg" rel="gP" class="gal-item col-sm-3 col-lg-2 col-xs-6  no-pad">
+                    <a href="images/galeri-icmimari-3.jpg" rel="gP" class="gal-item col-sm-3 col-xs-6  no-pad">
                         <div class="mask">
                             <p>
                                 2+1 Daire Planı
@@ -204,7 +119,7 @@
                         </div>
                         <img src="images/2+1.jpg" alt="mimari">
                     </a>
-                    <a href="images/galeri-icmimari-3.jpg" rel="gP" class="gal-item col-lg-2 col-sm-3 col-xs-6  no-pad">
+                    <a href="images/galeri-icmimari-3.jpg" rel="gP" class="gal-item col-sm-3 col-xs-6  no-pad">
                         <div class="mask">
                             <p>
                                 2+1 Daire Planı
@@ -212,7 +127,7 @@
                         </div>
                         <img src="images/2+1.jpg" alt="mimari">
                     </a>
-                    <a href="images/galeri-icmimari-3.jpg" rel="gP" class="gal-item col-lg-2 col-sm-3 col-xs-6  no-pad">
+                    <a href="images/galeri-icmimari-3.jpg" rel="gP" class="gal-item col-sm-3 col-xs-6  no-pad">
                         <div class="mask">
                             <p>
                                 2+1 Daire Planı
@@ -220,7 +135,7 @@
                         </div>
                         <img src="images/2+1.jpg" alt="mimari">
                     </a>
-                    <a href="images/galeri-icmimari-3.jpg" rel="gP" class="gal-item col-lg-2 col-sm-3 col-xs-6  no-pad">
+                    <a href="images/galeri-icmimari-3.jpg" rel="gP" class="gal-item col-sm-3 col-xs-6  no-pad">
                         <div class="mask">
                             <p>
                                 2+1 Daire Planı
@@ -228,7 +143,7 @@
                         </div>
                         <img src="images/2+1.jpg" alt="mimari">
                     </a>
-                    <a href="images/galeri-icmimari-3.jpg" rel="gP" class="gal-item col-lg-2 col-sm-3 col-xs-6  no-pad">
+                    <a href="images/galeri-icmimari-3.jpg" rel="gP" class="gal-item col-sm-3 col-xs-6  no-pad">
                         <div class="mask">
                             <p>
                                 2+1 Daire Planı
@@ -236,7 +151,7 @@
                         </div>
                         <img src="images/2+1.jpg" alt="mimari">
                     </a>
-                    <a href="images/2+1.jpg" rel="gP" class="gal-item col-lg-2 col-sm-3 col-xs-6  no-pad">
+                    <a href="images/2+1.jpg" rel="gP" class="gal-item col-sm-3 col-xs-6  no-pad">
                         <div class="mask">
                             <p>
                                 2+1 Daire Planı
@@ -244,7 +159,7 @@
                         </div>
                         <img src="images/2+1.jpg" alt="mimari">
                     </a>
-                    <a href="images/2+1.jpg" rel="gP" class="gal-item col-lg-2 col-sm-3 col-xs-6  no-pad">
+                    <a href="images/2+1.jpg" rel="gP" class="gal-item col-sm-3 col-xs-6  no-pad">
                         <div class="mask">
                             <p>
                                 2+1 Daire Planı
@@ -252,7 +167,7 @@
                         </div>
                         <img src="images/2+1.jpg" alt="mimari">
                     </a>
-                    <a href="images/2+1.jpg" rel="gP" class="gal-item col-lg-2 col-sm-3 col-xs-6  no-pad">
+                    <a href="images/2+1.jpg" rel="gP" class="gal-item col-sm-3 col-xs-6  no-pad">
                         <div class="mask">
                             <p>
                                 2+1 Daire Planı
@@ -260,7 +175,7 @@
                         </div>
                         <img src="images/2+1.jpg" alt="mimari">
                     </a>
-                    <a href="images/2+1.jpg" rel="gP" class="gal-item col-lg-2 col-sm-3 col-xs-6  no-pad">
+                    <a href="images/2+1.jpg" rel="gP" class="gal-item col-sm-3 col-xs-6  no-pad">
                         <div class="mask">
                             <p>
                                 2+1 Daire Planı
@@ -268,7 +183,7 @@
                         </div>
                         <img src="images/2+1.jpg" alt="mimari">
                     </a>
-                    <a href="images/2+1.jpg" rel="gP" class="gal-item col-lg-2 col-sm-3 col-xs-6  no-pad">
+                    <a href="images/2+1.jpg" rel="gP" class="gal-item col-sm-3 col-xs-6  no-pad">
                         <div class="mask">
                             <p>
                                 2+1 Daire Planı
@@ -276,7 +191,7 @@
                         </div>
                         <img src="images/2+1.jpg" alt="mimari">
                     </a>
-                    <a href="images/2+1.jpg" rel="gP" class="gal-item col-lg-2 col-sm-3 col-xs-6  no-pad">
+                    <a href="images/2+1.jpg" rel="gP" class="gal-item col-sm-3 col-xs-6  no-pad">
                         <div class="mask">
                             <p>
                                 2+1 Daire Planı
@@ -284,7 +199,7 @@
                         </div>
                         <img src="images/2+1.jpg" alt="mimari">
                     </a>
-                    <a href="images/2+1.jpg" rel="gP" class="gal-item col-lg-2 col-sm-3 col-xs-6  no-pad">
+                    <a href="images/2+1.jpg" rel="gP" class="gal-item col-sm-3 col-xs-6  no-pad">
                         <div class="mask">
                             <p>
                                 2+1 Daire Planı
@@ -292,7 +207,7 @@
                         </div>
                         <img src="images/2+1.jpg" alt="mimari">
                     </a>
-                    <a href="images/2+1.jpg" rel="gP" class="gal-item col-lg-2 col-sm-3 col-xs-6  no-pad">
+                    <a href="images/2+1.jpg" rel="gP" class="gal-item col-sm-3 col-xs-6  no-pad">
                         <div class="mask">
                             <p>
                                 2+1 Daire Planı
@@ -300,7 +215,7 @@
                         </div>
                         <img src="images/2+1.jpg" alt="mimari">
                     </a>
-                    <a href="images/2+1.jpg" rel="gP" class="gal-item col-lg-2 col-sm-3 col-xs-6  no-pad">
+                    <a href="images/2+1.jpg" rel="gP" class="gal-item col-sm-3 col-xs-6  no-pad">
                         <div class="mask">
                             <p>
                                 2+1 Daire Planı
@@ -308,7 +223,7 @@
                         </div>
                         <img src="images/2+1.jpg" alt="mimari">
                     </a>
-                    <a href="images/2+1.jpg" rel="gP" class="gal-item col-lg-2 col-sm-3 col-xs-6  no-pad">
+                    <a href="images/2+1.jpg" rel="gP" class="gal-item col-sm-3 col-xs-6  no-pad">
                         <div class="mask">
                             <p>
                                 2+1 Daire Planı
@@ -319,94 +234,93 @@
 
                 </div>
             </div>
-            
         </div>
     </section>
     <div style="visibility:hidden;" id="ozellikler"></div>
     <section id="ozellikler-in-screens" class="krtl-plans hidden-xxs">
-        <div class="container-fluid">
+        <div class="container">
 
             <div class="row">
                 <div class="side-txt">ÖZELLİKLER</div>
                 <div class="ozl-wr">
-                    <div class="col-sm-6 col-lg-4 col-xs-6 no-pad">
+                    <div class="col-sm-3 col-xs-6 no-pad">
                         <a href="#" class="ozellik" style="background-image:url('images/ozellikler-fitness.jpg')">
                                 <span>
                                     <h3>Spor Salonları</h3>
                                 </span>
                             </a>
                     </div>
-                    <div class="col-sm-3 col-lg-2 col-xs-6 no-pad">
+                    <div class="col-sm-3 col-xs-6 no-pad">
                         <a href="#" class="ozellik" style="background-image:url('images/ozellikler-deniz-manzarasi.jpg')">
                                 <span>
                                     <h3>Deniz Manzarası</h3>
                                 </span>
                             </a>
                     </div>
-                    <div class="col-sm-3 col-lg-2 col-xs-6 no-pad">
+                    <div class="col-sm-3 col-xs-6 no-pad">
                         <a href="#" class="ozellik" style="background-image:url('images/ozellikler-kafe.jpg')">
                                 <span>
                                     <h3>Cafe-Restaurant</h3>
                                 </span>
                             </a>
                     </div>
-                    <div class="col-sm-3 col-lg-2 col-xs-6 no-pad">
+                    <div class="col-sm-3 col-xs-6 no-pad">
                         <a href="#" class="ozellik" style="background-image:url('images/ozellikler-kultur.jpg')">
                                 <span>
                                     <h3>Kültür ve Sanat Alanları</h3>
                                 </span>
                             </a>
                     </div>
-                    <div class="col-sm-3 col-lg-2 col-xs-6 no-pad">
+                    <div class="col-sm-3 col-xs-6 no-pad">
                         <a href="#" class="ozellik" style="background-image:url('images/ozellikler-oyun.jpg')">
                                 <span>
                                     <h3>Eğlence ve Oyun Alanları</h3>
                                 </span>
                             </a>
                     </div>
-                    <div class="col-sm-3 col-lg-2 col-xs-6 no-pad">
+                    <div class="col-sm-3 col-xs-6 no-pad">
                         <a href="#" class="ozellik" style="background-image:url('images/ozellikler-park.jpg')">
                                 <span>
                                     <h3>Otopark Alanları</h3>
                                 </span>
                             </a>
                     </div>
-                    <div class="col-sm-3 col-lg-2 col-xs-6 no-pad">
+                    <div class="col-sm-3 col-xs-6 no-pad">
                         <a href="#" class="ozellik" style="background-image:url('images/ozellikler-teras.jpg')">
                                 <span>
                                     <h3>Teras ve Bahça Alanları</h3>
                                 </span>
                             </a>
                     </div>
-                    <div class="col-sm-3 col-lg-2 col-xs-6 no-pad">
+                    <div class="col-sm-3 col-xs-6 no-pad">
                         <a href="#" class="ozellik" style="background-image:url('images/ozellikler-ofis.jpg')">
                                 <span>
                                     <h3>İşlevsel Ofis ve Daireler</h3>
                                 </span>
                             </a>
                     </div>
-                    <div class="col-sm-3 col-lg-2 col-xs-6 no-pad">
+                    <div class="col-sm-3 col-xs-6 no-pad">
                         <a href="#" class="ozellik" style="background-image:url('images/ozellikler-metro.jpg')">
                                 <span>
                                     <h3>Metro ve Ulaşım Kolaylığı</h3>
                                 </span>
                             </a>
                     </div>
-                    <div class="col-sm-3 col-lg-2 col-xs-6 no-pad">
+                    <div class="col-sm-3 col-xs-6 no-pad">
                         <a href="#" class="ozellik" style="background-image:url('images/ozellikler-avm.jpg')">
                                 <span>
                                     <h3>Alışveriş Merkzine Yakınlık</h3>
                                 </span>
                             </a>
                     </div>
-                    <div class="col-sm-3 col-lg-2 col-xs-6 no-pad">
+                    <div class="col-sm-3 col-xs-6 no-pad">
                         <a href="#" class="ozellik" style="background-image:url('images/ozellikler-lokasyon.jpg')">
                                 <span>
                                     <h3>Merkez Konumda Olması</h3>
                                 </span>
                             </a>
                     </div>
-                    <div class="col-sm-3 col-lg-2 col-xs-6 no-pad">
+                    <div class="col-sm-3 col-xs-6 no-pad">
                         <a href="#" class="ozellik" style="background-image:url('images/ozellikler-guvenlik.jpg')">
                                 <span>
                                     <h3>7/24 Güvenlik Hizmeti</h3>
@@ -517,15 +431,15 @@
         </div>
     </section>
     <!-- kartal özellikler for mobile devices section end -->
-    <section id="harita" class="mapWr no-pad">
-        <div class="container-fluid no-pad">
-            <div class="clearfix">
-                <!-- <div class="side-txt">LOKASYON</div> -->
-                <div class="clearfix no-pad gry-60">
-                    <div class="col-sm-10 col-xs-12">
+    <section id="harita" class="mapWr">
+        <div class="container">
+            <div class="row">
+                <div class="side-txt">LOKASYON</div>
+                <div class="clearfix no-pad">
+                    <div class="col-sm-9 col-xs-12">
                         <div id="kartalMap" class="map kartalMap"></div>
                     </div>
-                    <div class="col-sm-2 col-xs-12">
+                    <div class="col-sm-3 col-xs-12">
                         <div class="har-projs">
                             <ul class="dplaces col-md-12">
                                 <li id="tumu">
@@ -648,50 +562,7 @@
     </script>
 
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB2V7XQtDZSOvcJzylGchYrL8nqzfsTsFg"></script>
-    <footer class="proje-footer">
-  <div class="container">
-    <h2>İLETİŞİM</h2>
-    <div class="foot-in">
-      <h3>SATIŞ OFİSİ</h3>
-      <h4>
-        Merkez Mahallesi Kemerburgaz Caddesi No: 74 Kağıthane / İstanbul
-      </h4>
-      <h3><a href="tel:444 9 359">444 9 359</a></h3>
-      <a href="#" class="bulten-input">Kroki için tıklayın</a>
-    </div>
-    <div class="col-sm-4 col-xs-12">
-      <ul class="contact-items">
-        <li><a href="#">BASINDA DKY</a></li>
-        <li><a href="#">MEDYA MERKEZİ</a></li>
-      </ul>
-    </div>
-    <div class="col-sm-4 col-xs-12">
-      <div class="social-media-icons">
-        <a href="#">
-            <i class="fa fa-facebook"></i>
-          </a>
-        <a href="#">
-            <i class="fa fa-twitter"></i>
-          </a>
-        <a href="#">
-            <i class="fa fa-instagram"></i>
-          </a>
-        <a href="#">
-            <i class="fa fa-youtube"></i>
-          </a>
-        <a href="#">
-            <i class="fa fa-google-plus"></i>
-          </a>
-      </div>
-    </div>
-    <div class="col-sm-4 col-xs-12">
-      <a class="foot-logo" href="#"><img src="images/DKY-logo.png" alt="DKY İnşaat Logo"></a>
-    </div>
-  </div>
-
-</footer>
-<!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="js/app.min.js"></script>
+    @import "proje_footer.html"
     <script src="js/sweetalert2.min.js"></script>
     <script src="js/validate.js"></script>
     <script>

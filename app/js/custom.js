@@ -36,8 +36,8 @@ if (screen.width > 425) {
   $(window).scroll(function () {
     if ($(this).scrollTop() >= 50) {
       $('.header').addClass('shdw');
-    } else { 
-      $('.header').removeClass('shdw'); 
+    } else {
+      $('.header').removeClass('shdw');
     }
   });
 } else {
@@ -484,6 +484,12 @@ $('.nav-proj a').each(function () {
 $('.scroll-down-i').click(function () {
   $('html, body').animate({
     scrollTop: window.innerHeight - 40
+  }, 2000);
+});
+$('.k-scroll-down-i').click(function (e) {
+  e.preventDefault();
+  $('html, body').animate({
+    scrollTop: $('.k-sldr-cont').height()
   }, 2000);
 });
 

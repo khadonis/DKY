@@ -386,78 +386,81 @@
     <script src="js/sweetalert2.min.js"></script>
     <script src="js/validate.js"></script>
     <script>
-        var iltMapOpt = {
-            styles: stls,
-            zoom: 12,
-            scrollwheel: false,
-            center: new google.maps.LatLng(dkyVizyon[0][1], dkyVizyon[0][2]),
-            mapTypeId: google.maps.MapTypeId.ROADMAP
-        };
+        $.getJSON('js/iletisim.json', function (data) {
 
-        var iltMap = new google.maps.Map(document.getElementById('iltMap'), iltMapOpt);
-        var marker2, i;
-        var markers2 = [];
-        var infowindow2;
-        function test2(locatis, iltMap) {
+            var iltMapOpt = {
+                styles: stls,
+                zoom: 12,
+                scrollwheel: false,
+                center: new google.maps.LatLng(data[0]['lat'], data[0]['lng']),
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+            };
 
-            for (i = 0; i < locatis.length; i++) {
-                var wayDir = 'https://www.google.com.tr/maps/dir//' + locatis[i][1] + ',' + locatis[i][2];
-                marker2 = new google.maps.Marker({
-                    position: new google.maps.LatLng(locatis[i][1], locatis[i][2]),
-                    map: iltMap,
-                    animation: google.maps.Animation.DROP,
-                    icon: new google.maps.MarkerImage(locatis[i][3])
 
-                });
-                markers2.push(marker2);
-                infowindow2 = new SnazzyInfoWindow({
-                    marker: marker2,
-                    content: '<div class="mi-content"><div class="mi-image" style="background-image:url(' + locatis[i][5] + ');" ></div><a target="_blank" href="' + wayDir + '" class="mi-tarif">Yol Tarifi</a><a href="' + locatis[i][4] + '" class="mi-detay">Proje Detayı</a></div>',
-                    wrapperClass: 'iw-container',
-                    placement: 'top',
-                    closeWhenOthersOpen: true,
-                    callbacks: {
-                        afterOpen: function () {
-                            $(this.getWrapper()).addClass('active');
+            var iltMap = new google.maps.Map(document.getElementById('iltMap'), iltMapOpt);
+            var marker2, i;
+            var markers2 = [];
+            var infowindow2;
+            function test2(locatis, iltMap) {
+                //console.log(locatis[0]["lat"]);
+                for (i = 0; i < locatis.length; i++) {
+                    var wayDir = 'https://www.google.com.tr/maps/dir//' + locatis[i]['lat'] + ',' + locatis[i]['lng'];
+                    marker2 = new google.maps.Marker({
+                        position: new google.maps.LatLng(locatis[i]['lat'], locatis[i]['lng']),
+                        map: iltMap,
+                        animation: google.maps.Animation.DROP,
+                        icon: new google.maps.MarkerImage(locatis[i]['icon'])
+
+                    });
+                    markers2.push(marker2);
+                    infowindow2 = new SnazzyInfoWindow({
+                        marker: marker2,
+                        content: '<div class="mi-content"><div class="mi-image" style="background-image:url(' + locatis[i]['image'] + ');" ></div><a target="_blank" href="' + wayDir + '" class="mi-tarif">Yol Tarifi</a><a href="' + locatis[i]['link'] + '" class="mi-detay">Proje Detayı</a></div>',
+                        wrapperClass: 'iw-container',
+                        placement: 'top',
+                        closeWhenOthersOpen: true,
+                        callbacks: {
+                            afterOpen: function () {
+                                $(this.getWrapper()).addClass('active');
+                            }
                         }
-                    }
-                });
-                //infowindow.open();
-                google.maps.event.addListener(marker2, 'click', (function (marker2, i) {
-                    return function () {
-                        var infowindow2 = null;
-                        if (infowindow2) {
-                            infowindow2.close();
+                    });
+                    //infowindow.open();
+                    google.maps.event.addListener(marker2, 'click', (function (marker2, i) {
+                        return function () {
+                            var infowindow2 = null;
+                            if (infowindow2) {
+                                infowindow2.close();
+                            }
+                            infowindow2.open();
                         }
-                        infowindow2.open();
-                    }
-                })(marker2, i));
+                    })(marker2, i));
+                }
+            };
+            test2(data[0], iltMap);
+            function setMapOnAll2(iltMap) {
+                for (var i = 0; i < markers2.length; i++) {
+                    markers2[i].setMap(iltMap);
+                }
             }
-        };
-        test2(dkyVizyon, iltMap);
-        function setMapOnAll2(iltMap) {
-            for (var i = 0; i < markers2.length; i++) {
-                markers2[i].setMap(iltMap);
+            function clearMarkers2() {
+                setMapOnAll2(null);
             }
-        }
-        function clearMarkers2() {
-            setMapOnAll2(null);
-        }
-        function runMap2(button, locations, latLng, zoom) {
-            $(button).click(function (event) {
-                $('.si-float-wrapper').remove();
-                clearMarkers2();
-                infowindow2.close();
-                iltMap.setZoom(zoom);
-                iltMap.panTo(latLng);
-                test2(locations, iltMap);
-                $("html, body").animate({ scrollTop: 0 }, 1000);
-            });
-        }
-        runMap2('#dkyKartalBtn', dkyBusiness, { lat: hepsi[3][1], lng: hepsi[1][2] }, 11);
-        runMap2('.dkyAdaBtn', dkyAda, { lat: hepsi[3][1], lng: hepsi[1][2] }, 11);
-        runMap2('#dkyOnBtn', dkyOnKagithane, { lat: hepsi[3][1], lng: hepsi[1][2] }, 11);
-       
+            function runMap2(button, locations, latLng, zoom) {
+                $(button).click(function (event) {
+                    $('.si-float-wrapper').remove();
+                    clearMarkers2();
+                    infowindow2.close();
+                    iltMap.setZoom(zoom);
+                    iltMap.panTo(latLng);
+                    test2(locations, iltMap);
+                    $("html, body").animate({ scrollTop: 0 }, 1000);
+                });
+            }
+            runMap2('#dkyKartalBtn', dkyBusiness, { lat: hepsi[3][1], lng: hepsi[1][2] }, 11);
+            runMap2('.dkyAdaBtn', dkyAda, { lat: hepsi[3][1], lng: hepsi[1][2] }, 11);
+            runMap2('#dkyOnBtn', dkyOnKagithane, { lat: hepsi[3][1], lng: hepsi[1][2] }, 11);
+        });
     </script>
 
 </body>

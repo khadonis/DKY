@@ -57,7 +57,7 @@ Custom SCSS File
     animation-delay: 1s;
     position: absolute;
     bottom: 0px;
-    left: calc(50% - 77px);
+    left: calc(50% - 39px);
     display: block;
     margin: 0;
     padding: 0;
@@ -69,6 +69,11 @@ Custom SCSS File
         repeat: no-repeat;
         size: 100%;
     }
+}
+.k-scroll-down-i {
+    @extend .scroll-down-i;
+    width: 60px;
+    left: calc(50% - 30px);
 }
 
 .b-talep-form {
