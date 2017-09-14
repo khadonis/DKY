@@ -16,7 +16,7 @@
         "icon": "\/images\/Ada_map_icon.png",
         "link": "#",
         "image": "\/images\/map-ada.jpg",
-        "c_id": "1",
+        "c_id": "2",
         "category_name": "Gelecek Projeler"
     },
     {
@@ -26,7 +26,7 @@
         "icon": "\/images\/On_map_icon.png",
         "link": "#",
         "image": "\/images\/map-on.jpg",
-        "c_id": "1",
+        "c_id": "3",
         "category_name": "Sat\u0131\u015f\u0131 Devam Eden Projeler"
     }
 ]
