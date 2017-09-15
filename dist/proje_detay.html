@@ -319,7 +319,7 @@
 
                 </div>
             </div>
-            
+
         </div>
     </section>
     <div style="visibility:hidden;" id="ozellikler"></div>
@@ -696,7 +696,6 @@
     <script src="js/validate.js"></script>
     <script>
         $.getJSON('js/suadiye.json', function (data) {
-
             // json için local değişkenler
             var latLng = { lat: parseFloat(data.proje[0][0]["lat"]), lng: parseFloat(data.proje[0][0]["lng"]) };
             var kartalMapOpt = {
@@ -711,10 +710,12 @@
             var kartalMarkers = [];
             var kartalInfowindow;
             var wayDir;
+            var bounds;
             // haritayı döngüde oluşturan fonksiyon
+            var boundss = new google.maps.LatLngBounds();
             function runMap(data, map) {
+                bounds = new google.maps.LatLngBounds();
                 for (i = 0; i < data.length; i++) {
-                    //console.log(data[i]["lat"]);
                     wayDir = 'https://www.google.com.tr/maps/dir//' + data[i]["lat"] + ',' + data[i]["lng"];
 
                     kartalMarker = new google.maps.Marker({
@@ -747,6 +748,8 @@
                         }
 
                     })(marker, i));
+                    bounds.extend(new google.maps.LatLng(data[i]["lat"], data[i]["lng"]));
+                    boundss.extend(new google.maps.LatLng(data[i]["lat"], data[i]["lng"]));
                 }
             };
             //ilk yüklenen hariç tüm markerları bulmak için fonksiyon
@@ -777,16 +780,18 @@
                             clearMarkers();
                             runMap(obj, kartalMap);
                             kartalMap.setZoom(11);
-                            kartalMap.panTo(latLng);
+                            // kartalMap.panTo(latLng);
+                            kartalMap.fitBounds(bounds);
                         });
                     });
                     tumu.click(function () {
                         ul.find('li').removeClass('active');
                         $(this).addClass('active');
-                        //clearMarkers();
+                        // clearMarkers();
                         runMap(obj, kartalMap);
                         kartalMap.setZoom(11);
-                        kartalMap.panTo(latLng);
+                        // kartalMap.panTo(latLng);
+                        kartalMap.fitBounds(boundss);
                     });
 
                 });
