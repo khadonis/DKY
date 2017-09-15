@@ -568,7 +568,7 @@
     <script src="js/sweetalert2.min.js"></script>
     <script src="js/validate.js"></script>
     <script>
-        $.getJSON('js/suadiye.json', function (data) {
+        $.getJSON('js/on.json', function (data) {
             // json için local değişkenler
             var latLng = { lat: parseFloat(data.proje[0][0]["lat"]), lng: parseFloat(data.proje[0][0]["lng"]) };
             var kartalMapOpt = {
@@ -584,6 +584,14 @@
             var kartalInfowindow;
             var wayDir;
             var bounds;
+
+            var dts = data.lokasyonlar;
+            
+            $.each(dts, function (index, objj) {
+                objj.push(data.proje[0][0]);
+            });
+            
+
             // haritayı döngüde oluşturan fonksiyon
             var boundss = new google.maps.LatLngBounds();
             function runMap(data, map) {
@@ -598,6 +606,7 @@
                         icon: new google.maps.MarkerImage(data[i]["icon"])
 
                     });
+
                     kartalMarkers.push(kartalMarker);
                     kartalInfowindow = new SnazzyInfoWindow({
                         marker: kartalMarker,
@@ -625,9 +634,10 @@
                     boundss.extend(new google.maps.LatLng(data[i]["lat"], data[i]["lng"]));
                 }
             };
+
             //ilk yüklenen hariç tüm markerları bulmak için fonksiyon
             function setMapOnAll(map) {
-                for (var i = 1; i < kartalMarkers.length; i++) {
+                for (var i = 0; i < kartalMarkers.length; i++) {
                     kartalMarkers[i].setMap(map);
                 }
             }
@@ -642,7 +652,6 @@
                 var tumu = $('<li id="#tumu">').text('Tümü').appendTo(ul);
                 $('<span class="circle">').appendTo(tumu);
                 $.each(data.lokasyonlar, function (index, obj) {
-                    //console.log(obj);
                     var item = obj[0];
                     var li = $('<li id="' + item.category_name + '">').text(item.category_name).prependTo(ul);
                     var span = $('<span class="circle">').appendTo(li);
@@ -672,7 +681,6 @@
             // fonksiyonların hepsi çalıştırılıyor
             runMap(data.proje[0], kartalMap);
             runLocationsMap();
-            //console.log(data.proje);
             $(document).click(function (evt) {
                 kartalMap.set('scrollwheel', false);
             });
