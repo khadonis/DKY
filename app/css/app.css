@@ -9664,6 +9664,19 @@ body .modal.in .modal-dialog {
 .tarih {
   font-family: "flexoregular", "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
+.bulten {
+  display: block;
+  padding-left: 90px;
+  position: relative;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #333333; }
+  .bulten-link {
+    position: absolute;
+    top: 10px;
+    left: 0; }
+  .bulten-head h3 {
+    font-family: "flexobold", "flexoregular", "Helvetica Neue", Times, serif; }
+
 @media screen and (max-width: 1440px) {
   .proje-harita-head {
     margin: 30px auto 15px; }

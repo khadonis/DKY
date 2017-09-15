@@ -1,0 +1,17 @@
+.bulten {
+    display: block;
+    padding-left: 90px;
+    position: relative;
+    padding-bottom: 15px;
+    border-bottom: 1px solid $gray-dark;
+    &-link {
+        position: absolute;
+        top: 10px;
+        left: 0;
+    }
+    &-head {
+        h3 {
+            font-family: $f-bold;
+        }
+    }
+}
