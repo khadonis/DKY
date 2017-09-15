@@ -219,9 +219,7 @@
 
 
             var iltMap = new google.maps.Map(document.getElementById('iltMap'), iltMapOpt);
-            var marker2, i;
-            var markers2 = [];
-            var infowindow2;
+
             /* function test2(locatis, iltMap) {
                 //console.log(locatis[0]["lat"]);
                 for (i = 0; i < locatis.length; i++) {
@@ -258,6 +256,9 @@
                     })(marker2, i));
                 }
             }; */
+            var infowindow;
+            var marker, i;
+            var markers = [];
             function runMap(data, map) {
                 clearMarkers();
                 for (i = 0; i < data.length; i++) {
@@ -319,10 +320,10 @@
                     $("html, body").animate({ scrollTop: 0 }, 1000);
                 });
             }
-            console.log(kartalP[0]);
-            runMap2('#dkyKartalBtn', kartalP, { lat: kartalP[0]["lat"], lng: kartalP[0]["lng"] }, 11);
-            runMap2('.dkyAdaBtn', adaKartal, { lat: adaKartal[0]["lat"], lng: adaKartal[0]["lng"] }, 11);
-            runMap2('#dkyOnBtn', onKartal, { lat: onKartal[0]["lat"], lng: onKartal[0]["lng"] }, 11);
+            console.log(kartalP[0]["lat"]);
+            runMap2('#dkyKartalBtn', kartalP, { lat: parseFloat(kartalP[0]["lat"]), lng: parseFloat(kartalP[0]["lng"]) }, 11);
+            runMap2('.dkyAdaBtn', adaKartal, { lat: parseFloat(adaKartal[0]["lat"]), lng: parseFloat(adaKartal[0]["lng"]) }, 11);
+            runMap2('#dkyOnBtn', onKartal, { lat: parseFloat(onKartal[0]["lat"]), lng: parseFloat(onKartal[0]["lng"]) }, 11);
         });
     </script>
 
