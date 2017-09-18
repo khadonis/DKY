@@ -74,6 +74,9 @@
     .h-info {
         margin-bottom: 15px;
         margin-top: -15px;
+        &.h-info-mm {
+            margin-top: 15px;
+        }
     }
     img {
         margin-right: 0;

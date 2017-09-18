@@ -368,6 +368,16 @@ $('.video-wrapper .mask').click(function (params) {
 if ($(window).width() > 767) {
   $('.side-menu').height($('.content-inner').height() - 60);
 }
+$('.content-inner').resize(function () {
+  if ($(window).width() > 767) {
+    $('.side-menu').height($('.content-inner').height() - 60);
+  }
+});
+$('html').on('DOMNodeInserted', '.h-box, li', function () {
+  if ($(window).width() > 767) {
+    $('.side-menu').height($('.content-inner').height() - 60);
+  }
+});
 
 /* $(function () {
   var current = location.pathname;

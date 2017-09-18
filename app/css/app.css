@@ -9529,6 +9529,8 @@ section.bi-tal-form {
   .h-box .h-info {
     margin-bottom: 15px;
     margin-top: -15px; }
+    .h-box .h-info.h-info-mm {
+      margin-top: 15px; }
   .h-box img {
     margin-right: 0;
     width: 100%;
