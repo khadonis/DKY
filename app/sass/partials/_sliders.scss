@@ -93,11 +93,14 @@
     margin-top: -30px;
     background-color: #fff;
     img {
-        width: auto;
-        height: 125px;
+        width: 100%;
+        height: auto;
+        min-height: 100%;
         margin: 0 auto;
     }
     .golge {
+        max-height: 150px;
+        overflow: hidden;
         display: block;
         &:hover {
             &:after,
@@ -105,7 +108,7 @@
                 border-width: 2px;
             }
         }
-        &:after,
+       /*  &:after,
         &:before {
             content: '';
             position: absolute;
@@ -130,18 +133,20 @@
             right: 223px;
             border-top: 0 solid $sec-color;
             border-left: 0 solid $sec-color;
-        }
+        } */
     }
     h3 {
         font-family: $font-family-sans-serif;
         text-align: left;
-        font-size: 20px;
+        font-size: 16px;
         min-height: 70px;
+        margin-top: 10px;
     }
     .swiper-slide {
-        padding: 0 15px 0 0;
+        padding: 10px;
         background: transparent;
-        &:after {
+       // border: 1px solid lighten($gray-light, 40%);
+        /* &:after {
             content: '\f142';
             top: 15%;
             transform: translateY(-85);
@@ -153,7 +158,7 @@
             left: initial;
             opacity: .5;
             cursor: -webkit-grab;
-        }
+        } */
     }
 }
 
@@ -176,12 +181,12 @@
 
 .swiper-haber-btn-prev {
     @extend %slider-btn-prev;
-    right: 30px;
+    right: 60px;
 }
 
 .swiper-haber-btn-next {
     @extend %slider-btn-next;
-    right: 0;
+    right: 30px;
 }
 
 .swiper-pagination {
