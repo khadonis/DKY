@@ -8208,10 +8208,18 @@ a {
   cursor: pointer; }
 
 body {
-  min-height: 600px; }
+  min-height: 600px;
+  /* -webkit-text-stroke: 0.3px;
+    text-shadow: 0 0 1px rgba(51,51,51,0.2); */
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke: 0.4px rgba(0, 0, 0, 0.1);
+  text-shadow: #fff 0px 1px 1px; }
 
 ul {
   list-style: none; }
+
+p {
+  -webkit-text-stroke: 0.3px; }
 
 .hero-img {
   margin-top: 48px;
@@ -9683,6 +9691,9 @@ body .modal.in .modal-dialog {
     left: 0; }
   .bulten-head h3 {
     font-family: "flexobold", "flexoregular", "Helvetica Neue", Times, serif; }
+  @media screen and (max-width: 768px) {
+    .bulten {
+      height: auto; } }
 
 @media screen and (max-width: 1440px) {
   .proje-harita-head {
