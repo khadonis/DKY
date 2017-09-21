@@ -8213,7 +8213,7 @@ body {
     text-shadow: 0 0 1px rgba(51,51,51,0.2); */
   -webkit-font-smoothing: antialiased;
   -webkit-text-stroke: 0.4px rgba(0, 0, 0, 0.1);
-  text-shadow: #fff 0px 1px 1px; }
+  text-shadow: transparent 0px 1px 1px; }
 
 ul {
   list-style: none; }
@@ -9365,8 +9365,10 @@ section.bi-tal-form {
 
 .bf-wr {
   color: #fff;
-  margin-top: 60px;
-  padding: 60px 0; }
+  margin-top: 20px;
+  padding: 60px 0 0;
+  position: relative;
+  background: #1d2b3e; }
   .bf-wr .back-effect {
     z-index: 0; }
   .bf-wr .container {
@@ -9374,7 +9376,7 @@ section.bi-tal-form {
     position: relative; }
   .bf-wr h2 {
     color: #fff;
-    padding: 60px 0;
+    padding: 30px 0 0;
     font-size: 48px; }
   .bf-wr input[type="text"],
   .bf-wr input[type="tel"],
@@ -9386,8 +9388,9 @@ section.bi-tal-form {
     width: 100%;
     padding: 20px 10px;
     border: none;
-    border-bottom: 2px solid #fff;
-    -webkit-appearance: none; }
+    border: 1px solid #fff;
+    -webkit-appearance: none;
+    margin-bottom: 30px; }
     .bf-wr input[type="text"]::-webkit-input-placeholder,
     .bf-wr input[type="tel"]::-webkit-input-placeholder,
     .bf-wr input[type="mail"]::-webkit-input-placeholder,
@@ -9410,7 +9413,7 @@ section.bi-tal-form {
             appearance: none;
     background: #010101; }
   .bf-wr .y-uyari {
-    margin: 30px 0;
+    margin: 0 0 30px 0;
     font-size: 12px; }
   .bf-wr .fieldset span {
     font-size: 18px; }
@@ -9457,6 +9460,13 @@ section.bi-tal-form {
     text-align: center;
     margin: 30px auto;
     display: block; }
+
+.bf-in {
+  padding: 60px;
+  text-shadow: transparent 0 0 0; }
+  @media screen and (max-width: 425px) {
+    .bf-in {
+      padding: 60px 0; } }
 
 .btf-sayfa .b-talep-form {
   display: none; }

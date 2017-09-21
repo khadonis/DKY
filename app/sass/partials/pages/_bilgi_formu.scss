@@ -1,7 +1,9 @@
 .bf-wr {
     color: #fff;
-    margin-top: $header-height;
-    padding: 60px 0;
+    margin-top: $header-height - 40;
+    padding: 60px 0 0;
+    position: relative;
+    background: rgba($main-color, 1.0);
     .back-effect {
         z-index: 0;
     }
@@ -11,7 +13,7 @@
     }
     h2 {
         color: #fff;
-        padding: 60px 0;
+        padding: 30px 0 0;
         font-size: 48px;
     }
     input[type="text"],
@@ -24,8 +26,9 @@
         width: 100%;
         padding: 20px 10px;
         border: none;
-        border-bottom: 2px solid #fff;
+        border: 1px solid #fff;
         -webkit-appearance: none;
+        margin-bottom: 30px;
         &::placeholder {
             color: #fff;
         }
@@ -36,7 +39,7 @@
         background: rgba(1, 1, 1, 1);
     }
     .y-uyari {
-        margin: 30px 0;
+        margin: 0 0 30px 0;
         font-size: 12px;
     }
     .fieldset {
@@ -94,8 +97,18 @@
         display: block;
     }
 }
-.btf-sayfa{
-    .b-talep-form{
+
+.bf-in {
+    //border: 2px solid #fff;
+    padding: 60px;
+    text-shadow: transparent 0 0 0;
+    @media screen and (max-width: 425px) {
+        padding: 60px 0;
+    }
+}
+
+.btf-sayfa {
+    .b-talep-form {
         display: none;
     }
 }
