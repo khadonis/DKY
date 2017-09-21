@@ -1,23 +1,13 @@
 [
     {
-        "name": "DKY Vizyon Kartal",
-        "lat": "40.894315",
-        "lng": "29.171416",
-        "icon": "\/images\/Merkez_map_icon.png",
-        "link": "#dkyVizyonLink",
-        "image": "\/images\/map-sahil.jpg",
-        "c_id": "1",
-        "category_name": "Sat\u0131\u015f\u0131 Devam Eden Projeler"
-    },
-    {
         "name": "DKY Sahil Kartal",
         "lat": "40.8944685",
         "lng": "29.171256",
         "icon": "\/images\/Sahil_map_icon.png",
         "link": "#dkySahilLink",
         "image": "\/images\/map-sahil.jpg",
-        "c_id": "3",
-        "category_name": "Gelecek Projeler"
+        "c_id": "1",
+        "category_name": "Satıştaki Projeler"
     },
     {
         "name": "DKY On Kağıthane",
@@ -26,8 +16,8 @@
         "icon": "\/images\/On_map_icon.png",
         "link": "#dkyOnKagithaneLink",
         "image": "\/images\/map-on.jpg",
-        "c_id": "3",
-        "category_name": "Gelecek Projeler"
+        "c_id": "1",
+        "category_name": "Satıştaki Projeler"
     },
     {
         "name": "DKY Cadde Göztepe 05",
@@ -36,8 +26,8 @@
         "icon": "images/Goztepe_map_icon.png",
         "link": "#dkyGoztepeLink",
         "image": "images/map-goztepe.jpg",
-        "c_id": "3",
-        "category_name": "Gelecek Projeler"
+        "c_id": "2",
+        "category_name": "Tamamlanan Projeler"
     },
     {
         "name": "DKY Business Kartal",
@@ -47,7 +37,17 @@
         "link": "#dkyBusinessLink",
         "image": "images/map-business.jpg",
         "c_id": "1",
-        "category_name": "Gelecek Projeler"
+        "category_name": "Satıştaki Projeler"
+    },
+    {
+        "name": "DKY Kartal",
+        "lat": "40.909721",
+        "lng": "29.212279",
+        "icon": "images/Kartal_map_icon.png",
+        "link": "#dkyBusinessLink",
+        "image": "images/map-business.jpg",
+        "c_id": "1",
+        "category_name": "Satıştaki Projeler"
     },
     {
         "name": "Lokum Evler",
@@ -56,8 +56,8 @@
         "icon": "images/Lokum_map_icon.png",
         "link": "#dkyLokumEvlerLink",
         "image": "images/map-lokum.jpg",
-        "c_id": "3",
-        "category_name": "Gelecek Projeler"
+        "c_id": "1",
+        "category_name": "Satıştaki Projeler"
     },
     {
         "name":"DKY Ada",
@@ -66,8 +66,8 @@
         "icon": "images/Ada_map_icon.png",
         "link": "#dkyAdaLink",
         "image": "images/map-ada.jpg",
-        "c_id": "1",
-        "category_name":"Sat\u0131\u015f\u0131 Devam Eden Projeler"
+        "c_id": "3",
+        "category_name":"Gelecek Projeler"
     },
     {
         "name":"DKY Business Tuzla",
@@ -76,8 +76,8 @@
         "icon": "images/Businesstuz_map_icon.png",
         "link": "#dkyBusinezzTuzlaLink",
         "image": "images/map-tuzla.jpg",
-        "c_id": "1",
-        "category_name":"Sat\u0131\u015f\u0131 Devam Eden Projeler"
+        "c_id": "3",
+        "category_name":"Gelecek Projeler"
     },
     {
         "name":"DKY Cadde Suadiye 12",

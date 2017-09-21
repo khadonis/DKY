@@ -13,12 +13,12 @@ var pathLast = path.substring(path.lastIndexOf("/") + 1, path.length);
 
 
 $.getJSON('js/json_deneme.json', function (data) {
-    latLng = { lat: parseFloat(data[3]["lat"]), lng: parseFloat(data[1]["lng"]) };
+    latLng = { lat: parseFloat(data[8]["lat"]), lng: parseFloat(data[6]["lng"]) };
     var mapOpt = {
-        zoom: 11,
+        zoom: 10,
         scrollwheel: false,
         //center: new google.maps.LatLng(40.9801883, 29.171256),
-        center: new google.maps.LatLng([data[3].lat], [data[1].lng]),
+        center: new google.maps.LatLng([data[8].lat], [data[6].lng]),
         mapTypeId: google.maps.MapTypeId.ROADMAP,
         styles: stls
     };
@@ -76,7 +76,7 @@ $.getJSON('js/json_deneme.json', function (data) {
         $(btn).click(function () {
             clearMarkers();
             runMap(data, map);
-            map.setZoom(11);
+            map.setZoom(10);
             map.panTo(latLng);
             $('.proje-listesi a').removeClass('active');
             $('.dprojs li').removeClass('active');
@@ -132,9 +132,9 @@ $.getJSON('js/json_deneme.json', function (data) {
 
     // parametreleri eklenmiş fonksiyonları çalıştırma
     runMap(data, map);
-    runTekProj(tamamlananProj, '.proje-listesi li:first-child ul', '.tamamlanan-harbtn');
-    runTekProj(satisiDevamEdenProj, '.proje-listesi li:nth-child(2) ul', '.devam-eden-harbtn');
-    runTekProj(gelecekProj, '.proje-listesi li:nth-child(3) ul', '.gelecek-harbtn');
+    runTekProj(satisiDevamEdenProj, '#de', '.devam-eden-harbtn');
+    runTekProj(tamamlananProj, '#tp', '.tamamlanan-harbtn');
+    runTekProj(gelecekProj, '#gp', '.gelecek-harbtn');
     runMapCat('.gelecek-harbtn', gelecekProj, map);
     runMapCat('.devam-eden-harbtn', satisiDevamEdenProj, map);
     runMapCat('.tamamlanan-harbtn', tamamlananProj, map);
