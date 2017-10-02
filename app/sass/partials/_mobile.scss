@@ -96,7 +96,7 @@
         }
     }
     .kurum-content {
-        margin-top: 220px;
+        margin-top: 160px;
     }
     .side-menu a.active:after {
         top: 16px;
@@ -736,7 +736,7 @@
             .v-sep {
                 display: none;
             }
-            padding: 80px 0 0;
+            padding: 30px 0 80px;
         }
         .b-talep-form {
             transform-origin: center bottom;
@@ -785,9 +785,19 @@
             padding: 0;
         }
         .swiper-container {
-            height: 240px;
+            height: 300px;
             display: block;
-            top: 60px;
+            top: 0px;
+            .swiper-slide {
+                overflow: auto !important;
+                height: 300px;
+            }
+            .hero-video-img {
+                height: 300px;
+                width: auto;
+                min-width: auto;
+                display: block !important;
+            }
         }
         .odul-slide-container,
         .basin-slide-container {
@@ -804,7 +814,7 @@
             }
         }
         .hero-video {
-            min-height: 240px;
+            min-height: 200px;
             height: 200px;
             margin-top: 0 !important;
         }

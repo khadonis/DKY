@@ -7404,7 +7404,8 @@ footer {
 .basin-slide-container {
   width: 100%;
   height: 100%;
-  overflow: hidden; }
+  overflow: hidden;
+  background-attachment: fixed; }
   .swiper-container img, .krtl-slider-container img, .kartal-galeri-slider-container img,
   .kg-mimari-slider-container img,
   .kg-icmimari-slider-container img,
@@ -7428,7 +7429,8 @@ footer {
 .plan-3-slide-container,
 .plan-4-slide-container,
 .krtl-video-slider-container {
-  height: 100vh;
+  margin-top: 62px;
+  height: 90vh;
   overflow: hidden; }
   .swiper-container .swiper-slide, .krtl-slider-container .swiper-slide, .kartal-galeri-slider-container .swiper-slide,
   .kg-mimari-slider-container .swiper-slide,
@@ -7444,14 +7446,17 @@ footer {
 .hero-video {
   min-width: 100%;
   min-height: 100%;
-  width: auto;
+  width: 100%;
   height: auto;
   position: absolute;
   left: 50%;
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  z-index: 0; }
+  z-index: 0;
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat; }
 
 .odul-slide-container, .basin-slide-container {
   height: 295px; }
@@ -8225,7 +8230,7 @@ p {
   margin-top: 48px;
   width: 100%;
   position: relative;
-  height: 41.66667vw;
+  height: 30.66667vw;
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat; }
@@ -9803,7 +9808,7 @@ body .modal.in .modal-dialog {
       top: 470px;
       width: 48%; }
   .kurum-content {
-    margin-top: 220px; }
+    margin-top: 160px; }
   .side-menu a.active:after {
     top: 16px; }
   .map {
@@ -10394,7 +10399,7 @@ body .modal.in .modal-dialog {
   body section h2 {
     text-align: center; }
   body .section-medya {
-    padding: 80px 0 0; }
+    padding: 30px 0 80px; }
     body .section-medya .v-sep {
       display: none; }
   body .b-talep-form {
@@ -10441,9 +10446,33 @@ body .modal.in .modal-dialog {
   .plan-3-slide-container, body
   .plan-4-slide-container, body
   .krtl-video-slider-container {
-    height: 240px;
+    height: 300px;
     display: block;
-    top: 60px; }
+    top: 0px; }
+    body .swiper-container .swiper-slide, body .krtl-slider-container .swiper-slide, body .kartal-galeri-slider-container .swiper-slide, body
+    .kg-mimari-slider-container .swiper-slide, body
+    .kg-icmimari-slider-container .swiper-slide, body
+    .kg-odaire-slider-container .swiper-slide, body .plans-slider-container .swiper-slide, body
+    .plan-1-slide-container .swiper-slide, body
+    .plan-2-slide-container .swiper-slide, body
+    .plan-3-slide-container .swiper-slide, body
+    .plan-4-slide-container .swiper-slide, body
+    .krtl-video-slider-container .swiper-slide {
+      overflow: auto !important;
+      height: 300px; }
+    body .swiper-container .hero-video-img, body .krtl-slider-container .hero-video-img, body .kartal-galeri-slider-container .hero-video-img, body
+    .kg-mimari-slider-container .hero-video-img, body
+    .kg-icmimari-slider-container .hero-video-img, body
+    .kg-odaire-slider-container .hero-video-img, body .plans-slider-container .hero-video-img, body
+    .plan-1-slide-container .hero-video-img, body
+    .plan-2-slide-container .hero-video-img, body
+    .plan-3-slide-container .hero-video-img, body
+    .plan-4-slide-container .hero-video-img, body
+    .krtl-video-slider-container .hero-video-img {
+      height: 300px;
+      width: auto;
+      min-width: auto;
+      display: block !important; }
   body .odul-slide-container, body .basin-slide-container,
   body .basin-slide-container {
     height: 40%;
@@ -10456,7 +10485,7 @@ body .modal.in .modal-dialog {
       text-align: center;
       font-size: 90%; }
   body .hero-video {
-    min-height: 240px;
+    min-height: 200px;
     height: 200px;
     margin-top: 0 !important; }
   section[class^='section'] .container-fluid {
@@ -10828,7 +10857,8 @@ body .modal.in .modal-dialog {
     overflow: hidden;
     position: relative;
     -webkit-transition: all ease-in .3s;
-    transition: all ease-in .3s; }
+    transition: all ease-in .3s;
+    display: block; }
     .section-projeler .hero-proj img {
       position: absolute;
       z-index: 0;

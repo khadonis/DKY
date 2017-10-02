@@ -250,6 +250,7 @@ Custom SCSS File
         overflow: hidden;
         position: relative;
         transition: all ease-in .3s;
+        display: block;
         img {
             position: absolute;
             z-index: 0;
