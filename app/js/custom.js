@@ -49,6 +49,7 @@ if (screen.width > 425) {
 $('.menu-toggle').click(function (evt) {
   evt.preventDefault();
   $('.menu').toggleClass('opened');
+  $('body').toggleClass('no-scroll');
   $(this).toggleClass('active');
   $('.header').toggleClass('static');
   $('.krtl-header').toggleClass('static');
@@ -353,10 +354,11 @@ var searchButon = '.languages .search-btn', searchDiv = '.search', closeButon = 
 $(searchButon).click(function (evt) {
   evt.preventDefault();
   $(searchDiv).addClass('opened');
-
+  $('body').addClass('no-scroll');
 });
 $(closeButon).click(function () {
   $(searchDiv).removeClass('opened');
+  $('body').removeClass('no-scroll');
 });
 
 //video
