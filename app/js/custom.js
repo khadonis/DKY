@@ -57,7 +57,7 @@ $('.menu-toggle').click(function (evt) {
 
 //Youtube Videos
 
-var player;
+/* var player;
 var player2;
 function onYouTubeIframeAPIReady() {
   player = new YT.Player('video1', {
@@ -76,8 +76,8 @@ function onYouTubeIframeAPIReady() {
       'onReady': onPlayerReady2
     }
   });
-}
-var videoId_1 = 'NBldK9HYe6k';
+} */
+/* var videoId_1 = 'NBldK9HYe6k';
 var videoId_2 = 'NhsJY7Zf6cc';
 var linkVideo = 'http://img.youtube.com/vi/' + videoId_1 + '/0.jpg';
 var linkVideo2 = 'http://img.youtube.com/vi/' + videoId_2 + '/0.jpg';
@@ -94,7 +94,7 @@ function onPlayerReady2(event) {
     $(this).hide();
     player2.playVideo();
   });
-}
+} */
 
 
 
