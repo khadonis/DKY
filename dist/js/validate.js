@@ -16,7 +16,7 @@ function validateForm() {
     var email = $('#email').val();
     var projects = $('#proje').val();
     var message = $('#mesaj').val();
-    var nameReg = /^[A-Za-z]+$/;
+    var nameReg = /^[A-Za-zşŞıİçÇöÖüÜĞğa-zA-Z-,]+(\s{0,1}[A-Za-zşŞıİçÇöÖüÜĞğa-zA-Z-, ])*$/; ///^[A-Za-zşŞıİçÇöÖüÜĞğa-zA-Z-,]+(\s{0,1}[A-Za-zşŞıİçÇöÖüÜĞğa-zA-Z-,]\ {0,1})*$/
     var numberReg = /^[0-9]+$/;
     var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
     var kabul = $('#ke');
@@ -43,7 +43,15 @@ function validateForm() {
         event.preventDefault();
     }
 
-
+    if (message == "") {
+        swal({
+            title: 'Uyarı!',
+            text: 'Lütfen mesajınızı giriniz',
+            type: 'warning',
+            confirmButtonText: 'OK'
+        });
+        event.preventDefault();
+    }
 
     if (email == "") {
         swal({
@@ -93,7 +101,7 @@ function validateForm() {
     } else if (!nameReg.test(surname)) {
         swal({
             title: 'Uyarı!',
-            text: 'Lütfen geçerli bir ad giriniz',
+            text: 'Lütfen geçerli bir soyadı giriniz',
             type: 'warning',
             confirmButtonText: 'OK'
         });
@@ -122,15 +130,7 @@ function validateForm() {
 
 
 
-    if (message == "") {
-        swal({
-            title: 'Uyarı!',
-            text: 'Lütfen mesajınızı giriniz',
-            type: 'warning',
-            confirmButtonText: 'OK'
-        });
-        event.preventDefault();
-    }
+
 
 
 }

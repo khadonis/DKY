@@ -279,9 +279,9 @@
             }
         }
     }
-    .swiper-container {
+    /* .swiper-container {
         height: 420px;
-    }
+    } */
 }
 
 //768< (Tablet)
@@ -455,11 +455,11 @@
             }
         }
         .col-sm-8 {
-            @include make-xs-column(12);
+            @include make-xs-column(12); 
         }
     }
     .swiper-container {
-        height: 420px;
+        //height: 420px;
         .scroll-down-i {
             display: none;
         }

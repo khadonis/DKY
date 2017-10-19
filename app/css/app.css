@@ -7436,7 +7436,7 @@ footer {
 .plan-4-slide-container,
 .krtl-video-slider-container {
   margin-top: 62px;
-  height: 90vh;
+  height: 42.709vw;
   overflow: hidden; }
   .swiper-container .swiper-slide, .krtl-slider-container .swiper-slide, .kartal-galeri-slider-container .swiper-slide,
   .kg-mimari-slider-container .swiper-slide,
@@ -9972,16 +9972,9 @@ body .modal.in .modal-dialog {
   footer .text-right h5 {
     text-align: center;
     font-size: 14px; }
-  .swiper-container, .krtl-slider-container, .kartal-galeri-slider-container,
-  .kg-mimari-slider-container,
-  .kg-icmimari-slider-container,
-  .kg-odaire-slider-container, .plans-slider-container,
-  .plan-1-slide-container,
-  .plan-2-slide-container,
-  .plan-3-slide-container,
-  .plan-4-slide-container,
-  .krtl-video-slider-container {
-    height: 420px; } }
+  /* .swiper-container {
+        height: 420px;
+    } */ }
 
 @media screen and (max-width: 768px) {
   body .content-inner h2 {
@@ -10141,34 +10134,24 @@ body .modal.in .modal-dialog {
       min-height: 1px;
       padding-left: 15px;
       padding-right: 15px; }
-  .swiper-container, .krtl-slider-container, .kartal-galeri-slider-container,
-  .kg-mimari-slider-container,
-  .kg-icmimari-slider-container,
-  .kg-odaire-slider-container, .plans-slider-container,
-  .plan-1-slide-container,
-  .plan-2-slide-container,
-  .plan-3-slide-container,
-  .plan-4-slide-container,
-  .krtl-video-slider-container {
-    height: 420px; }
-    .swiper-container .scroll-down-i, .krtl-slider-container .scroll-down-i, .kartal-galeri-slider-container .scroll-down-i,
-    .kg-mimari-slider-container .scroll-down-i,
-    .kg-icmimari-slider-container .scroll-down-i,
-    .kg-odaire-slider-container .scroll-down-i, .plans-slider-container .scroll-down-i,
-    .plan-1-slide-container .scroll-down-i,
-    .plan-2-slide-container .scroll-down-i,
-    .plan-3-slide-container .scroll-down-i,
-    .plan-4-slide-container .scroll-down-i,
-    .krtl-video-slider-container .scroll-down-i, .swiper-container .k-scroll-down-i, .krtl-slider-container .k-scroll-down-i, .kartal-galeri-slider-container .k-scroll-down-i,
-    .kg-mimari-slider-container .k-scroll-down-i,
-    .kg-icmimari-slider-container .k-scroll-down-i,
-    .kg-odaire-slider-container .k-scroll-down-i, .plans-slider-container .k-scroll-down-i,
-    .plan-1-slide-container .k-scroll-down-i,
-    .plan-2-slide-container .k-scroll-down-i,
-    .plan-3-slide-container .k-scroll-down-i,
-    .plan-4-slide-container .k-scroll-down-i,
-    .krtl-video-slider-container .k-scroll-down-i {
-      display: none; }
+  .swiper-container .scroll-down-i, .krtl-slider-container .scroll-down-i, .kartal-galeri-slider-container .scroll-down-i,
+  .kg-mimari-slider-container .scroll-down-i,
+  .kg-icmimari-slider-container .scroll-down-i,
+  .kg-odaire-slider-container .scroll-down-i, .plans-slider-container .scroll-down-i,
+  .plan-1-slide-container .scroll-down-i,
+  .plan-2-slide-container .scroll-down-i,
+  .plan-3-slide-container .scroll-down-i,
+  .plan-4-slide-container .scroll-down-i,
+  .krtl-video-slider-container .scroll-down-i, .swiper-container .k-scroll-down-i, .krtl-slider-container .k-scroll-down-i, .kartal-galeri-slider-container .k-scroll-down-i,
+  .kg-mimari-slider-container .k-scroll-down-i,
+  .kg-icmimari-slider-container .k-scroll-down-i,
+  .kg-odaire-slider-container .k-scroll-down-i, .plans-slider-container .k-scroll-down-i,
+  .plan-1-slide-container .k-scroll-down-i,
+  .plan-2-slide-container .k-scroll-down-i,
+  .plan-3-slide-container .k-scroll-down-i,
+  .plan-4-slide-container .k-scroll-down-i,
+  .krtl-video-slider-container .k-scroll-down-i {
+    display: none; }
   footer .blog {
     display: none; }
   body .hero-proj {
