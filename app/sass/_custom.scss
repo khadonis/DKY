@@ -233,6 +233,9 @@ Custom SCSS File
         color: $main-color;
         font-family: $font-family-sans-serif;
         margin-bottom: 20px;
+        .section-medya & {
+            font-size: 30px;
+        }
     }
 }
 
